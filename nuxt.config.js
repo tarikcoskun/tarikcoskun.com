@@ -28,6 +28,7 @@ export default {
    ** Plugins to load before mounting the App
    */
   plugins: [],
+  buildModules: ['@nuxtjs/tailwindcss'],
   /*
    ** Nuxt.js modules
    */

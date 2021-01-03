@@ -64,17 +64,6 @@
             <div class="flex flex-col justify-center w-2/5 text-center text-white bg-gray-700 shadow-none whitespace-nowrap"></div>
           </div>
         </div>
-        <div class="p-2 bg-gray-200 rounded-md">
-          <div class="flex items-center justify-between mb-1">
-            <span class="inline-block text-xl font-semibold text-gray-700 truncate">GameMaker Studio Language</span>
-            <div class="text-right">
-              <span class="inline-block text-lg font-semibold text-gray-600">10%</span>
-            </div>
-          </div>
-          <div class="flex h-2 overflow-hidden text-xs bg-gray-400 rounded">
-            <div class="flex flex-col justify-center w-1/12 text-center text-white bg-gray-700 shadow-none whitespace-nowrap"></div>
-          </div>
-        </div>
       </div>
     </div>
   </div>

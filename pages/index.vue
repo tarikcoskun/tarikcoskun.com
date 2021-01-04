@@ -12,7 +12,7 @@
           <h1 class="text-2xl font-semibold">Positions</h1>
           <div class="grid gap-2 md:grid-cols-2">
             <div>
-              <a href="https://zyapimstudios.com/generations" target="_blank" class="text-xl font-semibold text-gray-800 hover:underline">Generations</a>
+              <a href="https://generations.vercel.app" target="_blank" class="text-xl font-semibold text-gray-800 hover:underline">Generations</a>
               <p class="-mt-1 text-lg text-gray-700">Website Developer</p>
             </div>
             <div>

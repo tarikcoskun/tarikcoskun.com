@@ -8,7 +8,7 @@
     </div>
     <section class="col-span-4 mt-4 md:mt-0">
       <div class="col-span-7 p-3 mb-4 bg-gray-100 rounded-lg md:mb-0">
-        <h1 class="text-2xl font-semibold">Project</h1>
+        <h1 class="text-2xl font-semibold">Positions</h1>
         <div class="grid gap-2 md:grid-cols-2">
           <div>
             <a href="https://zyapimstudios.com/generations" target="_blank" class="text-xl font-semibold text-gray-800 hover:underline">Generations</a>

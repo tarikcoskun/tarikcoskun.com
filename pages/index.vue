@@ -1,12 +1,12 @@
 <template>
 <div class="p-4 md:px-16 md:py-8">
 
-  <div class="gap-4 md:grid md:grid-cols-5">
-    <div class="col-span-5 p-3 bg-gray-100 rounded-lg md:p-6 md:mb-0">
+  <div class="gap-4 md:grid md:grid-cols-7">
+    <div class="col-span-7 p-3 bg-gray-100 rounded-lg md:p-6 md:mb-0">
       <h1 class="text-2xl font-semibold">About Me</h1>
       <p class="text-lg text-justify text-gray-700">Howdy! I'm Tarık, a young developer from Turkey. I spend most of my time playing games, coding and chatting. I have been coding since 2018, when I started using Discord. I've always wondered how Discord bots and websites work, so I started researching about them. About 8 months later, I had enough knowledge to create Discord bots from scratch. After learning about Discord bots, I started researching about websites and since then, I'm trying to create websites using new technologies I learn.</p>
     </div>
-    <section class="col-span-3 mt-4 md:mt-0">
+    <section class="col-span-4 mt-4 md:mt-0">
       <div class="grid gap-4">
         <div class="p-3 mb-4 bg-gray-100 rounded-lg md:mb-0">
           <h1 class="text-2xl font-semibold">Positions</h1>
@@ -38,7 +38,7 @@
         </div>
       </div>
     </section>
-    <section class="col-span-2">
+    <section class="col-span-3">
       <div class="grid gap-4">
         <div class="p-3 bg-gray-100 rounded-lg">
           <h1 class="text-2xl font-semibold">Skills</h1>

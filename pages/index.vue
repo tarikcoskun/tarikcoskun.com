@@ -8,7 +8,7 @@
     </div>
     <section class="col-span-4 mt-4 md:mt-0">
       <div class="grid gap-4">
-        <div class="p-3 mb-4 bg-gray-100 rounded-lg md:mb-0">
+        <div class="p-3 bg-gray-100 rounded-lg md:mb-0">
           <h1 class="text-2xl font-semibold">Positions</h1>
           <div class="grid gap-2 md:grid-cols-2">
             <div>

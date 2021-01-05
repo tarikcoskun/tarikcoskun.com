@@ -23,6 +23,6 @@ export default {
   css: [],
   plugins: [],
   buildModules: ['@nuxtjs/tailwindcss'],
-  modules: [],
+  modules: ['@nuxt/content'],
   build: {},
 };

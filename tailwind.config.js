@@ -6,4 +6,7 @@ module.exports = {
   },
   variants: {},
   plugins: [],
+  experimental: {
+    applyComplexClasses: true
+  }
 }

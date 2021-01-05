@@ -24,6 +24,6 @@ export default {
   css: [],
   plugins: [],
   buildModules: ['@nuxtjs/tailwindcss'],
-  modules: ['@nuxt/content'],
+  modules: ['@nuxt/content', '@nuxtjs/pwa'],
   build: {},
 };

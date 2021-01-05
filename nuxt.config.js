@@ -1,5 +1,6 @@
 export default {
   ssr: false,
+  target: 'static',
   head: {
     title: 'Tarık Coşkun',
     meta: [

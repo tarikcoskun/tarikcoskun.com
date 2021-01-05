@@ -1,5 +1,5 @@
 export default {
-  mode: 'spa',
+  ssr: true,
   head: {
     title: 'Tarık Coşkun',
     meta: [

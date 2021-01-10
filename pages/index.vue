@@ -8,11 +8,10 @@
         Howdy! I'm Tarık, a young Front-End developer from Turkey. I spend most
         of my time playing games, coding and chatting. I have been coding since
         2018, when I started using Discord. I've always wondered how Discord
-        bots and websites work, so I started researching about them. About 8
-        months later, I had enough knowledge to create Discord bots from
-        scratch. After learning about Discord bots, I started researching about
-        how Discord bot dashboards work and since then, I'm trying to create
-        websites using new technologies I learn.
+        bots work, so I started coding Discord bots. In 2019, I started creating
+        Discord bot dashboards and since then, I'm trying to create websites
+        using new technologies I learn. In late 2020, I started learning Nuxt.js
+        and Tailwind CSS and this website is only example for now.
       </p>
     </div>
     <div
@@ -170,6 +169,11 @@ export default {
           title: 'C#',
           icon:
             '<svg xmlns="http://www.w3.org/2000/svg" viewBox="-26 -20 507 552" fill="#f7fafc" > <linearGradient id="d" x1="121.0946" x2="261.7725" y1="55.8074" y2="235.867" gradientUnits="userSpaceOnUse" > <stop stop-color="#9866d3"></stop> </linearGradient> <linearGradient id="b" x1="314.1754" x2="443.4638" y1="207.291" y2="372.7726" gradientUnits="userSpaceOnUse" > <stop stop-color="#9866d3"/> </linearGradient> <linearGradient id="c" x1="115.2882" x2="252.7405" y1="326.1631" y2="502.094" gradientUnits="userSpaceOnUse" > <stop stop-color="#9866d3"/> </linearGradient> <clipPath id="a"> <path d="M435.279 113.284L247.191 4.692c-10.835-6.257-28.567-6.257-39.402 0L19.701 113.284C8.865 119.539 0 134.896 0 147.408v217.185c.843 14.571 8.286 26.639 19.701 34.123l188.088 108.592c10.835 6.257 28.567 6.257 39.402 0l188.088-108.592c12.248-8.146 19.219-20.408 19.701-34.123V147.408c-.44-13.165-8.323-26.443-19.701-34.124z"/> </clipPath> <g clip-path="url(#a)"> <path fill="url(#b)" d="M222.588 124.487h267.464V397.98H222.588z" /> <path fill="url(#c)" d="M490.052 407.802L145.845 208.63H-29.911v329.723h519.963z" /><path fill="url(#d)" d="M-29.911 405.093l519.963-300.885V-14.513H-29.911z" /></g> <path d="M75.83 256.001c-.891-148.089 197.459-213.479 282.996-75.878l-65.635 37.98C253.569 152.569 155.19 176.002 151.659 256c1.06 73.729 97.754 107.978 141.536 37.893l65.635 37.979c-75.382 130.863-279.198 83.781-283-75.871zM326 213h12.5l-8.541 82.5h-12.735zM352.776 213h12.5l-8.541 82.5H344zM312 232.592h62.5v12.072H312zM308.5 262H371v12.072h-62.5z" /></svg>',
+        },
+        {
+          title: 'Python',
+          icon:
+            '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#306998"><path d="M14.31.18l.9.2.73.26.59.3.45.32.34.34.25.34.16.33.1.3.04.26.02.2-.01.13V8.5l-.05.63-.13.55-.21.46-.26.38-.3.31-.33.25-.35.19-.35.14-.33.1-.3.07-.26.04-.21.02H8.83l-.69.05-.59.14-.5.22-.41.27-.33.32-.27.35-.2.36-.15.37-.1.35-.07.32-.04.27-.02.21v3.06H3.23l-.21-.03-.28-.07-.32-.12-.35-.18-.36-.26-.36-.36-.35-.46-.32-.59-.28-.73-.21-.88-.14-1.05L0 11.97l.06-1.22.16-1.04.24-.87.32-.71.36-.57.4-.44.42-.33.42-.24.4-.16.36-.1.32-.05.24-.01h.16l.06.01h8.16v-.83H6.24l-.01-2.75-.02-.37.05-.34.11-.31.17-.28.25-.26.31-.23.38-.2.44-.18.51-.15.58-.12.64-.1.71-.06.77-.04.84-.02 1.27.05 1.07.13zm-6.3 1.98l-.23.33-.08.41.08.41.23.34.33.22.41.09.41-.09.33-.22.23-.34.08-.41-.08-.41-.23-.33-.33-.22-.41-.09-.41.09-.33.22zM21.1 6.11l.28.06.32.12.35.18.36.27.36.35.35.47.32.59.28.73.21.88.14 1.04.05 1.23-.06 1.23-.16 1.04-.24.86-.32.71-.36.57-.4.45-.42.33-.42.24-.4.16-.36.09-.32.05-.24.02-.16-.01h-8.22v.82h5.84l.01 2.76.02.36-.05.34-.11.31-.17.29-.25.25-.31.24-.38.2-.44.17-.51.15-.58.13-.64.09-.71.07-.77.04-.84.01-1.27-.04-1.07-.14-.9-.2-.73-.25-.59-.3-.45-.33-.34-.34-.25-.34-.16-.33-.1-.3-.04-.25-.02-.2.01-.13v-5.34l.05-.64.13-.54.21-.46.26-.38.3-.32.33-.24.35-.2.35-.14.33-.1.3-.06.26-.04.21-.02.13-.01h5.84l.69-.05.59-.14.5-.21.41-.28.33-.32.27-.35.2-.36.15-.36.1-.35.07-.32.04-.28.02-.21V6.07h2.09l.14.01.21.03zm-6.47 14.25l-.23.33-.08.41.08.41.23.33.33.23.41.08.41-.08.33-.23.23-.33.08-.41-.08-.41-.23-.33-.33-.23-.41-.08-.41.08-.33.23z" /></svg>',
         },
       ],
     }

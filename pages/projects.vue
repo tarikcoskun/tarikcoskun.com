@@ -1,6 +1,6 @@
 <template>
   <section
-    class="grid gap-2 p-4 mb-2 col-span-full md:gap-4 md:grid-cols-2 md:mt-2 md:pb-12 md:pt-6 md:px-24"
+    class="grid gap-2 p-4 mb-2 col-span-full md:gap-4 md:grid-cols-2 md:pb-12 md:px-24"
   >
     <NuxtLink
       to="#"
@@ -8,7 +8,7 @@
       v-for="item in projects"
       :key="item"
     >
-      <div class="py-16 mb-2 bg-teal-600 rounded-md"></div>
+      <div class="py-16 mb-2 bg-teal-300 rounded-md"></div>
       <h1 class="text-xl text-white">{{ item.title }}</h1>
       <p class="text-justify text-gray-100 line-clamp-2">
         {{ item.description }}

@@ -1,6 +1,8 @@
 <template>
-  <section class="grid gap-2 mt-2 col-span-full md:gap-4">
-    <div class="p-3 bg-gray-800 border-2 border-gray-900 rounded-lg md:p-6">
+  <section class="grid gap-2 mb-2 md:mt-2 col-span-full md:gap-4">
+    <div
+      class="p-3 bg-gray-800 border-2 border-gray-900 border-opacity-50 rounded-lg md:p-4"
+    >
       <h1 class="text-3xl text-center text-white">About Me</h1>
       <p class="mt-1 text-lg text-justify text-gray-200">
         Howdy! I'm Tarık, a young Front-End developer from Turkey. I spend most

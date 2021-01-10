@@ -6,17 +6,17 @@
       >
         <NuxtLink
           to="/"
-          class="text-xl text-center text-white bg-black bg-opacity-25 rounded-lg bg-gray-black md:bg-transparent md:text-left col-span-full md:col-span-1 hover:underline"
+          class="p-1 text-xl text-center text-white bg-black bg-opacity-25 rounded-lg md:p-px bg-gray-black md:bg-transparent md:text-left col-span-full md:col-span-1 hover:underline"
           >Tarık Coşkun</NuxtLink
         >
         <NuxtLink
           to="/projects"
-          class="text-xl text-center text-white bg-teal-600 rounded-md md:col-span-1 md:col-start-7 hover:bg-teal-700"
+          class="p-1 text-xl text-center text-white bg-teal-600 rounded-md md:p-px md:col-span-1 md:col-start-7 hover:bg-teal-700"
           >Projects</NuxtLink
         >
         <NuxtLink
           to="/blog"
-          class="text-xl text-center text-white bg-red-600 rounded-md md:col-span-1 hover:bg-red-700"
+          class="p-1 text-xl text-center text-white bg-red-600 rounded-md md:p-px md:col-span-1 hover:bg-red-700"
           >Blog</NuxtLink
         >
       </div>

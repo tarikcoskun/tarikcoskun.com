@@ -23,7 +23,9 @@ export default {
   },
   loading: { color: '#111' },
   css: [],
-  plugins: [],
+  plugins: [
+    { src: '~/plugins/Unicons', mode: 'client' }
+  ],
   buildModules: ['@nuxtjs/tailwindcss'],
   modules: ['@nuxt/content', '@nuxtjs/pwa'],
   build: {},

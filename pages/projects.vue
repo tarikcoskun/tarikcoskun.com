@@ -1,7 +1,6 @@
 <template>
-  <section class="mb-2 md:mt-2 col-span-full">
+  <section class="p-4 mb-2 md:mt-2 col-span-full md:py-12 md:px-24">
     <div>
-      <h1 class="mb-2 text-3xl font-bold text-center">Projects</h1>
       <div class="grid gap-2 md:gap-4 md:grid-cols-2">
         <NuxtLink
           to="#"

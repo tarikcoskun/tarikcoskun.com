@@ -1,8 +1,6 @@
 <template>
   <section class="mb-2 md:mt-2 col-span-full">
-    <div
-      class="p-3 bg-gray-200 border-2 border-gray-300 border-opacity-50 rounded-lg md:p-4"
-    >
+    <div>
       <h1 class="mb-2 text-3xl font-bold text-center">Projects</h1>
       <div class="grid gap-2 md:gap-4 md:grid-cols-2">
         <NuxtLink

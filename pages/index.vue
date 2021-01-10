@@ -60,9 +60,9 @@
       </div>
     </div>
 
-    <h1 class="text-2xl font-bold text-center">Check out</h1>
+    <h1 class="text-2xl font-bold text-center">Contact me</h1>
     <p class="-mt-3 text-xl text-center text-gray-700 md:-mt-5">
-      my social media accounts
+      and follow me on
     </p>
     <div class="flex flex-wrap justify-center md:-mb-5">
       <a href="https://discord.com/users/474537652943847444" target="_blank">
@@ -85,6 +85,14 @@
         <unicon
           name="github"
           fill="#161414"
+          width="48"
+          height="48"
+          class="mx-1 duration-75 transform hover:scale-125"
+      /></a>
+      <a href="mailto:imtarikcoskun@gmail.com" target="_blank">
+        <unicon
+          name="at"
+          fill="#d34b3f"
           width="48"
           height="48"
           class="mx-1 duration-75 transform hover:scale-125"

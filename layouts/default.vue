@@ -2,21 +2,21 @@
   <div>
     <div class="grid grid-cols-3 gap-2 md:gap-4">
       <div
-        class="grid grid-cols-2 gap-2 p-4 bg-gray-800 md:py-2 md:px-24 md:grid-cols-6 col-span-full"
+        class="grid grid-cols-2 gap-2 p-4 bg-gray-900 md:p-2 md:px-24 md:grid-cols-8 col-span-full"
       >
         <NuxtLink
           to="/"
-          class="p-1 text-xl text-center text-white bg-gray-900 rounded-lg col-span-full md:col-span-1"
+          class="text-xl text-center text-white bg-black bg-opacity-25 rounded-lg bg-gray-black md:bg-transparent md:text-left col-span-full md:col-span-1 hover:underline"
           >Tarık Coşkun</NuxtLink
         >
         <NuxtLink
           to="/projects"
-          class="p-1 text-xl text-center text-white bg-teal-500 rounded-lg md:col-span-1 md:col-start-5 hover:bg-teal-600"
+          class="text-xl text-center text-white bg-teal-600 rounded-md md:col-span-1 md:col-start-7 hover:bg-teal-700"
           >Projects</NuxtLink
         >
         <NuxtLink
           to="/blog"
-          class="p-1 text-xl text-center text-white bg-red-500 rounded-lg md:col-span-1 hover:bg-red-600"
+          class="text-xl text-center text-white bg-red-600 rounded-md md:col-span-1 hover:bg-red-700"
           >Blog</NuxtLink
         >
       </div>

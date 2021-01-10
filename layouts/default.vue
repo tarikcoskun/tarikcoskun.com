@@ -1,47 +1,26 @@
 <template>
-  <div class="p-4 md:py-12 md:px-24">
-    <div class="grid grid-cols-4 gap-2 md:gap-4">
-      <NuxtLink
-        to="/"
-        class="hidden col-span-1 p-1 text-2xl text-center text-white bg-gray-800 border-2 border-gray-900 border-opacity-50 rounded-lg md:block hover:bg-gray-900"
-        >Home</NuxtLink
+  <div>
+    <div class="grid grid-cols-3 gap-2 md:gap-4">
+      <div
+        class="grid grid-cols-2 gap-2 p-4 bg-gray-800 md:py-2 md:px-24 md:grid-cols-6 col-span-full"
       >
-      <NuxtLink
-        to="/projects"
-        class="hidden col-span-1 p-1 text-2xl text-center text-white bg-teal-500 border-2 border-teal-600 rounded-lg md:block hover:bg-teal-600"
-        >Projects</NuxtLink
-      >
-      <NuxtLink
-        to="/blog"
-        class="hidden col-span-1 p-1 text-2xl text-center text-white bg-red-500 border-2 border-red-600 rounded-lg md:block hover:bg-red-600"
-        >Blog</NuxtLink
-      >
-      <NuxtLink
-        to="/contact"
-        class="hidden col-span-1 p-1 text-2xl font-bold text-center bg-gray-200 border-2 border-gray-300 rounded-lg md:block hover:bg-gray-300"
-        >Contact</NuxtLink
-      >
+        <NuxtLink
+          to="/"
+          class="p-1 text-xl text-center text-white bg-gray-900 rounded-lg col-span-full md:col-span-1"
+          >Tarık Coşkun</NuxtLink
+        >
+        <NuxtLink
+          to="/projects"
+          class="p-1 text-xl text-center text-white bg-teal-500 rounded-lg md:col-span-1 md:col-start-5 hover:bg-teal-600"
+          >Projects</NuxtLink
+        >
+        <NuxtLink
+          to="/blog"
+          class="p-1 text-xl text-center text-white bg-red-500 rounded-lg md:col-span-1 hover:bg-red-600"
+          >Blog</NuxtLink
+        >
+      </div>
       <Nuxt />
-      <NuxtLink
-        to="/"
-        class="col-span-2 p-px text-2xl text-center text-white bg-gray-800 border-2 border-gray-900 rounded-lg md:hidden hover:bg-gray-900"
-        >Home</NuxtLink
-      >
-      <NuxtLink
-        to="/projects"
-        class="col-span-2 p-px text-2xl text-center text-white bg-teal-500 border-2 border-teal-600 rounded-lg md:hidden hover:bg-teal-600"
-        >Projects</NuxtLink
-      >
-      <NuxtLink
-        to="/blog"
-        class="col-span-2 p-px text-2xl text-center text-white bg-red-500 border-2 border-red-600 rounded-lg md:hidden hover:bg-red-600"
-        >Blog</NuxtLink
-      >
-      <NuxtLink
-        to="/contact"
-        class="col-span-2 p-px text-2xl font-bold text-center bg-gray-200 border-2 border-gray-300 rounded-lg md:hidden hover:bg-gray-300"
-        >Contact</NuxtLink
-      >
     </div>
   </div>
 </template>

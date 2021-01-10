@@ -1,5 +1,7 @@
 <template>
-  <section class="grid gap-2 mb-2 md:mt-2 col-span-full md:gap-4">
+  <section
+    class="grid gap-2 p-4 mb-2 md:mt-2 col-span-full md:gap-4 md:py-12 md:px-24"
+  >
     <div
       class="p-3 bg-gray-800 border-2 border-gray-900 border-opacity-50 rounded-lg md:p-4"
     >
@@ -56,6 +58,37 @@
           <span class="mt-4 text-center">{{ item.title }}</span>
         </div>
       </div>
+    </div>
+
+    <h1 class="text-2xl font-bold text-center">Check out</h1>
+    <p class="-mt-3 text-xl text-center text-gray-700 md:-mt-5">
+      my social media accounts
+    </p>
+    <div class="flex flex-wrap justify-center md:-mb-5">
+      <a href="https://discord.com/users/474537652943847444" target="_blank">
+        <unicon
+          name="discord"
+          fill="#7289da"
+          width="48"
+          height="48"
+          class="mx-1 duration-75 transform hover:scale-125"
+      /></a>
+      <a href="https://twitter.com/itstarikcoskun" target="_blank">
+        <unicon
+          name="twitter"
+          fill="#1da1f2"
+          width="48"
+          height="48"
+          class="mx-1 duration-75 transform hover:scale-125"
+      /></a>
+      <a href="https://github.com/tarikcoskun" target="_blank">
+        <unicon
+          name="github"
+          fill="#161414"
+          width="48"
+          height="48"
+          class="mx-1 duration-75 transform hover:scale-125"
+      /></a>
     </div>
   </section>
 </template>

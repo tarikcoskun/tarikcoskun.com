@@ -69,7 +69,7 @@
           fill="#7289da"
           width="48"
           height="48"
-          class="mx-1 duration-75 transform hover:scale-125"
+          class="mx-1 duration-75 transform hover:scale-115"
       /></a>
       <a href="https://twitter.com/itstarikcoskun" target="_blank">
         <unicon
@@ -77,7 +77,7 @@
           fill="#1da1f2"
           width="48"
           height="48"
-          class="mx-1 duration-75 transform hover:scale-125"
+          class="mx-1 duration-75 transform hover:scale-115"
       /></a>
       <a href="https://github.com/tarikcoskun" target="_blank">
         <unicon
@@ -85,7 +85,7 @@
           fill="#161414"
           width="48"
           height="48"
-          class="mx-1 duration-75 transform hover:scale-125"
+          class="mx-1 duration-75 transform hover:scale-115"
       /></a>
       <a href="mailto:imtarikcoskun@gmail.com" target="_blank">
         <unicon
@@ -93,7 +93,7 @@
           fill="#d34b3f"
           width="48"
           height="48"
-          class="mx-1 duration-75 transform hover:scale-125"
+          class="mx-1 duration-75 transform hover:scale-115"
       /></a>
     </div>
   </section>

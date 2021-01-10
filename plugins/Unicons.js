@@ -1,7 +1,6 @@
 import Vue from 'vue'
 import Unicon from 'vue-unicons/dist/vue-unicons-ssr.common.js'
-import { uniLayerGroupMonochrome, uniCarWash } from 'vue-unicons/src/icons'
-import 'vue-unicons/dist/vue-unicons-ssr.css'
+import { uniDiscord, uniTwitter, uniGithub } from 'vue-unicons/src/icons'
 
-Unicon.add([uniLayerGroupMonochrome, uniCarWash])
+Unicon.add([uniDiscord, uniTwitter, uniGithub])
 Vue.use(Unicon)

@@ -6,7 +6,7 @@
       >
         <NuxtLink
           to="/"
-          class="p-1 text-xl text-center text-white bg-black bg-opacity-25 rounded-lg md:p-px bg-gray-black md:bg-transparent md:text-left col-span-full md:col-span-1 hover:underline"
+          class="p-1 text-xl text-center text-white bg-black bg-opacity-25 rounded-lg md:p-px bg-gray-black md:bg-transparent md:text-left col-span-full md:col-span-1 md:hover:underline"
           >Tarık Coşkun</NuxtLink
         >
         <NuxtLink

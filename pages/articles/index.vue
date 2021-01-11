@@ -20,7 +20,7 @@
 export default {
   head() {
     return {
-      title: 'Blog - Tarık Coşkun',
+      title: 'Articles - Tarık Coşkun',
     }
   },
   async asyncData({ $content, params }) {

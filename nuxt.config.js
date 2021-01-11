@@ -22,7 +22,7 @@ export default {
   loading: { color: '#2d3748' },
   css: [],
   plugins: [
-    { src: '~/plugins/Unicons', mode: 'client' }
+    { src: '~/plugins/vue-unicons', mode: 'client' }
   ],
   buildModules: ['@nuxtjs/tailwindcss'],
   modules: ['@nuxt/content', '@nuxtjs/pwa'],

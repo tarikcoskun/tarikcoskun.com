@@ -1,10 +1,12 @@
 <template>
-  <section class="grid gap-2 p-4 mb-2 col-span-full md:gap-4 md:pb-12 md:px-40">
+  <section
+    class="grid gap-4 p-4 mb-2 md:grid-cols-2 col-span-full md:pb-12 md:px-40"
+  >
     <div
-      class="px-3 py-2 bg-gray-800 border-2 border-gray-900 border-opacity-50 rounded-lg md:p-4"
+      class="px-3 py-2 bg-gray-800 border-2 border-gray-900 border-opacity-50 rounded-lg md:col-span-full md:p-4"
     >
       <h1 class="text-2xl text-center text-white">About Me</h1>
-      <p class="text-justify text-gray-200">
+      <p class="text-lg text-justify text-gray-200">
         Howdy! I'm Tarık, a young Front-End developer from Turkey. I spend most
         of my time playing games, coding and chatting. I have been coding since
         2018, when I started using Discord. I've always wondered how Discord
@@ -14,53 +16,47 @@
         and Tailwind CSS and this website is only example for now.
       </p>
     </div>
-    <div
-      class="px-3 py-2 bg-gray-100 border-2 border-b-0 border-gray-200 rounded-t-lg"
-    >
-      <div class="text-center">
-        <h2 class="my-2 text-2xl font-bold pt-15">
-          Technologies and tools I use
-        </h2>
-      </div>
+    <div class="px-3 py-2 bg-gray-100 border-2 border-gray-200 rounded-lg">
+      <h2 class="my-2 text-2xl font-bold text-center">
+        Technologies and tools I use
+      </h2>
       <div
         class="flex flex-wrap items-center justify-center mt-4 text-gray-600"
       >
         <div
-          v-for="item in technologiesKnow"
-          :key="item"
           class="flex flex-col items-center py-4 mx-1 mb-4 rounded-lg cursor-pointer w-28 hover:bg-gray-200"
+          v-for="item in technologiesIKnow"
+          :key="item"
         >
           <div class="w-10 h-10" v-html="item.icon"></div>
           <span class="mt-4 text-center">{{ item.title }}</span>
         </div>
       </div>
     </div>
-    <div
-      class="px-3 py-2 -mt-8 bg-gray-100 border-2 border-t-0 border-gray-200 rounded-b-lg"
-    >
-      <div class="text-center">
-        <h2 class="my-2 text-2xl font-bold pt-15">
-          Technologies I want to learn
-        </h2>
-      </div>
+    <div class="px-3 py-2 bg-gray-100 border-2 border-gray-200 rounded-lg">
+      <h2 class="my-2 text-2xl font-bold text-center">
+        Technologies I want to learn
+      </h2>
       <div
         class="flex flex-wrap items-center justify-center mt-4 text-gray-600"
       >
         <div
-          v-for="item in technologiesLearning"
-          :key="item"
           class="flex flex-col items-center py-4 mx-1 mb-4 rounded-lg cursor-pointer w-28 hover:bg-gray-200"
+          v-for="item in technologiesWantToLearn"
+          :key="item"
         >
           <div class="w-10 h-10" v-html="item.icon"></div>
           <span class="mt-4 text-center">{{ item.title }}</span>
         </div>
       </div>
     </div>
-    <h1 class="mt-1 text-2xl font-bold text-center md:mt-0">Contact me</h1>
-    <p class="-mt-3 text-xl text-center text-gray-700 md:-mt-5">
-      and follow me on
+    <h1 class="mt-1 text-2xl font-bold text-center md:mt-0 col-span-full">
+      Contact Me
+    </h1>
+    <p class="-mt-3 text-xl text-center text-gray-700 md:-mt-5 col-span-full">
+      You can find me on
     </p>
-    <div class="flex flex-wrap justify-center md:-mb-5">
+    <div class="flex flex-wrap justify-center md:-mb-5 col-span-full">
       <a href="https://discord.com/users/474537652943847444" target="_blank">
         <unicon
           name="discord"
@@ -81,6 +77,14 @@
         <unicon
           name="github"
           fill="#161414"
+          width="48"
+          height="48"
+          class="mx-1 duration-75 transform hover:scale-115"
+      /></a>
+      <a href="https://t.me/tarikcoskun" target="_blank">
+        <unicon
+          name="telegram"
+          fill="#32afed"
           width="48"
           height="48"
           class="mx-1 duration-75 transform hover:scale-115"
@@ -106,7 +110,7 @@ export default {
   },
   data() {
     return {
-      technologiesKnow: [
+      technologiesIKnow: [
         {
           title: 'HTML',
           icon:
@@ -148,7 +152,7 @@ export default {
             '<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="#0088d2" > <path d="M23.15 2.587L18.21.21a1.494 1.494 0 0 0-1.705.29l-9.46 8.63-4.12-3.128a.999.999 0 0 0-1.276.057L.327 7.261A1 1 0 0 0 .326 8.74L3.899 12 .326 15.26a1 1 0 0 0 .001 1.479L1.65 17.94a.999.999 0 0 0 1.276.057l4.12-3.128 9.46 8.63a1.492 1.492 0 0 0 1.704.29l4.942-2.377A1.5 1.5 0 0 0 24 20.06V3.939a1.5 1.5 0 0 0-.85-1.352zm-5.146 14.861L10.826 12l7.178-5.448v10.896z" /></svg>',
         },
       ],
-      technologiesLearning: [
+      technologiesWantToLearn: [
         {
           title: 'Java',
           icon:

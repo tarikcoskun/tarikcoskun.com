@@ -15,9 +15,9 @@
           >Positions</NuxtLink
         >
         <NuxtLink
-          to="/blog"
+          to="/articles"
           class="p-1 text-xl text-center text-white bg-red-600 rounded-md md:p-px md:col-span-1 hover:bg-red-700"
-          >Blog</NuxtLink
+          >Articles</NuxtLink
         >
       </div>
       <Nuxt />

@@ -1,10 +1,10 @@
 <template>
   <section
-    class="grid gap-2 p-4 mb-2 col-span-full md:gap-4 md:grid-cols-2 md:pb-12 md:px-40"
+    class="grid gap-4 p-4 mb-2 md:grid-cols-2 col-span-full md:pb-12 md:px-40"
   >
     <NuxtLink
       to="#"
-      class="p-3 bg-teal-600 border-2 border-teal-700 rounded-lg hover:bg-teal-700"
+      class="p-3 bg-teal-600 border-2 border-teal-700 border-opacity-50 rounded-lg hover:bg-teal-700"
       v-for="item in positions"
       :key="item"
     >

@@ -1,10 +1,10 @@
 <template>
-  <section class="grid gap-2 p-4 mb-2 col-span-full md:gap-4 md:pb-12 md:px-24">
+  <section class="grid gap-2 p-4 mb-2 col-span-full md:gap-4 md:pb-12 md:px-40">
     <div
-      class="p-3 bg-gray-800 border-2 border-gray-900 border-opacity-50 rounded-lg md:p-4"
+      class="px-3 py-2 bg-gray-800 border-2 border-gray-900 border-opacity-50 rounded-lg md:p-4"
     >
-      <h1 class="text-3xl text-center text-white">About Me</h1>
-      <p class="mt-1 text-lg text-justify text-gray-200">
+      <h1 class="text-2xl text-center text-white">About Me</h1>
+      <p class="text-justify text-gray-200">
         Howdy! I'm Tarık, a young Front-End developer from Turkey. I spend most
         of my time playing games, coding and chatting. I have been coding since
         2018, when I started using Discord. I've always wondered how Discord
@@ -28,7 +28,7 @@
         <div
           v-for="item in technologiesKnow"
           :key="item"
-          class="flex flex-col items-center py-4 mx-2 mb-4 rounded-lg cursor-pointer w-28 hover:bg-gray-200"
+          class="flex flex-col items-center py-4 mx-1 mb-4 rounded-lg cursor-pointer w-28 hover:bg-gray-200"
         >
           <div class="w-10 h-10" v-html="item.icon"></div>
           <span class="mt-4 text-center">{{ item.title }}</span>
@@ -36,7 +36,7 @@
       </div>
     </div>
     <div
-      class="px-3 py-2 -mt-2 bg-gray-100 border-2 border-t-0 border-gray-200 rounded-b-lg md:-mt-4"
+      class="px-3 py-2 -mt-8 bg-gray-100 border-2 border-t-0 border-gray-200 rounded-b-lg"
     >
       <div class="text-center">
         <h2 class="my-2 text-2xl font-bold pt-15">
@@ -49,15 +49,14 @@
         <div
           v-for="item in technologiesLearning"
           :key="item"
-          class="flex flex-col items-center py-4 mx-2 mb-4 rounded-lg cursor-pointer w-28 hover:bg-gray-200"
+          class="flex flex-col items-center py-4 mx-1 mb-4 rounded-lg cursor-pointer w-28 hover:bg-gray-200"
         >
           <div class="w-10 h-10" v-html="item.icon"></div>
           <span class="mt-4 text-center">{{ item.title }}</span>
         </div>
       </div>
     </div>
-
-    <h1 class="text-2xl font-bold text-center">Contact me</h1>
+    <h1 class="mt-1 text-2xl font-bold text-center md:mt-0">Contact me</h1>
     <p class="-mt-3 text-xl text-center text-gray-700 md:-mt-5">
       and follow me on
     </p>

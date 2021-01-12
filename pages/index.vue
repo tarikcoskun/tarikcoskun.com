@@ -3,7 +3,7 @@
     class="grid gap-4 p-4 mb-2 md:grid-cols-2 col-span-full md:pb-12 md:px-40"
   >
     <div
-      class="px-3 py-2 bg-gray-900 border-2 rounded-lg md:col-span-full md:p-4"
+      class="px-3 py-2 bg-gray-900 rounded-lg md:col-span-full md:p-4"
     >
       <h1 class="text-2xl text-center text-white">About Me</h1>
       <p class="text-lg text-justify text-gray-200">

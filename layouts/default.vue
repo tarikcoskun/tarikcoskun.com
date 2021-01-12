@@ -28,12 +28,12 @@
         >
         <NuxtLink
           to="/"
-          class="text-xl font-bold text-center text-gray-100 hover:underline"
+          class="text-xl font-bold text-center text-gray-100"
           >Home</NuxtLink
         >
         <NuxtLink
           to="/articles"
-          class="mr-3 text-xl text-right text-gray-100 hover:underline"
+          class="mr-3 text-xl text-right text-gray-100"
           >Articles</NuxtLink
         >
       </div>

@@ -11,7 +11,7 @@
         >
         <NuxtLink
           to="/positions"
-          class="col-start-5 p-px text-xl text-center text-white bg-teal-600 rounded-md hover:bg-teal-700"
+          class="col-start-5 p-px text-xl text-center text-white bg-green-600 rounded-md hover:bg-green-700"
           >Positions</NuxtLink
         >
         <NuxtLink

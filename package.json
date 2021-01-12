@@ -12,9 +12,12 @@
   "dependencies": {
     "@nuxt/content": "^1.9.0",
     "@tailwindcss/line-clamp": "^0.1.0",
-    "@nuxtjs/pwa": "^3.3.0",
+    "@nuxtjs/pwa": "^3.3.0"
+    "autoprefixer": "^10.2.1",
+    "postcss": "^8.2.4",
+    "tailwindcss": "^2.0.2",
     "vue-unicons": "^2.3.0",
-    "nuxt": "^2.0.0"
+    "nuxt": "^2.14.12"
   },
   "devDependencies": {
     "@nuxtjs/tailwindcss": "^3.1.0",

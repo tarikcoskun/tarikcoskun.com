@@ -21,7 +21,7 @@ export default {
       }
     ],
   },
-  loading: { color: '#2d3748' },
+  loading: { color: '#4a5568' },
   css: [],
   plugins: [
     { src: '~/plugins/vue-unicons', mode: 'client' }

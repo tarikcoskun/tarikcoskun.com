@@ -4,7 +4,7 @@
   >
     <NuxtLink
       to="#"
-      class="p-3 bg-green-600 border-2 border-green-700 border-opacity-50 rounded-lg hover:bg-green-700"
+      class="p-3 bg-green-600 rounded-lg hover:bg-green-700"
       v-for="item in positions"
       :key="item"
     >

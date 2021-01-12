@@ -4,17 +4,17 @@
   >
     <NuxtLink
       to="#"
-      class="p-3 bg-teal-600 border-2 border-teal-700 border-opacity-50 rounded-lg hover:bg-teal-700"
+      class="p-3 bg-green-600 border-2 border-green-700 border-opacity-50 rounded-lg hover:bg-green-700"
       v-for="item in positions"
       :key="item"
     >
       <h1 class="text-2xl text-white">
         {{ item.title }}
-        <span class="block -mt-1 text-base text-teal-200">{{
+        <span class="block -mt-1 text-base text-green-200">{{
           item.position
         }}</span>
       </h1>
-      <p class="mt-px text-justify text-teal-100 line-clamp-3">
+      <p class="mt-px text-justify text-green-100 line-clamp-3">
         {{ item.description }}
       </p>
     </NuxtLink>

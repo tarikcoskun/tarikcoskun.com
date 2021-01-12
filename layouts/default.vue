@@ -23,7 +23,7 @@
       <div class="grid grid-cols-3 p-2 bg-gray-900 md:hidden col-span-full">
         <NuxtLink
           to="/positions"
-          class="ml-3 text-xl text-gray-100 hover:underline"
+          class="ml-3 text-xl text-gray-100"
           >Positions</NuxtLink
         >
         <NuxtLink

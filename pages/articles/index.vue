@@ -4,7 +4,7 @@
   >
     <nuxt-link
       :to="`/articles/${article.slug}`"
-      class="p-3 bg-gray-800 border-2 border-gray-900 rounded-lg hover:bg-gray-900"
+      class="p-3 bg-gray-800 rounded-lg hover:bg-gray-900"
       v-for="article in articles"
       :key="article.id"
     >

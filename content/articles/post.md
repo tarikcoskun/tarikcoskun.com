@@ -1,20 +1,9 @@
 ---
-title: Getting started
-description: 'Empower your NuxtJS application with @nuxt/content module: write in a content/ directory and fetch your Markdown, JSON, YAML and CSV files through a MongoDB like API, acting as a Git-based Headless CMS.'
+title: Kişisel İnternet Sitem!
+description: 'Uzun süredir yenilemek istediğim sitemin hikayesi ve eski sitelerim hakkında bir yazı'
 ---
 
-Empower your NuxtJS application with `@nuxtjs/content` module: write in a `content/` directory and fetch your Markdown, JSON, YAML and CSV files through a MongoDB like API, acting as a **Git-based Headless CMS**.
+## Bu yakışıklı site de ne?
+Eski sitemi ziyaret ettiyseniz ne kadar basit ve tembelce hazırlanmış olduğunu söylememe gerek kalmadığına eminim. Sadece tek sayfalık bir "blog" sitesinden ibaretti. Uzun zamandır siteyi baştan yazarak yenilemek ve bunu da EGGSY'nin sitelerinde kullanıp her zaman övdüğü Nuxt.js ve Roi'nin de projelerinde kullandığı Tailwind CSS kullanarak yapmak istiyordum ve öyle de oldu! Hem Nuxt.js'in hem de Tailwind CSS'in getirdiği kolaylıklarla siteyi yazmam eski sitemi yazmamdan çok daha kısa sürdü.
 
-## Writing content
-
-Learn how to write your `content/`, supporting Markdown, YAML, CSV and JSON: https://content.nuxtjs.org/writing.
-
-## Fetching content
-
-Learn how to fetch your content with `$content`: https://content.nuxtjs.org/fetching.
-
-## Displaying content
-
-Learn how to display your Markdown content with the `<nuxt-content>` component directly in your template: https://content.nuxtjs.org/displaying.
-
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, mollitia reiciendis. Voluptatem dolor deleniti dolorum explicabo consequatur, in soluta ad velit ipsa cumque vel ex, perferendis recusandae magnam cupiditate distinctio ab iure hic illum quaerat. Ullam dolores, facilis consectetur laboriosam ut, sapiente odit quibusdam expedita eligendi similique repellendus sunt qui! Illum obcaecati, non asperiores ipsa laborum officia voluptatem vitae, facilis ullam magnam eligendi sequi nihil dolore doloremque necessitatibus dignissimos, nulla odio? Vero quae libero ducimus veniam amet porro dolorum, incidunt perspiciatis provident exercitationem magni obcaecati ipsa itaque est expedita deserunt nobis vel numquam, non odio similique quaerat. Suscipit, commodi nostrum?
+### Devamı gelecek...

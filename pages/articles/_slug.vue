@@ -1,6 +1,6 @@
 <template>
   <section
-    class="grid gap-2 p-4 mb-2 col-span-full md:gap-4 md:grid-cols-2 md:pb-12 md:px-40"
+    class="grid gap-2 p-4 col-span-full md:gap-4 md:grid-cols-2 md:px-40"
   >
     <div class="grid gap-2 col-span-full">
       <div>

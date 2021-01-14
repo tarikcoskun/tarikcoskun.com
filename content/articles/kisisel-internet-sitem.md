@@ -1,9 +1,9 @@
 ---
-title: Kişisel İnternet Sitem!
-description: 'Uzun süredir yenilemek istediğim sitemin hikayesi ve eski sitelerim hakkında bir yazı'
+title: Sitem Yenilendi!
+description: 'Şu anda bulunduğunuz sitenin yapım hikayesi ve siteyle ilgili bilgiler verdiğim gönderi'
 ---
 
-## Bu yakışıklı site de ne?
-Eski sitemi ziyaret ettiyseniz ne kadar basit ve tembelce hazırlanmış olduğunu söylememe gerek kalmadığına eminim. Sadece tek sayfalık bir "blog" sitesinden ibaretti. Uzun zamandır siteyi baştan yazarak yenilemek ve bunu da EGGSY'nin sitelerinde kullanıp her zaman övdüğü Nuxt.js ve Roi'nin de projelerinde kullandığı Tailwind CSS kullanarak yapmak istiyordum ve öyle de oldu! Hem Nuxt.js'in hem de Tailwind CSS'in getirdiği kolaylıklarla siteyi yazmam eski sitemi yazmamdan çok daha kısa sürdü.
+Uzun bir süre önce yapmış olduğum eski sitemi ziyaret ettiyseniz ne kadar basit ve tembelce hazırlanmış olduğunu söylememe gerek kalmadığına eminim. Site tek sayfalık bir "blog" sayfasından ibaretti ama ben sitemde gönderilerden çok yaptığım projelere ve bilgilere yer vermek istiyordum. Site bitince halinden memnundum ama çok geçmeden siteyle ilgilenmemeye başlamıştım. Siteyi baştan yazarak yenilemek ve bunu da EGGSY'nin sitelerinde kullanıp her zaman övdüğü Nuxt.js ve Roi'nin de projelerinde kullandığı Tailwind CSS kullanarak yapmak istiyordum ve isteklerimi gerçekleştirebildim! Hem Nuxt'ın hem de Tailwind'in getirdiği kolaylıklarla siteyi yazmam eski sitemi yazmamdan bile kısa sürdü!
 
-### Devamı gelecek...
+## Sitede neler değişti?
+Doğru olmak gerekirse sitenin her yanı değişti. Sitedeki en büyük değişikliğin sitede Nuxt.js kullanmam olduğunu söyleyebilirim.

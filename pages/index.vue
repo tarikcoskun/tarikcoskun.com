@@ -81,14 +81,6 @@
           height="48"
           class="mx-1 duration-75 transform hover:scale-115"
       /></a>
-      <a href="https://t.me/tarikcoskun" target="_blank">
-        <unicon
-          name="telegram"
-          fill="#32afed"
-          width="48"
-          height="48"
-          class="mx-1 duration-75 transform hover:scale-115"
-      /></a>
       <a href="mailto:imtarikcoskun@gmail.com" target="_blank">
         <unicon
           name="at"

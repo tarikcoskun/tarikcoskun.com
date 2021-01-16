@@ -3,10 +3,10 @@
     class="grid gap-4 p-4 mb-2 md:grid-cols-2 col-span-full md:pb-12 md:px-40"
   >
     <div
-      class="px-3 py-2 bg-gray-900 rounded-lg md:col-span-full md:p-4"
+      class="px-3 py-2 bg-gray-50 rounded-lg md:col-span-full md:p-4"
     >
-      <h1 class="text-2xl text-center text-white">About Me</h1>
-      <p class="text-lg text-justify text-gray-200">
+      <h1 class="text-2xl text-center">About Me</h1>
+      <p class="text-lg text-justify text-gray-800">
         Howdy! I'm Tarık, a young Front-End developer from Turkey. I spend most
         of my time playing games, coding and chatting. I have been coding since
         2018, when I started using Discord. I've always wondered how Discord

@@ -16,7 +16,7 @@
         and Tailwind CSS and this website is only example for now.
       </p>
     </div>
-    <div class="px-3 py-2 bg-gray-100 rounded-lg">
+    <div class="px-3 py-2 bg-gray-50 rounded-lg">
       <h2 class="my-2 text-2xl font-bold text-center">
         Technologies and tools I use
       </h2>
@@ -24,7 +24,7 @@
         class="flex flex-wrap items-center justify-center mt-4 text-gray-600"
       >
         <div
-          class="flex flex-col items-center py-4 mx-1 mb-4 rounded-lg cursor-pointer w-28 hover:bg-gray-200"
+          class="flex flex-col items-center py-4 mx-1 mb-4 rounded-lg cursor-pointer w-28 hover:bg-gray-100"
           v-for="item in technologiesIKnow"
           :key="item"
         >
@@ -33,7 +33,7 @@
         </div>
       </div>
     </div>
-    <div class="px-3 py-2 bg-gray-100 rounded-lg">
+    <div class="px-3 py-2 bg-gray-50 rounded-lg">
       <h2 class="my-2 text-2xl font-bold text-center">
         Technologies I want to learn
       </h2>
@@ -41,7 +41,7 @@
         class="flex flex-wrap items-center justify-center mt-4 text-gray-600"
       >
         <div
-          class="flex flex-col items-center py-4 mx-1 mb-4 rounded-lg cursor-pointer w-28 hover:bg-gray-200"
+          class="flex flex-col items-center py-4 mx-1 mb-4 rounded-lg cursor-pointer w-28 hover:bg-gray-100"
           v-for="item in technologiesWantToLearn"
           :key="item"
         >

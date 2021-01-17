@@ -5,7 +5,7 @@
     <div
       class="px-3 py-2 bg-gray-50 rounded-lg md:col-span-full md:p-4"
     >
-      <h1 class="text-2xl font-bold text-center">ABOUT ME</h1>
+      <h1 class="text-4xl font-bold">About Me</h1>
       <p class="text-lg text-justify text-gray-800">
         Howdy! I'm Tarık, a young Front-End developer from Turkey. I spend most
         of my time playing games, coding and chatting. I have been coding since

@@ -2,38 +2,32 @@
   <div>
     <div class="grid grid-cols-3">
       <div
-        class="hidden grid-cols-6 gap-2 p-2 px-40 bg-gray-900 md:grid col-span-full"
+        class="flex-wrap items-center justify-center hidden p-2 bg-gray-900 md:flex col-span-full"
       >
         <NuxtLink
-          to="/"
-          class="col-span-2 p-px text-xl text-left text-white rounded-lg hover:underline"
-          >Tarık Coşkun</NuxtLink
-        >
-        <NuxtLink
           to="/positions"
-          class="col-start-5 p-px text-xl text-center text-white bg-green-600 rounded-md hover:bg-green-700"
+          class="px-4 ml-3 text-xl text-white md:flex-col md:hover:underline"
           >Positions</NuxtLink
         >
         <NuxtLink
+          to="/"
+          class="px-4 text-xl font-bold text-white md:flex-col md:hover:underline"
+          >Tarık Coşkun</NuxtLink
+        >
+        <NuxtLink
           to="/articles"
-          class="p-px text-xl text-center text-white bg-red-600 rounded-md hover:bg-red-700"
+          class="px-4 mr-3 text-xl text-white md:flex-col md:hover:underline"
           >Articles</NuxtLink
         >
       </div>
       <div class="grid grid-cols-3 p-2 bg-gray-900 md:hidden col-span-full">
-        <NuxtLink
-          to="/positions"
-          class="ml-3 text-xl text-gray-100"
+        <NuxtLink to="/positions" class="ml-3 text-xl text-gray-100"
           >Positions</NuxtLink
         >
-        <NuxtLink
-          to="/"
-          class="text-xl font-bold text-center text-gray-100"
-          >Home</NuxtLink
+        <NuxtLink to="/" class="text-xl font-bold text-center text-gray-100"
+          >Tarık Coşkun</NuxtLink
         >
-        <NuxtLink
-          to="/articles"
-          class="mr-3 text-xl text-right text-gray-100"
+        <NuxtLink to="/articles" class="mr-3 text-xl text-right text-gray-100"
           >Articles</NuxtLink
         >
       </div>

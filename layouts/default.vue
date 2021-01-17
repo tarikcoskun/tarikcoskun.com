@@ -25,7 +25,7 @@
           >Positions</NuxtLink
         >
         <NuxtLink to="/" class="text-xl font-bold text-center text-gray-100"
-          >Tarık Coşkun</NuxtLink
+          >Home</NuxtLink
         >
         <NuxtLink to="/articles" class="mr-3 text-xl text-right text-gray-100"
           >Articles</NuxtLink

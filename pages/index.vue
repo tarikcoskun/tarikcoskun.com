@@ -55,7 +55,7 @@
     >
       Last Posts
     </h1>
-    <p class="-mt-4 text-xl text-center text-blue-gray-700 col-span-full">
+    <p class="-mt-3 text-xl text-center text-gray-700 col-span-full">
       You can see my last posts here
     </p>
     <div class="grid gap-4 col-span-full md:grid-cols-2">
@@ -74,7 +74,7 @@
     <h1 class="mt-1 text-2xl font-bold text-center md:mt-0 col-span-full">
       Contact Me
     </h1>
-    <p class="-mt-3 text-xl text-center text-gray-700 md:-mt-5 col-span-full">
+    <p class="-mt-3 text-xl text-center text-gray-700 col-span-full">
       You can find me on
     </p>
     <div class="flex flex-wrap justify-center md:-mb-5 col-span-full">

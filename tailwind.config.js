@@ -5,11 +5,7 @@ module.exports = {
     scale: {
       115: '1.15',
     },
-    extend: {
-      width: {
-        28: '7rem',
-      },
-    },
+    extend: {},
   },
   variants: {},
   plugins: [require('@tailwindcss/line-clamp'), require('tailwind-scrollbar')],

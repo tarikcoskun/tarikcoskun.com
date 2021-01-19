@@ -53,10 +53,10 @@
     <h1
       class="mt-1 text-2xl font-bold text-center text-blue-gray-800 md:mt-0 col-span-full"
     >
-      Last Posts
+      Last Post & Repository
     </h1>
     <p class="-mt-4 text-xl text-center text-gray-700 col-span-full">
-      You can see my last posts here
+      You can see my last post and GitHub repository
     </p>
     <div class="grid gap-4 col-span-full md:grid-cols-2">
       <NuxtLink
@@ -70,6 +70,15 @@
           {{ article.description }}
         </p>
       </NuxtLink>
+      <a
+        href="https://github.com/tarikcoskun/tarikcoskun.xyz"
+        class="p-3 rounded-lg bg-gray-50 hover:bg-gray-100"
+      >
+        <h1 class="text-2xl">tarikcoskun.xyz</h1>
+        <p class="-mt-1 text-justify text-gray-800 line-clamp-2">
+          Source code of my website!
+        </p>
+      </a>
     </div>
     <h1 class="mt-1 text-2xl font-bold text-center md:mt-0 col-span-full">
       Contact Me
@@ -123,7 +132,7 @@ export default {
   },
   async asyncData({ $content, params }) {
     return {
-      articles: await $content('articles', params.slug).limit(2).fetch(),
+      articles: await $content('articles', params.slug).limit(1).fetch(),
     }
   },
   data() {

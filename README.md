@@ -12,5 +12,5 @@
   
 **Please inspect the codes and learn what they are used for and don't use my codes directly!**
 
-### Special Thanks
-To [EGGSY](https://github.com/eggsy) (who is this handsome guy) for inspiring me and always talking about how good Nuxt.js is!
+#### :pray: Special Thanks
+To [EGGSY](https://github.com/eggsy) (who is this handsome guy) for inspiring and always talking about how good Nuxt.js is, [Roi](https://github.com/thisisroi) for also inspiring and letting me see how good Tailwind is, and [Arda](https://github.com/ardasoyturk) for helping me about everything!

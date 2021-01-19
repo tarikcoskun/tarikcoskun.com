@@ -13,6 +13,9 @@
 **Please inspect the codes and learn what they are used for and don't use my codes directly!**
 
 #### :pray: Special Thanks
-To [EGGSY](https://github.com/eggsy) (who is this handsome guy) for inspiring and always talking about how good Nuxt.js is, [Roi](https://github.com/thisisroi) for also inspiring and letting me see how good Tailwind is, and [Arda](https://github.com/ardasoyturk) for helping me about everything!
+To [Barış](https://github.com/barbarbar338) for helping me about everthing including React, JavaScript, Node.js, CSS and many more things!
+To [EGGSY](https://github.com/eggsy) (who is this handsome guy) for inspiring and always talking about how good Nuxt.js is!
+To [Arda](https://github.com/ardasoyturk) for helping me about everything including JavaScript, Node.js and many more things!
+To [Roi](https://github.com/thisisroi) for also inspiring and letting me see how good Tailwind is!
 
 *Last update: 19th January, 2021*

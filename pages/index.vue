@@ -1,7 +1,5 @@
 <template>
-  <section
-    class="grid gap-4 px-4 my-4 md:my-16 md:gap-y-12 col-span-full md:px-72"
-  >
+  <section class="grid gap-4 md:gap-y-12">
     <div>
       <h1 class="text-3xl font-bold text-center text-gray-800 md:text-left">
         Howdy, visitor!

@@ -11,7 +11,6 @@
   "dependencies": {
     "@nuxtjs/pwa": "^3.3.0",
     "autoprefixer": "^10.2.1",
-    "core-js": "^3.6.5",
     "nuxt": "^2.14.6",
     "postcss": "^8.2.4",
     "tailwindcss": "^2.0.2",

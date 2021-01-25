@@ -39,6 +39,6 @@ export default {
   css: [],
   plugins: [{ src: '~/plugins/vue-unicons', mode: 'client' }],
   buildModules: ['@nuxtjs/tailwindcss'],
-  modules: ['@nuxt/content', '@nuxtjs/color-mode'],
+  modules: ['@nuxtjs/color-mode'],
   build: {},
 }

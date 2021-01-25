@@ -1,12 +1,8 @@
 module.exports = {
+  darkMode: 'class',
   future: {},
   purge: [],
-  theme: {
-    scale: {
-      115: '1.15',
-    },
-    extend: {},
-  },
+  theme: {},
   variants: {},
   plugins: [require('@tailwindcss/line-clamp'), require('tailwind-scrollbar')],
   experimental: {

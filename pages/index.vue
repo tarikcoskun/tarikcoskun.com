@@ -21,7 +21,7 @@
       <div class="grid items-center grid-cols-2 gap-3 md:grid-cols-5">
         <a
           :href="item.link"
-          class="flex flex-col items-center justify-center w-full rounded-md cursor-pointer h-28 bg-gray-50 hover:bg-gray-100"
+          class="flex flex-col items-center justify-center w-full rounded-md cursor-pointer tech h-28 bg-gray-50 hover:bg-gray-100"
           v-for="item in technologiesIKnow"
           :key="item"
           target="_blank"
@@ -33,6 +33,25 @@
         </a>
       </div>
     </div>
+    <div>
+      <ul class="flex flex-wrap items-center justify-center">
+        <li
+          v-for="color of colors"
+          :key="color"
+          @click="$colorMode.preference = color.value"
+          class="inline-block p-2 mx-1 rounded-md cursor-pointer bg-gray-50 hover:bg-gray-100 theme-selector"
+        >
+          <unicon
+            :name="color.icon"
+            width="36"
+            height="36"
+            fill="currentColor"
+            class="theme-icon"
+          />
+        </li>
+      </ul>
+    </div>
+
     <div class="px-3">
       <h1 class="text-3xl font-bold text-center">Contact Me</h1>
       <p class="-mt-1 text-xl text-center text-gray-700">You can find me on</p>
@@ -43,7 +62,7 @@
             fill="#7289da"
             width="48"
             height="48"
-            class="mx-1 duration-75 transform hover:opacity-75"
+            class="mx-1 duration-75 transform hover:opacity-75 social"
         /></a>
         <a href="https://twitter.com/itstarikcoskun" target="_blank">
           <unicon
@@ -51,15 +70,15 @@
             fill="#1da1f2"
             width="48"
             height="48"
-            class="mx-1 duration-75 transform hover:opacity-75"
+            class="mx-1 duration-75 transform hover:opacity-75 social"
         /></a>
         <a href="https://github.com/tarikcoskun" target="_blank">
           <unicon
             name="github"
-            fill="#24292e"
+            fill="currentColor"
             width="48"
             height="48"
-            class="mx-1 duration-75 transform hover:opacity-75"
+            class="mx-1 text-gray-800 duration-75 transform hover:opacity-75 social"
         /></a>
         <a href="mailto:imtarikcoskun@gmail.com" target="_blank">
           <unicon
@@ -67,12 +86,39 @@
             fill="#d34b3f"
             width="48"
             height="48"
-            class="mx-1 duration-75 transform hover:opacity-75"
+            class="mx-1 duration-75 transform hover:opacity-75 social"
         /></a>
       </div>
     </div>
   </section>
 </template>
+
+<style lang="postcss">
+.dark-mode body {
+  @apply bg-gray-800;
+}
+.dark-mode h1 {
+  @apply text-gray-200;
+}
+.dark-mode p {
+  @apply text-gray-300;
+}
+.dark-mode .tech {
+  @apply bg-gray-700 hover:bg-gray-600;
+}
+.dark-mode .tech span {
+  @apply text-gray-300 font-normal;
+}
+.dark-mode .social {
+  @apply text-gray-200;
+}
+.dark-mode .theme-selector {
+  @apply bg-gray-700 hover:bg-gray-600;
+}
+.dark-mode .theme-icon {
+  @apply text-gray-300;
+}
+</style>
 
 <script>
 export default {
@@ -83,6 +129,20 @@ export default {
   },
   data() {
     return {
+      colors: [
+        {
+          value: 'system',
+          icon: 'desktop',
+        },
+        {
+          value: 'light',
+          icon: 'brightness',
+        },
+        {
+          value: 'dark',
+          icon: 'moon',
+        },
+      ],
       technologiesIKnow: [
         {
           title: 'HTML',

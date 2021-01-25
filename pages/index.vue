@@ -21,7 +21,7 @@
       <div class="grid items-center grid-cols-2 gap-3 md:grid-cols-5">
         <a
           :href="item.link"
-          class="flex flex-col items-center justify-center w-full rounded-md cursor-pointer tech h-28 bg-gray-50 hover:bg-gray-100"
+          class="flex flex-col items-center justify-center w-full rounded-md cursor-pointer tech h-28 bg-gray-100 hover:bg-gray-200"
           v-for="item in technologiesIKnow"
           :key="item"
           target="_blank"
@@ -39,7 +39,7 @@
           v-for="color of colors"
           :key="color"
           @click="$colorMode.preference = color.value"
-          class="inline-block p-2 mx-1 rounded-md cursor-pointer bg-gray-50 hover:bg-gray-100 theme-selector"
+          class="inline-block p-2 mx-1 rounded-md cursor-pointer bg-gray-100 hover:bg-gray-200 theme-selector"
         >
           <unicon
             :name="color.icon"
@@ -94,6 +94,9 @@
 </template>
 
 <style lang="postcss">
+body {
+  @apply bg-gray-50;
+}
 .dark-mode body {
   @apply bg-gray-800;
 }

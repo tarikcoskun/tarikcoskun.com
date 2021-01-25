@@ -33,7 +33,7 @@
         </a>
       </div>
     </div>
-    <div>
+    <!-- <div>
       <h1
         class="mb-2 text-3xl font-bold text-center text-gray-800 md:text-left"
       >
@@ -52,7 +52,7 @@
           </p>
         </NuxtLink>
       </div>
-    </div>
+    </div> -->
     <div class="px-3">
       <h1 class="text-3xl font-bold text-center">Contact Me</h1>
       <p class="-mt-1 text-xl text-center text-gray-700">You can find me on</p>

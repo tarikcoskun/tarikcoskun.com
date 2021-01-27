@@ -8,8 +8,8 @@
         I'm Tarık, a young Front-End developer from Turkey. I have been coding
         since 2018, when I started using Discord. I've always wondered how
         Discord bots work, so I started coding Discord bots. In 2019, I started
-        creating Discord bot dashboards and since then, I'm trying to create
-        websites using new technologies I learn.
+        creating Discord bot dashboards and since then, I'm creating websites
+        using new technologies I learn.
       </p>
     </div>
     <div>
@@ -47,7 +47,11 @@
           target="_blank"
           class="overflow-hidden bg-gray-100 rounded-md tech project-card hover:bg-gray-200"
         >
-          <img class="block w-full h-auto" :src="item.photo" />
+          <img
+            class="block w-full h-auto"
+            :src="item.photo"
+            draggable="false"
+          />
           <header
             class="items-center justify-between py-1.5 px-2 leading-tight md:flex md:p-4"
           >

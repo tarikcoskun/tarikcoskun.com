@@ -39,22 +39,35 @@
       >
         Projects
       </h1>
-      <div class="grid grid-cols-2 gap-4">
+      <div class="grid gap-4 md:grid-cols-2">
         <a
           :href="item.link"
           v-for="item in projects"
           :key="item"
           target="_blank"
-          class="overflow-hidden bg-gray-100 rounded-md tech hover:bg-gray-200"
+          class="overflow-hidden bg-gray-100 rounded-md tech project-card hover:bg-gray-200"
         >
           <img class="block w-full h-auto" :src="item.photo" />
-          <h1 class="py-2 text-xl text-center text-gray-700">
-            {{ item.title }}
-          </h1>
+          <header
+            class="items-center justify-between py-1.5 px-2 leading-tight md:flex md:p-4"
+          >
+            <h1
+              :title="item.title"
+              class="text-xl text-center text-gray-700 truncate"
+            >
+              {{ item.title }}
+            </h1>
+            <p
+              class="hidden ml-1 bg-gray-200 rounded-full project-position md:block"
+              style="padding: 0.22rem 0.6rem"
+            >
+              DESIGNER
+            </p>
+          </header>
         </a>
       </div>
     </div>
-    <div class="-mt-4 -mb-8">
+    <div class="md:-mt-4 md:-mb-8">
       <ul class="flex flex-wrap items-center justify-center">
         <li
           v-for="color of colors"
@@ -64,8 +77,8 @@
         >
           <unicon
             :name="color.icon"
-            width="36"
-            height="36"
+            width="28"
+            height="28"
             fill="currentColor"
             class="theme-icon"
           />
@@ -74,7 +87,7 @@
     </div>
 
     <div class="px-3">
-      <h1 class="text-3xl font-bold text-center">Contact Me</h1>
+      <h1 class="text-2xl font-bold text-center contact-me">Contact Me</h1>
       <p class="-mt-1 text-xl text-center text-gray-700">You can find me on</p>
       <div class="flex flex-wrap justify-center mt-2">
         <a href="https://discord.com/users/474537652943847444" target="_blank">
@@ -122,7 +135,10 @@ body {
   @apply bg-gray-800;
 }
 .dark-mode h1 {
-  @apply text-gray-200;
+  @apply text-gray-100;
+}
+.dark-mode .contact-me {
+  @apply font-normal;
 }
 .dark-mode p {
   @apply text-gray-300;
@@ -141,6 +157,12 @@ body {
 }
 .dark-mode .theme-icon {
   @apply text-gray-300;
+}
+.dark-mode .project-card:hover > .project-position {
+  @apply bg-gray-500;
+}
+.dark-mode .project-position {
+  @apply bg-gray-600;
 }
 </style>
 
@@ -169,7 +191,7 @@ export default {
       ],
       projects: [
         {
-          title: "Flowey's Time Machine",
+          title: "Flowey's Time Machine Rework",
           link: '',
           photo:
             'https://media.discordapp.net/attachments/601880078514651166/803930368716832778/unknown.png',

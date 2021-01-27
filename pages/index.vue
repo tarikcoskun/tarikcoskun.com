@@ -21,7 +21,7 @@
       <div class="grid items-center grid-cols-2 gap-3 md:grid-cols-5">
         <a
           :href="item.link"
-          class="flex flex-col items-center justify-center w-full bg-gray-100 rounded-md cursor-pointer tech h-28 hover:bg-gray-1200"
+          class="flex flex-col items-center justify-center w-full bg-gray-100 rounded-md cursor-pointer tech h-28 hover:bg-gray-200"
           v-for="item in technologiesIKnow"
           :key="item"
           target="_blank"

@@ -21,7 +21,7 @@
       <div class="grid items-center grid-cols-2 gap-3 md:grid-cols-5">
         <a
           :href="item.link"
-          class="flex flex-col items-center justify-center w-full rounded-md cursor-pointer tech h-28 bg-gray-100 hover:bg-gray-200"
+          class="flex flex-col items-center justify-center w-full bg-gray-100 rounded-md cursor-pointer tech h-28 hover:bg-gray-1200"
           v-for="item in technologiesIKnow"
           :key="item"
           target="_blank"
@@ -34,12 +34,33 @@
       </div>
     </div>
     <div>
+      <h1
+        class="mb-2 text-3xl font-bold text-center text-gray-800 md:text-left"
+      >
+        Projects
+      </h1>
+      <div class="grid grid-cols-2 gap-4">
+        <a
+          :href="item.link"
+          v-for="item in projects"
+          :key="item"
+          target="_blank"
+          class="overflow-hidden bg-gray-100 rounded-md tech hover:bg-gray-200"
+        >
+          <img class="block w-full h-auto" :src="item.photo" />
+          <h1 class="py-2 text-xl text-center text-gray-700">
+            {{ item.title }}
+          </h1>
+        </a>
+      </div>
+    </div>
+    <div class="-mt-4 -mb-8">
       <ul class="flex flex-wrap items-center justify-center">
         <li
           v-for="color of colors"
           :key="color"
           @click="$colorMode.preference = color.value"
-          class="inline-block p-2 mx-1 rounded-md cursor-pointer bg-gray-100 hover:bg-gray-200 theme-selector"
+          class="inline-block p-2 mx-1 bg-gray-100 rounded-md cursor-pointer hover:bg-gray-200 theme-selector"
         >
           <unicon
             :name="color.icon"
@@ -95,7 +116,7 @@
 
 <style lang="postcss">
 body {
-  @apply bg-gray-50;
+  @apply bg-gray-50 transform duration-75;
 }
 .dark-mode body {
   @apply bg-gray-800;
@@ -144,6 +165,14 @@ export default {
         {
           value: 'dark',
           icon: 'moon',
+        },
+      ],
+      projects: [
+        {
+          title: "Flowey's Time Machine",
+          link: '',
+          photo:
+            'https://media.discordapp.net/attachments/601880078514651166/803930368716832778/unknown.png',
         },
       ],
       technologiesIKnow: [

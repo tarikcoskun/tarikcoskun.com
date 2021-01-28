@@ -196,7 +196,7 @@ export default {
       projects: [
         {
           title: "Flowey's Time Machine Rework",
-          link: '',
+          link: 'https://floweystimemachine.github.io/',
           photo:
             'https://media.discordapp.net/attachments/601880078514651166/803930368716832778/unknown.png',
         },

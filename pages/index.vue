@@ -196,9 +196,9 @@ export default {
       projects: [
         {
           title: "Flowey's Time Machine Rework",
-          link: 'https://floweystimemachine.github.io/',
+          link: 'http://crumblingstatue.github.io/FloweysTimeMachine',
           photo:
-            'https://media.discordapp.net/attachments/601880078514651166/803930368716832778/unknown.png',
+            'https://media.discordapp.net/attachments/801123953187749918/804766073697075240/Screen_Shot_2021-01-29_at_23.02.56.png',
         },
       ],
       technologiesIKnow: [

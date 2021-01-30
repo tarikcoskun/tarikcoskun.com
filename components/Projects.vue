@@ -63,6 +63,13 @@ export default {
           photo:
             'https://media.discordapp.net/attachments/601880078514651166/803930368716832778/unknown.png',
         },
+        {
+          title: 'tarikcoskun.xyz',
+          link: 'https://tarikcoskun.xyz',
+          badge: 'Developer',
+          photo:
+            'https://media.discordapp.net/attachments/705535550093787296/805075022623277056/unknown.png',
+        },
       ],
     }
   },

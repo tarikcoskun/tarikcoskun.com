@@ -35,6 +35,7 @@ export default {
       },
     ],
   },
+  components: true,
   loading: { color: '#4a5568' },
   css: [],
   plugins: [{ src: '~/plugins/vue-unicons', mode: 'client' }],

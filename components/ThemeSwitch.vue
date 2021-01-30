@@ -12,7 +12,7 @@
 
 <style lang="postcss">
 .theme-switch {
-  @apply fixed -mt-4 top-0 p-2 mx-1 bg-gray-200 rounded-md cursor-pointer right-8 hover:bg-gray-300;
+  @apply sticky float-right mr-8 bottom-8 p-2.5 bg-gray-200 rounded-md cursor-pointer hover:bg-gray-300;
 }
 .dark-mode .theme-switch {
   @apply bg-gray-700 hover:bg-gray-600;

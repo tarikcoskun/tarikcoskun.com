@@ -1,7 +1,7 @@
 <template>
   <div class="px-3">
     <h2>Contact Me</h2>
-    <p class="-mt-1 text-xl text-center">You can find me on</p>
+    <p class="-mt-1 text-center">You can find me on</p>
     <div class="flex flex-wrap justify-center mt-2">
       <a
         v-for="account in accounts"

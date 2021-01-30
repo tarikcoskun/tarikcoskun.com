@@ -1,6 +1,9 @@
 <template>
-  <div class="m-4 md:px-64 md:my-12">
-    <Nuxt />
+  <div>
+    <div class="m-4 md:px-64 md:mt-12">
+      <Nuxt />
+    </div>
+    <ThemeSwitch />
   </div>
 </template>
 
@@ -21,7 +24,7 @@ h2 {
   @apply text-2xl font-bold text-center text-gray-800;
 }
 p {
-  @apply text-lg text-justify text-gray-700;
+  @apply text-xl text-justify text-gray-700;
 }
 .dark-mode body {
   @apply bg-gray-800;

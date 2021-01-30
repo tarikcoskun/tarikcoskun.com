@@ -18,4 +18,4 @@ To [EGGSY](https://github.com/eggsy) (who is this handsome guy) for inspiring an
 To [Arda](https://github.com/ardasoyturk) for helping me about everything including JavaScript, Node.js and many more things!  
 To [Roi](https://github.com/thisisroi) for also inspiring and letting me see how good Tailwind is!
 
-*Last update: 24th January, 2021*
+*Last update: 30th January, 2021*

@@ -21,16 +21,13 @@
   @apply grid items-center grid-cols-2 gap-3 md:grid-cols-5;
 }
 .technology {
-  @apply flex flex-col items-center justify-center w-full h-28 card;
+  @apply flex flex-col items-center justify-center w-full h-28 bg-gray-200 rounded-md cursor-pointer hover:bg-gray-300 focus:outline-none focus:ring focus:ring-gray-400;
 }
 .technology-title {
   @apply mt-5 font-bold text-center text-gray-700;
 }
-.card {
-  @apply bg-gray-200 rounded-md cursor-pointer hover:bg-gray-300;
-}
 .dark-mode .technology {
-  @apply bg-gray-700 hover:bg-gray-600;
+  @apply bg-gray-700 hover:bg-gray-600 focus:ring-gray-500;
 }
 .dark-mode .technology-title {
   @apply text-gray-300 font-normal;

@@ -19,7 +19,7 @@
 
 <style lang="postcss">
 .technologies-section {
-  @apply grid items-center grid-cols-2 gap-4 md:grid-cols-5;
+  @apply grid items-center grid-cols-2 gap-4 lg:grid-cols-5;
 }
 .technology {
   @apply flex flex-col items-center justify-center w-full h-28 rounded-md cursor-pointer transition-opacity duration-100 hover:opacity-75;

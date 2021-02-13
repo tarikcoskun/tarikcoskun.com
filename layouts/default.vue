@@ -27,14 +27,14 @@ p {
   @apply text-xl text-gray-700;
 }
 .dark-mode body {
-  @apply bg-gray-800;
+  background: #111;
 }
 .dark-mode h1,
 .dark-mode h2 {
   @apply text-white;
 }
 .dark-mode p {
-  @apply text-gray-300;
+  @apply text-gray-100;
 }
 </style>
 
@@ -44,7 +44,7 @@ export default {
     return {
       htmlAttrs: {
         class:
-          'scrollbar-thin scrollbar-track-gray-400 scrollbar-thumb-gray-700',
+          'scrollbar-thin scrollbar-track-transparent scrollbar-thumb-gray-400',
       },
     }
   },

@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h2>Technologies I Use</h2>
+    <h1>Technologies I Use</h1>
     <div class="technologies-section">
       <a
         :href="technology.link"

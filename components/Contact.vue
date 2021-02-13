@@ -23,7 +23,7 @@
 
 <style lang="postcss">
 .account {
-  @apply mx-1 hover:opacity-75;
+  @apply mx-1 transition-opacity duration-100 hover:opacity-75;
 }
 .dark-mode .account {
   @apply text-gray-200;

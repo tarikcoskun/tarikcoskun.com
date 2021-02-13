@@ -1,6 +1,6 @@
 <template>
   <div class="px-3">
-    <h2>Contact Me</h2>
+    <h2 class="mb-0 text-center">Contact Me</h2>
     <p class="-mt-1 text-center">You can find me on</p>
     <div class="flex flex-wrap justify-center mt-2">
       <a
@@ -8,6 +8,7 @@
         :key="account"
         :href="account.link"
         target="_blank"
+        class="focus:outline-none focus:opacity-75"
       >
         <unicon
           :name="account.name"

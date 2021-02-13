@@ -4,8 +4,6 @@ module.exports = {
   purge: [],
   theme: {},
   variants: {},
-  plugins: [ require('tailwind-scrollbar')],
-  experimental: {
-    applyComplexClasses: true,
-  },
+  plugins: [require('tailwind-scrollbar'), require('@tailwindcss/line-clamp')],
+  experimental: {},
 }

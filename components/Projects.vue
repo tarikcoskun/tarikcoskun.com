@@ -7,7 +7,7 @@
         :key="project"
         class="flex-col rounded-lg md:flex"
         style="
-          background-image: linear-gradient(to bottom right, #151515, #000);
+          background-image: linear-gradient(to bottom right, #121212, #000);
         "
       >
         <img
@@ -21,7 +21,7 @@
             <a
               :href="project.link"
               target="_blank"
-              class="text-white hover:underline"
+              class="text-white hover:underline focus:outline-none focus:underline"
             >
               {{ project.title }}
             </a>

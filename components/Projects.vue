@@ -1,21 +1,32 @@
 <template>
   <div>
-    <h2>Projects</h2>
-    <div class="grid gap-4 lg:grid-cols-2">
-      <div v-for="project in projects" :key="project" class="flex flex-shrink">
+    <h1>Projects</h1>
+    <div class="grid gap-4 lg:grid-cols-3">
+      <div
+        v-for="project in projects"
+        :key="project"
+        class="flex-col rounded-lg md:flex"
+        style="
+          background-image: linear-gradient(to bottom right, #151515, #000);
+        "
+      >
         <img
           :src="project.photo"
           draggable="false"
-          class="rounded-lg"
-          style="width: 100px; height: 100px"
+          class="w-full rounded-t-lg"
+          style="background-color: rgba(0, 0, 0, 0.5)"
         />
-        <div class="pl-3">
-          <h1 :title="project.title" class="project-title">
-            <a :href="project.link" target="_blank" class="hover:underline">
+        <div class="p-3">
+          <h1 :title="project.title" class="text-lg text-left truncate">
+            <a
+              :href="project.link"
+              target="_blank"
+              class="text-white hover:underline"
+            >
               {{ project.title }}
             </a>
           </h1>
-          <p class="text-base leading-6 text-left line-clamp-3">
+          <p class="-mt-1 text-base leading-6 text-gray-100 line-clamp-2">
             {{ project.description }}
           </p>
         </div>
@@ -23,13 +34,6 @@
     </div>
   </div>
 </template>
-
-<style lang="postcss">
-.project-title {
-  @apply text-lg text-left truncate;
-  margin-bottom: -0.05rem;
-}
-</style>
 
 <script>
 export default {
@@ -41,7 +45,7 @@ export default {
           link: 'http://crumblingstatue.github.io/FloweysTimeMachine',
           badge: 'Designer',
           photo:
-            'https://media.discordapp.net/attachments/705535550093787296/810121912276746241/Adsz.png',
+            'https://media.discordapp.net/attachments/705535550093787296/810173997253787658/flowey.png',
           description:
             "Flowey's Time Machine is an UNDERTALE save editor that allows you to change everything about your save easily",
         },

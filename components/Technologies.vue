@@ -1,36 +1,23 @@
 <template>
   <div>
     <h1>Technologies I Use</h1>
-    <div class="technologies-section">
+    <div class="grid items-center grid-cols-2 gap-4 lg:grid-cols-5">
       <a
         :href="tech.link"
-        class="tech"
         v-for="tech in technologies"
         :key="tech"
         target="_blank"
         :style="tech.background"
+        class="flex flex-col items-center justify-center w-full transition-opacity duration-100 rounded-md cursor-pointer h-28 hover:opacity-75 focus:outline-none focus:opacity-75"
       >
         <div class="w-10 h-10" v-html="tech.icon"></div>
-        <span class="tech-title">{{ tech.title }}</span>
+        <span class="mt-5 font-medium text-center text-white">{{
+          tech.title
+        }}</span>
       </a>
     </div>
   </div>
 </template>
-
-<style lang="postcss">
-.technologies-section {
-  @apply grid items-center grid-cols-2 gap-4 lg:grid-cols-5;
-}
-.tech {
-  @apply flex flex-col items-center justify-center w-full h-28 rounded-md cursor-pointer transition-opacity duration-100 hover:opacity-75;
-}
-.tech-title {
-  @apply mt-5 font-medium text-center text-white;
-}
-.dark-mode .tech {
-  @apply bg-gray-700 hover:bg-gray-600;
-}
-</style>
 
 <script>
 export default {

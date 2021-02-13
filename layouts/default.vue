@@ -18,20 +18,20 @@ section {
   @apply grid gap-4 md:gap-y-12;
 }
 h1 {
-  @apply mb-2 text-3xl font-bold text-center text-gray-800 md:text-left;
+  @apply mb-2 text-3xl font-medium text-center md:text-left;
 }
 h2 {
-  @apply text-2xl font-bold text-center text-gray-800;
+  @apply mb-2 text-2xl font-medium text-center md:text-left;
 }
 p {
-  @apply text-xl text-justify text-gray-700;
+  @apply text-xl text-gray-700;
 }
 .dark-mode body {
   @apply bg-gray-800;
 }
 .dark-mode h1,
 .dark-mode h2 {
-  @apply text-gray-100 font-normal;
+  @apply text-white;
 }
 .dark-mode p {
   @apply text-gray-300;

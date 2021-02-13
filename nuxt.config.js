@@ -2,8 +2,8 @@ let description =
   "I'm Tarık, a young Front-End web developer from Turkey. I have been coding since 2018, when I started using Discord. I've always wondered how Discord bots work, so I started coding Discord bots. Since 2019, I'm creating websites using new technologies I learn."
 
 export default {
-  ssr: false,
   target: 'static',
+  ssr: false,
   head: {
     title: 'Tarık Coşkun',
     meta: [
@@ -30,16 +30,16 @@ export default {
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
       {
         rel: 'stylesheet',
-        href: 'https://fonts.googleapis.com/css2?family=Roboto&display=swap',
+        href: 'https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap',
         media: 'all',
       },
     ],
   },
-  components: true,
   loading: { color: '#4a5568' },
   css: [],
+  components: true,
   plugins: [{ src: '~/plugins/vue-unicons', mode: 'client' }],
   buildModules: ['@nuxtjs/tailwindcss'],
-  modules: ['@nuxtjs/pwa', '@nuxtjs/color-mode'],
+  modules: ['@nuxtjs/color-mode'],
   build: {},
 }

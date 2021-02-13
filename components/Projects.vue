@@ -49,15 +49,6 @@ export default {
           description:
             "Flowey's Time Machine is an UNDERTALE save editor that allows you to change everything about your save easily",
         },
-        {
-          title: "Flowey's Time Machine Rework",
-          link: 'http://crumblingstatue.github.io/FloweysTimeMachine',
-          badge: 'Designer',
-          photo:
-            'https://media.discordapp.net/attachments/705535550093787296/810121912276746241/Adsz.png',
-          description:
-            "Flowey's Time Machine is an UNDERTALE save editor that allows you to change everything about your save easily",
-        },
       ],
     }
   },

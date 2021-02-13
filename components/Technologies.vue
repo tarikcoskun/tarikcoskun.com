@@ -28,10 +28,7 @@
   @apply mt-5 font-medium text-center text-white;
 }
 .dark-mode .technology {
-  @apply bg-gray-700 hover:bg-gray-600 focus:ring-gray-500;
-}
-.dark-mode .technology-title {
-  @apply text-gray-300 font-normal;
+  @apply bg-gray-700 hover:bg-gray-600;
 }
 </style>
 

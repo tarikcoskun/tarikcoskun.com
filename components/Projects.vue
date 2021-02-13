@@ -2,13 +2,7 @@
   <div>
     <h2>Projects</h2>
     <div class="grid gap-4 lg:grid-cols-2">
-      <a
-        :href="project.link"
-        target="_blank"
-        v-for="project in projects"
-        :key="project"
-        class="flex flex-shrink"
-      >
+      <div v-for="project in projects" :key="project" class="flex flex-shrink">
         <img
           :src="project.photo"
           draggable="false"
@@ -17,13 +11,15 @@
         />
         <div class="pl-3">
           <h1 :title="project.title" class="project-title">
-            {{ project.title }}
+            <a :href="project.link" target="_blank" class="hover:underline">
+              {{ project.title }}
+            </a>
           </h1>
           <p class="text-base leading-6 text-left line-clamp-3">
             {{ project.description }}
           </p>
         </div>
-      </a>
+      </div>
     </div>
   </div>
 </template>

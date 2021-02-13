@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="m-4 -mb-8 md:mt-8 md:-mb-4 md:px-56">
+    <div class="m-4 -mb-8 lg:mt-8 lg:-mb-4 lg:px-56 sm:px-36">
       <Nuxt />
     </div>
     <ThemeSwitch />

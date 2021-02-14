@@ -8,6 +8,7 @@
     "start": "nuxt start"
   },
   "dependencies": {
+    "@nuxtjs/axios": "^5.13.1",
     "@nuxtjs/pwa": "^3.3.0",
     "@tailwindcss/line-clamp": "^0.2.0",
     "autoprefixer": "^10.2.1",

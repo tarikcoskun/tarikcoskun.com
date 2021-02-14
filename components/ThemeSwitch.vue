@@ -15,7 +15,7 @@
   @apply sticky float-right opacity-50 md:opacity-75 md:mr-8 md:m-0 mr-4 -mb-8 bottom-4 md:bottom-8 p-2 bg-gray-200 rounded-md cursor-pointer hover:opacity-100;
 }
 .dark-mode .theme-switch {
-  @apply bg-gray-700;
+  background: #202020;
 }
 .dark-mode .theme-icon {
   @apply text-gray-300;

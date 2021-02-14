@@ -5,28 +5,24 @@
       <div
         v-for="project in projects"
         :key="project"
-        class="flex-col rounded-lg md:flex"
-        style="
-          background-image: linear-gradient(to bottom right, #121212, #000);
-        "
+        class="flex-col rounded-lg md:flex background"
       >
         <img
           :src="project.photo"
           draggable="false"
           class="w-full rounded-t-lg"
-          style="background-color: rgba(0, 0, 0, 0.5)"
         />
         <div class="p-3">
           <h1 :title="project.title" class="text-lg text-left truncate">
             <a
               :href="project.link"
               target="_blank"
-              class="text-white hover:underline focus:outline-none focus:underline"
+              class="hover:underline focus:outline-none"
             >
               {{ project.title }}
             </a>
           </h1>
-          <p class="-mt-1 text-base leading-6 text-gray-100 line-clamp-2">
+          <p class="-mt-1 text-base leading-6 line-clamp-2">
             {{ project.description }}
           </p>
         </div>
@@ -34,6 +30,15 @@
     </div>
   </div>
 </template>
+
+<style lang="postcss">
+.background {
+  background: #f0f0f0;
+}
+.dark-mode .background {
+  background: #202020;
+}
+</style>
 
 <script>
 export default {
@@ -45,7 +50,7 @@ export default {
           link: 'http://crumblingstatue.github.io/FloweysTimeMachine',
           badge: 'Designer',
           photo:
-            'https://media.discordapp.net/attachments/705535550093787296/810173997253787658/flowey.png',
+            'https://media.discordapp.net/attachments/705535550093787296/810173445186387978/flowey.png',
           description:
             "Flowey's Time Machine is an UNDERTALE save editor that allows you to change everything about your save easily",
         },

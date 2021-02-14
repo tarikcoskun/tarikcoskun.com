@@ -5,10 +5,10 @@
       <div v-for="item in 2" class="repo">
         <div class="flex space-x-4 animate-pulse">
           <div class="flex-1 py-1 space-y-5">
-            <div class="w-2/4 h-4 rounded skeleton"></div>
+            <div class="w-2/4 skeleton"></div>
             <div class="space-y-2">
-              <div class="w-5/6 h-4 rounded skeleton"></div>
-              <div class="w-2/5 h-4 rounded skeleton"></div>
+              <div class="w-5/6 skeleton"></div>
+              <div class="w-2/5 skeleton"></div>
             </div>
           </div>
         </div>
@@ -59,6 +59,36 @@
           </a>
         </div>
       </div>
+      <div class="repo" v-for="repo in ftm" :key="repo">
+        <h1 class="text-lg hover:underline focus:outline-none focus:underline">
+          <a
+            :href="repo.html_url"
+            target="_blank"
+            class="hover:underline focus:outline-none"
+            >{{ repo.name }}</a
+          >
+        </h1>
+        <p class="-mt-1 text-base truncate" :title="repo.description">
+          {{ repo.description }}
+        </p>
+        <div class="flex flex-wrap mt-1 space-x-4">
+          <p class="text-base">{{ repo.language }}</p>
+          <a
+            :href="`https://github.com/floweystimemachine/${repo.name}/stargazers`"
+            target="_blank"
+            class="flex text-base focus:outline-none"
+          >
+            <unicon
+              name="star"
+              width="20"
+              height="20"
+              fill="#ffac33"
+              class="mr-1"
+            />
+            {{ repo.stargazers_count }}
+          </a>
+        </div>
+      </div>
     </div>
   </div>
 </template>
@@ -69,6 +99,7 @@
   background: #f0f0f0;
 }
 .skeleton {
+  @apply h-4 rounded;
   background: #bebebe;
 }
 .error-message {
@@ -90,6 +121,7 @@ export default {
   data() {
     return {
       repos: [],
+      ftm: [],
     }
   },
   fetchOnServer: false,
@@ -97,10 +129,14 @@ export default {
     const { data: repos } = await this.$axios.get(
       'https://api.github.com/users/tarikcoskun/repos'
     )
+    const { data: ftm } = await this.$axios.get(
+      'https://api.github.com/users/floweystimemachine/repos'
+    )
     const filter = ['tarikcoskun']
     this.repos = repos
-      ?.filter((repo) => repo.fork === false && !filter.includes(repo.name))
+      ?.filter((repo) => !filter.includes(repo.name))
       ?.sort((a, b) => b?.stargazers_count - a?.stargazers_count)
+    this.ftm = ftm
   },
 }
 </script>

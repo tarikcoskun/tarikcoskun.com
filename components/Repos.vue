@@ -28,7 +28,7 @@
       </h2>
     </div>
 
-    <div v-else-if="repos.length > 0" class="grid gap-2 lg:grid-cols-2">
+    <div v-else-if="repos.length > 0" class="grid gap-3 lg:grid-cols-2">
       <div class="repo" v-for="repo in repos" :key="repo">
         <h1 class="text-lg hover:underline focus:outline-none focus:underline">
           <a
@@ -95,7 +95,7 @@
 
 <style lang="postcss">
 .repo {
-  @apply p-4 rounded-lg;
+  @apply p-4 rounded-md;
   background: #f0f0f0;
 }
 .skeleton {

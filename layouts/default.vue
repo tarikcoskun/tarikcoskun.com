@@ -18,10 +18,10 @@ section {
   @apply grid gap-4 md:gap-y-12;
 }
 h1 {
-  @apply mb-2 text-3xl font-medium text-center md:text-left;
+  @apply mb-2 text-3xl font-medium;
 }
 h2 {
-  @apply mb-2 text-2xl font-medium text-center md:text-left;
+  @apply mb-2 text-2xl font-medium;
 }
 p {
   @apply text-xl text-gray-700;

@@ -8,6 +8,8 @@ import {
   uniTwitter,
   uniGithub,
   uniAt,
+  uniStar,
+  uniExclamationTriangle
 } from 'vue-unicons/src/icons'
 
 Unicon.add([
@@ -18,5 +20,7 @@ Unicon.add([
   uniTwitter,
   uniGithub,
   uniAt,
+  uniStar,
+  uniExclamationTriangle
 ])
 Vue.use(Unicon)

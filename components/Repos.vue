@@ -1,7 +1,7 @@
 <template>
   <div>
     <h1>GitHub Repositories</h1>
-    <div v-if="$fetchState.pending" class="grid gap-2 md:grid-cols-2">
+    <div v-if="$fetchState.pending" class="grid gap-2 lg:grid-cols-2">
       <div v-for="item in 2" class="repo">
         <div class="flex space-x-4 animate-pulse">
           <div class="flex-1 py-1 space-y-5">
@@ -28,7 +28,7 @@
       </h2>
     </div>
 
-    <div v-else-if="repos.length > 0" class="grid gap-2 md:grid-cols-2">
+    <div v-else-if="repos.length > 0" class="grid gap-2 lg:grid-cols-2">
       <div class="repo" v-for="repo in repos" :key="repo">
         <h1 class="text-lg hover:underline focus:outline-none focus:underline">
           <a

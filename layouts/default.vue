@@ -26,6 +26,9 @@ h2 {
 p {
   @apply text-xl text-gray-700;
 }
+a {
+  @apply text-gray-700;
+}
 .dark-mode body {
   background: #111;
 }
@@ -33,7 +36,8 @@ p {
 .dark-mode h2 {
   @apply text-white;
 }
-.dark-mode p {
+.dark-mode p,
+.dark-mode a {
   @apply text-gray-100;
 }
 </style>

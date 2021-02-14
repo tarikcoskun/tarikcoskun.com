@@ -40,6 +40,6 @@ export default {
   components: true,
   plugins: [{ src: '~/plugins/vue-unicons', mode: 'client' }],
   buildModules: ['@nuxtjs/tailwindcss'],
-  modules: ['@nuxtjs/color-mode'],
+  modules: ['@nuxtjs/color-mode', '@nuxtjs/axios'],
   build: {},
 }

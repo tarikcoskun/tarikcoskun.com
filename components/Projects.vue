@@ -1,7 +1,7 @@
 <template>
   <div>
     <h1>Projects</h1>
-    <div class="grid gap-4 lg:grid-cols-3">
+    <div class="grid gap-3 lg:grid-cols-3">
       <div
         v-for="project in projects"
         :key="project"

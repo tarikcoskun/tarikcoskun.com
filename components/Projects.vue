@@ -22,7 +22,7 @@
               {{ project.title }}
             </a>
           </h1>
-          <p class="-mt-1 text-base leading-6 line-clamp-2">
+          <p class="-mt-1 text-base leading-6 line-clamp-2" :title="project.description">
             {{ project.description }}
           </p>
         </div>
@@ -30,15 +30,6 @@
     </div>
   </div>
 </template>
-
-<style lang="postcss">
-.background {
-  background: #f0f0f0;
-}
-.dark-mode .background {
-  background: #202020;
-}
-</style>
 
 <script>
 export default {

@@ -13,6 +13,7 @@ html {
 }
 body {
   @apply bg-gray-50 transform duration-75;
+  min-height: 100vh;
 }
 section {
   @apply grid gap-4 md:gap-y-12;
@@ -39,6 +40,12 @@ a {
 .dark-mode p,
 .dark-mode a {
   @apply text-gray-100;
+}
+.background {
+  @apply bg-gray-100;
+}
+.dark-mode .background {
+  background: #202020;
 }
 </style>
 

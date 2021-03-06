@@ -30,6 +30,12 @@ p {
 a {
   @apply text-gray-700;
 }
+.background {
+  @apply bg-gray-100;
+}
+a.background:hover {
+  background: #ececec
+}
 .dark-mode body {
   background: #111;
 }
@@ -39,12 +45,12 @@ a {
 }
 .dark-mode p,
 .dark-mode a {
-  @apply text-gray-100;
-}
-.background {
-  @apply bg-gray-100;
+  @apply text-gray-200;
 }
 .dark-mode .background {
+  background: #181818;
+}
+.dark-mode a.background:hover {
   background: #202020;
 }
 </style>

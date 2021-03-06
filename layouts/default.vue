@@ -31,10 +31,10 @@ a {
   @apply text-gray-700;
 }
 .background {
-  @apply bg-gray-100;
+  background: #f2f2f2;
 }
 a.background:hover {
-  background: #ececec
+  background: #ebebeb
 }
 .dark-mode body {
   background: #111;

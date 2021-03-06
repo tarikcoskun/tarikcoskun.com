@@ -37,7 +37,7 @@ export default {
           link: 'http://crumblingstatue.github.io/FloweysTimeMachine',
           badge: 'Designer',
           photo:
-            'http://localhost:3000/flowey_nice.png',
+            'https://tarikcoskun.xyz/flowey.png',
           description:
             "Flowey's Time Machine is an UNDERTALE save editor that allows you to change everything about your save easily",
         },

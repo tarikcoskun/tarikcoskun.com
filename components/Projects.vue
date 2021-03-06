@@ -1,32 +1,28 @@
 <template>
   <div>
     <h1>Projects</h1>
-    <div class="grid gap-3 lg:grid-cols-3">
-      <div
+    <div class="grid gap-3 lg:grid-cols-2">
+      <a
         v-for="project in projects"
         :key="project"
-        class="flex-col rounded-lg md:flex background"
+        :href="project.link"
+        target="_blank"
+        class="flex background rounded-lg"
       >
         <img
           :src="project.photo"
           draggable="false"
-          class="w-full rounded-t-lg"
+          class="rounded-l-lg p-1 bg-black"
         />
-        <div class="p-3">
+        <div class="p-4 flex justify-center align-center flex-col">
           <h1 :title="project.title" class="text-lg text-left truncate">
-            <a
-              :href="project.link"
-              target="_blank"
-              class="hover:underline focus:outline-none"
-            >
-              {{ project.title }}
-            </a>
+            {{ project.title }}
           </h1>
           <p class="-mt-1 text-base leading-6 line-clamp-2" :title="project.description">
             {{ project.description }}
           </p>
         </div>
-      </div>
+      </a>
     </div>
   </div>
 </template>
@@ -38,10 +34,10 @@ export default {
       projects: [
         {
           title: "Flowey's Time Machine Rework",
-          link: 'https://floweystimemachine.github.io',
+          link: 'http://crumblingstatue.github.io/FloweysTimeMachine',
           badge: 'Designer',
           photo:
-            'https://media.discordapp.net/attachments/705535550093787296/810173445186387978/flowey.png',
+            'http://localhost:3000/flowey_nice.png',
           description:
             "Flowey's Time Machine is an UNDERTALE save editor that allows you to change everything about your save easily",
         },

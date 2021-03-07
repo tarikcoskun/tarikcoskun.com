@@ -12,13 +12,13 @@
         <img
           :src="project.photo"
           draggable="false"
-          class="lg:rounded-l-lg p-1 bg-black md:block hidden"
+          class="md:rounded-l-lg md:block hidden w-24 h-24"
         />
-        <div class="p-4 flex justify-center align-center flex-col">
+        <div class="px-2.5 flex justify-center align-center flex-col">
           <h1 :title="project.title" class="text-lg text-left truncate">
             {{ project.title }}
           </h1>
-          <p class="-mt-1 text-base leading-6 line-clamp-2" :title="project.description">
+          <p class="-mt-2 text-base leading-6 line-clamp-2" :title="project.description">
             {{ project.description }}
           </p>
         </div>
@@ -37,7 +37,7 @@ export default {
           link: 'https://floweystimemachine.github.io',
           badge: 'Designer',
           photo:
-            'http://tarikcoskun.xyz/flowey.png',
+            'http://localhost:3000/flowey.png',
           description:
             "Flowey's Time Machine is an UNDERTALE save editor that allows you to change everything about your save easily",
         },

@@ -36,8 +36,7 @@ export default {
           title: "Flowey's Time Machine Rework",
           link: 'https://floweystimemachine.github.io',
           badge: 'Designer',
-          photo:
-            'http://localhost:3000/flowey.png',
+          photo: 'https://tarikcoskun.xyz/flowey.png',
           description:
             "Flowey's Time Machine is an UNDERTALE save editor that allows you to change everything about your save easily",
         },

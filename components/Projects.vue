@@ -14,7 +14,7 @@
           draggable="false"
           class="md:rounded-l-lg md:block hidden w-24 h-24"
         />
-        <div class="px-2.5 flex justify-center align-center flex-col">
+        <div class="p-2.5 flex justify-center align-center flex-col">
           <h1 :title="project.title" class="text-lg text-left truncate">
             {{ project.title }}
           </h1>

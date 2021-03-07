@@ -34,7 +34,7 @@ export default {
       projects: [
         {
           title: "Flowey's Time Machine Rework",
-          link: 'http://crumblingstatue.github.io/FloweysTimeMachine',
+          link: 'https://floweystimemachine.github.io',
           badge: 'Designer',
           photo:
             'http://tarikcoskun.xyz/flowey.png',

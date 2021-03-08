@@ -40,7 +40,7 @@ export default {
   components: true,
   plugins: [{ src: '~/plugins/vue-unicons', mode: 'client' }],
   buildModules: ['@nuxtjs/tailwindcss'],
-  modules: ['@nuxtjs/color-mode', '@nuxtjs/axios', 'v-wave/nuxt'],
+  modules: ['@nuxtjs/axios', 'v-wave/nuxt'],
   vWave: {
     color: 'black',
     duration: 0.2,

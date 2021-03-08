@@ -1,9 +1,8 @@
 <template>
   <div>
-    <div class="m-4 -mb-8 lg:mt-8 lg:-mb-4 lg:px-56 sm:px-36">
+    <div class="m-4 lg:my-8 lg:px-56 sm:px-36">
       <Nuxt />
     </div>
-    <ThemeSwitch />
   </div>
 </template>
 
@@ -31,27 +30,7 @@ a {
   @apply text-gray-700;
 }
 .background {
-  background: #f2f2f2;
-}
-a.background:hover {
-  background: #ebebeb
-}
-.dark-mode body {
-  background: #111;
-}
-.dark-mode h1,
-.dark-mode h2 {
-  @apply text-white;
-}
-.dark-mode p,
-.dark-mode a {
-  @apply text-gray-200;
-}
-.dark-mode .background {
-  background: #181818;
-}
-.dark-mode a.background:hover {
-  background: #202020;
+  @apply bg-gray-200;
 }
 </style>
 

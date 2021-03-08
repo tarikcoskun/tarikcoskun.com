@@ -8,7 +8,8 @@
         :key="tech"
         target="_blank"
         :style="tech.background"
-        class="flex flex-col items-center justify-center w-full transition-opacity duration-100 rounded-md cursor-pointer h-28 hover:opacity-75 focus:outline-none focus:opacity-75"
+        class="select-none flex flex-col items-center justify-center w-full transform duration-300 hover:-translate-y-1.5 rounded-md cursor-pointer h-28"
+        v-wave
       >
         <div
           class="w-10 h-10 mt-2 text-white fill-current"

@@ -30,7 +30,7 @@ a {
   @apply text-gray-700;
 }
 .background {
-  @apply bg-gray-200;
+  background: #f2f2f2;
 }
 </style>
 

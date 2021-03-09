@@ -7,7 +7,7 @@
         :key="project"
         :href="project.link"
         target="_blank"
-        class="select-none flex background rounded-md transform duration-300 hover:-translate-y-1.5"
+        class="select-none flex background rounded-md transform duration-300 hover:-translate-y-1.5 border-gray-200 border shadow hover:shadow-lg"
         v-wave
       >
         <div class="rounded-full" :style="project.color"></div>

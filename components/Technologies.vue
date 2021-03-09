@@ -3,12 +3,12 @@
     <h1>Technologies I Use</h1>
     <div class="grid items-center grid-cols-2 gap-4 lg:grid-cols-5">
       <a
-        :href="tech.link"
         v-for="tech in technologies"
         :key="tech"
+        :href="tech.link"
         target="_blank"
         :style="tech.background"
-        class="select-none flex flex-col items-center justify-center w-full transform duration-300 hover:-translate-y-1.5 rounded-md cursor-pointer h-28"
+        class="select-none flex flex-col items-center justify-center w-full transform duration-300 hover:-translate-y-1.5 rounded-md cursor-pointer h-28 shadow-lg hover:shadow-xl"
         v-wave
       >
         <div

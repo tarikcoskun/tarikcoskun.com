@@ -10,7 +10,7 @@
       </p>
     </div>
     <Technologies />
-    <Projects />
+    <Positions />
     <Contact />
   </section>
 </template>

@@ -1,7 +1,5 @@
 <template>
-  <div
-    class="m-4 lg:transform lg:mb-0 lg:mx-24 lg:-translate-y-1/2 lg:absolute lg:top-1/2"
-  >
+  <div>
     <Nuxt />
   </div>
 </template>
@@ -11,7 +9,7 @@ html {
   font-family: "Roboto", sans-serif;
 }
 body {
-  @apply bg-gray-100 transform duration-75;
+  @apply bg-gray-100 flex items-center m-4 lg:m-0 lg:mx-32;
   min-height: 100vh;
 }
 section {

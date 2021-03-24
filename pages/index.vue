@@ -3,13 +3,13 @@
     <div>
       <div>
         <h1>About me</h1>
-        <p class="text-justify">
+        <p class="leading-5 text-justify">
           I'm Tarık, a Front-End web developer from Turkey. I started coding in
           2018, with Node.js. Since 2019, I'm learning more and more about web
           development and creating websites with my knowledge.
         </p>
       </div>
-      <div class="grid grid-cols-4 gap-1 mt-1">
+      <div class="grid grid-cols-4 gap-1 mt-2">
         <Account
           color="#7289da"
           title="Discord"
@@ -35,7 +35,7 @@
           url="mailto:imtarikcoskun@gmail.com"
         />
       </div>
-      <div class="mt-2">
+      <div class="mt-3">
         <h1>Technologies I use</h1>
         <div class="grid grid-cols-3 gap-1">
           <Technology color="#dd4b25" title="HTML" icon="html" />
@@ -61,10 +61,11 @@
           color="#7289da"
           title="PreMiD"
           url="https://premid.app/users/474537652943847444"
-          position="Translator & Presence Developer"
+          position="Translator & Presence Dev"
           description="PreMiD is a utility that allows you to show what you're doing on the web in your Discord now playing status"
         />
         <Position
+          color="#b3c7dc"
           title="Hypixel"
           url="https://hypixel.net"
           position="Translator"

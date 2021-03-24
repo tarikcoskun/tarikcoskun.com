@@ -43,7 +43,7 @@
           <Technology color="#ec008c" title="JavaScript" icon="javascript" />
           <Technology color="#047857" title="Node.js" icon="nodejs" />
           <Technology color="#00c58e" title="Nuxt.js" icon="nuxtjs" />
-          <Technology color="#44a8b3" title="Tailwind CSS" icon="tailwindcss" />
+          <Technology color="#44a8b3" title="Tailwind" icon="tailwind" />
         </div>
       </div>
     </div>

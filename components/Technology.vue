@@ -7,7 +7,7 @@
   >
     <img
       class="hidden w-5 h-5 rounded fill-current lg:block"
-      :src="'http://localhost:3000/icons/' + icon + '.svg'"
+      :src="'http://tarikcoskun.xyz/icons/' + icon + '.svg'"
     />
     <h2 class="text-base">{{ title }}</h2>
   </div>

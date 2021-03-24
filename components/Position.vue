@@ -7,7 +7,9 @@
       <a draggable="false" :href="url" target="_blank">{{ title }}</a>
       <span class="text-lg font-normal"> — {{ position }}</span>
     </h2>
-    <p class="text-base leading-5 lg:mr-32">{{ description }}</p>
+    <p class="text-base leading-5 lg:mr-32 line-clamp-2" :title="description">
+      {{ description }}
+    </p>
   </div>
 </template>
 

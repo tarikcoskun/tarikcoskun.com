@@ -1,9 +1,7 @@
 let description =
-  "I'm Tarık, a young Front-End web developer from Turkey. I have been coding since 2018, when I started using Discord. I've always wondered how Discord bots work, so I started coding Discord bots. Since 2019, I'm creating websites using new technologies I learn."
+  "I'm Tarık, a Front-End web developer from Turkey. I started coding in 2018, with Node.js. Since 2019, I'm learning more and more about web development since 2019 and creating websites with my knowledge."
 
 export default {
-  target: 'static',
-  ssr: false,
   head: {
     title: 'Tarık Coşkun',
     meta: [

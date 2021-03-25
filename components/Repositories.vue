@@ -77,7 +77,7 @@ export default {
     const { data: repos } = await this.$axios.get(
       "https://api.github.com/users/tarikcoskun/repos"
     );
-    const filter = ["tarikcoskun", "DBM", "eggsywashere.github.io"];
+    const filter = ["tarikcoskun"];
 
     this.repos = repos
       ?.filter((repo) => repo.fork === false && !filter.includes(repo.name))

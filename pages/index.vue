@@ -3,7 +3,7 @@
     <section>
       <div class="flex w-full h-48 space-x-2">
         <img src="http://tarikcoskun.xyz/avatar.png" class="rounded-md" />
-        <div class="grid grid-rows-4 gap-1.5">
+        <div class="grid grid-rows-4 w-48 gap-1.5">
           <Account
             color="#7289da"
             icon="discord"

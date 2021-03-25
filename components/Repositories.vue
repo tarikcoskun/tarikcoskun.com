@@ -3,7 +3,8 @@
     <div v-if="$fetchState.pending" class="grid gap-2 md:grid-cols-3">
       <div
         v-for="item in 3"
-        class="p-4 bg-gray-200 border-b-4 border-gray-300 rounded-md"
+        class="p-4 bg-gray-200 border-gray-400 rounded-md"
+        style="border-bottom-width: 3px"
       >
         <div class="flex space-x-4 animate-pulse">
           <div class="flex-1 py-1 space-y-5">
@@ -32,9 +33,10 @@
 
     <div v-else-if="repos.length > 0" class="grid gap-2 md:grid-cols-3">
       <div
-        class="p-4 bg-gray-200 border-b-4 border-gray-300 rounded-md"
+        class="p-4 bg-gray-200 border-b-4 border-gray-400 rounded-md"
         v-for="repo in repos"
         :key="repo"
+        style="border-bottom-width: 3px"
       >
         <h1 class="text-lg hover:underline focus:outline-none focus:underline">
           <a

@@ -2,14 +2,14 @@
   <div
     draggable="false"
     :href="url"
-    class="flex flex-row p-1.5 px-3 text-white duration-75 transform rounded cursor-default select-none lg:p-2 lg:space-x-2 align-center hover:opacity-80 lg:h-9"
+    class="flex flex-row items-center p-2 px-3 space-x-2 text-white duration-75 transform rounded cursor-default select-none sm:p-1.5 lg:p-2 lg:space-x-2 sm:space-x-0 hover:opacity-80 lg:h-9"
     :style="{ background: color }"
   >
     <img
-      class="hidden w-5 h-5 rounded fill-current lg:block"
+      class="w-5 h-5 rounded-sm fill-current sm:hidden lg:block"
       :src="'http://tarikcoskun.xyz/icons/' + icon + '.svg'"
     />
-    <h2 class="text-base">{{ title }}</h2>
+    <h2 class="text-sm truncate" style="margin-top: 2px">{{ title }}</h2>
   </div>
 </template>
 

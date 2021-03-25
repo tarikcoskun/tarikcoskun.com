@@ -1,13 +1,16 @@
 <template>
   <div
-    class="pl-2.5 py-1 border-l-4 border-gray-300"
+    class="px-2.5 pb-1 mt-1 border-l-4 border-gray-300 bg-opacity-50"
     :style="{ 'border-left-color': color }"
   >
-    <h2 class="select-none">
+    <h2 class="truncate select-none" :title="title + ' — ' + position">
       <a draggable="false" :href="url" target="_blank">{{ title }}</a>
       <span class="text-lg font-normal"> — {{ position }}</span>
     </h2>
-    <p class="text-base leading-5 lg:mr-32 line-clamp-2" :title="description">
+    <p
+      class="text-base leading-5 line-clamp-2 md:line-clamp-1"
+      :title="description"
+    >
       {{ description }}
     </p>
   </div>

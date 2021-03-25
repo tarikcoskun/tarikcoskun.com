@@ -1,55 +1,109 @@
 <template>
-  <section class="grid gap-4 lg:grid-cols-2 lg:gap-16">
-    <div>
+  <div>
+    <section>
+      <div class="flex w-full h-48 space-x-2">
+        <img src="http://tarikcoskun.xyz/avatar.png" class="rounded-md" />
+        <div class="grid grid-rows-4 gap-1.5">
+          <Account
+            color="#7289da"
+            icon="discord"
+            url="https://discord.com/users/474537652943847444"
+          />
+          <Account
+            color="#1da1f2"
+            icon="twitter"
+            url="https://twitter.com/itstarikcoskun"
+          />
+          <Account
+            color="#374151"
+            icon="github"
+            url="https://github.com/tarikcoskun"
+          />
+          <Account
+            color="#ef4444"
+            icon="at"
+            url="mailto:imtarikcoskun@gmail.com"
+          />
+        </div>
+        <div class="flex-col justify-between hidden pl-4 -mt-1 md:flex">
+          <div>
+            <h1>About me</h1>
+            <p class="leading-5 text-justify md:line-clamp-4">
+              I'm Tarık, a Front-End developer from Turkey. I started coding in
+              2018, with Node.js. About a year later, I started learning web
+              development stuff and since then, I'm learning more and more about
+              it and creating websites using technologies below.
+            </p>
+          </div>
+          <div class="mt-2 md:mt-0">
+            <div class="grid grid-cols-4 gap-1">
+              <Technology color="#dd4b25" title="HTML" icon="html" />
+              <Technology color="#196eb3" title="CSS" icon="css" />
+              <Technology
+                color="#ec008c"
+                title="JavaScript"
+                icon="javascript"
+              />
+              <Technology color="#047857" title="Node.js" icon="nodejs" />
+              <Technology color="#00c58e" title="Nuxt.js" icon="nuxtjs" />
+              <Technology color="#44a8b3" title="Tailwind" icon="tailwind" />
+              <Technology color="#bf4080" title="Sass" icon="sass" />
+              <Technology color="#f44d27" title="Git" icon="git" />
+            </div>
+          </div>
+        </div>
+        <div class="hidden pl-4 -mt-1 lg:block">
+          <h1>Experiences</h1>
+          <Position
+            color="#d6212a"
+            title="Flowey's Time Machine"
+            url="https://floweystimemachine.github.io"
+            position="Designer"
+            description="A re-design project we made with Arda for Flowey's Time Machine for better experience"
+          />
+          <Position
+            color="#7289da"
+            title="PreMiD"
+            url="https://premid.app/users/474537652943847444"
+            position="Translator & Presence Dev"
+            description="PreMiD is a utility that allows you to show what you're doing on the web in your Discord now playing status"
+          />
+          <Position
+            color="#b3c7dc"
+            title="Hypixel"
+            url="https://hypixel.net"
+            position="Translator"
+            description="Hypixel is one of the largest and highest quality Minecraft Server Networks in the world"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- Some Mobile Stuff -->
+    <section class="mt-4 md:hidden">
       <div>
         <h1>About me</h1>
-        <p class="leading-5 text-justify">
-          I'm Tarık, a Front-End web developer from Turkey. I started coding in
-          2018, with Node.js. Since 2019, I'm learning more and more about web
-          development and creating websites with my knowledge.
+        <p class="leading-5 text-justify md:line-clamp-3">
+          I'm Tarık, a Front-End developer from Turkey. I started coding in
+          2018, with Node.js. About a year later, I started learning web
+          development stuff and since then, I'm learning more and more about it
+          and creating websites using technologies below.
         </p>
       </div>
-      <div class="grid grid-cols-4 gap-1 mt-2">
-        <Account
-          color="#7289da"
-          title="Discord"
-          icon="discord"
-          url="https://discord.com/users/474537652943847444"
-        />
-        <Account
-          color="#1da1f2"
-          title="Twitter"
-          icon="twitter"
-          url="https://twitter.com/itstarikcoskun"
-        />
-        <Account
-          color="#374151"
-          title="GitHub"
-          icon="github"
-          url="https://github.com/tarikcoskun"
-        />
-        <Account
-          color="#ef4444"
-          title="Mail"
-          icon="at"
-          url="mailto:imtarikcoskun@gmail.com"
-        />
-      </div>
-      <div class="mt-3">
-        <h1>Technologies I use</h1>
-        <div class="grid grid-cols-3 gap-1">
+      <div class="mt-2">
+        <div class="grid grid-cols-2 gap-1 sm:grid-cols-4">
           <Technology color="#dd4b25" title="HTML" icon="html" />
           <Technology color="#196eb3" title="CSS" icon="css" />
           <Technology color="#ec008c" title="JavaScript" icon="javascript" />
           <Technology color="#047857" title="Node.js" icon="nodejs" />
           <Technology color="#00c58e" title="Nuxt.js" icon="nuxtjs" />
           <Technology color="#44a8b3" title="Tailwind" icon="tailwind" />
+          <Technology color="#bf4080" title="Sass" icon="sass" />
+          <Technology color="#f44d27" title="Git" icon="git" />
         </div>
       </div>
-    </div>
-    <div>
-      <div>
-        <h1>Positions</h1>
+      <div class="mt-4">
+        <h1>Experiences</h1>
         <Position
           color="#d6212a"
           title="Flowey's Time Machine"
@@ -72,6 +126,7 @@
           description="Hypixel is one of the largest and highest quality Minecraft Server Networks in the world"
         />
       </div>
-    </div>
-  </section>
+    </section>
+    <Repositories />
+  </div>
 </template>

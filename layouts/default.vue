@@ -9,11 +9,8 @@ html {
   font-family: "Roboto", sans-serif;
 }
 body {
-  @apply bg-gray-100 flex items-center m-4 lg:m-0 lg:mx-32;
+  @apply bg-gray-100 m-4 lg:m-0 xl:mx-28 lg:mx-16 lg:flex items-center;
   min-height: 100vh;
-}
-section {
-  @apply grid gap-4 md:gap-y-12;
 }
 h1 {
   @apply mb-1 text-xl font-medium;
@@ -30,9 +27,6 @@ img {
 }
 a {
   @apply text-gray-800 hover:underline select-none;
-}
-.background {
-  background: #f2f2f2;
 }
 </style>
 

@@ -9,7 +9,7 @@ html {
   font-family: "Roboto", sans-serif;
 }
 body {
-  @apply bg-gray-100 m-4 lg:m-0 xl:mx-28 lg:mx-16 lg:flex items-center;
+  @apply bg-gray-100 m-4 md:mx-12 lg:m-0 xl:mx-28 lg:mx-16 lg:flex items-center;
   min-height: 100vh;
 }
 h1 {

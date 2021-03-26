@@ -4,31 +4,31 @@
       <div class="flex w-full h-48 space-x-2">
         <img
           src="http://tarikcoskun.xyz/avatar.png"
-          class="object-cover border-black rounded-md border-opacity-80"
+          class="object-cover border-black rounded border-opacity-80"
           style="border-bottom-width: 3px"
         />
         <div class="w-full md:w-auto grid grid-rows-4 gap-1.5">
           <Account
             color="#7289da"
-            colorDarker="#434f7a"
+            colorDarker="#5263a3"
             icon="discord"
             url="https://discord.com/users/474537652943847444"
           />
           <Account
             color="#1da1f2"
-            colorDarker="#175b85"
+            colorDarker="#147bba"
             icon="twitter"
             url="https://twitter.com/itstarikcoskun"
           />
           <Account
             color="#374151"
-            colorDarker="#161a21"
+            colorDarker="#1f252e"
             icon="github"
             url="https://github.com/tarikcoskun"
           />
           <Account
             color="#ef4444"
-            colorDarker="#9c2c2c"
+            colorDarker="#b53333"
             icon="at"
             url="mailto:imtarikcoskun@gmail.com"
           />
@@ -46,50 +46,50 @@
           <div class="mt-2 md:mt-0">
             <div class="grid grid-cols-4 gap-1">
               <Technology
-                color="#dd4b25"
-                colorDarker="#943218"
+                color="#f4470b"
+                colorDarker="#bf3a0b"
                 title="HTML"
                 icon="html"
               />
               <Technology
                 color="#196eb3"
-                colorDarker="#134670"
+                colorDarker="#125387"
                 title="CSS"
                 icon="css"
               />
               <Technology
                 color="#ec008c"
-                colorDarker="#a60765"
+                colorDarker="#b3006a"
                 title="JavaScript"
                 icon="javascript"
               />
               <Technology
                 color="#047857"
-                colorDarker="#035c42"
+                colorDarker="#03573f"
                 title="Node.js"
                 icon="nodejs"
               />
               <Technology
                 color="#00c58e"
-                colorDarker="#01855f"
+                colorDarker="#009c70"
                 title="Nuxt.js"
                 icon="nuxtjs"
               />
               <Technology
                 color="#44a8b3"
-                colorDarker="#2a7680"
+                colorDarker="#35848c"
                 title="Tailwind"
                 icon="tailwind"
               />
               <Technology
                 color="#bf4080"
-                colorDarker="#822856"
+                colorDarker="#992f65"
                 title="Sass"
                 icon="sass"
               />
               <Technology
                 color="#f44d27"
-                colorDarker="#a83419"
+                colorDarker="#bf3b1d"
                 title="Git"
                 icon="git"
               />
@@ -123,7 +123,7 @@
       </div>
     </section>
 
-    <!-- Some Mobile Stuff -->
+    <!-- Small Screen Stuff -->
     <section class="mt-4 md:hidden">
       <div>
         <h1>About me</h1>
@@ -137,50 +137,50 @@
       <div class="mt-2">
         <div class="grid grid-cols-2 gap-1 sm:grid-cols-4">
           <Technology
-            color="#dd4b25"
-            colorDarker="#943218"
+            color="#f4470b"
+            colorDarker="#bf3a0b"
             title="HTML"
             icon="html"
           />
           <Technology
             color="#196eb3"
-            colorDarker="#134670"
+            colorDarker="#125387"
             title="CSS"
             icon="css"
           />
           <Technology
             color="#ec008c"
-            colorDarker="#a60765"
+            colorDarker="#b3006a"
             title="JavaScript"
             icon="javascript"
           />
           <Technology
             color="#047857"
-            colorDarker="#035c42"
+            colorDarker="#03573f"
             title="Node.js"
             icon="nodejs"
           />
           <Technology
             color="#00c58e"
-            colorDarker="#01855f"
+            colorDarker="#009c70"
             title="Nuxt.js"
             icon="nuxtjs"
           />
           <Technology
             color="#44a8b3"
-            colorDarker="#2a7680"
+            colorDarker="#35848c"
             title="Tailwind"
             icon="tailwind"
           />
           <Technology
             color="#bf4080"
-            colorDarker="#822856"
+            colorDarker="#992f65"
             title="Sass"
             icon="sass"
           />
           <Technology
             color="#f44d27"
-            colorDarker="#a83419"
+            colorDarker="#bf3b1d"
             title="Git"
             icon="git"
           />
@@ -211,6 +211,5 @@
         />
       </div>
     </section>
-    <Repositories />
   </div>
 </template>

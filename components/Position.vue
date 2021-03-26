@@ -1,7 +1,7 @@
 <template>
   <div
-    class="px-2.5 pb-1 mt-1 border-l-4 border-gray-300 bg-opacity-50"
-    :style="{ 'border-left-color': color }"
+    class="pb-1 pl-2 mt-1 bg-opacity-50 border-l-4 border-gray-300"
+    :style="{ 'border-color': color }"
   >
     <h2 class="truncate select-none" :title="title + ' — ' + position">
       <a draggable="false" :href="url" target="_blank">{{ title }}</a>

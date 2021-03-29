@@ -8,10 +8,8 @@
     "start": "nuxt start"
   },
   "dependencies": {
-    "@nuxtjs/axios": "^5.13.1",
-    "@nuxtjs/pwa": "^3.3.0",
-    "@tailwindcss/postcss7-compat": "^2.0.3",
     "@tailwindcss/line-clamp": "^0.2.0",
+    "@tailwindcss/postcss7-compat": "^2.0.3",
     "autoprefixer": "^10.2.1",
     "nuxt": "^2.14.6",
     "postcss": "^7.0.32",
@@ -20,9 +18,12 @@
     "vue-unicons": "^2.3.0"
   },
   "devDependencies": {
-    "@nuxtjs/color-mode": "^2.0.2",
+    "@nuxtjs/pwa": "^3.3.5",
     "@nuxtjs/tailwindcss": "^3.1.0",
+    "fibers": "^5.0.0",
     "nodemon": "^1.18.9",
+    "sass": "^1.32.8",
+    "sass-loader": "^10.1.1",
     "tailwind-scrollbar": "^1.1.2"
   }
 }

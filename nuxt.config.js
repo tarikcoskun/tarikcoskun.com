@@ -1,28 +1,13 @@
-let description =
-  "I'm Tarık, a Front-End web developer from Turkey. I started coding in 2018, with Node.js. Since 2019, I'm learning more and more about web development since 2019 and creating websites with my knowledge."
+import { resolve } from "path"
 
 export default {
+  srcDir: 'src',
   head: {
     title: 'Tarık Coşkun',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { name: 'theme-color', content: '#111' },
-      {
-        name: 'og:site_name',
-        hid: 'og:site_name',
-        content: 'tarikcoskun.xyz',
-      },
-      {
-        name: 'description',
-        hid: 'description',
-        content: description,
-      },
-      {
-        name: 'og:description',
-        hid: 'og:description',
-        content: description,
-      },
+      { name: 'theme-color', content: '#313131' },
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
@@ -33,12 +18,23 @@ export default {
       },
     ],
   },
-  loading: { color: '#4a5568' },
-  css: [],
+  pwa: {
+		manifest: {
+			name: 'tarikcoskun.xyz',
+			theme_color: '#313131',
+		},
+	},
+  css: [
+    '@/assets/css/main.scss'
+  ],
   components: true,
+  tailwindcss: {
+    configPath: resolve('./tailwind.config.js'),
+    viewer: false,
+  },
   plugins: [{ src: '~/plugins/vue-unicons', mode: 'client' }],
-  buildModules: ['@nuxtjs/tailwindcss'],
-  modules: ['@nuxtjs/axios', 'v-wave/nuxt'],
+  buildModules: ['@nuxtjs/pwa', '@nuxtjs/tailwindcss'],
+  modules: ['v-wave/nuxt'],
   vWave: {
     color: 'black',
     duration: 0.2,

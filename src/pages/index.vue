@@ -3,7 +3,7 @@
     <section>
       <div class="flex w-full h-48 space-x-2">
         <img
-          src="http://tarikcoskun.xyz/avatar.png"
+          src="~/assets/icons/avatar.png"
           class="object-cover border-black rounded border-opacity-80"
           style="border-bottom-width: 3px"
         />

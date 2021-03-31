@@ -89,3 +89,5 @@ sw.*
 
 # Mac OSX
 .DS_Store
+
+Thumbs.db

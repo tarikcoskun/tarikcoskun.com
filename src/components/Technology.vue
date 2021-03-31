@@ -2,10 +2,10 @@
   <div
     draggable="false"
     :href="url"
-    class="flex flex-row items-center p-2 px-3 space-x-2 text-white duration-75 transform rounded cursor-default select-none sm:p-1.5 lg:p-2 lg:space-x-2 sm:space-x-0 hover:opacity-80 lg:h-9"
+    class="flex flex-row items-center p-2 px-3 space-x-2 text-white duration-75 transform rounded cursor-default select-none sm:p-1.5 lg:p-2 lg:space-x-2 sm:space-x-0 border-b-3 hover:opacity-80 lg:h-9"
     :style="{
       background: color,
-      'border-bottom': `3px solid ${colorDarker}`,
+      'border-color': colorDarker,
     }"
   >
     <img

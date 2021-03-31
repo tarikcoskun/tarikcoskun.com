@@ -2,7 +2,7 @@ html {
   font-family: "Roboto", sans-serif;
 }
 body {
-  @apply bg-gray-100 m-4 md:mx-12 lg:m-0 xl:mx-28 lg:mx-16 lg:flex items-center;
+  @apply bg-gray-100 m-4 md:mx-12 lg:m-0 xl:mx-32 lg:mx-12 lg:flex items-center;
   min-height: 100vh;
 }
 h1 {
@@ -12,7 +12,7 @@ h2 {
   @apply text-lg font-medium;
 }
 p {
-  @apply text-base text-gray-800 leading-6;
+  @apply text-base text-gray-800 leading-5;
 }
 svg,
 img {
@@ -20,4 +20,10 @@ img {
 }
 a {
   @apply text-gray-800 hover:underline select-none;
+}
+
+@media (min-width: 1024px) {
+  .projects-container {
+    padding-right: 21.6rem;
+  }
 }

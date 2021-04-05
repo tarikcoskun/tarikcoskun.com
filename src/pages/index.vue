@@ -2,7 +2,7 @@
   <div>
     <div
       class="absolute top-0 left-0 w-full h-3"
-      style="background: #c19cdd"
+      style="background: #4da7a6"
     ></div>
     <section>
       <div class="flex w-full h-48 space-x-2">

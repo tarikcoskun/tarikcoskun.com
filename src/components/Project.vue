@@ -2,7 +2,7 @@
   <a
     draggable="false"
     :href="url"
-    class="px-3 py-1.5 bg-gray-200 border-gray-400 rounded border-b-3 transform hover:-translate-y-1 duration-150 hover:no-underline cursor-pointer"
+    class="px-3 py-1.5 rounded transform hover:-translate-y-1 duration-150 hover:no-underline cursor-pointer bg-gray-200 border-gray-400"
     v-wave
   >
     <h2>{{ title }}</h2>

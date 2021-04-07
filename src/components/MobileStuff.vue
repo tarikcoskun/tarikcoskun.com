@@ -11,54 +11,14 @@
     </div>
     <div class="mt-2">
       <div class="grid grid-cols-2 gap-1 sm:grid-cols-4">
-        <Technology
-          color="#f4470b"
-          colorDarker="#bf3a0b"
-          title="HTML"
-          icon="html"
-        />
-        <Technology
-          color="#196eb3"
-          colorDarker="#125387"
-          title="CSS"
-          icon="css"
-        />
-        <Technology
-          color="#ec008c"
-          colorDarker="#b3006a"
-          title="JavaScript"
-          icon="javascript"
-        />
-        <Technology
-          color="#047857"
-          colorDarker="#03573f"
-          title="Node.js"
-          icon="nodejs"
-        />
-        <Technology
-          color="#00c58e"
-          colorDarker="#009c70"
-          title="Nuxt.js"
-          icon="nuxtjs"
-        />
-        <Technology
-          color="#44a8b3"
-          colorDarker="#35848c"
-          title="Tailwind"
-          icon="tailwind"
-        />
-        <Technology
-          color="#bf4080"
-          colorDarker="#992f65"
-          title="Sass"
-          icon="sass"
-        />
-        <Technology
-          color="#f44d27"
-          colorDarker="#bf3b1d"
-          title="Git"
-          icon="git"
-        />
+        <Technology color="#f4470b" title="HTML" icon="html" />
+        <Technology color="#196eb3" title="CSS" icon="css" />
+        <Technology color="#ec008c" title="JavaScript" icon="javascript" />
+        <Technology color="#047857" title="Node.js" icon="nodejs" />
+        <Technology color="#00c58e" title="Nuxt.js" icon="nuxtjs" />
+        <Technology color="#44a8b3" title="Tailwind" icon="tailwind" />
+        <Technology color="#bf4080" title="Sass" icon="sass" />
+        <Technology color="#f44d27" title="Git" icon="git" />
       </div>
     </div>
     <div class="mt-4">

@@ -1,30 +1,13 @@
 <template>
   <section>
-    <div
-      class="absolute top-0 left-0 w-full h-2"
-      style="background: #3b82f6"
-    ></div>
-    <div class="grid grid-cols-2 gap-12">
+    <TopBar color="#3b82f6" />
+    <div class="grid gap-8 md:grid-cols-2">
       <div>
         <h1>{{ project.title }}</h1>
         <p v-html="project.description"></p>
         <div class="flex mt-2 space-x-2">
-          <a
-            class="hover:no-underline flex gap-1.5 items-center justify-center px-2 py-1 text-lg bg-gray-100 rounded-md"
-            style="background: #ededed"
-            :href="project.source"
-            target="_blank"
-            v-wave
-            ><unicon name="github" /> Source Code</a
-          >
-          <a
-            class="hover:no-underline flex gap-1.5 items-center justify-center px-2 py-1 text-lg rounded-md"
-            :href="project.visit"
-            style="background: #ededed"
-            target="_blank"
-            v-wave
-            ><unicon name="link" /> Visit Project</a
-          >
+          <Button title="Source Code" icon="github" :url="project.source" />
+          <Button title="Visit Project" icon="link" :url="project.visit" />
         </div>
       </div>
       <div>

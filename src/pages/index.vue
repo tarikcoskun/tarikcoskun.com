@@ -1,9 +1,6 @@
 <template>
   <div>
-    <div
-      class="absolute top-0 left-0 w-full h-2"
-      style="background: #4da7a6"
-    ></div>
+    <TopBar color="#4da7a6" />
     <section>
       <div class="flex w-full h-48 space-x-2">
         <img src="~/assets/icons/avatar.png" class="object-cover rounded-md" />
@@ -43,11 +40,7 @@
             <div class="grid grid-cols-4 gap-1">
               <Technology color="#f4470b" title="HTML" icon="html" />
               <Technology color="#196eb3" title="CSS" icon="css" />
-              <Technology
-                color="#ec008c"
-                title="JavaScript"
-                icon="javascript"
-              />
+              <Technology color="#ec008c" title="JavaScript" icon="js" />
               <Technology color="#047857" title="Node.js" icon="nodejs" />
               <Technology color="#00c58e" title="Nuxt.js" icon="nuxtjs" />
               <Technology color="#44a8b3" title="Tailwind" icon="tailwind" />
@@ -96,7 +89,7 @@
         :key="project.id"
       />
     </section>
-    <section class="mt-4 md:mt-8">
+    <!-- <section class="mt-4 md:mt-8">
       <h1 class="text-center">Articles & Devlog</h1>
       <p class="mb-4 -mt-1 text-center">
         My articles and devlogs of the projects I'm working on
@@ -112,7 +105,7 @@
           />
         </div>
       </div>
-    </section>
+    </section> -->
   </div>
 </template>
 

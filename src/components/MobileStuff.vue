@@ -13,7 +13,7 @@
       <div class="grid grid-cols-2 gap-1 sm:grid-cols-4">
         <Technology color="#f4470b" title="HTML" icon="html" />
         <Technology color="#196eb3" title="CSS" icon="css" />
-        <Technology color="#ec008c" title="JavaScript" icon="javascript" />
+        <Technology color="#ec008c" title="JavaScript" icon="js" />
         <Technology color="#047857" title="Node.js" icon="nodejs" />
         <Technology color="#00c58e" title="Nuxt.js" icon="nuxtjs" />
         <Technology color="#44a8b3" title="Tailwind" icon="tailwind" />

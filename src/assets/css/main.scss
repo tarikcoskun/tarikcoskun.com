@@ -1,8 +1,20 @@
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-gray-200;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-gray-400;
+}
+
 html {
   font-family: "Roboto", sans-serif;
 }
 body {
-  @apply bg-gray-100 m-4 mt-6 md:mx-12 lg:m-0 xl:mx-32 lg:mx-12 lg:flex items-center min-h-screen;
+  @apply bg-gray-50 m-4 mt-8 md:mt-16 md:mx-12 lg:mx-32;
 }
 h1 {
   @apply mb-1 text-xl font-medium;
@@ -27,5 +39,26 @@ hr {
 @media (min-width: 1024px) {
   .projects-container {
     padding-right: 21.6rem;
+  }
+}
+
+.nuxt-content {
+  h1 {
+    @apply mt-4;
+  }
+  a {
+    @apply text-blue-600;
+  }
+  p {
+    @apply mb-6 text-lg text-gray-800;
+  }
+  img {
+    @apply mx-auto rounded-md;
+  }
+  code {
+    @apply bg-gray-800 rounded text-white px-1 py-px;
+  }
+  strong {
+    @apply font-medium text-black;
   }
 }

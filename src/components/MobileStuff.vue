@@ -31,7 +31,7 @@
           position="Designer"
           description="An editor tool for UNDERTALE that allows you to change everything in your save, made the re-design with Arda"
         />
-        <hr class="w-2/3 mx-auto my-1 border-gray-300" />
+        <hr />
         <Position
           color="#047857"
           url="http://zyapimstudios.com"
@@ -39,7 +39,7 @@
           position="Web Developer"
           description="A development studio based in Turkey that creates games, custom projects etc."
         />
-        <hr class="w-2/3 mx-auto my-1 border-gray-300" />
+        <hr />
         <Position
           color="#7289da"
           url="https://premid.app"

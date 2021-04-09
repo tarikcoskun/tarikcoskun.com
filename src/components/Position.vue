@@ -4,13 +4,7 @@
       class="text-gray-800 select-none line-clamp-1"
       :title="title + ' — ' + position"
     >
-      <a
-        draggable="false"
-        :href="url"
-        target="_blank"
-        class="border-gray-300"
-        >{{ title }}</a
-      >
+      <a draggable="false" :href="url" target="_blank">{{ title }}</a>
       <span class="text-lg font-normal"> — {{ position }}</span>
     </h2>
     <p class="text-justify line-clamp-2" :title="description">

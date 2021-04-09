@@ -6,10 +6,7 @@
     ></div>
     <section>
       <div class="flex w-full h-48 space-x-2">
-        <img
-          src="~/assets/icons/avatar.png"
-          class="object-cover border-black rounded-md border-opacity-80"
-        />
+        <img src="~/assets/icons/avatar.png" class="object-cover rounded-md" />
         <div class="w-full md:w-auto grid grid-rows-4 gap-1.5">
           <Account
             color="#7289da"
@@ -91,16 +88,41 @@
     </section>
     <MobileStuff />
     <section class="grid gap-2 mt-4 md:grid-cols-2 projects-container">
-      <Project
-        url="#"
-        title="Project Name"
-        description="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio modi eligendi quibusdam aliquid ipsam qui repudiandae, eum amet molestias nemo (thats really just a placeholder)"
+      <Card
+        :url="`/projects/${project.slug}`"
+        :title="project.title"
+        :description="project.description"
+        v-for="project in projects"
+        :key="project.id"
       />
-      <Project
-        onclick="alert('You are already sitting there!')"
-        title="This Website"
-        description="My personal website where you can get information about me and my stuff and such (hello there visitor)"
-      />
+    </section>
+    <section class="mt-4 md:mt-8">
+      <h1 class="text-center">Articles & Devlog</h1>
+      <p class="mb-4 -mt-1 text-center">
+        My articles and devlogs of the projects I'm working on
+      </p>
+      <div class="md:mx-24">
+        <div class="grid gap-2 md:grid-cols-2">
+          <Card
+            :url="`/articles/${article.slug}`"
+            :title="article.title"
+            :description="article.description"
+            v-for="article in articles"
+            :key="article.id"
+          />
+        </div>
+      </div>
     </section>
   </div>
 </template>
+
+<script>
+export default {
+  async asyncData({ $content, params }) {
+    return {
+      articles: await $content("articles", params.slug).limit(2).fetch(),
+      projects: await $content("projects", params.slug).limit(2).fetch(),
+    };
+  },
+};
+</script>

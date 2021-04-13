@@ -4,8 +4,9 @@
     class="flex items-center space-x-2 text-gray-800 cursor-default select-none"
   >
     <img
-      class="w-6 rounded-sm sm:hidden lg:block"
       :src="require(`~/assets/icons/${icon}.svg`)"
+      class="w-6 rounded-sm sm:hidden lg:block"
+      draggable="false"
     />
     <h2 class="text-lg truncate" style="margin-top: 2px">{{ title }}</h2>
   </div>

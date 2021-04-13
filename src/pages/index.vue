@@ -4,6 +4,7 @@
       <img
         :src="require('~/assets/icons/avatar.png')"
         class="mb-2 rounded-lg w-36"
+        draggable="false"
       />
       <h1 class="-mb-px">Tarık Coşkun</h1>
       <VueTyper

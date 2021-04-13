@@ -14,7 +14,7 @@ html {
   font-family: "Roboto", sans-serif;
 }
 body {
-  @apply bg-gray-50 m-4 mt-8 md:mt-16 md:mx-12 lg:mx-32;
+  @apply bg-gray-50 lg:m-0 m-4 mt-8 md:mt-24 lg:flex items-center md:mx-12 lg:mx-32 min-h-screen;
 }
 h1 {
   @apply mb-1 text-xl font-medium;
@@ -33,32 +33,17 @@ a {
   @apply text-gray-800 hover:underline select-none;
 }
 hr {
-  @apply w-2/3 mx-auto my-1.5 border-gray-300;
+  @apply my-px border-gray-300;
 }
 
 @media (min-width: 1024px) {
   .projects-container {
-    padding-right: 21.6rem;
+    padding-right: 21.5rem;
   }
 }
 
-.nuxt-content {
-  h1 {
-    @apply mt-4;
-  }
-  a {
-    @apply text-blue-600;
-  }
-  p {
-    @apply mb-6 text-lg text-gray-800;
-  }
-  img {
-    @apply mx-auto rounded-md;
-  }
-  code {
-    @apply bg-gray-800 rounded text-white px-1 py-px;
-  }
-  strong {
-    @apply font-medium text-black;
+.vue-typer {
+  .custom.caret {
+    background: #fafafa;
   }
 }

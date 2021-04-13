@@ -25,11 +25,11 @@
       <h1>Positions</h1>
       <div>
         <Position
-          color="#d6212a"
-          url="https://floweystimemachine.github.io"
-          title="Flowey's Time Machine"
-          position="Designer"
-          description="An editor tool for UNDERTALE that allows you to change everything in your save, made the re-design with Arda"
+          color="#111111"
+          url="https://discordtemplates.com"
+          title="Discord Templates"
+          position="Moderator"
+          description="Create your own kingdom with our diverse range of Discord templates!"
         />
         <hr />
         <Position

@@ -7,7 +7,7 @@ export default {
     meta: [
       { charset: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { name: "theme-color", content: "#4da7a6" },
+      { name: "theme-color", content: "#3b82f6" },
     ],
     link: [
       { rel: "icon", type: "image/x-icon", href: "/favicon.ico" },
@@ -22,7 +22,7 @@ export default {
   pwa: {
     manifest: {
       name: "tarikcoskun.xyz",
-      theme_color: "#4da7a6",
+      theme_color: "#3b82f6",
     },
   },
   css: ["@/assets/css/main.scss"],
@@ -31,9 +31,12 @@ export default {
     configPath: resolve("./tailwind.config.js"),
     viewer: false,
   },
-  plugins: [{ src: "~/plugins/vue-unicons", mode: "client" }],
+  plugins: [
+    { src: "~/plugins/vue-unicons", mode: "client" },
+    { src: "~/plugins/vue-typer", ssr: false },
+  ],
   buildModules: ["@nuxtjs/pwa", "@nuxtjs/tailwindcss"],
-  modules: ["@nuxt/content", "v-wave/nuxt"],
+  modules: ["v-wave/nuxt"],
   vWave: {
     color: "black",
     duration: 0.2,

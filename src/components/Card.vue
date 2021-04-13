@@ -1,16 +1,17 @@
 <template>
-  <nuxt-link
-    :to="url"
+  <a
+    :href="url"
+    target="_blank"
     draggable="false"
-    class="px-3 py-1.5 rounded-md transform hover:-translate-y-1 duration-150 hover:no-underline cursor-pointer"
-    style="background: #ededed"
+    class="px-3 py-2 duration-150 transform rounded-md cursor-pointer hover:-translate-y-1 hover:no-underline"
+    style="background: #ececec"
     v-wave
   >
     <h2>{{ title }}</h2>
-    <p class="-mt-1 line-clamp-2" :title="description">
+    <p class="line-clamp-2" :title="description">
       {{ description }}
     </p>
-  </nuxt-link>
+  </a>
 </template>
 
 <script>

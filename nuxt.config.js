@@ -7,7 +7,7 @@ export default {
     meta: [
       { charset: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { name: "theme-color", content: "#3b82f6" },
+      { name: "theme-color", content: "#374151" },
     ],
     link: [
       { rel: "icon", type: "image/x-icon", href: "/favicon.ico" },
@@ -22,7 +22,7 @@ export default {
   pwa: {
     manifest: {
       name: "tarikcoskun.xyz",
-      theme_color: "#3b82f6",
+      theme_color: "#374151",
     },
   },
   css: ["@/assets/css/main.scss"],

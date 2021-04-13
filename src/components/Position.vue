@@ -1,5 +1,5 @@
 <template>
-  <div class="pl-3 border-l-4" :style="{ 'border-color': color }">
+  <div class="pl-3 border-l-4 rounded-sm" :style="{ 'border-color': color }">
     <h2
       class="text-gray-800 select-none line-clamp-1"
       :title="`${title} — ${position}`"

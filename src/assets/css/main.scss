@@ -10,6 +10,10 @@
   @apply bg-gray-400;
 }
 
+::selection {
+  background: #accef7;
+}
+
 html {
   font-family: "Roboto", sans-serif;
 }

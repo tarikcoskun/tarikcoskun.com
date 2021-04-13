@@ -1,5 +1,5 @@
 <template>
-  <div class="flex items-center gap-x-16 gap-y-4">
+  <div class="flex flex-wrap items-center gap-x-16 gap-y-4">
     <section class="w-80">
       <img
         :src="require('~/assets/icons/avatar.png')"
@@ -38,7 +38,7 @@
     <section class="grid gap-4">
       <section>
         <h1>Current positions</h1>
-        <div class="grid grid-cols-2 mt-2 gap-x-4 gap-y-2">
+        <div class="grid mt-2 md:grid-cols-2 gap-x-4 gap-y-2">
           <Position
             color="#d6212a"
             url="https://floweystimemachine.github.io"
@@ -72,7 +72,7 @@
       <section>
         <h1>Technologies I use</h1>
         <p>Technologies I use to make my projects</p>
-        <div class="grid grid-cols-4 gap-1 mt-3">
+        <div class="grid grid-cols-2 gap-1 mt-3 md:grid-cols-4">
           <Technology color="#f4470b" title="HTML" icon="html" />
           <Technology color="#196eb3" title="CSS" icon="css" />
           <Technology color="#ec008c" title="JavaScript" icon="js" />

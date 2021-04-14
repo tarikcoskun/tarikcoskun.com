@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-wrap items-center md:flex-nowrap gap-x-16">
+  <div class="flex flex-wrap items-center md:flex-nowrap gap-x-16 gap-y-8">
     <section class="w-96">
       <img
         :src="require('~/assets/icons/avatar.png')"

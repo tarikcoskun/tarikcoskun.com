@@ -5,7 +5,7 @@
   >
     <img
       :src="require(`~/assets/icons/${icon}.svg`)"
-      class="w-6 rounded-sm sm:hidden lg:block"
+      class="w-6 rounded sm:hidden lg:block"
       draggable="false"
     />
     <h2 class="text-lg truncate" style="margin-top: 2px">{{ title }}</h2>
@@ -14,6 +14,6 @@
 
 <script>
 export default {
-  props: ["color", "icon", "title"],
+  props: ["icon", "title"],
 };
 </script>

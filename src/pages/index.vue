@@ -1,9 +1,9 @@
 <template>
-  <div class="flex flex-wrap items-center md:flex-nowrap gap-x-16 gap-y-4">
-    <section class="w-80">
+  <div class="flex flex-wrap items-center md:flex-nowrap gap-x-16">
+    <section class="w-96">
       <img
         :src="require('~/assets/icons/avatar.png')"
-        class="mb-2 rounded-lg w-36"
+        class="w-32 mb-2 rounded-lg"
         draggable="false"
       />
       <h1 class="-mb-px">Tarık Coşkun</h1>
@@ -13,7 +13,6 @@
           'Learning game development',
           'Loves Nuxt.js',
         ]"
-        caret-animation="smooth"
       />
       <div class="grid gap-1 mt-3">
         <Account
@@ -63,7 +62,7 @@
           />
           <!-- <Position
             color="#111111"
-            url="https://premid.app"
+            url="https://temp.gg"
             title="Discord Templates"
             position="Moderator"
             description="Create your own kingdom with our diverse range of Discord templates!"
@@ -71,17 +70,20 @@
         </div>
       </section>
       <section>
-        <h1>Technologies I use</h1>
-        <p>Technologies I use to make my projects</p>
-        <div class="grid grid-cols-2 gap-1 mt-3 md:grid-cols-4">
-          <Technology color="#f4470b" title="HTML" icon="html" />
-          <Technology color="#196eb3" title="CSS" icon="css" />
-          <Technology color="#ec008c" title="JavaScript" icon="js" />
-          <Technology color="#047857" title="Node.js" icon="nodejs" />
-          <Technology color="#00c58e" title="Nuxt.js" icon="nuxtjs" />
-          <Technology color="#44a8b3" title="Tailwind" icon="tailwind" />
-          <Technology color="#bf4080" title="Sass" icon="sass" />
-          <Technology color="#f44d27" title="Git" icon="git" />
+        <div>
+          <h1>Technologies I use</h1>
+          <p>Technologies I use to make my projects</p>
+          <div class="grid grid-cols-2 gap-1 mt-3 md:grid-cols-4">
+            <Technology title="HTML" icon="html" />
+            <Technology title="CSS" icon="css" />
+            <Technology title="JavaScript" icon="js" />
+            <!-- <Technology title="TypeScript" icon="ts" /> -->
+            <Technology title="Node.js" icon="nodejs" />
+            <Technology title="Nuxt.js" icon="nuxtjs" />
+            <Technology title="Tailwind" icon="tailwind" />
+            <Technology title="Sass" icon="sass" />
+            <Technology title="Git" icon="git" />
+          </div>
         </div>
       </section>
     </section>

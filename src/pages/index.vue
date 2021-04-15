@@ -12,6 +12,7 @@
           'Front-end web developer',
           'Learning game development',
           'Loves Nuxt.js',
+          'Minecraft: yarnpkg',
         ]"
       />
       <div class="grid gap-1 mt-3">

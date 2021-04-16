@@ -7,7 +7,43 @@
           class="w-32 mb-3 rounded-lg"
           draggable="false"
         />
-        <ProfileCard />
+        <div>
+          <h1 class="-mb-px">Tarık Coşkun</h1>
+          <VueTyper
+            class="hidden md:block"
+            :text="[
+              '15 y.o, Turkish student',
+              'Front-end developer',
+              'Little bit of back-end',
+              'Loves Nuxt.js and Tailwind',
+              'Gaming since 2057',
+              'Doesn\'t listen to music 7/24',
+              'UNDERTALE lover',
+              'Unreal game engine is real',
+            ]"
+            :type-delay="40"
+          />
+          <div class="grid gap-1 mt-2">
+            <Account
+              color="#7289da"
+              title="Discord"
+              icon="discord"
+              url="https://discord.com/users/474537652943847444"
+            />
+            <Account
+              color="#1da1f2"
+              title="Twitter"
+              icon="twitter"
+              url="https://twitter.com/itstarikcoskun"
+            />
+            <Account
+              color="#374151"
+              title="GitHub"
+              icon="github"
+              url="https://github.com/tarikcoskun"
+            />
+          </div>
+        </div>
       </div>
     </section>
     <section class="grid gap-4">

@@ -1,12 +1,9 @@
 <template>
-  <div
-    class="flex flex-row pr-2 space-x-3 border-gray-400 rounded-sm"
-    :class="logo ? 'border-l-0' : 'border-l-4 pl-3'"
-  >
+  <div class="flex flex-row pr-2 space-x-3">
     <img
       v-if="logo"
       :src="logo"
-      class="w-16 h-16 rounded-lg"
+      class="w-16 h-16 rounded-md"
       draggable="false"
     />
     <div>

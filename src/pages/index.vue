@@ -1,45 +1,19 @@
 <template>
   <div class="flex flex-wrap items-center md:flex-nowrap gap-x-16 gap-y-4">
     <section class="w-96">
-      <img
-        :src="require('~/assets/icons/avatar.png')"
-        class="w-32 mb-2 rounded-lg"
-        draggable="false"
-      />
-      <h1 class="-mb-px">Tarık Coşkun</h1>
-      <VueTyper
-        :text="[
-          'Front-end web developer',
-          'Learning game development',
-          'Loves Nuxt.js',
-          'Minecraft: yarnpkg',
-        ]"
-      />
-      <div class="grid gap-1 mt-3">
-        <Account
-          color="#7289da"
-          title="Discord"
-          icon="discord"
-          url="https://discord.com/users/474537652943847444"
+      <div class="flex flex-row space-x-3 md:flex-col md:space-x-0">
+        <img
+          :src="require('~/assets/icons/avatar.png')"
+          class="w-32 mb-3 rounded-lg"
+          draggable="false"
         />
-        <Account
-          color="#1da1f2"
-          title="Twitter"
-          icon="twitter"
-          url="https://twitter.com/itstarikcoskun"
-        />
-        <Account
-          color="#374151"
-          title="GitHub"
-          icon="github"
-          url="https://github.com/tarikcoskun"
-        />
+        <ProfileCard />
       </div>
     </section>
     <section class="grid gap-4">
       <section>
         <h1>Current positions</h1>
-        <div class="grid gap-3 mt-2 md:grid-cols-2">
+        <div class="grid gap-3 md:grid-cols-2">
           <Position
             :logo="require('~/assets/icons/dcst.png')"
             url="https://temp.gg"

@@ -20,6 +20,7 @@
               'Doesn\'t listen to music 7/24',
               'UNDERTALE lover',
               'Unreal game engine is real',
+              'Subscribe to AhmetEsad',
             ]"
             :type-delay="40"
           />

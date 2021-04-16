@@ -43,7 +43,7 @@
           <Position
             :logo="require('~/assets/icons/dcst.png')"
             url="https://temp.gg"
-            title="Discord Templates"
+            title="Templates"
             position="Trial Moderator"
             description="Create your own kingdom with our diverse range of Discord templates!"
           />
@@ -57,7 +57,7 @@
           <Position
             :logo="require('~/assets/icons/flowey.png')"
             url="https://floweystimemachine.github.io"
-            title="Flowey's Time Machine"
+            title="Flowey's Time M..."
             position="Designer"
             description="An editor tool for UNDERTALE that allows you to change everything in your save"
           />
@@ -65,7 +65,7 @@
             :logo="require('~/assets/icons/zyapim.png')"
             url="http://zyapimstudios.com"
             title="Zyapim Studios"
-            position="Web Developer"
+            position="Web Dev"
             description="A development studio based in Turkey that creates games, custom projects etc."
           />
         </div>

@@ -1,6 +1,6 @@
 <template>
   <div
-    class="flex flex-row space-x-3 border-gray-400 rounded-sm"
+    class="flex flex-row pr-2 space-x-3 border-gray-400 rounded-sm"
     :class="logo ? 'border-l-0' : 'border-l-4 pl-3'"
   >
     <img
@@ -11,10 +11,10 @@
     />
     <div>
       <h2
-        class="-mt-1 text-gray-800 select-none line-clamp-1"
+        class="flex flex-row justify-between -mt-1 text-gray-800 select-none line-clamp-1"
         :title="`${title} — ${position}`"
       >
-        <a draggable="false" :href="url" target="_blank">{{ title }}</a>
+        <a draggable="false" :href="url" target="_blank">{{ title }} </a>
         <span class="text-lg font-normal"> — {{ position }}</span>
       </h2>
       <p class="line-clamp-2" :title="description">

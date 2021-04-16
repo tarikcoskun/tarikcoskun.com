@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-wrap items-center md:flex-nowrap gap-x-16 gap-y-8">
+  <div class="flex flex-wrap items-center md:flex-nowrap gap-x-16 gap-y-4">
     <section class="w-96">
       <img
         :src="require('~/assets/icons/avatar.png')"
@@ -39,35 +39,35 @@
     <section class="grid gap-4">
       <section>
         <h1>Current positions</h1>
-        <div class="grid mt-2 md:grid-cols-2 gap-x-4 gap-y-2">
+        <div class="grid gap-3 mt-2 md:grid-cols-2">
           <Position
-            color="#d6212a"
+            :logo="require('~/assets/icons/dcst.png')"
+            url="https://temp.gg"
+            title="Discord Templates"
+            position="Trial Moderator"
+            description="Create your own kingdom with our diverse range of Discord templates!"
+          />
+          <Position
+            :logo="require('~/assets/icons/premid.png')"
+            url="https://premid.app"
+            title="PreMiD"
+            position="Translator"
+            description="A utility that allows you to show what you're doing on the web in your Discord status"
+          />
+          <Position
+            :logo="require('~/assets/icons/flowey.png')"
             url="https://floweystimemachine.github.io"
             title="Flowey's Time Machine"
             position="Designer"
             description="An editor tool for UNDERTALE that allows you to change everything in your save"
           />
           <Position
-            color="#047857"
+            :logo="require('~/assets/icons/zyapim.png')"
             url="http://zyapimstudios.com"
             title="Zyapim Studios"
             position="Web Developer"
             description="A development studio based in Turkey that creates games, custom projects etc."
           />
-          <Position
-            color="#7289da"
-            url="https://premid.app"
-            title="PreMiD"
-            position="Translator"
-            description="A utility that allows you to show what you're doing on the web in your Discord status"
-          />
-          <!-- <Position
-            color="#111111"
-            url="https://temp.gg"
-            title="Discord Templates"
-            position="Moderator"
-            description="Create your own kingdom with our diverse range of Discord templates!"
-          /> -->
         </div>
       </section>
       <section>

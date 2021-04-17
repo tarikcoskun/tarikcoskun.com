@@ -7,23 +7,9 @@
           class="w-32 mb-3 rounded-lg"
           draggable="false"
         />
-        <div>
+        <div class="-mt-px">
           <h1 class="-mb-px">Tarık Coşkun</h1>
-          <VueTyper
-            class="hidden md:block"
-            :text="[
-              '15 y.o, Turkish student',
-              'Front-end developer',
-              'Little bit of back-end',
-              'Loves Nuxt.js and Tailwind',
-              'Gaming since 2057',
-              'Doesn\'t listen to music 7/24',
-              'UNDERTALE lover',
-              'Unreal game engine is real',
-              'Subscribe to AhmetEsad',
-            ]"
-            :type-delay="40"
-          />
+          <Typer class="hidden md:block" />
           <div class="grid gap-1 mt-2">
             <Account
               color="#7289da"
@@ -46,6 +32,7 @@
           </div>
         </div>
       </div>
+      <Typer class="md:hidden" />
     </section>
     <section class="grid gap-4">
       <section>

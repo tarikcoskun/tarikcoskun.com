@@ -3,7 +3,7 @@
     <img
       v-if="logo"
       :src="logo"
-      class="w-16 h-16 rounded-md"
+      class="w-16 h-16 rounded-lg"
       draggable="false"
     />
     <div>

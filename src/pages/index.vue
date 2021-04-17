@@ -55,7 +55,7 @@
           <Position
             :logo="require('~/assets/icons/flowey.png')"
             url="https://floweystimemachine.github.io"
-            title="Flowey's Time M..."
+            title="UNDERTALE Editor"
             position="Designer"
             description="An editor tool for UNDERTALE that allows you to change everything in your save"
           />
@@ -71,7 +71,7 @@
       <section>
         <div>
           <h1>Technologies I use</h1>
-          <p>Technologies I use to make my projects</p>
+          <p class="-mt-1">Technologies I use to make my projects</p>
           <div class="grid grid-cols-2 gap-1 mt-3 md:grid-cols-4">
             <Technology title="HTML" icon="html" />
             <Technology title="CSS" icon="css" />

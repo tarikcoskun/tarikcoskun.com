@@ -55,7 +55,7 @@
           <Position
             :logo="require('~/assets/icons/flowey.png')"
             url="https://floweystimemachine.github.io"
-            title="UNDERTALE Editor"
+            title="Undertale Editor"
             position="Designer"
             description="An editor tool for UNDERTALE that allows you to change everything in your save"
           />

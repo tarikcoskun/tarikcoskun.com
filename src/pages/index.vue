@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-wrap items-center md:flex-nowrap gap-x-16 gap-y-4">
+  <div class="flex flex-wrap items-center md:flex-nowrap gap-x-16">
     <section class="w-96">
       <div class="flex flex-row space-x-3 md:flex-col md:space-x-0">
         <img
@@ -10,7 +10,7 @@
         <div class="-mt-px">
           <h1 class="-mb-px">Tarık Coşkun</h1>
           <Typer class="hidden md:block" />
-          <div class="grid gap-1 mt-2">
+          <div class="flex flex-col gap-1 mt-2">
             <Account
               color="#7289da"
               title="Discord"

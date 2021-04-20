@@ -28,7 +28,7 @@ export default {
   css: ["@/assets/css/main.scss"],
   components: true,
   tailwindcss: {
-    configPath: resolve("./tailwindcss.config.js"),
+    configPath: resolve("./tailwind.config.js"),
     viewer: false,
   },
   plugins: [

@@ -8,11 +8,11 @@
     />
     <div>
       <h2
-        class="flex flex-row justify-between -mt-1 text-gray-800 select-none line-clamp-1"
+        class="-mt-1 text-gray-800 select-none line-clamp-1 2xl:text-xl"
         :title="`${title} — ${position}`"
       >
         <a draggable="false" :href="url" target="_blank">{{ title }} </a>
-        <span class="text-lg font-normal"> — {{ position }}</span>
+        <span class="font-normal"> — {{ position }}</span>
       </h2>
       <p class="line-clamp-2" :title="description">
         {{ description }}

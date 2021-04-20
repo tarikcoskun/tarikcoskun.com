@@ -5,10 +5,10 @@
   >
     <img
       :src="require(`~/assets/icons/${icon}.svg`)"
-      class="w-6 rounded sm:hidden lg:block"
+      class="w-6 rounded 2xl:w-8 sm:hidden lg:block"
       draggable="false"
     />
-    <h2 class="text-lg truncate" style="margin-top: 2px">{{ title }}</h2>
+    <h2 class="truncate">{{ title }}</h2>
   </div>
 </template>
 

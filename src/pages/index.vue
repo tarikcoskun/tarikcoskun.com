@@ -1,10 +1,10 @@
 <template>
-  <div class="flex flex-wrap items-center md:flex-nowrap gap-x-16">
+  <div class="flex flex-wrap items-center md:flex-nowrap gap-x-16 2xl:gap-x-64">
     <section class="w-96">
       <div class="flex flex-row space-x-3 md:flex-col md:space-x-0">
         <img
           :src="require('~/assets/icons/avatar.png')"
-          class="w-32 mb-3 rounded-lg"
+          class="w-32 mb-3 rounded-lg 2xl:w-40"
           draggable="false"
         />
         <div class="-mt-px">

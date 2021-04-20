@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-wrap items-center md:flex-nowrap gap-x-16 2xl:gap-x-64">
+  <div class="flex flex-wrap items-center md:flex-nowrap gap-x-16 2xl:gap-x-20">
     <section class="w-96">
       <div class="flex flex-row space-x-3 md:flex-col md:space-x-0">
         <img

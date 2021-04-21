@@ -17,18 +17,23 @@
 html {
   font-family: "Roboto", sans-serif;
 }
+
 body {
   @apply bg-gray-50 lg:flex lg:mx-32 2xl:mx-48 lg:m-0 md:mx-12 md:mt-24 m-4 mt-6 items-center min-h-screen justify-center;
 }
+
 h1 {
   @apply mb-1 text-xl 2xl:text-2xl font-medium;
 }
+
 h2 {
   @apply text-lg 2xl:text-xl font-medium;
 }
+
 p {
   @apply text-gray-800 text-base 2xl:text-lg leading-5 2xl:leading-5;
 }
+
 span {
   @apply text-lg 2xl:text-xl;
 }
@@ -36,15 +41,56 @@ svg,
 img {
   @apply select-none;
 }
+
 a {
   @apply text-gray-800 hover:underline select-none;
 }
+
 hr {
   @apply text-base 2xl:text-lg my-px border-gray-300;
 }
 
+.dark-mode {
+  ::selection {
+    background: #1b2330;
+  }
+  body {
+    background: #090c10;
+  }
+  h1,
+  h2 {
+    @apply text-white;
+  }
+  p,
+  a,
+  span {
+    @apply text-gray-200;
+  }
+  .vue-typer {
+    .custom {
+      &.char {
+        @apply text-gray-200;
+        &.selected {
+          background: #1b2330;
+        }
+      }
+      &.caret {
+        background: #0d0d0d;
+      }
+    }
+  }
+}
+
 .vue-typer {
-  .custom.caret {
-    background: #fafafa;
+  .custom {
+    &.char {
+      @apply text-gray-800;
+      &.selected {
+        background: #accef7;
+      }
+    }
+    &.caret {
+      background: #fafafa;
+    }
   }
 }

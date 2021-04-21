@@ -35,7 +35,7 @@ export default {
     { src: "~/plugins/vue-unicons", mode: "client" },
     { src: "~/plugins/vue-typer", ssr: false },
   ],
-  buildModules: ["@nuxtjs/pwa", "@nuxtjs/tailwindcss"],
+  buildModules: ["@nuxtjs/pwa", "@nuxtjs/tailwindcss", "@nuxtjs/color-mode"],
   modules: ["v-wave/nuxt"],
   vWave: {
     color: "black",

@@ -1,12 +1,7 @@
 <template>
-  <div class="flex flex-row pr-2 space-x-3">
-    <img
-      v-if="logo"
-      :src="logo"
-      class="w-16 h-16 rounded-lg"
-      draggable="false"
-    />
-    <div>
+  <div class="grid w-full grid-cols-5 pr-2 space-x-3">
+    <Skeleton :image-url="logo" class="rounded-lg" />
+    <div class="col-span-4">
       <h2
         class="-mt-1 text-gray-800 select-none line-clamp-1 2xl:text-xl"
         :title="`${title} — ${position}`"

@@ -6,7 +6,17 @@ import {
   uniGithub,
   uniAt,
   uniLink,
+  uniBrightness,
+  uniMoon,
 } from "vue-unicons/src/icons";
 
-Unicon.add([uniDiscord, uniTwitter, uniGithub, uniAt, uniLink]);
+Unicon.add([
+  uniDiscord,
+  uniTwitter,
+  uniGithub,
+  uniAt,
+  uniLink,
+  uniBrightness,
+  uniMoon,
+]);
 Vue.use(Unicon);

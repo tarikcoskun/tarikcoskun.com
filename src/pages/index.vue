@@ -1,11 +1,12 @@
 <template>
   <div class="flex flex-wrap items-center md:flex-nowrap gap-x-16 2xl:gap-x-20">
-    <section class="w-96">
+    <section style="width: 28rem">
       <div class="flex flex-row space-x-3 md:flex-col md:space-x-0">
         <img
           :src="require('~/assets/icons/avatar.png')"
           class="w-32 mb-3 rounded-lg 2xl:w-40"
           draggable="false"
+          alt="Avatar"
         />
         <div class="-mt-px">
           <h1 class="-mb-px">Tarık Coşkun</h1>
@@ -24,7 +25,7 @@
               url="https://twitter.com/itstarikcoskun"
             />
             <Account
-              color="#374151"
+              :color="$colorMode.value === 'dark' ? '#f0f6fc' : '#374151'"
               title="GitHub"
               icon="github"
               url="https://github.com/tarikcoskun"
@@ -58,13 +59,6 @@
             title="Undertale Editor"
             position="Designer"
             description="An editor tool for UNDERTALE that allows you to change everything in your save"
-          />
-          <Position
-            :logo="require('~/assets/icons/zyapim.png')"
-            url="http://zyapimstudios.com"
-            title="Zyapim Studios"
-            position="Web Dev"
-            description="A development studio based in Turkey that creates games, custom projects etc."
           />
         </div>
       </section>

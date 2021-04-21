@@ -16,6 +16,7 @@
     "vue-unicons": "^2.3.0"
   },
   "devDependencies": {
+    "@nuxtjs/color-mode": "^2.0.5",
     "@nuxtjs/pwa": "^3.3.5",
     "@nuxtjs/tailwindcss": "^3.1.0",
     "@tailwindcss/jit": "^0.1.18",

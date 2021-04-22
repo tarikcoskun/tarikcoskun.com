@@ -52,10 +52,10 @@ hr {
 
 .dark-mode {
   ::selection {
-    background: #1b2330;
+    background: #1c1c21;
   }
   body {
-    background: #090c10;
+    background: #111114;
   }
   h1,
   h2 {
@@ -71,11 +71,11 @@ hr {
       &.char {
         @apply text-gray-200;
         &.selected {
-          background: #1b2330;
+          background: #1c1c21;
         }
       }
       &.caret {
-        background: #0d0d0d;
+        background: #101013;
       }
     }
   }

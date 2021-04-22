@@ -6,7 +6,7 @@
     }"
     :style="{
       backgroundImage: itemLoaded === true ? `url('${imageUrl}')` : '',
-      backgroundColor: '#0d1117',
+      backgroundColor: '#18181c',
     }"
   >
     <img

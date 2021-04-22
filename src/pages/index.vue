@@ -1,7 +1,7 @@
 <template>
   <div class="flex flex-wrap items-center md:flex-nowrap gap-x-16 2xl:gap-x-20">
-    <section style="width: 28rem">
-      <div class="flex flex-row space-x-3 md:flex-col md:space-x-0">
+    <section style="width: 30rem">
+      <div class="flex flex-row space-x-3 rounded-lg md:flex-col md:space-x-0">
         <img
           :src="require('~/assets/icons/avatar.png')"
           class="w-32 mb-3 rounded-lg 2xl:w-40"

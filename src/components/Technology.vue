@@ -1,20 +1,36 @@
 <template>
-  <div
-    draggable="false"
-    class="flex items-center space-x-2 text-gray-800 cursor-default select-none"
-  >
-    <img
-      :src="require(`~/assets/icons/${icon}.svg`)"
-      class="w-6 rounded 2xl:w-8 sm:hidden lg:block"
-      draggable="false"
-      alt="Logo"
-    />
-    <h2 class="truncate">{{ title }}</h2>
+  <div class="rounded-lg cursor-default card">
+    <div class="flex items-center p-2 space-x-3">
+      <div
+        class="p-2 rounded-lg"
+        :class="{ 'animate-pulse': itemLoaded === false }"
+        :style="{ background: color }"
+      >
+        <Skeleton
+          :image-url="require(`~/assets/img/${title.toLowerCase()}.svg`)"
+          type="tech"
+          :color="color"
+        />
+        <img
+          :src="require(`~/assets/img/${title.toLowerCase()}.svg`)"
+          class="hidden"
+          @load="itemLoaded = true"
+        />
+      </div>
+      <h2 class="line-clamp-1">
+        {{ title }}
+      </h2>
+    </div>
   </div>
 </template>
 
 <script>
 export default {
-  props: ["icon", "title"],
+  props: ["title", "url", "role", "color", "description", "color"],
+  data() {
+    return {
+      itemLoaded: false,
+    };
+  },
 };
 </script>

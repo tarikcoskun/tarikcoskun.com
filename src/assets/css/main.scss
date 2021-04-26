@@ -1,96 +1,87 @@
-::-webkit-scrollbar {
-  width: 10px;
-}
-
-::-webkit-scrollbar-track {
-  @apply bg-gray-200;
-}
-
-::-webkit-scrollbar-thumb {
-  @apply bg-gray-400;
-}
-
-::selection {
-  background: #accef7;
-}
-
 html {
+  --background: #fafafa;
+  --gray: #f3f3f4;
+  --title-color: #000;
+  --title-secondary: #27272a;
+  --text-color: #3f3f46;
+  --link-color: #5353c9;
+  --border-color: #e8e8eb;
   font-family: "Roboto", sans-serif;
 }
 
+.dark-mode {
+  --background: #1e2024;
+  --gray: #30343b;
+  --title-color: #fff;
+  --title-secondary: #e4e4e7;
+  --text-color: #d4d4d8;
+  --border-color: #474d57;
+}
+
+::-webkit-scrollbar {
+  @apply w-3;
+  &-track {
+    background: var(--background);
+  }
+  &-thumb {
+    background: var(--gray);
+  }
+}
+
+::selection {
+  background: var(--gray);
+}
+
 body {
-  @apply bg-gray-50 lg:flex lg:mx-32 2xl:mx-48 lg:m-0 md:mx-12 md:mt-24 m-4 mt-6 items-center min-h-screen justify-center;
+  background: var(--background);
+  @apply mx-4 my-8 lg:mx-40 xl:mx-64 lg:my-16;
 }
 
 h1 {
-  @apply mb-1 text-xl 2xl:text-2xl font-medium;
+  color: var(--title-color);
+  @apply mb-1 text-2xl font-medium;
 }
 
 h2 {
-  @apply text-lg 2xl:text-xl font-medium;
+  color: var(--title-secondary);
+  @apply -mb-px text-lg font-medium;
 }
 
-p {
-  @apply text-gray-800 text-base 2xl:text-lg leading-5 2xl:leading-5;
+p,
+a {
+  color: var(--text-color);
+  @apply text-base leading-6;
 }
 
-span {
-  @apply text-lg 2xl:text-xl;
+a {
+  color: var(--link-color);
 }
+
 svg,
 img {
   @apply select-none;
 }
 
-a {
-  @apply text-gray-800 hover:underline select-none;
-}
-
 hr {
-  @apply text-base 2xl:text-lg my-px border-gray-300;
+  border-color: var(--border-color);
 }
 
-.dark-mode {
-  ::selection {
-    background: #1c1c21;
-  }
-  body {
-    background: #111114;
-  }
-  h1,
-  h2 {
-    @apply text-white;
-  }
-  p,
-  a,
-  span {
-    @apply text-gray-200;
-  }
-  .vue-typer {
-    .custom {
-      &.char {
-        @apply text-gray-200;
-        &.selected {
-          background: #1c1c21;
-        }
-      }
-      &.caret {
-        background: #101013;
-      }
-    }
-  }
+.card {
+  background: var(--gray);
+  @apply grid w-full duration-300 ease-out transform hover:scale-105;
 }
 
 .vue-typer {
   .custom {
     &.char {
-      @apply text-gray-800;
+      color: var(--text-color);
+      @apply text-lg;
       &.selected {
-        background: #accef7;
+        background: var(--gray);
       }
     }
     &.caret {
-      background: #fafafa;
+      background: var(--background);
     }
   }
 }

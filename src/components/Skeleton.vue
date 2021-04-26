@@ -1,27 +1,23 @@
 <template>
   <div
-    class="bg-center bg-no-repeat bg-contain focus:outline-none"
+    class="bg-no-repeat"
     :class="{
       'animate-pulse': itemLoaded === false,
+      'w-6 h-6 bg-contain bg-center': type === 'tech',
+      'w-16 h-16 bg-cover bg-left': type !== 'tech',
     }"
     :style="{
       backgroundImage: itemLoaded === true ? `url('${imageUrl}')` : '',
-      backgroundColor: '#18181c',
+      backgroundColor: color ? color : '#111',
     }"
   >
-    <img
-      :src="imageUrl"
-      class="invisible w-16 h-16"
-      draggable="false"
-      alt="Logo"
-      @load="itemLoaded = true"
-    />
+    <img :src="imageUrl" class="hidden" @load="itemLoaded = true" />
   </div>
 </template>
 
 <script>
 export default {
-  props: ["image-url"],
+  props: ["image-url", "type", "color"],
   data() {
     return {
       itemLoaded: false,

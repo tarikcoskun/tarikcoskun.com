@@ -1,84 +1,97 @@
 <template>
-  <div class="flex flex-wrap items-center md:flex-nowrap gap-x-16 2xl:gap-x-20">
-    <section style="width: 30rem">
-      <div class="flex flex-row space-x-3 rounded-lg md:flex-col md:space-x-0">
-        <img
-          :src="require('~/assets/icons/avatar.png')"
-          class="w-32 mb-3 rounded-lg 2xl:w-40"
-          draggable="false"
-          alt="Avatar"
-        />
-        <div class="-mt-px">
-          <h1 class="-mb-px">Tarık Coşkun</h1>
-          <Typer class="hidden md:block" />
-          <div class="flex flex-col gap-1 mt-2">
-            <Account
-              color="#7289da"
-              title="Discord"
-              icon="discord"
-              url="https://discord.com/users/474537652943847444"
-            />
-            <Account
-              color="#1da1f2"
-              title="Twitter"
-              icon="twitter"
-              url="https://twitter.com/itstarikcoskun"
-            />
-            <Account
-              :color="$colorMode.value === 'dark' ? '#f0f6fc' : '#374151'"
-              title="GitHub"
-              icon="github"
-              url="https://github.com/tarikcoskun"
-            />
-          </div>
+  <div class="grid gap-8">
+    <section class="flex flex-col items-center justify-center space-y-3">
+      <img
+        :src="require('~/assets/img/avatar.png')"
+        class="rounded-full w-44"
+        draggable="false"
+        alt="Avatar"
+      />
+      <div class="text-center">
+        <h1 class="-mb-px">Tarık Coşkun</h1>
+        <Typer />
+        <div class="flex items-center justify-center mt-2 space-x-2">
+          <Account
+            icon="discord"
+            url="https://discord.com/users/474537652943847444"
+          />
+          <Account icon="twitter" url="https://twitter.com/itstarikcoskun" />
+          <Account
+            icon="github"
+            url="https://discord.com/users/474537652943847444"
+          />
         </div>
       </div>
-      <Typer class="md:hidden" />
     </section>
-    <section class="grid gap-4">
-      <section>
-        <h1>Current positions</h1>
-        <div class="grid gap-3 md:grid-cols-2">
-          <Position
-            :logo="require('~/assets/icons/dcst.png')"
-            url="https://temp.gg"
-            title="Templates"
-            position="Trial Moderator"
-            description="Create your own kingdom with our diverse range of Discord templates!"
-          />
-          <Position
-            :logo="require('~/assets/icons/premid.png')"
-            url="https://premid.app"
-            title="PreMiD"
-            position="Translator"
-            description="A utility that allows you to show what you're doing on the web in your Discord status"
-          />
-          <Position
-            :logo="require('~/assets/icons/flowey.png')"
-            url="https://floweystimemachine.github.io"
-            title="Undertale Editor"
-            position="Designer"
-            description="An editor tool for UNDERTALE that allows you to change everything in your save"
-          />
-        </div>
-      </section>
-      <section>
-        <div>
-          <h1>Technologies I use</h1>
-          <p class="-mt-1">Technologies I use to make my projects</p>
-          <div class="grid grid-cols-2 gap-1 mt-3 md:grid-cols-4">
-            <Technology title="HTML" icon="html" />
-            <Technology title="CSS" icon="css" />
-            <Technology title="JavaScript" icon="js" />
-            <!-- <Technology title="TypeScript" icon="ts" /> -->
-            <Technology title="Node.js" icon="nodejs" />
-            <Technology title="Nuxt.js" icon="nuxtjs" />
-            <Technology title="Tailwind" icon="tailwind" />
-            <Technology title="Sass" icon="sass" />
-            <Technology title="Git" icon="git" />
-          </div>
-        </div>
-      </section>
+    <section>
+      <h1>About me</h1>
+      <p class="text-lg">
+        Hello there, visitor! I'm Tarık, a front-end developer from Turkey. I'm
+        currently working at Discord Templates as a Moderator and also
+        translating many projects (you can find them from my
+        <a
+          class="text-lg"
+          href="https://crowdin.com/profile/tarikcoskun"
+          draggable="false"
+          >Crowdin profile</a
+        >). Aside coding, I love playing games like Minecraft, Terraria,
+        Half-Life and Undertale.
+      </p>
+    </section>
+    <section>
+      <h1>Current positions</h1>
+      <div class="grid gap-3 sm:grid-cols-3">
+        <Position
+          url="https://temp.gg"
+          title="Templates"
+          role="Moderator"
+          description="A service for Discord that allows you to share server templates and use them easily!"
+        />
+        <Position
+          url="https://premid.app"
+          title="PreMiD"
+          role="Translator"
+          description="A utility that allows you to show what you're doing on the web in your Discord status"
+        />
+        <Position
+          url="https://floweystimemachine.github.io"
+          title="Undertale Editor"
+          role="Designer"
+          description="An editor tool for Undertale that allows you to change everything in your save easily!"
+        />
+      </div>
+    </section>
+    <section>
+      <h1>Also contributed to</h1>
+      <div class="grid gap-3 sm:grid-cols-3 md:grid-cols-3">
+        <Contribution
+          url="https://dogehouse.tv"
+          title="DogeHouse"
+          role="Translator"
+          color="#efe7dc"
+        />
+        <Contribution
+          url="https://dogehouse.tv"
+          title="Will You Snail?"
+          role="Translator"
+          color="#c42278"
+        />
+      </div>
+    </section>
+    <section>
+      <h1>Technologies I use</h1>
+      <div
+        class="grid grid-cols-2 gap-1.5 sm:grid-cols-3 md:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6"
+      >
+        <Technology title="HTML" color="#f4470b" />
+        <Technology title="CSS" color="#196eb3" />
+        <Technology title="JavaScript" color="#e4006e" />
+        <Technology title="Node.js" color="#047857" />
+        <Technology title="Nuxt.js" color="#00c58e" />
+        <Technology title="Tailwind" color="#44a8b3" />
+        <Technology title="Sass" color="#bf4080" />
+        <Technology title="Git" color="#f44d27" />
+      </div>
     </section>
   </div>
 </template>

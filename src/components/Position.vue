@@ -1,5 +1,11 @@
 <template>
-  <a :href="url" target="_blank" class="card rounded-xl" draggable="false">
+  <a
+    :href="url"
+    target="_blank"
+    class="card rounded-xl"
+    draggable="false"
+    v-wave
+  >
     <div class="flex items-center p-4 space-x-3">
       <Skeleton
         :image-url="require(`~/assets/img/${title.split(' ')[0]}.png`)"

@@ -38,9 +38,8 @@ export default {
   buildModules: ["@nuxtjs/pwa", "@nuxtjs/tailwindcss", "@nuxtjs/color-mode"],
   modules: ["v-wave/nuxt"],
   vWave: {
-    color: "black",
     duration: 0.2,
-    finalOpacity: 0.2,
+    finalOpacity: 0.1,
   },
   build: {},
 };

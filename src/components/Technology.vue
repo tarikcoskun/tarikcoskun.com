@@ -2,7 +2,7 @@
   <div class="rounded-lg cursor-default card">
     <div class="flex items-center p-2 space-x-3">
       <div
-        class="p-2 rounded-lg"
+        class="p-1.5 rounded-lg"
         :class="{ 'animate-pulse': itemLoaded === false }"
         :style="{ background: color }"
       >

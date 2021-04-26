@@ -1,9 +1,9 @@
 <template>
-  <div class="grid gap-8">
+  <div class="grid gap-12">
     <section class="flex flex-col items-center justify-center space-y-3">
       <img
         :src="require('~/assets/img/avatar.png')"
-        class="rounded-full w-44"
+        class="w-48 rounded-full"
         draggable="false"
         alt="Avatar"
       />
@@ -28,13 +28,13 @@
       <p class="text-lg">
         Hello there, visitor! I'm Tarık, a front-end developer from Turkey. I'm
         currently working at Discord Templates as a Moderator and also
-        translating many projects (you can find them from my
+        translating many projects which you can find from my
         <a
           class="text-lg"
           href="https://crowdin.com/profile/tarikcoskun"
           draggable="false"
           >Crowdin profile</a
-        >). Aside coding, I love playing games like Minecraft, Terraria,
+        >. Aside coding, I love playing games like Minecraft, Terraria,
         Half-Life and Undertale.
       </p>
     </section>

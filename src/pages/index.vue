@@ -71,7 +71,7 @@
           color="#efe7dc"
         />
         <Contribution
-          url="https://dogehouse.tv"
+          url="https://store.steampowered.com/app/1115050/Will_You_Snail"
           title="Will You Snail?"
           role="Translator"
           color="#c42278"

@@ -12,7 +12,7 @@
   >
     <div
       class="flex items-center space-x-3"
-      :class="{ 'p-2': type === 'tech', 'p-4': type !== 'tech' }"
+      :class="{ 'p-1.5': type === 'tech', 'p-4': type !== 'tech' }"
     >
       <div
         v-if="type === 'tech'"
@@ -24,6 +24,7 @@
       <Skeleton
         v-else
         :image-url="require(`~/assets/img/${title.split(' ')[0]}.png`)"
+        type="logo"
         class="rounded-xl"
         :style="{ backgroundColor: color ? color : '#111' }"
       />

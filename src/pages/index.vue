@@ -1,24 +1,20 @@
 <template>
-  <div class="grid gap-12">
+  <div class="grid gap-16">
     <section class="flex flex-col items-center justify-center space-y-3">
-      <img
-        :src="require('~/assets/img/avatar.png')"
-        class="w-48 rounded-full"
-        draggable="false"
-        alt="Avatar"
+      <Skeleton
+        :image-url="require('~/assets/img/avatar.png')"
+        type="avatar"
+        color="var(--gray)"
       />
       <div class="text-center">
         <h1 class="-mb-px">Tarık Coşkun</h1>
         <Typer />
         <div class="flex items-center justify-center mt-2 space-x-2">
           <Account
-            icon="discord"
-            url="https://discord.com/users/474537652943847444"
-          />
-          <Account icon="twitter" url="https://twitter.com/itstarikcoskun" />
-          <Account
-            icon="github"
-            url="https://discord.com/users/474537652943847444"
+            v-for="acc in accounts"
+            key="acc"
+            :url="acc.url"
+            :icon="acc.icon"
           />
         </div>
       </div>
@@ -41,57 +37,54 @@
     <section>
       <h1>Current positions</h1>
       <div class="grid gap-3 sm:grid-cols-3">
-        <Position
-          url="https://temp.gg"
-          title="Templates"
-          role="Moderator"
-          description="A service for Discord that allows you to share server templates and use them easily!"
-        />
-        <Position
-          url="https://premid.app"
-          title="PreMiD"
-          role="Translator"
-          description="A utility that allows you to show what you're doing on the web in your Discord status"
-        />
-        <Position
-          url="https://floweystimemachine.github.io"
-          title="Undertale Editor"
-          role="Designer"
-          description="An editor tool for Undertale that allows you to change everything in your save easily!"
+        <Card
+          v-for="pos in positions"
+          key="pos"
+          :url="pos.url"
+          :title="pos.title"
+          :color="pos.color"
+          :role="pos.role"
+          :description="pos.description"
         />
       </div>
     </section>
     <section>
       <h1>Also contributed to</h1>
       <div class="grid gap-3 sm:grid-cols-3 md:grid-cols-3">
-        <Contribution
-          url="https://dogehouse.tv"
-          title="DogeHouse"
-          role="Translator"
-          color="#efe7dc"
-        />
-        <Contribution
-          url="https://store.steampowered.com/app/1115050/Will_You_Snail"
-          title="Will You Snail?"
-          role="Translator"
-          color="#c42278"
+        <Card
+          v-for="contrib in contributions"
+          key="contrib"
+          :url="contrib.url"
+          :title="contrib.title"
+          :color="contrib.color"
+          :role="contrib.role"
         />
       </div>
     </section>
     <section>
       <h1>Technologies I use</h1>
-      <div
-        class="grid grid-cols-2 gap-2 sm:grid-cols-3 md:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6"
-      >
-        <Technology title="HTML" color="#f4470b" />
-        <Technology title="CSS" color="#196eb3" />
-        <Technology title="JavaScript" color="#e4006e" />
-        <Technology title="Node.js" color="#047857" />
-        <Technology title="Nuxt.js" color="#00c58e" />
-        <Technology title="Tailwind" color="#44a8b3" />
-        <Technology title="Sass" color="#bf4080" />
-        <Technology title="Git" color="#f44d27" />
+      <div class="grid grid-cols-2 gap-2 md:grid-cols-4 xl:grid-cols-5">
+        <Card
+          v-for="tech in technologies"
+          key="tech"
+          :title="tech.title"
+          :color="tech.color"
+          type="tech"
+        />
       </div>
     </section>
   </div>
 </template>
+
+<script>
+export default {
+  data() {
+    return {
+      accounts: require("~/assets/data/accounts.json"),
+      positions: require("~/assets/data/positions.json"),
+      contributions: require("~/assets/data/contributions.json"),
+      technologies: require("~/assets/data/technologies.json"),
+    };
+  },
+};
+</script>

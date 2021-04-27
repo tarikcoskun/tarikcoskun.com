@@ -1,6 +1,6 @@
 <template>
   <div
-    class="absolute p-2 duration-75 rounded-full opacity-50 cursor-pointer right-4 top-4 hover:opacity-80"
+    class="fixed p-2 duration-75 rounded-full opacity-50 cursor-pointer right-4 top-4 hover:opacity-80"
     style="background: var(--gray)"
     @click="
       $colorMode.value === 'dark'

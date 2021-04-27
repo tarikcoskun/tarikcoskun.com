@@ -1,11 +1,10 @@
 html {
   --background: #fafafa;
-  --gray: #f3f3f4;
+  --gray: #eeeeee;
   --title-color: #000;
   --title-secondary: #27272a;
   --text-color: #3f3f46;
-  --link-color: #5353c9;
-  --border-color: #e8e8eb;
+  --link-color: #5365c9;
   font-family: "Roboto", sans-serif;
 }
 
@@ -15,7 +14,6 @@ html {
   --title-color: #fff;
   --title-secondary: #e4e4e7;
   --text-color: #d4d4d8;
-  --border-color: #393f47;
 }
 
 ::-webkit-scrollbar {
@@ -60,10 +58,6 @@ a {
 svg,
 img {
   @apply select-none;
-}
-
-hr {
-  border-color: var(--border-color);
 }
 
 .card {

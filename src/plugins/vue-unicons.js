@@ -4,9 +4,10 @@ import {
   uniDiscord,
   uniTwitter,
   uniGithub,
+  uniAt,
   uniBrightness,
   uniMoon,
 } from "vue-unicons/src/icons";
 
-Unicon.add([uniDiscord, uniTwitter, uniGithub, uniBrightness, uniMoon]);
+Unicon.add([uniDiscord, uniTwitter, uniGithub, uniAt, uniBrightness, uniMoon]);
 Vue.use(Unicon);

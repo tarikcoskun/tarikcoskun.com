@@ -8,13 +8,14 @@
       />
       <div class="text-center">
         <h1 class="-mb-px">Tarık Coşkun</h1>
-        <Typer />
+        <Typer class="" />
         <div class="flex items-center justify-center mt-2 space-x-2">
           <Account
             v-for="acc in accounts"
-            key="acc"
+            v-bind:key="acc"
             :url="acc.url"
             :icon="acc.icon"
+            class="account"
           />
         </div>
       </div>
@@ -39,7 +40,7 @@
       <div class="grid gap-3 sm:grid-cols-3">
         <Card
           v-for="pos in positions"
-          key="pos"
+          v-bind:key="pos"
           :url="pos.url"
           :title="pos.title"
           :color="pos.color"
@@ -53,7 +54,7 @@
       <div class="grid gap-3 sm:grid-cols-3 md:grid-cols-3">
         <Card
           v-for="contrib in contributions"
-          key="contrib"
+          v-bind:key="contrib"
           :url="contrib.url"
           :title="contrib.title"
           :color="contrib.color"
@@ -66,7 +67,7 @@
       <div class="grid grid-cols-2 gap-2 md:grid-cols-4 xl:grid-cols-5">
         <Card
           v-for="tech in technologies"
-          key="tech"
+          v-bind:key="tech"
           :title="tech.title"
           :color="tech.color"
           type="tech"

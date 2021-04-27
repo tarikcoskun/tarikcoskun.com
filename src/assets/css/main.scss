@@ -4,7 +4,7 @@ html {
   --title-color: #000;
   --title-secondary: #27272a;
   --text-color: #3f3f46;
-  --link-color: #5365c9;
+  --link-color: #1445a1;
   font-family: "Roboto", sans-serif;
 }
 
@@ -14,6 +14,7 @@ html {
   --title-color: #fff;
   --title-secondary: #e4e4e7;
   --text-color: #d4d4d8;
+  --link-color: #5379e0;
 }
 
 ::-webkit-scrollbar {
@@ -51,8 +52,14 @@ a {
   @apply text-base leading-6;
 }
 
-a {
+a:not(.card, .account) {
   color: var(--link-color);
+  border-bottom-color: var(--link-color);
+  @apply transform duration-75;
+  &:hover {
+    border-bottom: 2px solid;
+    background: rgba(110, 165, 247, 0.2);
+  }
 }
 
 svg,
@@ -61,15 +68,20 @@ img {
 }
 
 .card {
+  color: var(--link-color);
   background: var(--gray);
-  @apply grid w-full duration-300 ease-out transform hover:scale-105;
+  @apply grid w-full duration-300 ease-out transform hover:shadow-md;
+  &:hover {
+    --tw-scale-x: 1.025;
+    --tw-scale-y: 1.025;
+  }
 }
 
 .vue-typer {
   .custom {
+    @apply text-lg;
     &.char {
       color: var(--text-color);
-      @apply text-lg;
       &.selected {
         background: var(--gray);
       }

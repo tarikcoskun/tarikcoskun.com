@@ -36,7 +36,7 @@ export default {
     { src: "~/plugins/vue-typer", ssr: false },
   ],
   buildModules: ["@nuxtjs/pwa", "@nuxtjs/tailwindcss", "@nuxtjs/color-mode"],
-  modules: ["v-wave/nuxt"],
+  modules: ["v-wave/nuxt", "@nuxtjs/svg"],
   vWave: {
     duration: 0.2,
     finalOpacity: 0.1,

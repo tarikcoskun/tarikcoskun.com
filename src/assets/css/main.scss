@@ -1,6 +1,7 @@
 html {
   --background: #fafafa;
   --gray: #eeeeee;
+  --gray: #dddddd;
   --title-color: #000;
   --title-secondary: #27272a;
   --text-color: #3f3f46;
@@ -47,7 +48,8 @@ h2 {
 }
 
 p,
-a {
+a,
+.icon {
   color: var(--text-color);
   @apply text-base leading-6;
 }

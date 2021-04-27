@@ -12,7 +12,11 @@
       backgroundColor: color,
     }"
   >
-    <img :src="imageUrl" class="hidden" @load="itemLoaded = true" />
+    <img
+      :src="imageUrl"
+      :class="{ hidden: type !== 'tech' }"
+      @load="itemLoaded = true"
+    />
   </div>
 </template>
 

@@ -16,14 +16,11 @@
     >
       <div
         v-if="type === 'tech'"
-        class="p-1.5 rounded-lg"
+        class="p-1.5 mx-1.5 rounded-lg"
         :class="{ 'animate-pulse': itemLoaded === false }"
         :style="{ background: color }"
       >
-        <Skeleton
-          :image-url="require(`~/assets/img/${title.toLowerCase()}.svg`)"
-          type="tech"
-        />
+        <!-- <img :src="require(`~/assets/img/${title.toLowerCase()}.svg?inline`)" /> -->
       </div>
       <Skeleton
         v-else

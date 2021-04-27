@@ -1,6 +1,8 @@
 html {
   --background: #fafafa;
   --gray: #eeeeee;
+  --scrollbar: #a1a1aa;
+  --scrollbar-hover: #71717a;
   --title-color: #000;
   --title-secondary: #27272a;
   --text-color: #3f3f46;
@@ -11,6 +13,8 @@ html {
 .dark-mode {
   --background: #1e2024;
   --gray: #30343b;
+  --scrollbar: #616169;
+  --scrollbar-hover: #80808d;
   --title-color: #fff;
   --title-secondary: #e4e4e7;
   --text-color: #d4d4d8;
@@ -18,12 +22,16 @@ html {
 }
 
 ::-webkit-scrollbar {
-  @apply w-3;
+  @apply w-2;
   &-track {
-    background: var(--background);
+    background: var(--gray);
   }
   &-thumb {
-    background: var(--gray);
+    background: var(--scrollbar);
+    @apply rounded-lg;
+    &:hover {
+      background: var(--scrollbar-hover);
+    }
   }
 }
 

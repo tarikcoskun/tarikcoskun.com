@@ -1,6 +1,6 @@
 <template>
   <div
-    class="fixed flex items-center justify-center w-10 h-10 duration-75 rounded-full opacity-50 cursor-pointer right-4 top-4 hover:opacity-80"
+    class="fixed z-10 flex items-center justify-center w-10 h-10 duration-75 rounded-full opacity-50 cursor-pointer right-4 top-4 hover:opacity-80"
     style="background: var(--gray)"
     @click="
       $colorMode.value === 'dark'

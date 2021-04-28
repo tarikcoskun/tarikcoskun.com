@@ -4,27 +4,28 @@
     target="_blank"
     class="card"
     :class="{
-      'cursor-default rounded-lg': type === 'tech',
-      'rounded-xl': type !== 'tech',
+      'cursor-default rounded-lg': !role && !description,
+      'rounded-xl': role,
     }"
     draggable="false"
     v-wave
   >
     <div
       class="flex items-center space-x-3"
-      :class="{ 'p-1.5': type === 'tech', 'p-4': type !== 'tech' }"
+      :class="{
+        'p-1.5': !role,
+        'p-3': role && !description,
+        'p-4': description,
+      }"
     >
       <div
-        v-if="type === 'tech'"
-        class="p-1.5 mx-1.5 rounded-lg"
+        v-if="!role"
+        class="p-1.5 mx-1.5 rounded-full"
         :style="{ background: color }"
-      >
-        <!-- <img :src="require(`~/assets/img/${title.toLowerCase()}.svg?inline`)" /> -->
-      </div>
+      ></div>
       <Skeleton
         v-else
-        :image-url="require(`~/assets/img/${title.split(' ')[0]}.png`)"
-        type="logo"
+        :img="`/${title.split(' ')[0]}.png`"
         class="rounded-xl"
         :style="{ backgroundColor: color ? color : '#111' }"
       />
@@ -42,6 +43,6 @@
 
 <script>
 export default {
-  props: ["url", "title", "role", "description", "color", "type"],
+  props: ["url", "title", "role", "description", "color"],
 };
 </script>

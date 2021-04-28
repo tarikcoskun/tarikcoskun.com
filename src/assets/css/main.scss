@@ -1,6 +1,6 @@
 html {
   --background: #fafafa;
-  --gray: #f0f0f0;
+  --gray: #f3f3f3;
   --scrollbar: #9d9da3;
   --scrollbar-hover: #74747c;
   --title-color: #000;
@@ -79,11 +79,7 @@ img {
 .card {
   color: var(--link-color);
   background: var(--gray);
-  @apply grid w-full duration-300 ease-out transform hover:shadow-md;
-  &:hover {
-    --tw-scale-x: 1.025;
-    --tw-scale-y: 1.025;
-  }
+  @apply grid w-full duration-[350ms] ease-out transform hover:scale-105;
 }
 
 .vue-typer {

@@ -3,7 +3,7 @@
     :href="url"
     target="_blank"
     draggable="false"
-    class="flex items-center space-x-2 duration-500 ease-out transform hover:-translate-y-1"
+    class="flex items-center space-x-2 duration-[350ms] ease-out transform hover:translate-y-[-3px]"
   >
     <unicon :name="icon" fill="currentColor" width="36" height="36" />
   </a>

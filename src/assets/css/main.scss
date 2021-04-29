@@ -1,8 +1,10 @@
-html {
+:root {
   --background: #fafafa;
   --gray: #f3f3f3;
-  --scrollbar: #9d9da3;
-  --scrollbar-hover: #74747c;
+  --gray-secondary: #6b7280;
+  --another-gray: #afb7c5;
+  --scrollbar: #6b7280;
+  --scrollbar-hover: #4b5563;
   --title-color: #000;
   --title-secondary: #27272a;
   --text-color: #3f3f46;
@@ -13,6 +15,8 @@ html {
 .dark-mode {
   --background: #1e2024;
   --gray: #30343b;
+  --gray-secondary: #d1d5db;
+  --another-gray: #494c53;
   --scrollbar: #616169;
   --scrollbar-hover: #80808d;
   --title-color: #fff;
@@ -56,6 +60,7 @@ h2 {
 
 p,
 a,
+span,
 .icon {
   color: var(--text-color);
   @apply text-base leading-6;
@@ -77,9 +82,12 @@ img {
 }
 
 .card {
-  color: var(--link-color);
   background: var(--gray);
-  @apply grid w-full duration-[350ms] ease-out transform hover:scale-105;
+  @apply grid w-full;
+}
+
+.journey:nth-child(2n + 1) {
+  @apply flex-row-reverse;
 }
 
 .vue-typer {

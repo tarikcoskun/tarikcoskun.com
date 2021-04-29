@@ -4,7 +4,7 @@
       <Skeleton img="/icon.png" type="avatar" color="var(--gray)" />
       <div class="text-center">
         <h1 class="-mb-px">Tarık Coşkun</h1>
-        <Typer class="" />
+        <Typer />
         <div class="flex items-center justify-center mt-2 space-x-2">
           <Account
             url="https://discord.com/users/474537652943847444"
@@ -97,6 +97,46 @@
         <Card title="Tailwind" color="#44a8b3" />
         <Card title="Sass" color="#bf4080" />
         <Card title="Git" color="#f44d27" />
+      </div>
+    </section>
+    <section>
+      <h1 class="mb-8 text-center">Journey</h1>
+      <div class="flex flex-col grid-cols-9 p-2 mx-auto md:grid">
+        <Journey
+          date="August 2018"
+          title="I discover Discord"
+          description="I saw many YouTube channels with a Discord server so I decided to have a look at Discord"
+        />
+        <Journey
+          date="October 2018"
+          title="I create my first ever Discord bot"
+          description="I was amazed by how Discord bots worked and I wanted make my own one"
+          position="right"
+        />
+        <Journey
+          date="March 2019"
+          title="I start learning web development"
+          description="I wanted to make a website for my Discord bot so, I started learning web development"
+        />
+        <Journey
+          date="April 2019"
+          title="I discover CSS frameworks"
+          position="right"
+        />
+        <Journey
+          date="June 2019"
+          title="I make my own website"
+          description="I made a personal website using Express, Handlebars, Bootstrap and basic stuff"
+        />
+        <Journey
+          date="September 2020"
+          title="I start learning Nuxt"
+          position="right"
+        />
+        <Journey
+          date="December 2020"
+          title="I recreate my website using Nuxt & Tailwind"
+        />
       </div>
     </section>
   </div>

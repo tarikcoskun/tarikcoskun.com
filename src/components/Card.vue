@@ -5,7 +5,7 @@
     class="card"
     :class="{
       'cursor-default rounded-lg': !role && !description,
-      'rounded-xl': role,
+      'rounded-xl duration-200 ease-out transform hover:scale-[1.025]': role,
     }"
     draggable="false"
     v-wave

@@ -1,17 +1,9 @@
-const colors = require("tailwindcss/colors");
-
 module.exports = {
   mode: "jit",
-  darkMode: "media",
+  darkMode: "class",
   future: {},
   purge: [],
-  theme: {
-    extend: {
-      colors: {
-        gray: colors.gray,
-      },
-    },
-  },
+  theme: {},
   variants: {},
   plugins: [require("@tailwindcss/line-clamp")],
 };

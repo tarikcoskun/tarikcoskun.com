@@ -2,7 +2,7 @@
   <a
     :href="url"
     target="_blank"
-    class="card"
+    class="grid w-full bg-gray-300 dark:bg-gray-700"
     :class="{
       'cursor-default rounded-lg': !role && !description,
       'rounded-xl duration-200 ease-out transform hover:scale-[1.025]': role,

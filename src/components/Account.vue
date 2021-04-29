@@ -3,7 +3,7 @@
     :href="url"
     target="_blank"
     draggable="false"
-    class="flex items-center space-x-2 duration-[350ms] ease-out transform hover:translate-y-[-3px]"
+    class="flex items-center space-x-2 duration-[350ms] ease-out transform hover:translate-y-[-2.5px]"
   >
     <unicon :name="icon" fill="currentColor" width="36" height="36" />
   </a>
@@ -11,6 +11,6 @@
 
 <script>
 export default {
-  props: ["color", "icon", "url"],
+  props: ["icon", "url"],
 };
 </script>

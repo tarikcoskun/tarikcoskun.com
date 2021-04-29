@@ -5,7 +5,7 @@
       'animate-pulse': itemLoaded === false,
       'w-6 h-6 bg-contain bg-center': color,
       'w-16 h-16 bg-cover bg-left': !color,
-      'w-48 h-48 bg-cover rounded-full': type === 'avatar',
+      'w-44 h-44 bg-cover rounded-full': type === 'avatar',
     }"
     :style="{
       backgroundImage: itemLoaded === true ? `url('${img}')` : '',

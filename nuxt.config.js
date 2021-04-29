@@ -48,6 +48,9 @@ export default {
     duration: 0.2,
     finalOpacity: 0.1,
   },
+  colorMode: {
+    classSuffix: "",
+  },
   build: {
     postcss: {
       plugins: {

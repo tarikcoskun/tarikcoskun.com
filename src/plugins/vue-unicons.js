@@ -4,10 +4,17 @@ import {
   uniDiscord,
   uniTwitter,
   uniGithub,
-  uniAt,
   uniBrightness,
   uniMoon,
 } from "vue-unicons/dist/icons";
+import { uniCrowdin } from "./custom-icons";
 
-Unicon.add([uniDiscord, uniTwitter, uniGithub, uniAt, uniBrightness, uniMoon]);
+Unicon.add([
+  uniDiscord,
+  uniTwitter,
+  uniGithub,
+  uniBrightness,
+  uniMoon,
+  uniCrowdin,
+]);
 Vue.use(Unicon);

@@ -6,15 +6,7 @@
         <p class="text-lg leading-6" xyz="fade down delay-1 duration-8">
           Hello there, visitor! I'm Tarık, a front-end developer from Turkey.
           I'm currently working at Discord Templates as a Moderator and also
-          translating many projects which you can find from my
-          <a
-            class="text-lg bg-gray-300 dark:bg-gray-700 dark:hover:border-gray-100 hover:border-b-2 hover:border-gray-700"
-            href="https://crowdin.com/profile/tarikcoskun"
-            target="_blank"
-            rel="noreferrer"
-            draggable="false"
-            >Crowdin profile</a
-          >.
+          translating many projects.
         </p>
       </XyzTransition>
       <div
@@ -27,6 +19,7 @@
           :url="account.url"
           :icon="account.icon"
         />
+        </XyzTransition>
       </div>
     </div>
   </Section>
@@ -50,8 +43,8 @@ export default {
           icon: "github",
         },
         {
-          url: "mailto:imtarikcoskun@gmail.com",
-          icon: "at",
+          url: "https://crowdin.com/profile/tarikcoskun",
+          icon: "crowdin",
         },
       ],
     };

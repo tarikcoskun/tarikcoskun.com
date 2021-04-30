@@ -7,7 +7,12 @@
       draggable="false"
       class="flex items-center p-1 space-x-2 rounded-full hover:bg-gray-300 dark:hover:bg-gray-700"
     >
-      <unicon :name="icon" fill="currentColor" width="32" height="32" />
+      <unicon
+        :name="icon"
+        fill="currentColor"
+        :width="icon === 'crowdin' ? 26 : 32"
+        :height="icon === 'crowdin' ? 26 : 32"
+      />
     </a>
   </XyzTransition>
 </template>

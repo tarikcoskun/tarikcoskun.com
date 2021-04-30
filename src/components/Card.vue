@@ -24,6 +24,7 @@
         <p v-if="role" v-html="role"></p>
       </div>
     </div>
+    <hr v-if="description" class="mb-4 border-gray-400 dark:border-gray-600" />
     <div class="p-4 pt-0" v-if="description">
       <h2>Description</h2>
       <p class="mt-1" v-html="description"></p>

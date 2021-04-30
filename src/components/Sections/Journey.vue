@@ -4,7 +4,7 @@
       <div
         v-for="(event, index) in events"
         :key="index"
-        class="flex md:contents"
+        class="flex cursor-default md:contents"
         :class="{ 'flex-row-reverse': index % 2 === 0 }"
       >
         <div

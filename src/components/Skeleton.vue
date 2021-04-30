@@ -5,18 +5,14 @@
       'animate-pulse': itemLoaded === false,
     }"
     :style="{
-      backgroundImage: itemLoaded === true ? `url('${img}.webp')` : '',
+      backgroundImage: itemLoaded === true ? `url('${img}')` : '',
     }"
   >
-    <picture>
-      <source type="image/webp" :srcset="`${img}.webp`" />
-      <source type="image/png" :srcset="`${img}.png`" />
-      <img
-        :src="`${img}.png`"
-        class="invisible w-16 h-16 bg-left bg-cover"
-        @load="itemLoaded = true"
-      />
-    </picture>
+    <img
+      :src="img"
+      class="invisible w-16 h-16 bg-left bg-cover"
+      @load="itemLoaded = true"
+    />
   </div>
 </template>
 

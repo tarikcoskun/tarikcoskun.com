@@ -24,7 +24,11 @@
         class="p-1.5 mx-1.5 rounded-full"
         :style="{ background: color }"
       ></div>
-      <Skeleton v-else :img="`/${title.split(' ')[0]}`" class="rounded-xl" />
+      <Skeleton
+        v-else
+        :img="`/${title.split(' ')[0]}.webp`"
+        class="rounded-xl"
+      />
       <div>
         <h2 class="line-clamp-1" v-html="title"></h2>
         <p v-if="role" v-html="role"></p>

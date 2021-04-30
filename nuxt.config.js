@@ -2,6 +2,7 @@ import { resolve } from "path";
 
 export default {
   srcDir: "src",
+  target: "static",
   head: {
     title: "Tarık Coşkun",
     meta: [

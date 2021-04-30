@@ -1,26 +1,18 @@
 <template>
   <Section>
-    <XyzTransition :appear-visible="{ threshold: 0.5 }">
-      <h1 xyz="fade down duration-8 delay-5">Experiences</h1>
-    </XyzTransition>
+    <Title title="Experiences" />
     <div
       class="grid gap-3 sm:grid-cols-3 xyz-nested"
-      xyz="fade down stagger-6 delay-5 duration-15"
+      xyz="fade down stagger-3 delay-3 duration-10"
     >
-      <XyzTransition
-        :appear-visible="{ threshold: 0.5 }"
-        :style="`--xyz-index: ${i};`"
+      <Card
         v-for="(e, i) in positions"
-        :key="i"
-      >
-        <Card
-          :url="e.url"
-          :title="e.title"
-          :role="e.role"
-          :color="e.color"
-          :description="e.description"
-        />
-      </XyzTransition>
+        :url="e.url"
+        :title="e.title"
+        :role="e.role"
+        :color="e.color"
+        :description="e.description"
+      />
     </div>
   </Section>
 </template>

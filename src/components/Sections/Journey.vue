@@ -14,26 +14,22 @@
           <div class="flex items-center justify-center w-6 h-full">
             <div
               class="w-1 h-full"
-              :class="[
-                i === 0 ? 'rounded-t-full bg-gradient-to-b' : '',
-                i === events.length - 1
-                  ? 'rounded-b-full bg-gradient-to-t'
-                  : '',
-                i === 0 || i === events.length - 1
-                  ? 'from-gray-200 via-gray-400 to-gray-400 dark:from-gray-800 dark:via-gray-600 dark:to-gray-600'
-                  : 'bg-gray-400 dark:bg-gray-600',
-              ]"
+              :class="{
+                'rounded-t-full bg-gradient-to-b': i === 0,
+                'rounded-b-full bg-gradient-to-t': i === events.length - 1,
+                'from-gray-200 via-gray-400 to-gray-400 dark:from-gray-800 dark:via-gray-600 dark:to-gray-600':
+                  i === 0 || i === events.length - 1,
+                'bg-gray-400 dark:bg-gray-600':
+                  i !== 0 || i !== events.length - 1,
+              }"
             ></div>
           </div>
           <div
             class="absolute w-6 h-6 -mt-3 bg-gray-600 border-4 border-gray-200 rounded-full top-1/2 dark:bg-gray-300 dark:border-gray-800"
           ></div>
         </div>
-        <XyzTransition
-          :appear-visible="{ threshold: 0.5 }"
-          :style="`--xyz-index: ${i};`"
-        >
-          <XyzConflict
+        <XyzTransition :appear-visible="{ threshold: 0.5 }">
+          <div
             xyz="fade down-1 stagger-4 duration-8"
             class="relative p-3 my-6 transition-transform transform bg-gray-300 rounded-lg dark:bg-gray-700"
             :class="
@@ -43,12 +39,12 @@
             "
           >
             <h2 v-html="e.title"></h2>
-            <p v-if="e.description !== ''" v-html="e.description"></p>
+            <p v-if="e.description" v-html="e.description"></p>
             <span
               class="absolute text-gray-500 top-[-1.6rem] left-0 whitespace-nowrap dark:text-gray-400"
               v-html="e.date"
             ></span>
-          </XyzConflict>
+          </div>
         </XyzTransition>
         <div
           v-if="i % 2 === 0"
@@ -57,15 +53,14 @@
           <div class="flex items-center justify-center w-6 h-full">
             <div
               class="w-1 h-full bg-gray-400 dark:bg-gray-600"
-              :class="[
-                i === 0 ? 'rounded-t-full bg-gradient-to-b' : '',
-                i === events.length - 1
-                  ? 'rounded-b-full bg-gradient-to-t'
-                  : '',
-                i === 0 || i === events.length - 1
-                  ? 'from-gray-200 via-gray-400 to-gray-400 dark:from-gray-800 dark:via-gray-600 dark:to-gray-600'
-                  : 'bg-gray-400 dark:bg-gray-600',
-              ]"
+              :class="{
+                'rounded-t-full bg-gradient-to-b': i === 0,
+                'rounded-b-full bg-gradient-to-t': i === events.length - 1,
+                'from-gray-200 via-gray-400 to-gray-400 dark:from-gray-800 dark:via-gray-600 dark:to-gray-600':
+                  i === 0 || i === events.length - 1,
+                'bg-gray-400 dark:bg-gray-600':
+                  i !== 0 || i !== events.length - 1,
+              }"
             ></div>
           </div>
           <div

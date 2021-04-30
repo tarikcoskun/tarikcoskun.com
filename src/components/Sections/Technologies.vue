@@ -1,20 +1,11 @@
 <template>
   <Section>
-    <XyzTransition :appear-visible="{ threshold: 0.5 }">
-      <h1 xyz="fade down duration-8">Technologies I use</h1>
-    </XyzTransition>
+    <Title title="Technologies I use" />
     <div
       class="grid grid-cols-2 gap-2 md:grid-cols-4 xl:grid-cols-5 xyz-nested"
       xyz="fade down stagger-2 duration-8"
     >
-      <XyzTransition
-        :appear-visible="{ threshold: 0.5 }"
-        :style="`--xyz-index: ${i};`"
-        v-for="(e, i) in technologies"
-        :key="i"
-      >
-        <Card :title="e.title" :color="e.color" />
-      </XyzTransition>
+      <Card v-for="(e, i) in technologies" :title="e.title" :color="e.color" />
     </div>
   </Section>
 </template>

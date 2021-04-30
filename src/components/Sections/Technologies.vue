@@ -1,11 +1,16 @@
 <template>
   <Section>
-    <Title title="Technologies I use" />
+    <h1>Technologies I use</h1>
     <div
       class="grid grid-cols-2 gap-2 md:grid-cols-4 xl:grid-cols-5 xyz-nested"
       xyz="fade down stagger-2 duration-8"
     >
-      <Card v-for="(e, i) in technologies" :title="e.title" :color="e.color" />
+      <Card
+        v-for="(technology, index) in technologies"
+        :key="index"
+        :title="technology.title"
+        :color="technology.color"
+      />
     </div>
   </Section>
 </template>

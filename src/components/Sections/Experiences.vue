@@ -1,17 +1,18 @@
 <template>
   <Section>
-    <Title title="Experiences" />
+    <h1>Experiences</h1>
     <div
-      class="grid gap-3 sm:grid-cols-3 xyz-nested"
-      xyz="fade down stagger-3 delay-3 duration-10"
+      class="grid gap-3 sm:grid-cols-3"
+      xyz="fade down stagger-3 duration-10"
     >
       <Card
-        v-for="(e, i) in positions"
-        :url="e.url"
-        :title="e.title"
-        :role="e.role"
-        :color="e.color"
-        :description="e.description"
+        v-for="(position, index) in positions"
+        :key="index"
+        :url="position.url"
+        :title="position.title"
+        :role="position.role"
+        :color="position.color"
+        :description="position.description"
       />
     </div>
   </Section>

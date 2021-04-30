@@ -1,25 +1,31 @@
 <template>
   <Section>
-    <div class="flex flex-col md:w-2/3">
-      <Title title="Tarık Coşkun" />
+    <div class="md:w-2/3">
+      <h1>Tarık Coşkun</h1>
       <XyzTransition :appear-visible="{ threshold: 0.5 }">
-        <p class="text-[1.05rem]" xyz="fade down delay-3 duration-8">
+        <p class="text-lg leading-6" xyz="fade down delay-1 duration-8">
           Hello there, visitor! I'm Tarık, a front-end developer from Turkey.
           I'm currently working at Discord Templates as a Moderator and also
           translating many projects which you can find from my
           <a
-            class="duration-75 transform border-b-2 border-blue-800 dark:border-gray-400"
+            class="text-lg bg-gray-900 dark:hover:border-gray-100 hover:border-b-2 hover:border-gray-900 dark:bg-gray-100 bg-opacity-10 dark:bg-opacity-10"
             href="https://crowdin.com/profile/tarikcoskun"
+            target="_blank"
             draggable="false"
             >Crowdin profile</a
           >.
         </p>
       </XyzTransition>
       <div
-        class="flex items-center mt-3 space-x-2 xyz-nested"
+        class="flex items-center mt-2 space-x-1 xyz-nested"
         xyz="fade down delay-3 stagger-3 duration-8"
       >
-        <Account v-for="(e, i) in accounts" :url="e.url" :icon="e.icon" />
+        <Account
+          v-for="(account, index) in accounts"
+          :key="index"
+          :url="account.url"
+          :icon="account.icon"
+        />
       </div>
     </div>
   </Section>

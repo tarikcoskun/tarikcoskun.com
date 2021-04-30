@@ -1,7 +1,7 @@
 <template>
   <XyzTransition appear-visible duration="auto">
-    <div>
+    <section xyz="fade down duration-8">
       <slot />
-    </div>
+    </section>
   </XyzTransition>
 </template>

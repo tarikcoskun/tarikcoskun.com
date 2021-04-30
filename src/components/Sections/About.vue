@@ -11,13 +11,14 @@
             class="text-lg bg-gray-900 dark:hover:border-gray-100 hover:border-b-2 hover:border-gray-900 dark:bg-gray-100 bg-opacity-10 dark:bg-opacity-10"
             href="https://crowdin.com/profile/tarikcoskun"
             target="_blank"
+            rel="noreferrer"
             draggable="false"
             >Crowdin profile</a
           >.
         </p>
       </XyzTransition>
       <div
-        class="flex items-center mt-2 space-x-1 xyz-nested"
+        class="flex items-center mt-2 space-x-1"
         xyz="fade down stagger-2 duration-8"
       >
         <Account

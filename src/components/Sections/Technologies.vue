@@ -2,7 +2,7 @@
   <Section>
     <h1>Technologies I use</h1>
     <div
-      class="grid grid-cols-2 gap-2 md:grid-cols-4 xl:grid-cols-5 xyz-nested"
+      class="grid grid-cols-2 gap-2 md:grid-cols-4 xl:grid-cols-5"
       xyz="fade down stagger-2 duration-8"
     >
       <Card

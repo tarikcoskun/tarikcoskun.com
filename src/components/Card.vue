@@ -2,6 +2,7 @@
   <a
     :href="url"
     target="_blank"
+    rel="noreferrer"
     class="grid w-full bg-gray-300 dark:bg-gray-700"
     :class="{
       'cursor-default rounded-lg': !role && !description,
@@ -23,12 +24,7 @@
         class="p-1.5 mx-1.5 rounded-full"
         :style="{ background: color }"
       ></div>
-      <Skeleton
-        v-else
-        :img="`/${title.split(' ')[0]}.png`"
-        class="rounded-xl"
-        :style="{ backgroundColor: color ? color : '#111' }"
-      />
+      <Skeleton v-else :img="`/${title.split(' ')[0]}`" class="rounded-xl" />
       <div>
         <h2 class="line-clamp-1" v-html="title"></h2>
         <p v-if="role" v-html="role"></p>

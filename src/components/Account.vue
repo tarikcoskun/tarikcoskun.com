@@ -3,6 +3,7 @@
     <a
       :href="url"
       target="_blank"
+      rel="noreferrer"
       draggable="false"
       class="flex items-center p-1 space-x-2 rounded-full hover:bg-gray-300 dark:hover:bg-gray-700"
     >

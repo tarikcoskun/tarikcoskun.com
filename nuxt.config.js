@@ -8,9 +8,14 @@ export default {
       { charset: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
       { name: "theme-color", content: "#30343b" },
+      {
+        name: "description",
+        content:
+          "Personal website of Tarık Coşkun, 15 years old Turkish front-end developer",
+      },
     ],
     link: [
-      { rel: "icon", type: "image/x-icon", href: "/icon.png" },
+      { rel: "icon", type: "image/x-icon", href: "/icon.webp" },
       {
         rel: "stylesheet",
         href:
@@ -21,7 +26,7 @@ export default {
   },
   pwa: {
     manifest: {
-      name: "tarikcoskun.xyz",
+      name: "Tarık Coşkun",
       theme_color: "#30343b",
     },
   },

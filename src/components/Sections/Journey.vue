@@ -28,7 +28,6 @@
             class="absolute w-6 h-6 -mt-3 bg-gray-600 border-4 border-gray-200 rounded-full top-1/2 dark:bg-gray-300 dark:border-gray-800"
           ></div>
         </div>
-        <XyzTransition :appear-visible="{ threshold: 0.5 }">
           <div
             xyz="fade down-1 stagger-4 duration-8"
             class="relative p-3 my-6 transition-transform transform bg-gray-300 rounded-lg dark:bg-gray-700"

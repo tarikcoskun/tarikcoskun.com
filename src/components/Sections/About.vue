@@ -18,7 +18,7 @@
       </XyzTransition>
       <div
         class="flex items-center mt-2 space-x-1 xyz-nested"
-        xyz="fade down delay-3 stagger-3 duration-8"
+        xyz="fade down stagger-2 duration-8"
       >
         <Account
           v-for="(account, index) in accounts"

@@ -8,7 +8,7 @@
           I'm currently working at Discord Templates as a Moderator and also
           translating many projects which you can find from my
           <a
-            class="text-lg bg-gray-900 dark:hover:border-gray-100 hover:border-b-2 hover:border-gray-900 dark:bg-gray-100 bg-opacity-10 dark:bg-opacity-10"
+            class="text-lg bg-gray-300 dark:bg-gray-700 dark:hover:border-gray-100 hover:border-b-2 hover:border-gray-700"
             href="https://crowdin.com/profile/tarikcoskun"
             target="_blank"
             rel="noreferrer"

@@ -15,15 +15,6 @@ export default {
           "Personal website of Tarık Coşkun, 15 years old Turkish front-end developer",
       },
     ],
-    link: [
-      { rel: "icon", type: "image/x-icon", href: "/icon.webp" },
-      {
-        rel: "stylesheet",
-        href:
-          "https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap",
-        media: "all",
-      },
-    ],
   },
   pwa: {
     manifest: {
@@ -48,6 +39,7 @@ export default {
     "@nuxtjs/tailwindcss",
     "@nuxtjs/color-mode",
     "@nuxt/postcss8",
+    "@nuxtjs/google-fonts",
   ],
   modules: ["v-wave/nuxt", "@nuxtjs/svg"],
   vWave: {
@@ -56,6 +48,14 @@ export default {
   },
   colorMode: {
     classSuffix: "",
+  },
+  googleFonts: {
+    families: {
+      Roboto: {
+        wght: [400, 500],
+      },
+    },
+    display: "swap",
   },
   build: {
     postcss: {

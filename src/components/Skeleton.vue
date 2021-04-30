@@ -11,7 +11,7 @@
     <img
       :src="img"
       :alt="img"
-      class="invisible w-16 h-16 bg-left bg-cover"
+      class="hidden w-16 h-16 bg-left bg-cover"
       @load="itemLoaded = true"
     />
   </div>

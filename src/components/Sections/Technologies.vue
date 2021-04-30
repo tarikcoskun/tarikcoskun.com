@@ -5,7 +5,7 @@
       class="grid grid-cols-2 gap-2 md:grid-cols-4 xl:grid-cols-5"
       xyz="fade down stagger-2 duration-8"
     >
-      <Card
+      <Tech
         v-for="(technology, index) in technologies"
         :key="index"
         :title="technology.title"

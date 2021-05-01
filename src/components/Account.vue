@@ -2,6 +2,7 @@
   <XyzTransition :appear-visible="{ threshold: 0.5 }">
     <a
       :href="url"
+      :aria-label="icon"
       target="_blank"
       rel="noreferrer"
       draggable="false"

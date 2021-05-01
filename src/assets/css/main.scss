@@ -20,7 +20,7 @@
 }
 
 body {
-  @apply bg-gray-200 dark:bg-gray-800 mx-4 my-8 max-w-4xl lg:my-16 lg:mx-auto;
+  @apply bg-gray-200 dark:bg-gray-800 mx-4 my-8 max-w-4xl lg:my-16 lg:mx-auto transition-colors duration-100;
 }
 
 h1 {

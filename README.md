@@ -11,4 +11,4 @@
 
 ### 🙏 Special Thanks
 
-to [EGGSY](https://github.com/eggsy), [Arda](https://github.com/ardasoyturk) and [Barış](https://github.com/barbarbar338) for helping me create this website! Also check their profiles 😉
+to [EGGSY](https://github.com/eggsy), [Arda](https://github.com/ardasoyturk), [Barış](https://github.com/barbarbar338) and [Florian Lefebre](https://github.com/florian-lefebvre). Inspired a lot by them, even used some of their amazing code. Make sure to check their profiles and websites 😉

@@ -3,7 +3,7 @@
     <div class="md:w-2/3">
       <h1>Tarık Coşkun</h1>
         <p class="text-lg leading-6" >
-          Hello there, I'm Tarık, a (mostly) front-end developer from Turkey. Recently started using Nuxt and Tailiwnd and this is my portfolio and playground!
+          Hello there, I'm Tarık, a (mostly) front-end developer from Turkey. Recently started using Nuxt and Tailwind and this is my portfolio and playground!
         </p>
       <div
         class="flex items-center mt-2 -ml-1.5 space-x-1"

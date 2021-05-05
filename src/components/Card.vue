@@ -20,7 +20,7 @@
     >
       <Skeleton :img="`/${title.split(' ')[0]}.webp`" class="rounded-xl" />
       <div>
-        <h2 class="-mb-1 line-clamp-1" v-html="title"></h2>
+        <h2 class="mb-[-0.15rem] line-clamp-1" v-html="title"></h2>
         <p v-if="role" v-html="role"></p>
       </div>
     </div>

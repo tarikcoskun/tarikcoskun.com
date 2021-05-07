@@ -1,22 +1,21 @@
 <template>
-  <Section>
-    <div class="md:w-2/3">
-      <h1>Tarık Coşkun</h1>
-        <p class="text-lg leading-6" >
-          Hello there, I'm Tarık, a (mostly) front-end developer from Turkey. Recently started using Nuxt and Tailwind and this is my portfolio and playground!
-        </p>
-      <div
-        class="flex items-center mt-2 -ml-1.5 space-x-1"
-        xyz="fade down stagger-2 duration-8"
-      >
-        <Account
-          v-for="(account, index) in accounts"
-          :key="index"
-          :url="account.url"
-          :icon="account.icon"
-        />
-        </XyzTransition>
-      </div>
+  <Section class="md:w-2/3">
+    <h1>Tarık Coşkun</h1>
+    <p class="text-lg leading-6">
+      Hello there, I'm Tarık, a (mostly) front-end developer from Turkey.
+      Recently started using Nuxt and Tailwind and this is my portfolio and
+      playground!
+    </p>
+    <div
+      class="flex items-center mt-2 -ml-1.5 space-x-1"
+      xyz="fade down stagger-2 duration-8"
+    >
+      <Account
+        v-for="(account, index) in accounts"
+        :key="index"
+        :url="account.url"
+        :icon="account.icon"
+      />
     </div>
   </Section>
 </template>

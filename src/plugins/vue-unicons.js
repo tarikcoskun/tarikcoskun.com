@@ -6,6 +6,8 @@ import {
   uniGithub,
   uniBrightness,
   uniMoon,
+  uniCheck,
+  uniTimes,
 } from "vue-unicons/dist/icons";
 import { uniCrowdin } from "./custom-icons";
 
@@ -16,5 +18,7 @@ Unicon.add([
   uniBrightness,
   uniMoon,
   uniCrowdin,
+  uniCheck,
+  uniTimes,
 ]);
 Vue.use(Unicon);

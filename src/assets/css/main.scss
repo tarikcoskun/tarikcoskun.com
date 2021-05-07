@@ -1,4 +1,4 @@
-:root {
+html {
   font-family: "Roboto", sans-serif;
 }
 
@@ -43,8 +43,8 @@ img {
   @apply select-none;
 }
 
-.journey:nth-child(2n + 1) {
-  @apply flex-row-reverse;
+.goal a {
+  @apply text-lg border-b-2 border-gray-400 hover:border-gray-500 dark:hover:border-gray-300;
 }
 
 .vue-typer {

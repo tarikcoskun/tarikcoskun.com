@@ -3,6 +3,6 @@
     <SectionsAbout />
     <SectionsExperiences />
     <SectionsTechnologies />
-    <SectionsJourney />
+    <!-- <SectionsJourney /> -->
   </div>
 </template>

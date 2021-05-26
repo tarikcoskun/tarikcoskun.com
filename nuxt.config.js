@@ -41,7 +41,7 @@ export default {
     "@nuxt/postcss8",
     "@nuxtjs/google-fonts",
   ],
-  modules: ["v-wave/nuxt", "@nuxtjs/svg", "@nuxt/content"],
+  modules: ["v-wave/nuxt", "@nuxtjs/svg"],
   vWave: {
     duration: 0.2,
     finalOpacity: 0.1,

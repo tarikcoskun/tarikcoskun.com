@@ -128,13 +128,7 @@ export default {
           date: "January 2021 — Today",
           title: "This portfolio",
           details:
-            "I like the current design, yeah... But it might change any time eventualy",
-        },
-        {
-          date: "Today",
-          title: "Conclusion",
-          details:
-            "Yeah, it was a long journey, but I have no regrets. Looking behind, at what I did before, I can tell that I learned so much stuff",
+            "I like the current design, yeah... But it might change any time eventually",
         },
       ],
     };

@@ -39,8 +39,8 @@ export default {
         },
         {
           url: "https://floweystimemachine.github.io",
-          title: "Undertale Editor",
-          role: "Designer",
+          title: "Flowey's Time Machine",
+          role: "Lead Designer",
           description:
             "An editor tool for Undertale that allows you to change everything in your save easily!",
         },

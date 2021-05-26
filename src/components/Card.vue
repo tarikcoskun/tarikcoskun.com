@@ -18,9 +18,22 @@
         'p-4': description,
       }"
     >
-      <Skeleton :img="`/${title.split(' ')[0]}.webp`" class="rounded-xl" />
+      <Skeleton
+        :img="`/${title
+          .toLowerCase()
+          .match(/[^\'\?]+/g)
+          .join('')
+          .split(' ')
+          .join('')}.webp`"
+        class="rounded-xl"
+        :color="color"
+      />
       <div>
-        <h2 class="mb-[-0.15rem] line-clamp-1" v-html="title"></h2>
+        <h2
+          class="mb-[-0.15rem] line-clamp-1"
+          v-html="title"
+          :title="title"
+        ></h2>
         <p v-if="role" v-html="role"></p>
       </div>
     </div>

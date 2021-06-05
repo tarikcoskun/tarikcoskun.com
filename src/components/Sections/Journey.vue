@@ -31,7 +31,7 @@
         </div>
           <div
             xyz="fade down-1 stagger-4 duration-8"
-            class="relative p-3 my-6 transition-transform transform bg-gray-300 rounded-lg dark:bg-gray-700"
+            class="relative p-3 my-6 transition-transform transform bg-gray-300 border border-gray-400 rounded-lg dark:border-gray-500 dark:bg-gray-700"
             :class="
               index % 2 === 0
                 ? 'col-start-1 col-end-5 mr-auto md:mr-0 md:ml-auto'

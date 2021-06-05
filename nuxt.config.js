@@ -31,7 +31,6 @@ export default {
   },
   plugins: [
     { src: "~/plugins/vue-unicons", mode: "client" },
-    { src: "~/plugins/vue-typer", ssr: false },
     { src: "~/plugins/animxyz", mode: "client" },
   ],
   buildModules: [

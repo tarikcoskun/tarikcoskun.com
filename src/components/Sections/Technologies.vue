@@ -10,6 +10,7 @@
         :key="index"
         :title="technology.title"
         :color="technology.color"
+        class="mt-1"
       />
     </div>
   </Section>

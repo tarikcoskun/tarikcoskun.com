@@ -20,7 +20,7 @@ html {
 }
 
 body {
-  @apply bg-gray-200 dark:bg-gray-800 mx-4 my-8 max-w-4xl lg:my-16 lg:mx-auto transition-colors duration-100;
+  @apply bg-gray-200 dark:bg-gray-800;
 }
 
 h1 {
@@ -45,19 +45,4 @@ img {
 
 .goal a {
   @apply text-lg border-b-2 border-gray-400 hover:border-gray-500 dark:hover:border-gray-300;
-}
-
-.vue-typer {
-  .custom {
-    @apply text-lg;
-    &.char {
-      color: var(--text-color);
-      &.selected {
-        background: var(--gray);
-      }
-    }
-    &.caret {
-      background: var(--background);
-    }
-  }
 }

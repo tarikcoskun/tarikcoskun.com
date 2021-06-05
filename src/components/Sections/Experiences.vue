@@ -2,7 +2,7 @@
   <Section>
     <h1>Experiences</h1>
     <div
-      class="grid gap-3 sm:grid-cols-3"
+      class="grid gap-3 sm:grid-cols-3 flex-grow-0"
       xyz="fade down stagger-3 duration-10"
     >
       <Card
@@ -12,7 +12,8 @@
         :title="position.title"
         :role="position.role"
         :color="position.color"
-        :description="position.description"
+        :description="position.description"c
+        class="mt-1"
       />
     </div>
   </Section>

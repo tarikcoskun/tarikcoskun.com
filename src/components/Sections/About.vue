@@ -1,5 +1,5 @@
 <template>
-  <Section class="md:w-2/3">
+  <Section class="md:w-1/2">
     <h1>Tarık Coşkun</h1>
     <p class="text-lg leading-6">
       Hello there, I'm Tarık, a (mostly) front-end developer from Turkey.
@@ -7,7 +7,7 @@
       playground!
     </p>
     <div
-      class="flex items-center mt-2 -ml-1.5 space-x-1"
+      class="flex flex-shrink-0 items-center mt-2 -ml-1.5 space-x-1"
       xyz="fade down stagger-2 duration-8"
     >
       <Account

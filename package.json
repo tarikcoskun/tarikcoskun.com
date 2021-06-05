@@ -15,7 +15,6 @@
     "@tailwindcss/line-clamp": "^0.2.0",
     "nuxt": "^2.15.4",
     "v-wave": "^1.2.8",
-    "vue-typer": "^1.2.0",
     "vue-unicons": "^3.2.1"
   },
   "devDependencies": {

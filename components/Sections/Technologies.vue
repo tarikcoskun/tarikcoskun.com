@@ -1,19 +1,16 @@
 <template>
-  <Section>
+  <section>
     <h1>Technologies I use</h1>
-    <div
-      class="grid grid-cols-2 gap-2 md:grid-cols-4 xl:grid-cols-5"
-      xyz="fade down stagger-2 duration-8"
-    >
+    <div class="grid grid-cols-2 gap-2 md:grid-cols-4 xl:grid-cols-5">
       <Tech
         v-for="(technology, index) in technologies"
         :key="index"
         :title="technology.title"
         :color="technology.color"
-        class="mt-1"
+        class="mt-1 opacity-0 anime-experiences"
       />
     </div>
-  </Section>
+  </section>
 </template>
 
 <script>

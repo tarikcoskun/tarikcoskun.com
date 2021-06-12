@@ -1,11 +1,5 @@
 <template>
-  <div
-    class="border rounded-lg cursor-default"
-    :style="{
-      background: color.toString() + '50',
-      borderColor: color.toString() + '75',
-    }"
-  >
+  <div class="rounded-lg cursor-default bg-[#ffffff15]">
     <div class="flex items-center space-x-3 p-1.5">
       <div class="p-2 mx-1.5 rounded-full" :style="{ background: color }"></div>
       <div>

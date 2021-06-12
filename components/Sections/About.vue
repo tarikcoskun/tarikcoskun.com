@@ -1,23 +1,20 @@
 <template>
-  <Section class="md:w-1/2">
-    <h1>Tarık Coşkun</h1>
-    <p class="text-lg leading-6">
-      Hello there, I'm Tarık, a (mostly) front-end developer from Turkey.
-      Recently started using Nuxt and Tailwind and this is my portfolio and
-      playground!
+  <section class="md:w-2/3" id="about">
+    <h1 class="opacity-0 anime-about">Tarık Coşkun</h1>
+    <p class="text-lg leading-6 opacity-0 anime-about">
+      Hello there, I'm Tarık, a front-end developer in the road of full-stack.
+      Recently started using Nuxt and Tailwind.
     </p>
-    <div
-      class="flex flex-shrink-0 items-center mt-2 -ml-1.5 space-x-1"
-      xyz="fade down stagger-2 duration-8"
-    >
+    <div class="flex flex-shrink-0 items-center mt-2 -ml-1.5 space-x-1">
       <Account
         v-for="(account, index) in accounts"
         :key="index"
         :url="account.url"
         :icon="account.icon"
+        class="opacity-0 anime-accounts"
       />
     </div>
-  </Section>
+  </section>
 </template>
 
 <script>

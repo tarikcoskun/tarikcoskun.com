@@ -1,10 +1,7 @@
 <template>
-  <Section>
+  <section>
     <h1>Experiences</h1>
-    <div
-      class="grid flex-grow-0 gap-3 sm:grid-cols-3"
-      xyz="fade down stagger-3 duration-10"
-    >
+    <div class="grid flex-grow-0 gap-3 sm:grid-cols-3">
       <Card
         v-for="(position, index) in positions"
         :key="index"
@@ -13,11 +10,10 @@
         :role="position.role"
         :color="position.color"
         :description="position.description"
-        c
-        class="mt-1"
+        class="mt-1 opacity-0 anime-experiences"
       />
     </div>
-  </Section>
+  </section>
 </template>
 
 <script>

@@ -1,5 +1,5 @@
 <template>
-  <Section>
+  <section>
     <h1 class="mb-4 text-center">My Journey</h1>
     <div class="flex flex-col grid-cols-9 p-2 mx-auto md:grid">
       <div
@@ -18,58 +18,90 @@
               :class="{
                 'rounded-t-full bg-gradient-to-b': index === 0,
                 'rounded-b-full bg-gradient-to-t': index === events.length - 1,
-                'from-gray-200 via-gray-400 to-gray-400 dark:from-gray-800 dark:via-gray-600 dark:to-gray-600':
+                'from-[#0c0d0f] via-[#191b1f] to-[#191b1f]':
                   index === 0 || index === events.length - 1,
-                'bg-gray-400 dark:bg-gray-600':
-                  index !== 0 || index !== events.length - 1,
+                'bg-[#191b1f] ': index !== 0 || index !== events.length - 1,
               }"
             ></div>
           </div>
           <div
-            class="absolute w-6 h-6 -mt-3 bg-gray-600 border-4 border-gray-200 rounded-full top-1/2 dark:bg-gray-300 dark:border-gray-800"
+            class="
+              absolute
+              w-6
+              h-6
+              -mt-3
+              bg-[#8b7af4]
+              border-4 border-[#0c0d0f]
+              rounded-full
+              top-1/2
+            "
           ></div>
         </div>
-          <div
-            xyz="fade down-1 stagger-4 duration-8"
-            class="relative p-3 my-6 transition-transform transform bg-gray-300 border border-gray-400 rounded-lg dark:border-gray-500 dark:bg-gray-700"
-            :class="
-              index % 2 === 0
-                ? 'col-start-1 col-end-5 mr-auto md:mr-0 md:ml-auto'
-                : 'col-start-6 col-end-10 mr-auto'
+        <div
+          class="
+            relative
+            p-3
+            my-6
+            transition-transform
+            transform
+            bg-[#ffffff15]
+            blur
+            rounded-lg
+            opacity-0
+            anime-journey
+          "
+          :class="
+            index % 2 === 0
+              ? 'col-start-1 col-end-5 mr-auto md:mr-0 md:ml-auto'
+              : 'col-start-6 col-end-10 mr-auto'
+          "
+        >
+          <h2 v-html="event.title"></h2>
+          <p v-if="event.details" v-html="event.details"></p>
+          <span
+            class="
+              absolute
+              text-gray-500
+              top-[-1.6rem]
+              left-0
+              whitespace-nowrap
+              dark:text-gray-400
             "
-          >
-            <h2 v-html="event.title"></h2>
-            <p v-if="event.details" v-html="event.details"></p>
-            <span
-              class="absolute text-gray-500 top-[-1.6rem] left-0 whitespace-nowrap dark:text-gray-400"
-              v-html="event.date"
-            ></span>
-          </div>
-        </XyzTransition>
+            v-html="event.date"
+          ></span>
+        </div>
         <div
           v-if="index % 2 === 0"
           class="relative col-start-5 col-end-6 mr-7 md:mx-auto"
         >
           <div class="flex items-center justify-center w-6 h-full">
             <div
-              class="w-1 h-full bg-gray-400 dark:bg-gray-600"
+              class="w-1 h-full bg-[#191b1f]"
               :class="{
                 'rounded-t-full bg-gradient-to-b': index === 0,
                 'rounded-b-full bg-gradient-to-t': index === events.length - 1,
-                'from-gray-200 via-gray-400 to-gray-400 dark:from-gray-800 dark:via-gray-600 dark:to-gray-600':
+                'from-[#0c0d0f] via-[#191b1f] to-[#191b1f]':
                   index === 0 || index === events.length - 1,
-                'bg-gray-400 dark:bg-gray-600':
-                  index !== 0 || index !== events.length - 1,
+                'bg-[#191b1f]': index !== 0 || index !== events.length - 1,
               }"
             ></div>
           </div>
           <div
-            class="absolute w-6 h-6 -mt-3 bg-gray-600 border-4 border-gray-200 rounded-full top-1/2 dark:bg-gray-300 dark:border-gray-800"
+            class="
+              absolute
+              w-6
+              h-6
+              -mt-3
+              bg-[#8b7af4]
+              border-4 border-[#0c0d0f]
+              rounded-full
+              top-1/2
+            "
           ></div>
         </div>
       </div>
     </div>
-  </Section>
+  </section>
 </template>
 
 <script>

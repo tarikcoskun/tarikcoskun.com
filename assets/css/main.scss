@@ -1,0 +1,48 @@
+html {
+  font-family: "Poppins", sans-serif;
+}
+
+::-webkit-scrollbar {
+  @apply w-2;
+  &-track {
+    @apply bg-transparent;
+  }
+  &-thumb {
+    @apply bg-[#ffffff15];
+    &:hover {
+      @apply bg-[#ffffff30];
+    }
+  }
+}
+
+::selection {
+  @apply bg-gray-400;
+}
+
+body {
+  background: url("/background.svg") #0c0d0f no-repeat;
+}
+
+h1 {
+  @apply text-white mb-1 text-2xl font-bold;
+}
+
+h2 {
+  @apply text-gray-100 text-lg font-medium;
+}
+
+p,
+a,
+span,
+.icon {
+  @apply text-gray-300  text-base leading-6 font-medium;
+}
+
+svg,
+img {
+  @apply select-none;
+}
+
+.blur {
+  backdrop-filter: blur(4px);
+}

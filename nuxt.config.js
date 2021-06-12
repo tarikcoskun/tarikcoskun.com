@@ -1,7 +1,6 @@
 import { resolve } from "path";
 
 export default {
-  srcDir: "src",
   target: "static",
   head: {
     title: "Tarık Coşkun",
@@ -29,16 +28,13 @@ export default {
     viewer: false,
     jit: true,
   },
-  plugins: [
-    { src: "~/plugins/vue-unicons", mode: "client" },
-    { src: "~/plugins/animxyz", mode: "client" },
-  ],
+  plugins: [{ src: "~/plugins/vue-unicons", mode: "client" }],
   buildModules: [
     "@nuxtjs/pwa",
     "@nuxtjs/tailwindcss",
-    "@nuxtjs/color-mode",
     "@nuxt/postcss8",
     "@nuxtjs/google-fonts",
+    "nuxt-animejs",
   ],
   modules: ["v-wave/nuxt", "@nuxtjs/svg"],
   vWave: {
@@ -50,17 +46,10 @@ export default {
   },
   googleFonts: {
     families: {
-      Roboto: {
-        wght: [400, 500],
+      Poppins: {
+        wght: [400, 500, 600],
       },
     },
     display: "swap",
-  },
-  build: {
-    postcss: {
-      plugins: {
-        "postcss-nested": {},
-      },
-    },
   },
 };

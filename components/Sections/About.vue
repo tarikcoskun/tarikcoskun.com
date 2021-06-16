@@ -1,11 +1,15 @@
 <template>
-  <section class="md:w-2/3" id="about">
-    <h1 class="opacity-0 anime-about">Tarık Coşkun</h1>
-    <p class="text-lg leading-6 opacity-0 anime-about">
+  <section id="about">
+    <h1 class="text-3xl opacity-0 anime">Tarık Coşkun</h1>
+    <p class="mt-2 text-lg opacity-0 anime">
       Hello there, I'm Tarık, a front-end developer in the road of full-stack.
-      Recently started using Nuxt and Tailwind.
+      Love playing the piano and interested in games like Undertale, Geometry
+      Dash and Will You Snail?
     </p>
-    <div class="flex flex-shrink-0 items-center mt-2 -ml-1.5 space-x-1">
+    <p class="mt-2 text-[#bebebe] opacity-0 anime">
+      You can find me on the platforms below and see my experiences.
+    </p>
+    <div class="flex items-center flex-shrink-0 gap-2 mt-2 -ml-0.5">
       <Account
         v-for="(account, index) in accounts"
         :key="index"

@@ -12,11 +12,11 @@ export default {
       const anime = this.$anime;
 
       anime({
-        targets: ".anime-about",
-        translateX: [-50, 0],
+        targets: ".anime",
+        translateX: [-35, 0],
         opacity: 1,
         duration: 1500,
-        delay: anime.stagger(100),
+        delay: anime.stagger(500),
         easing: "spring(1, 80, 25, 0)",
       });
 
@@ -25,7 +25,7 @@ export default {
         translateY: [15, 0],
         opacity: 1,
         duration: 1000,
-        delay: anime.stagger(300, { start: 500 }),
+        delay: anime.stagger(300, { start: 1500 }),
         easing: "spring(1, 80, 10, 0)",
       });
 
@@ -33,17 +33,7 @@ export default {
         targets: ".anime-experiences",
         translateY: [25, 0],
         opacity: 1,
-        duration: 1500,
-        delay: anime.stagger(200),
-        easing: "spring(1, 80, 25, 0)",
-      });
-
-      anime({
-        targets: ".anime-journey",
-        translateY: [50, 0],
-        opacity: [0, 1],
-        duration: 1000,
-        delay: anime.stagger(200),
+        delay: anime.stagger(200, { start: 2500 }),
         easing: "spring(1, 80, 25, 0)",
       });
     },

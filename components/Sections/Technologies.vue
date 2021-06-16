@@ -7,7 +7,7 @@
         :key="index"
         :title="technology.title"
         :color="technology.color"
-        class="mt-1 opacity-0 anime-experiences"
+        class="mt-1"
       />
     </div>
   </section>

@@ -1,6 +1,6 @@
 <template>
   <div
-    class="w-16 h-16 bg-gray-300 bg-left bg-no-repeat bg-cover dark:bg-gray-700"
+    class="w-16 h-16 border-2 border-[#181818] bg-left bg-no-repeat bg-cover"
     :class="{
       'animate-pulse': itemLoaded === false,
     }"

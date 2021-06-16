@@ -47,8 +47,6 @@
             bg-[#ffffff15]
             blur
             rounded-lg
-            opacity-0
-            anime-journey
           "
           :class="
             index % 2 === 0

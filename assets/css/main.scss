@@ -8,19 +8,21 @@ html {
     @apply bg-transparent;
   }
   &-thumb {
-    @apply bg-[#ffffff15];
+    @apply bg-[#191919];
     &:hover {
-      @apply bg-[#ffffff30];
+      @apply bg-[#212121];
     }
   }
 }
 
 ::selection {
-  @apply bg-gray-400;
+  @apply bg-[#202020];
 }
 
 body {
-  background: url("/background.svg") #0c0d0f no-repeat;
+  background: url("/bg.webp") #111111 repeat-y;
+
+  @apply max-w-3xl  mx-4 my-8 lg:my-16 lg:mx-auto;
 }
 
 h1 {
@@ -35,7 +37,7 @@ p,
 a,
 span,
 .icon {
-  @apply text-gray-300  text-base leading-6 font-medium;
+  @apply text-[#dedede]  text-base leading-7;
 }
 
 svg,

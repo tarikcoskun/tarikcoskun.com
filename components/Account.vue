@@ -8,11 +8,14 @@
     class="
       flex
       items-center
-      p-[0.325rem]
+      w-10
+      h-10
+      justify-center
       space-x-2
-      rounded-full
-      hover:bg-[#ffffff15]
-      blur
+      rounded-lg
+      hover:bg-[#161616]
+      transition-colors
+      duration-200
     "
   >
     <DiscordIcon v-if="icon === 'discord'" />

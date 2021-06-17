@@ -6,10 +6,7 @@
       Love playing the piano and interested in games like Undertale, Geometry
       Dash and Will You Snail?
     </p>
-    <p class="mt-2 text-[#bebebe] opacity-0 anime">
-      You can find me on the platforms below and see my experiences.
-    </p>
-    <div class="flex items-center flex-shrink-0 gap-2 mt-2 -ml-0.5">
+    <div class="flex items-center flex-shrink-0 gap-2 mt-3 -ml-1.5">
       <Account
         v-for="(account, index) in accounts"
         :key="index"

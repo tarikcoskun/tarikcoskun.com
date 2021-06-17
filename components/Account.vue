@@ -13,7 +13,8 @@
       justify-center
       space-x-2
       rounded-lg
-      hover:bg-[#161616]
+      hover:bg-[#dedede]
+      dark:hover:bg-[#161616]
       transition-colors
       duration-200
     "

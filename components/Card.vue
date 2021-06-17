@@ -3,7 +3,14 @@
     :href="url"
     target="_blank"
     rel="noreferrer"
-    class="grid w-full hover:bg-[#161616] rounded-lg duration-200"
+    class="
+      grid
+      w-full
+      hover:bg-[#dedede]
+      dark:hover:bg-[#161616]
+      rounded-lg
+      duration-200
+    "
     draggable="false"
     v-wave
   >
@@ -19,16 +26,12 @@
         class="rounded-lg"
       />
       <div>
-        <h2
-          class="mb-[-0.15rem] line-clamp-1"
-          v-html="title"
-          :title="title"
-        ></h2>
+        <h2 class="mb-[-0.15rem] line-clamp-1" v-html="title"></h2>
         <p v-if="role" v-html="role"></p>
       </div>
     </div>
     <p
-      class="w-[97.5%] p-2 sm:p-3 text-[#bebebe]"
+      class="w-[97.5%] p-2 sm:p-3 pt-0 sm:pt-0"
       v-if="description"
       v-html="description"
     ></p>

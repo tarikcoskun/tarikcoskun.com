@@ -1,17 +1,7 @@
 html {
   font-family: "Poppins", sans-serif;
-}
-
-::-webkit-scrollbar {
-  @apply w-2;
-  &-track {
+  &::-webkit-scrollbar {
     @apply bg-transparent;
-  }
-  &-thumb {
-    @apply bg-[#191919];
-    &:hover {
-      @apply bg-[#212121];
-    }
   }
 }
 
@@ -20,31 +10,31 @@ html {
 }
 
 body {
-  background: url("/bg.webp") #111111 repeat-y;
-
+  background: url("/bg-light.webp") #ececec repeat-y;
   @apply max-w-3xl  mx-4 my-8 lg:my-16 lg:mx-auto;
 }
 
+.dark body {
+  background-image: url("/bg-dark.webp");
+  background-color: #111111;
+}
+
 h1 {
-  @apply text-white mb-1 text-2xl font-bold;
+  @apply text-black dark:text-white mb-1 text-2xl font-bold;
 }
 
 h2 {
-  @apply text-gray-100 text-lg font-medium;
+  @apply text-black dark:text-white text-lg font-medium;
 }
 
 p,
 a,
 span,
 .icon {
-  @apply text-[#dedede]  text-base leading-7;
+  @apply text-[#151515] dark:text-[#dedede]  text-base leading-7;
 }
 
 svg,
 img {
   @apply select-none;
-}
-
-.blur {
-  backdrop-filter: blur(4px);
 }

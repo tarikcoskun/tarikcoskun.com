@@ -1,5 +1,6 @@
 <template>
   <div>
+    <ThemeSwitch />
     <Nuxt />
     <img class="hidden" src="/icon.png" alt="*ghost*" @load="animate" />
   </div>
@@ -16,7 +17,7 @@ export default {
         translateX: [-35, 0],
         opacity: 1,
         duration: 1500,
-        delay: anime.stagger(500),
+        delay: anime.stagger(350),
         easing: "spring(1, 80, 25, 0)",
       });
 
@@ -25,16 +26,16 @@ export default {
         translateY: [15, 0],
         opacity: 1,
         duration: 1000,
-        delay: anime.stagger(300, { start: 1500 }),
-        easing: "spring(1, 80, 10, 0)",
+        delay: anime.stagger(300, { start: 1000 }),
+        easing: "spring(1, 80, 20, 0)",
       });
 
       anime({
         targets: ".anime-experiences",
         translateY: [25, 0],
         opacity: 1,
-        delay: anime.stagger(200, { start: 2500 }),
-        easing: "spring(1, 80, 25, 0)",
+        delay: anime.stagger(200, { start: 1500 }),
+        easing: "spring(1, 80, 20, 0)",
       });
     },
   },

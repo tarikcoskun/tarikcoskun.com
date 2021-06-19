@@ -1,5 +1,3 @@
-import { resolve } from "path";
-
 export default {
   target: "static",
   head: {
@@ -24,11 +22,9 @@ export default {
   css: ["~/assets/main.scss"],
   components: true,
   tailwindcss: {
-    configPath: resolve("./tailwind.config.js"),
     viewer: false,
     jit: true,
   },
-  // plugins: [{ src: "~/plugins/vue-unicons", mode: "client" }],
   buildModules: [
     "@nuxtjs/pwa",
     "@nuxtjs/tailwindcss",

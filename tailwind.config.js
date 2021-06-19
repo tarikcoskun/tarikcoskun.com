@@ -5,5 +5,4 @@ module.exports = {
   purge: [],
   theme: {},
   variants: {},
-  plugins: [require("@tailwindcss/line-clamp")],
 };

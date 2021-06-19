@@ -14,8 +14,7 @@
     "@nuxtjs/svg": "^0.1.12",
     "@tailwindcss/line-clamp": "^0.2.0",
     "nuxt": "^2.15.4",
-    "v-wave": "^1.2.8",
-    "vue-unicons": "^3.2.1"
+    "v-wave": "^1.2.8"
   },
   "devDependencies": {
     "@nuxtjs/color-mode": "^2.0.10",

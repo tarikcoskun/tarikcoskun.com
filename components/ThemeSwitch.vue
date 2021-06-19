@@ -14,9 +14,9 @@
       right-4
       top-4
       text-[#151515]
-      hover:bg-[#dedede]
+      hover:bg-[#e5e5e5]
       dark:hover:bg-[#161616]
-      dark:text-[#dedede]
+      dark:text-[#e5e5e5]
     "
     @click="
       $colorMode.value === 'dark'

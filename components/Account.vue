@@ -12,7 +12,7 @@
       h-11
       justify-center
       rounded-lg
-      hover:bg-[#dedede]
+      hover:bg-[#e5e5e5]
       dark:hover:bg-[#161616]
       transition-colors
       duration-200

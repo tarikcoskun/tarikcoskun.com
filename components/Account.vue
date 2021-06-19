@@ -8,10 +8,9 @@
     class="
       flex
       items-center
-      w-10
-      h-10
+      w-11
+      h-11
       justify-center
-      space-x-2
       rounded-lg
       hover:bg-[#dedede]
       dark:hover:bg-[#161616]
@@ -27,10 +26,10 @@
 </template>
 
 <script>
-import DiscordIcon from "~/assets/discord.svg?inline";
-import TwitterIcon from "~/assets/twitter.svg?inline";
-import GitHubIcon from "~/assets/github.svg?inline";
-import CrowdinIcon from "~/assets/crowdin.svg?inline";
+import DiscordIcon from "~/assets/img/discord.svg?inline";
+import TwitterIcon from "~/assets/img/twitter.svg?inline";
+import GitHubIcon from "~/assets/img/github.svg?inline";
+import CrowdinIcon from "~/assets/img/crowdin.svg?inline";
 
 export default {
   props: ["icon", "url"],

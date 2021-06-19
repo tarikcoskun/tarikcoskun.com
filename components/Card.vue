@@ -16,13 +16,14 @@
   >
     <div class="flex items-center p-2 space-x-4 sm:p-3">
       <Skeleton
-        :img="`/${title
-          .toLowerCase()
-          .match(/[^\'\?]+/g)
-          .join('')
-          .split(' ')
-          .join('')}.webp`"
-        :color="color"
+        :img="
+          title
+            .toLowerCase()
+            .match(/[^\'\?]+/g)
+            .join('')
+            .split(' ')
+            .join('')
+        "
         class="rounded-lg"
       />
       <div>
@@ -31,7 +32,7 @@
       </div>
     </div>
     <p
-      class="w-[97.5%] p-2 sm:p-3 pt-0 sm:pt-0"
+      class="p-2 pt-0 sm:p-3 sm:pt-0"
       v-if="description"
       v-html="description"
     ></p>
@@ -40,6 +41,6 @@
 
 <script>
 export default {
-  props: ["url", "title", "role", "description", "color"],
+  props: ["url", "title", "role", "description"],
 };
 </script>

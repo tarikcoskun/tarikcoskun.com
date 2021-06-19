@@ -23,7 +23,7 @@ export default {
       positions: [
         {
           url: "https://discords.com/templates",
-          title: "Templates",
+          title: "Discord Templates",
           role: "Moderator",
           description:
             "A service for Discord that allows you to share server templates",
@@ -46,18 +46,9 @@ export default {
           url: "https://store.steampowered.com/app/1115050/Will_You_Snail",
           title: "Will You Snail?",
           role: "Translator",
-          color: "#c42277",
           description:
             "A fast paced action platformer where an evil AI tries to kill you with predictions",
         },
-        /*{
-          url: "https://dogehouse.tv",
-          title: "DogeHouse",
-          role: "Translator",
-          color: "#efe7dc",
-          description:
-            "DogeHouse is taking voice conversations to the moon (cancelled)",
-        },*/
       ],
     };
   },

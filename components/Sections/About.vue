@@ -6,7 +6,7 @@
       Love playing the piano and interested in games like Undertale, Geometry
       Dash and Will You Snail?
     </p>
-    <div class="flex items-center flex-shrink-0 gap-2 mt-3 -ml-1.5">
+    <div class="flex items-center flex-shrink-0 mt-2 -ml-2">
       <Account
         v-for="(account, index) in accounts"
         :key="index"

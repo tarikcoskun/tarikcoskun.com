@@ -1,8 +1,5 @@
 html {
   font-family: "Poppins", sans-serif;
-  &::-webkit-scrollbar {
-    @apply bg-transparent;
-  }
 }
 
 ::selection {

@@ -1,6 +1,6 @@
 <template>
   <section class="max-w-3xl mx-auto">
-    <h1 class="ml-2 opacity-0 sm:ml-3 anime">Experiences</h1>
+    <h2 class="ml-2 opacity-0 sm:ml-3 anime">Experiences</h2>
     <div class="grid gap-2 mt-2 sm:grid-cols-2">
       <Card
         v-for="(position, index) in positions"

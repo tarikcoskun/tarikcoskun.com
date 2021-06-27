@@ -43,8 +43,11 @@ export default {
   },
   googleFonts: {
     families: {
+      "IBM Plex Sans": {
+        wght: [600],
+      },
       Poppins: {
-        wght: [400, 500, 600],
+        wght: [400, 500],
       },
     },
     display: "swap",

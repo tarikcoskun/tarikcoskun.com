@@ -4,10 +4,9 @@ html {
   ::-webkit-scrollbar {
     @apply w-0 h-0;
   }
-}
-
-::selection {
-  @apply bg-[#202020];
+  ::selection {
+    @apply bg-[#aeaeae];
+  }
 }
 
 body {
@@ -17,11 +16,12 @@ body {
 }
 
 h1 {
-  @apply text-black mb-1 text-2xl font-medium;
+  font-family: "IBM Plex Sans";
+  @apply text-black mb-1 text-2xl font-medium tracking-wide;
 }
 
 h2 {
-  @apply text-black text-lg font-medium;
+  @apply text-black font-medium text-2xl;
 }
 
 p,

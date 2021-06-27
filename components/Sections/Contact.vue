@@ -12,9 +12,9 @@
     "
     id="contact"
   >
-    <h1 class="pl-6 mt-[-1.35rem] text-3xl text-[#212138] opacity-0 anime">
+    <h2 class="pl-6 mt-[-1.35rem] text-3xl text-[#212138] opacity-0 anime">
       That's all for now...
-    </h1>
+    </h2>
     <div class="p-6 pt-2">
       <p class="text-lg text-[#212138]">
         You can find me on the platforms below. <br />

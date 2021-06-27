@@ -20,7 +20,7 @@
         class="rounded-lg"
       />
       <div>
-        <h2 class="-mb-1" v-html="title"></h2>
+        <h2 class="-mb-1 text-lg" v-html="title"></h2>
         <p v-if="role" v-html="role"></p>
       </div>
     </div>

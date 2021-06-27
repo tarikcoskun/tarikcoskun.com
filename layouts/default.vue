@@ -1,6 +1,6 @@
 <template>
   <div>
-    <ThemeSwitch />
+    <!-- <ThemeSwitch /> -->
     <Nuxt />
     <img class="hidden" src="/icon.png" alt="*ghost*" @load="animate" />
   </div>

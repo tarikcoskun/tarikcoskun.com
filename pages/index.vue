@@ -1,6 +1,7 @@
 <template>
-  <div class="grid gap-16">
+  <div class="grid">
     <SectionsAbout />
     <SectionsExperiences />
+    <SectionsContact class="mt-16" />
   </div>
 </template>

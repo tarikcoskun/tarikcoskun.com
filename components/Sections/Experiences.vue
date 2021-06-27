@@ -1,7 +1,7 @@
 <template>
-  <section>
-    <h1 class="opacity-0 anime">Experiences</h1>
-    <div class="grid -ml-2 sm:-ml-3 sm:grid-cols-2">
+  <section class="max-w-3xl mx-auto">
+    <h1 class="ml-2 opacity-0 sm:ml-3 anime">Experiences</h1>
+    <div class="grid gap-2 mt-2 sm:grid-cols-2">
       <Card
         v-for="(position, index) in positions"
         :key="index"
@@ -10,7 +10,7 @@
         :role="position.role"
         :color="position.color"
         :description="position.description"
-        class="mt-1 opacity-0 anime-experiences"
+        class="opacity-0 anime-experiences"
       />
     </div>
   </section>
@@ -33,7 +33,7 @@ export default {
           title: "PreMiD",
           role: "Translator",
           description:
-            "A utility that allows you to show what you're doing on the web in your Discord status",
+            "A utility that allows you to show what you're doing in your Discord status",
         },
         {
           url: "https://crumblingstatue.github.io/FloweysTimeMachine",

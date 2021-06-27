@@ -8,8 +8,8 @@
     class="
       flex
       items-center
-      w-11
-      h-11
+      w-12
+      h-12
       justify-center
       rounded-lg
       hover:bg-[#e5e5e5]

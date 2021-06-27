@@ -3,14 +3,7 @@
     :href="url"
     target="_blank"
     rel="noreferrer"
-    class="
-      grid
-      w-full
-      hover:bg-[#e5e5e5]
-      dark:hover:bg-[#161616]
-      rounded-lg
-      duration-200
-    "
+    class="grid w-full hover:bg-[#161616] rounded-lg duration-200 blur"
     draggable="false"
     v-wave
   >

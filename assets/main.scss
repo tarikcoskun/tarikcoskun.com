@@ -1,5 +1,9 @@
 html {
   font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+  ::-webkit-scrollbar {
+    @apply w-0 h-0;
+  }
 }
 
 ::selection {
@@ -7,31 +11,35 @@ html {
 }
 
 body {
-  background: url("~/assets/img/bg-light.webp") #ececec repeat-y;
-  @apply max-w-3xl  mx-4 my-8 lg:my-16 lg:mx-auto;
-}
-
-.dark body {
-  background-image: url("~/assets/img/bg-dark.webp");
-  background-color: #111111;
+  background: url("~/assets/img/bg-primary.webp") no-repeat right top #111111;
+  background-size: contain;
+  @apply mx-4 my-8 md:m-0 lg:mx-32 lg:mb-16 overflow-x-hidden;
 }
 
 h1 {
-  @apply text-black dark:text-white mb-1 text-2xl font-bold;
+  @apply text-white mb-1 text-2xl font-medium;
 }
 
 h2 {
-  @apply text-black dark:text-white text-lg font-medium;
+  @apply text-white text-lg font-medium;
 }
 
 p,
 a,
 span,
 .icon {
-  @apply text-[#151515] dark:text-[#dedede]  text-base leading-7;
+  @apply text-[#dedede]  text-base leading-7;
 }
 
 svg,
 img {
   @apply select-none;
+}
+
+.link {
+  @apply text-lg px-1 leading-6 -ml-1 rounded-md transition-colors duration-200;
+  text-decoration: underline #55558b;
+  &:hover {
+    background: #303047;
+  }
 }

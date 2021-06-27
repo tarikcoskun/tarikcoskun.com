@@ -11,24 +11,24 @@ html {
 }
 
 body {
-  background: url("~/assets/img/bg-primary.webp") no-repeat right top #111111;
+  background: url("~/assets/img/bg-primary.webp") no-repeat right top #cecece;
   background-size: contain;
   @apply mx-4 my-8 md:m-0 lg:mx-32 lg:mb-16 overflow-x-hidden;
 }
 
 h1 {
-  @apply text-white mb-1 text-2xl font-medium;
+  @apply text-black mb-1 text-2xl font-medium;
 }
 
 h2 {
-  @apply text-white text-lg font-medium;
+  @apply text-black text-lg font-medium;
 }
 
 p,
 a,
 span,
 .icon {
-  @apply text-[#dedede]  text-base leading-7;
+  @apply text-[#151515]  text-base leading-7;
 }
 
 svg,
@@ -37,9 +37,8 @@ img {
 }
 
 .link {
-  @apply text-lg px-1 leading-6 -ml-1 rounded-md transition-colors duration-200;
-  text-decoration: underline #55558b;
+  @apply text-lg px-1 leading-6 -ml-1 rounded-md transition-colors duration-200 font-medium text-[#212138];
   &:hover {
-    background: #303047;
+    background: #79798a;
   }
 }

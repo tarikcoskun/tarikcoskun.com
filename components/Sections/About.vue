@@ -15,11 +15,14 @@
         w-40
         text-center text-lg
         p-2
-        rounded-lg
         transition-colors
         duration-200
-        bg-[#232039]
-        hover:bg-[#303047]
+        font-medium
+        bg-gradient-to-r
+        text-[#533a50]
+        from-[#8f798c]
+        to-[#a592a2]
+        border-2 border-[#8b7b88]
       "
       href="#contact"
       >Contact me</a

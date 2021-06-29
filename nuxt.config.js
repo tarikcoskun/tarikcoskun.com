@@ -28,7 +28,6 @@ export default {
   buildModules: [
     "@nuxtjs/pwa",
     "@nuxtjs/tailwindcss",
-    "@nuxtjs/color-mode",
     "@nuxt/postcss8",
     "@nuxtjs/google-fonts",
     "nuxt-animejs",

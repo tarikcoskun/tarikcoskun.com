@@ -1,7 +1,7 @@
 <template>
-  <section class="max-w-3xl mx-auto">
-    <h2 class="ml-2 opacity-0 sm:ml-3 anime">Experiences</h2>
-    <div class="grid gap-2 mt-2 sm:grid-cols-2">
+  <section>
+    <h2 class="opacity-0 anime">Experiences</h2>
+    <div class="grid mt-2 sm:grid-cols-3 sm:-ml-3">
       <Card
         v-for="(position, index) in positions"
         :key="index"
@@ -48,6 +48,12 @@ export default {
           role: "Translator",
           description:
             "A fast paced action platformer where an evil AI tries to kill you with predictions",
+        },
+        {
+          url: "https://dogehouse.tv",
+          title: "DogeHouse",
+          role: "Translator",
+          description: "Taking voice conversations to the moon 🚀 [CANCELLED]",
         },
       ],
     };

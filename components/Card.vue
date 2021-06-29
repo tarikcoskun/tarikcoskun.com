@@ -3,7 +3,14 @@
     :href="url"
     target="_blank"
     rel="noreferrer"
-    class="grid w-full hover:bg-[#bebebe] rounded-lg duration-200 blur"
+    class="
+      grid
+      place-items-start
+      w-full
+      hover:bg-[#bebebe]
+      rounded-lg
+      duration-200
+    "
     draggable="false"
     v-wave
   >

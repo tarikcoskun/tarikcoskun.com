@@ -1,33 +1,17 @@
 <template>
-  <section class="flex flex-col justify-center h-screen">
+  <section
+    class="flex flex-col justify-center py-24 md:p-0 md:my-24"
+    id="about"
+  >
     <h1 class="leading-[3.5rem] opacity-0 text-5xl anime">
       Hello, <br />
       it's Tarık C.
     </h1>
-    <p class="my-3 text-xl opacity-0 md:w-1/2 anime">
+    <p class="my-2 text-xl opacity-0 md:w-1/2 anime">
       I'm a Front-end developer with over 3 years of experience. Aside coding,
       translating stuff voluntarily.
     </p>
-    <a
-      class="
-        anime
-        opacity-0
-        w-40
-        text-center text-lg
-        p-2
-        transition-colors
-        duration-200
-        font-medium
-        bg-gradient-to-r
-        text-[#533a50]
-        from-[#8f798c]
-        to-[#a592a2]
-        border-2 border-[#8b7b88]
-      "
-      href="#contact"
-      >Contact me</a
-    >
-    <!-- <div class="flex items-center flex-shrink-0 -ml-2">
+    <div class="flex items-center flex-shrink-0 -ml-2">
       <Account
         v-for="(account, index) in accounts"
         :key="index"
@@ -35,11 +19,11 @@
         :icon="account.icon"
         class="opacity-0 anime-accounts"
       />
-    </div> -->
+    </div>
   </section>
 </template>
 
-<!--<script>
+<script>
 export default {
   data() {
     return {
@@ -64,4 +48,4 @@ export default {
     };
   },
 };
-</script>-->
+</script>

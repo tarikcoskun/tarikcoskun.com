@@ -1,7 +1,7 @@
 <template>
-  <div class="grid">
+  <div>
     <SectionsAbout />
     <SectionsExperiences />
-    <SectionsContact class="mt-16" />
+    <!-- <SectionsContact class="mt-16" /> -->
   </div>
 </template>

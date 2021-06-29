@@ -3,8 +3,7 @@
     class="
       w-[3.5rem]
       h-[3.5rem]
-      border-2
-      dark:border-[#202020]
+      border border-[#bebebe]
       bg-left bg-no-repeat bg-cover bg-[#111111]
     "
     :style="{

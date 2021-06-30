@@ -1,5 +1,5 @@
 <template>
-  <section>
+  <section class="md:mx-11">
     <h2 class="opacity-0 anime">Experiences</h2>
     <div class="grid mt-2 sm:grid-cols-3 sm:-ml-3">
       <Card
@@ -40,7 +40,7 @@ export default {
           title: "Flowey's Time Machine",
           role: "Lead Designer",
           description:
-            "An editor tool for Undertale that allows you to change everything in your save file",
+            "An editor tool for Undertale that lets you change everything in your save file",
         },
         {
           url: "https://store.steampowered.com/app/1115050/Will_You_Snail",

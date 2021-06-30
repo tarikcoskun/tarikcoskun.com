@@ -7,7 +7,7 @@
       grid
       place-items-start
       w-full
-      hover:bg-[#bebebe]
+      hover:bg-[#cecece]
       rounded-lg
       duration-200
     "

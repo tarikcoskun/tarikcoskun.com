@@ -1,6 +1,6 @@
 <template>
   <section
-    class="flex flex-col justify-center py-24 md:p-0 md:my-24"
+    class="flex flex-col justify-center py-24 md:py-12 md:my-12"
     id="about"
   >
     <h1 class="leading-[3.5rem] opacity-0 text-5xl anime">

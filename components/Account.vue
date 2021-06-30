@@ -8,11 +8,11 @@
     class="
       flex
       items-center
-      w-12
-      h-12
+      w-11
+      h-11
       justify-center
       rounded-lg
-      hover:bg-[#bebebe]
+      hover:bg-[#cecece]
       transition-colors
       duration-200
     "

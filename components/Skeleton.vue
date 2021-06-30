@@ -15,10 +15,5 @@
 <script>
 export default {
   props: ["img"],
-  data() {
-    return {
-      itemLoaded: false,
-    };
-  },
 };
 </script>

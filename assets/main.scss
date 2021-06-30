@@ -5,13 +5,13 @@ html {
     @apply w-0 h-0;
   }
   ::selection {
-    @apply bg-[#aeaeae];
+    @apply bg-[#bebebe];
   }
 }
 
 body {
-  background: #cecece;
-  @apply mx-4 my-8 md:m-0 max-w-6xl md:mx-auto lg:mb-16 overflow-x-hidden;
+  background: #dedede;
+  @apply m-4 md:m-0 max-w-6xl md:mx-auto lg:mb-16 overflow-x-hidden;
 }
 
 h1 {

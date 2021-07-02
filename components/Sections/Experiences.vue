@@ -57,7 +57,7 @@ export default {
             "Taking voice conversations to the moon, but it's cancelled",
         },
         {
-          title: "Trigon",
+          title: "Trigon Bot",
           role: "Creator",
           description:
             "Trigon was a Discord bot I made, my main source of learning Node.js",

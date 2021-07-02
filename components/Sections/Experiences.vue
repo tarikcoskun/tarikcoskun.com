@@ -1,5 +1,5 @@
 <template>
-  <section class="md:mx-16">
+  <section class="md:mx-24">
     <h2 class="opacity-0 anime">Experiences</h2>
     <div class="grid mt-1 sm:grid-cols-3 sm:-ml-3">
       <Card

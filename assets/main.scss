@@ -13,7 +13,8 @@ html {
 }
 
 body {
-  @apply bg-[#dedede] m-4 md:m-0 max-w-6xl md:mx-auto lg:mb-16 overflow-x-hidden;
+  background: url("~/assets/img/test.webp") #dedede no-repeat;
+  @apply m-4 md:m-0 max-w-6xl md:mx-auto lg:mb-16 bg-contain bg-center overflow-x-hidden;
 }
 
 h1 {

@@ -12,7 +12,7 @@
       h-11
       justify-center
       rounded-lg
-      hover:bg-[#cecece]
+      hover:bg-[#d2d2d2]
       transition-colors
       duration-200
     "

@@ -2,20 +2,22 @@ html {
   font-family: "Poppins", sans-serif;
   scroll-behavior: smooth;
   ::-webkit-scrollbar {
-    @apply w-0 h-0;
+    @apply w-2;
+    &-thumb {
+      background: #bebebe;
+    }
   }
   ::selection {
-    @apply bg-[#bebebe];
+    background: #bebebe;
   }
 }
 
 body {
-  background: #dedede;
-  @apply m-4 md:m-0 max-w-6xl md:mx-auto lg:mb-16 overflow-x-hidden;
+  @apply bg-[#dedede] m-4 md:m-0 max-w-6xl md:mx-auto lg:mb-16 overflow-x-hidden;
 }
 
 h1 {
-  font-family: "IBM Plex Sans";
+  font-family: "IBM Plex Sans", "Poppins", sans-serif;
   @apply text-black mb-1 text-2xl;
 }
 
@@ -33,13 +35,6 @@ span,
 svg,
 img {
   @apply select-none;
-}
-
-.link {
-  @apply text-lg px-1 leading-6 -ml-1 rounded-md transition-colors duration-200 font-medium text-[#212138];
-  &:hover {
-    background: #79798a;
-  }
 }
 
 #about {

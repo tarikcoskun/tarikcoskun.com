@@ -10,6 +10,7 @@
       hover:bg-[#cecece]
       rounded-lg
       duration-200
+      cursor-pointer
     "
     draggable="false"
     v-wave
@@ -32,7 +33,7 @@
       </div>
     </div>
     <p
-      class="p-2 pt-0 sm:p-3 sm:pt-0"
+      class="p-2 pt-0 leading-6 sm:p-3 sm:pt-0"
       v-if="description"
       v-html="description"
     ></p>

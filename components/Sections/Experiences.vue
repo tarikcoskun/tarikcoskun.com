@@ -1,7 +1,7 @@
 <template>
-  <section class="md:mx-11">
+  <section class="md:mx-16">
     <h2 class="opacity-0 anime">Experiences</h2>
-    <div class="grid mt-2 sm:grid-cols-3 sm:-ml-3">
+    <div class="grid mt-1 sm:grid-cols-3 sm:-ml-3">
       <Card
         v-for="(position, index) in positions"
         :key="index"
@@ -53,7 +53,14 @@ export default {
           url: "https://dogehouse.tv",
           title: "DogeHouse",
           role: "Translator",
-          description: "Taking voice conversations to the moon 🚀 [CANCELLED]",
+          description:
+            "Taking voice conversations to the moon, but it's cancelled",
+        },
+        {
+          title: "Trigon",
+          role: "Creator",
+          description:
+            "Trigon was a Discord bot I made, my main source of learning Node.js",
         },
       ],
     };

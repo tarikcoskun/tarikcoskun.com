@@ -5,7 +5,7 @@
     rel="noreferrer"
     class="
       grid
-      place-items-start
+      place-items-start place-content-start
       w-full
       hover:bg-[#cecece]
       rounded-lg
@@ -17,6 +17,7 @@
   >
     <div class="flex items-center p-2 space-x-4 sm:p-3">
       <Skeleton
+        v-if="img"
         :img="
           title
             .toLowerCase()
@@ -42,6 +43,6 @@
 
 <script>
 export default {
-  props: ["url", "title", "role", "description"],
+  props: ["url", "title", "role", "description", "img"],
 };
 </script>

@@ -1,16 +1,17 @@
 <template>
   <section class="md:mx-24">
-    <h2 class="opacity-0 anime">Experiences</h2>
+    <h2 class="opacity-0 anime-text">Experiences</h2>
     <div class="grid mt-1 sm:grid-cols-3 sm:-ml-3">
       <Card
         v-for="(position, index) in positions"
         :key="index"
+        :img="true"
         :url="position.url"
         :title="position.title"
         :role="position.role"
         :color="position.color"
         :description="position.description"
-        class="opacity-0 anime-experiences"
+        class="opacity-0 anime-cards"
       />
     </div>
   </section>

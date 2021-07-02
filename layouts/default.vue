@@ -12,7 +12,7 @@ export default {
       const anime = this.$anime;
 
       anime({
-        targets: ".anime",
+        targets: ".anime-text",
         translateX: [-35, 0],
         opacity: 1,
         duration: 1500,
@@ -30,7 +30,7 @@ export default {
       });
 
       anime({
-        targets: ".anime-experiences",
+        targets: ".anime-cards",
         translateY: [25, 0],
         opacity: 1,
         delay: anime.stagger(250, { start: 1000 }),

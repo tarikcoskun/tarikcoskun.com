@@ -3,11 +3,11 @@
     class="flex flex-col justify-center py-24 md:py-12 md:my-12"
     id="about"
   >
-    <h1 class="leading-[3.5rem] opacity-0 text-5xl anime">
+    <h1 class="leading-[3.5rem] opacity-0 text-5xl anime-text">
       Hello, <br />
       it's Tarık C.
     </h1>
-    <p class="my-2 text-xl opacity-0 md:w-1/2 anime">
+    <p class="my-2 text-xl opacity-0 md:w-1/2 anime-text">
       I'm a Front-end developer with over 3 years of experience. Aside coding,
       translating stuff voluntarily.
     </p>

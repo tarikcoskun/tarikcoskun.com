@@ -45,7 +45,7 @@ export default {
         {
           url: "https://store.steampowered.com/app/1115050/Will_You_Snail",
           title: "Will You Snail?",
-          role: "Translator",
+          role: "Translator, Tester",
           description:
             "A fast paced action platformer where an evil AI tries to kill you with predictions",
         },
@@ -58,7 +58,7 @@ export default {
         },
         {
           title: "Trigon Bot",
-          role: "Creator",
+          role: "Creator, Developer",
           description:
             "Trigon was a Discord bot I made, my main source of learning Node.js",
         },

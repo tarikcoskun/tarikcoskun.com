@@ -1,5 +1,6 @@
 <template>
   <div>
+    <div class="w-full h-2 bg-[#a991ab]"></div>
     <Nuxt />
     <img class="hidden" src="/icon.png" alt="*ghost*" @load="animate" />
   </div>

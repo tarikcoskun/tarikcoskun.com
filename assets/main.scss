@@ -4,7 +4,7 @@ html {
   ::-webkit-scrollbar {
     @apply w-2;
     &-thumb {
-      background: #89869e;
+      background: #b0b0b0;
     }
   }
   ::selection {
@@ -14,7 +14,7 @@ html {
 
 body {
   background: url("~/assets/img/test.webp") #dedede no-repeat;
-  @apply m-4 md:m-0 max-w-6xl md:mx-auto lg:mb-16 bg-contain bg-center overflow-x-hidden;
+  @apply m-4 md:m-0 lg:mb-16 bg-contain bg-center overflow-x-hidden;
 }
 
 h1 {

@@ -14,7 +14,7 @@ html {
 
 body {
   background: url("~/assets/img/test.webp") #dedede no-repeat;
-  @apply m-4 md:m-0 lg:mb-16 bg-contain bg-center overflow-x-hidden;
+  @apply lg:mb-16 bg-contain bg-center overflow-x-hidden;
 }
 
 h1 {

@@ -26,28 +26,28 @@ export default {
           title: "Discord Templates",
           role: "Moderator",
           description:
-            "A service for Discord that allows you to share server templates",
+            "A service for Discord that lets you share server templates",
         },
         {
           url: "https://premid.app",
           title: "PreMiD",
           role: "Translator",
           description:
-            "A utility that allows you to show what you're doing in your Discord status",
+            "A utility that lets you show what you're doing in your Discord status",
         },
         {
           url: "https://crumblingstatue.github.io/FloweysTimeMachine",
           title: "Flowey's Time Machine",
           role: "Lead Designer",
           description:
-            "An editor tool for Undertale that lets you change everything in your save file",
+            "An editor tool for Undertale that lets you change everything in your save",
         },
         {
           url: "https://store.steampowered.com/app/1115050/Will_You_Snail",
           title: "Will You Snail?",
           role: "Translator, Tester",
           description:
-            "A fast paced action platformer where an evil AI tries to kill you with predictions",
+            "An action platformer where an evil AI tries to kill you with predictions",
         },
         {
           url: "https://dogehouse.tv",

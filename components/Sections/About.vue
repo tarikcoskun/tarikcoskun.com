@@ -8,8 +8,8 @@
       it's Tarık C.
     </h1>
     <p class="my-2 text-xl opacity-0 md:w-1/2 anime-text">
-      I'm a Front-end developer with over 3 years of experience. Aside coding,
-      translating stuff voluntarily.
+      I'm a self taught Front-end developer with over 3 years of experience.
+      Aside coding, translating stuff voluntarily.
     </p>
     <div class="flex items-center flex-shrink-0 -ml-2">
       <Account

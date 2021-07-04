@@ -14,7 +14,7 @@ html {
 
 body {
   background: url("~/assets/img/bg-pattern.webp") no-repeat;
-  @apply lg:mb-16 bg-cover overflow-x-hidden;
+  @apply lg:mb-16 bg-contain md:bg-cover overflow-x-hidden;
 }
 
 h1 {

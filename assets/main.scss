@@ -13,7 +13,7 @@ html {
 }
 
 body {
-  background: url("~/assets/img/bg-pattern.webp") no-repeat;
+  background: url("~/assets/img/bg-pattern.webp") #dedede no-repeat;
   @apply lg:mb-16 bg-contain md:bg-cover overflow-x-hidden;
 }
 

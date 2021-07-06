@@ -1,16 +1,31 @@
 <template>
-  <main style="grid-template-columns: 17.5% 82.5%">
+  <main style="grid-template-columns: 17.5% 42.5% 40%">
     <Navbar class="md:hidden" />
     <Sidebar class="hidden md:flex" />
     <section class="header-container">
       <div class="header">
-        <h1 class="header-upper" v-if="this.$route.path != '/'">
-          {{ this.$route.path.split("/").pop() }}
-        </h1>
+        <h1 class="header-upper">Hello, it's</h1>
         <h1>Tarık Coşkun</h1>
       </div>
       <Nuxt />
-      <div class="background-pattern"></div>
+    </section>
+    <section class="header-container featured-content">
+      <div class="header">
+        <h1 class="header-upper">Latest</h1>
+        <h1>Articles</h1>
+      </div>
+      <div class="article-container">
+        <Article
+          title="Lorem ipsum, dolor sit amet!"
+          date="05.07.2021"
+          description="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus ullam nisi?"
+        />
+        <Article
+          title="Lorem ipsum, dolor sit amet!"
+          date="05.07.2021"
+          description="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus ullam nisi?"
+        />
+      </div>
     </section>
   </main>
 </template>

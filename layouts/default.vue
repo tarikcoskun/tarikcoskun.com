@@ -25,7 +25,7 @@
       <Nuxt />
     </section>
     <section
-      class="mt-8 border-l border-gray-300 md:pb-4 md:mt-0 header-container"
+      class="mt-8 border-l md:pb-4 md:mt-0 header-container"
       v-show="$route.path == '/'"
     >
       <header>

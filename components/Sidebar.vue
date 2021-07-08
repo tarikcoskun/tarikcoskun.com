@@ -1,7 +1,5 @@
 <template>
-  <section
-    class="z-10 flex-col justify-between bg-gray-100 border-r border-gray-300  sidebar"
-  >
+  <section class="z-10 flex-col justify-between border-r sidebar">
     <div class="flex flex-col gap-2 page-links">
       <NuxtLink to="/">Home</NuxtLink>
       <NuxtLink to="/works">Works</NuxtLink>

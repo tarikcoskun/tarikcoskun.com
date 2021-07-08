@@ -1,11 +1,6 @@
 <template>
   <div
-    class="
-      w-[3.75rem]
-      h-[3.75rem]
-      border border-[#a09e9c]
-      bg-left bg-no-repeat bg-cover bg-[#111111]
-    "
+    class="w-14 h-14 bg-left bg-no-repeat bg-cover bg-[#111111]"
     :style="{
       backgroundImage: `url('/${img}.webp')`,
     }"

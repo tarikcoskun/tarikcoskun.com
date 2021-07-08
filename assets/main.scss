@@ -15,7 +15,7 @@ body {
 p,
 a,
 span {
-  @apply text-lg text-gray-800 md:text-justify;
+  @apply text-lg text-gray-700 md:text-justify;
 }
 
 h1 {
@@ -29,7 +29,7 @@ h2 {
 .navbar .page-links a {
   @apply text-xl relative;
   &.nuxt-link-exact-active {
-    @apply font-medium flex items-center;
+    @apply flex items-center font-medium;
     &::before {
       content: "";
       @apply bg-gray-700 w-4 h-1.5 -top-2 left-1/2 transform -translate-x-1/2 absolute;
@@ -66,5 +66,5 @@ main {
 }
 
 section {
-  @apply px-4;
+  @apply px-4 bg-gray-100 border-gray-300;
 }

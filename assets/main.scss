@@ -15,7 +15,7 @@ body {
 p,
 a,
 span {
-  @apply text-lg text-gray-800 text-justify;
+  @apply text-lg text-gray-800 md:text-justify;
 }
 
 h1 {

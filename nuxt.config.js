@@ -34,9 +34,6 @@ export default {
   modules: ["@nuxtjs/svg"],
   googleFonts: {
     families: {
-      "IBM Plex Sans": {
-        wght: [600],
-      },
       Poppins: {
         wght: [400, 500],
       },

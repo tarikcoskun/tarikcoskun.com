@@ -1,9 +1,11 @@
 <template>
-  <article>
-    <NuxtLink to="/blog/post" v-html="title"></NuxtLink>
+  <article class="relative py-2">
+    <NuxtLink class="text-2xl font-medium" to="/blog/post">
+      {{ title }}
+    </NuxtLink>
     <br />
-    <span v-html="date"></span>
-    <p v-html="description"></p>
+    <span>{{ date }}</span>
+    <p class="mt-1">{{ description }}</p>
   </article>
 </template>
 

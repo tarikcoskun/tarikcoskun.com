@@ -1,17 +1,17 @@
 <template>
-  <div class="main-content">
-    <div class="works-container">
+  <main>
+    <div class="grid md:grid-cols-2">
       <Work
         v-for="(work, index) in works"
         :key="index"
         :url="work.url"
-        :img="work.img"
         :role="work.role"
         :title="work.title"
         :description="work.description"
+        :class="[index % 2 == 1 ? 'md:border-l pr-0 md:pl-4' : 'pl-0 md:pr-4']"
       />
     </div>
-  </div>
+  </main>
 </template>
 
 <script>

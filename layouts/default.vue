@@ -1,18 +1,51 @@
 <template>
-  <main style="grid-template-columns: 17.5% 82.5%">
+  <div
+    class="
+      py-4
+      h-screen
+      w-full
+      md:grid
+      md:py-8
+      md:overflow-hidden
+      grid-rows-[100%]
+    "
+    :class="[
+      $route.path == '/'
+        ? 'grid-cols-[17.5%,42.5%,40%]'
+        : 'grid-cols-[17.5%,82.5%]',
+    ]"
+  >
     <Navbar class="md:hidden" />
     <Sidebar class="hidden md:flex" />
     <section class="header-container">
-      <div class="header">
-        <h1 class="header-upper" v-if="this.$route.path != '/'">
-          {{ this.$route.path.split("/").pop() }}
-        </h1>
+      <header>
+        <h2>{{ this.$route.path.split("/").pop() || "Hello, it's" }}</h2>
         <h1>Tarık Coşkun</h1>
-      </div>
+      </header>
       <Nuxt />
-      <div class="background-pattern"></div>
     </section>
-  </main>
+    <section
+      class="mt-8 border-l border-gray-300 md:pb-4 md:mt-0 header-container"
+      v-show="$route.path == '/'"
+    >
+      <header>
+        <h2>Latest</h2>
+        <h1>Articles</h1>
+      </header>
+      <div class="article-container">
+        <Article
+          title="Lorem ipsum, dolor sit amet!"
+          date="05.07.2021"
+          description="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus ullam nisi?"
+        />
+        <Article
+          title="Lorem ipsum, dolor sit amet!"
+          date="05.07.2021"
+          description="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus ullam nisi?"
+        />
+      </div>
+    </section>
+  </div>
 </template>
 
 <script>

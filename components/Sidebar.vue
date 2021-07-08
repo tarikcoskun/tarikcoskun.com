@@ -1,34 +1,26 @@
 <template>
-  <section class="sidebar">
-    <div class="page-links">
+  <section
+    class="z-10 flex-col justify-between bg-gray-100 border-r border-gray-300  sidebar"
+  >
+    <div class="flex flex-col gap-2 page-links">
       <NuxtLink to="/">Home</NuxtLink>
       <NuxtLink to="/works">Works</NuxtLink>
       <NuxtLink to="/blog">Blog</NuxtLink>
     </div>
-    <div class="social-links">
+    <div class="flex flex-col gap-2">
       <a
-        href="https://discord.com/users/474537652943847444"
+        v-for="account in accounts"
+        :key="account"
+        :href="account.link"
         target="_blank"
         rel="noreferrer"
+        class="flex items-center gap-3 text-xl"
       >
-        <DiscordIcon />
-        <h2>Discord</h2>
-      </a>
-      <a
-        href="https://twitter.com/itstarikcoskun"
-        target="_blank"
-        rel="noreferrer"
-      >
-        <TwitterIcon />
-        <h2>Twitter</h2>
-      </a>
-      <a href="https://github.com/tarikcoskun" target="_blank" rel="noreferrer">
-        <GitHubIcon />
-        <h2>GitHub</h2>
-      </a>
-      <a href="mailto:imtarikcoskun@gmail.com" target="_blank" rel="noreferrer">
-        <MailIcon />
-        <h2>Mail</h2>
+        <DiscordIcon v-if="account.name == 'Discord'" />
+        <TwitterIcon v-if="account.name == 'Twitter'" />
+        <GitHubIcon v-if="account.name == 'GitHub'" />
+        <MailIcon v-if="account.name == 'Mail'" />
+        <h3>{{ account.name }}</h3>
       </a>
     </div>
   </section>
@@ -42,5 +34,27 @@ import MailIcon from "~/static/mail.svg?inline";
 
 export default {
   components: { DiscordIcon, TwitterIcon, GitHubIcon, MailIcon },
+  data() {
+    return {
+      accounts: [
+        {
+          link: "https://discord.com/users/474537652943847444",
+          name: "Discord",
+        },
+        {
+          link: "https://twitter.com/itstarikcoskun",
+          name: "Twitter",
+        },
+        {
+          link: "https://github.com/tarikcoskun",
+          name: "GitHub",
+        },
+        {
+          link: "mailto:imtarikcoskun@gmail.com",
+          name: "Mail",
+        },
+      ],
+    };
+  },
 };
 </script>

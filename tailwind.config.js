@@ -1,8 +1,8 @@
 module.exports = {
   mode: "jit",
-  darkMode: "class",
-  future: {},
-  purge: [],
-  theme: {},
-  variants: {},
+  theme: {
+    fontFamily: {
+      poppins: ["Poppins", "sans-serif"],
+    },
+  },
 };

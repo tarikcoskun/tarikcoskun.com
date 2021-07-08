@@ -6,38 +6,41 @@
       <NuxtLink to="/blog">Blog</NuxtLink>
     </div>
     <div class="social-links">
-      <a href="https://discord.com/users/474537652943847444" target="_blank">
+      <a
+        href="https://discord.com/users/474537652943847444"
+        target="_blank"
+        rel="noreferrer"
+      >
         <DiscordIcon />
         <h2>Discord</h2>
       </a>
-      <a href="https://twitter.com/itstarikcoskun" target="_blank">
+      <a
+        href="https://twitter.com/itstarikcoskun"
+        target="_blank"
+        rel="noreferrer"
+      >
         <TwitterIcon />
         <h2>Twitter</h2>
       </a>
-      <a href="https://github.com/tarikcoskun" target="_blank">
+      <a href="https://github.com/tarikcoskun" target="_blank" rel="noreferrer">
         <GitHubIcon />
         <h2>GitHub</h2>
       </a>
-      <a href="mailto:imtarikcoskun@gmail.com" target="_blank">
+      <a href="mailto:imtarikcoskun@gmail.com" target="_blank" rel="noreferrer">
         <MailIcon />
         <h2>Mail</h2>
-      </a>
-      <a href="https://github.com/tarikcoskun/website" target="_blank">
-        <SourceIcon />
-        <h2>Source</h2>
       </a>
     </div>
   </section>
 </template>
 
 <script>
-import DiscordIcon from "~/assets/img/discord.svg?inline";
-import TwitterIcon from "~/assets/img/twitter.svg?inline";
-import GitHubIcon from "~/assets/img/github.svg?inline";
-import MailIcon from "~/assets/img/mail.svg?inline";
-import SourceIcon from "~/assets/img/source.svg?inline";
+import DiscordIcon from "~/static/discord.svg?inline";
+import TwitterIcon from "~/static/twitter.svg?inline";
+import GitHubIcon from "~/static/github.svg?inline";
+import MailIcon from "~/static/mail.svg?inline";
 
 export default {
-  components: { DiscordIcon, TwitterIcon, GitHubIcon, MailIcon, SourceIcon },
+  components: { DiscordIcon, TwitterIcon, GitHubIcon, MailIcon },
 };
 </script>

@@ -31,10 +31,10 @@
 </template>
 
 <script>
-import DiscordIcon from "~/assets/img/discord.svg?inline";
-import TwitterIcon from "~/assets/img/twitter.svg?inline";
-import GitHubIcon from "~/assets/img/github.svg?inline";
-import MailIcon from "~/assets/img/mail.svg?inline";
+import DiscordIcon from "~/static/discord.svg?inline";
+import TwitterIcon from "~/static/twitter.svg?inline";
+import GitHubIcon from "~/static/github.svg?inline";
+import MailIcon from "~/static/mail.svg?inline";
 
 export default {
   components: { DiscordIcon, TwitterIcon, GitHubIcon, MailIcon },

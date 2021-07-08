@@ -5,11 +5,10 @@ export default {
     meta: [
       { charset: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { name: "theme-color", content: "#30343b" },
+      { name: "theme-color", content: "#3a3a3a" },
       {
         name: "description",
-        content:
-          "Personal website of Tarık Coşkun, 15 years old Turkish front-end developer",
+        content: "My personal website, portfolio, playground!",
       },
     ],
   },
@@ -32,14 +31,7 @@ export default {
     "@nuxtjs/google-fonts",
     "nuxt-animejs",
   ],
-  modules: ["v-wave/nuxt", "@nuxtjs/svg"],
-  vWave: {
-    duration: 0.2,
-    finalOpacity: 0.1,
-  },
-  colorMode: {
-    classSuffix: "",
-  },
+  modules: ["@nuxtjs/svg"],
   googleFonts: {
     families: {
       "IBM Plex Sans": {

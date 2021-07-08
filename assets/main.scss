@@ -24,6 +24,7 @@ html {
 
 body {
   background: $background;
+  max-width: 1366px;
   margin: auto;
 }
 
@@ -128,6 +129,7 @@ article {
     gap: 8px;
     a {
       font-size: 24px;
+      position: relative;
       &.nuxt-link-exact-active {
         display: flex;
         align-items: center;
@@ -138,7 +140,7 @@ article {
           width: 6px;
           height: 12px;
           position: absolute;
-          left: 0;
+          left: -16px;
         }
       }
     }
@@ -195,10 +197,14 @@ article {
   }
   .works-container {
     display: grid;
-    article:not(:last-child) {
+    article {
       border-bottom: $border;
     }
   }
+}
+
+.featured-content {
+  margin-top: 32px;
 }
 
 @media screen and (min-width: 768px) {

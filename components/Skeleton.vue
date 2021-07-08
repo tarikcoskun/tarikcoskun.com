@@ -7,7 +7,7 @@
       bg-left bg-no-repeat bg-cover bg-[#111111]
     "
     :style="{
-      backgroundImage: `url('/assets/${img}.webp')`,
+      backgroundImage: `url('/${img}.webp')`,
     }"
   ></div>
 </template>

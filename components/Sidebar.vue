@@ -1,11 +1,11 @@
 <template>
   <section class="z-10 sidebar">
-    <div class="fixed flex flex-col gap-2 top-8 page-links">
+    <div class="fixed z-10 flex flex-col gap-2 top-8 page-links">
       <NuxtLink to="/">Home</NuxtLink>
       <NuxtLink to="/works">Works</NuxtLink>
       <NuxtLink to="/blog">Blog</NuxtLink>
     </div>
-    <div class="fixed flex flex-col gap-2 bottom-8">
+    <div class="fixed z-10 flex flex-col gap-2 bottom-8">
       <a
         v-for="account in accounts"
         :key="account"

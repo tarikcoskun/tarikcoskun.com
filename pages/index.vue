@@ -20,6 +20,7 @@
         class="flex items-center px-3 py-1.5 text-xl bg-gray-200"
         v-for="tech in tech"
         :key="tech"
+        translate="no"
       >
         {{ tech }}
       </h3>

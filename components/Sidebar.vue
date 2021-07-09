@@ -7,8 +7,8 @@
     </div>
     <div class="fixed z-10 flex flex-col gap-2 bottom-8">
       <a
-        v-for="account in accounts"
-        :key="account"
+        v-for="(account, index) in accounts"
+        :key="index"
         :href="account.link"
         target="_blank"
         rel="noreferrer"
@@ -21,7 +21,7 @@
         <h3 translate="no">{{ account.name }}</h3>
       </a>
     </div>
-    <div class="fixed h-[calc(100vh-4rem)] border-r w-[calc(17.5%-1rem)]"></div>
+    <div class="fixed h-[calc(100vh-4rem)] border-r w-[calc(20%-1rem)]"></div>
   </section>
 </template>
 

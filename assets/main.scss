@@ -1,4 +1,5 @@
 html {
+  scroll-behavior: smooth;
   @apply font-poppins;
   ::-webkit-scrollbar {
     @apply w-2;
@@ -40,13 +41,15 @@ h2 {
   }
 }
 
-.sidebar .page-links a {
-  @apply text-2xl relative;
-  &.nuxt-link-exact-active {
-    @apply flex items-center font-medium;
-    &::before {
-      content: "";
-      @apply bg-gray-700 w-1.5 h-4 absolute -left-4;
+.sidebar {
+  .page-links a {
+    @apply text-2xl relative;
+    &.nuxt-link-exact-active {
+      @apply flex items-center font-medium;
+      &::before {
+        content: "";
+        @apply bg-gray-700 w-1.5 h-4 absolute -left-4;
+      }
     }
   }
 }
@@ -73,13 +76,11 @@ section {
 }
 
 .nuxt-content {
-  h3 {
-    @apply text-xl font-bold mb-1;
+  h1,
+  h2 {
+    @apply m-0 mb-1;
   }
-  p {
-    @apply mb-4;
-  }
-  code {
-    @apply bg-gray-200 rounded px-1;
+  img {
+    @apply rounded-lg mx-auto;
   }
 }

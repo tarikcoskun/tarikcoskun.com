@@ -2,9 +2,11 @@
   <div
     class="py-4 h-screen w-full md:grid md:py-8 grid-rows-[100%]"
     :class="[
-      $route.path == '/'
-        ? 'grid-cols-[17.5%,42.5%,40%]'
-        : 'grid-cols-[17.5%,82.5%]',
+      $route.name == 'index'
+        ? 'grid-cols-[20%,40%,40%]'
+        : $route.name == 'blog-slug'
+        ? 'grid-cols-[20%,57.5%,22.5%] '
+        : 'grid-cols-[20%,80%]',
     ]"
   >
     <Navbar class="md:hidden" />
@@ -17,18 +19,18 @@
               ? $route.name == "index"
                 ? "Hello, it's"
                 : $route.name
-              : header.upper
+              : getDate(post.date)
           }}
         </h2>
         <h1>
-          {{ $route.name != "blog-slug" ? "Tarık Coşkun" : header.title }}
+          {{ $route.name != "blog-slug" ? "Tarık Coşkun" : post.title }}
         </h1>
       </header>
       <Nuxt />
     </section>
     <section
       class="mt-8 border-l md:pb-4 md:mt-0 header-container"
-      v-show="$route.path == '/'"
+      v-show="$route.name == 'index'"
     >
       <header>
         <h2>Latest</h2>
@@ -45,6 +47,7 @@
         />
       </div>
     </section>
+    <PostHeads :toc="post.toc" v-show="$route.name == 'blog-slug'" />
   </div>
 </template>
 
@@ -60,15 +63,15 @@ export default {
     this.animate();
   },
   created() {
-    this.$nuxt.$on("header", (data) => {
-      this.header = data;
+    this.$nuxt.$on("post", (data) => {
+      this.post = data;
     });
   },
   data() {
     return {
       posts: [],
       pages: ["/", "/works", "/blog"],
-      header: "",
+      post: "",
     };
   },
   async fetch() {

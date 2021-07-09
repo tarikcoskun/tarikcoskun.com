@@ -1,6 +1,6 @@
 <template>
   <main>
-    <nuxt-content :document="post" class="mt-4" />
+    <nuxt-content :document="post" class="mt-2 prose-lg prose-blue" />
   </main>
 </template>
 
@@ -12,13 +12,10 @@ export default {
     };
   },
   mounted() {
-    this.$nuxt.$emit("header", {
-      title: this.post.title,
-      upper: this.getDate(this.post.date),
-    });
+    this.$nuxt.$emit("post", this.post);
   },
   beforeDestroy() {
-    this.$nuxt.$off("header");
+    this.$nuxt.$off("post");
   },
 };
 </script>

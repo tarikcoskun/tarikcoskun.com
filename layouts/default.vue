@@ -1,6 +1,6 @@
 <template>
   <div
-    class="py-4 h-screen w-full md:grid md:py-8 grid-rows-[100%]"
+    class="py-4 w-full md:grid md:py-8 grid-rows-[100%]"
     :class="[
       $route.name == 'index'
         ? 'grid-cols-[20%,40%,40%]'

@@ -17,7 +17,7 @@
     <h2>What I use...</h2>
     <div class="grid grid-cols-2 gap-1 mb-2 tech-container md:grid-cols-3">
       <h3
-        class="flex items-center px-3 py-1.5 text-xl bg-gray-200"
+        class="flex items-center px-3 py-1.5 text-xl bg-gray-200 select-none"
         v-for="tech in tech"
         :key="tech"
         translate="no"

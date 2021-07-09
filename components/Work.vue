@@ -2,6 +2,7 @@
   <article class="p-4 px-0 border-b border-gray-300">
     <div class="flex items-center gap-4">
       <Skeleton
+        class="rounded-lg"
         :img="
           title
             .toLowerCase()
@@ -12,7 +13,7 @@
         "
       />
       <div>
-        <a class="-mb-1 text-xl" v-html="title"></a>
+        <a class="-mb-1 text-xl font-medium" v-html="title"></a>
         <p v-html="role"></p>
       </div>
     </div>

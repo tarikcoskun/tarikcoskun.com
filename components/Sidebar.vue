@@ -18,7 +18,7 @@
         <TwitterIcon v-if="account.name == 'Twitter'" />
         <GitHubIcon v-if="account.name == 'GitHub'" />
         <MailIcon v-if="account.name == 'Mail'" />
-        <h3>{{ account.name }}</h3>
+        <h3 translate="no">{{ account.name }}</h3>
       </a>
     </div>
     <div class="fixed h-[calc(100vh-4rem)] border-r w-[calc(17.5%-1rem)]"></div>

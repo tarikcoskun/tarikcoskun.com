@@ -13,8 +13,10 @@
         "
       />
       <div>
-        <a class="-mb-1 text-xl font-medium" v-html="title"></a>
-        <p v-html="role"></p>
+        <a class="-mb-1 text-xl font-medium" :href="url" target="_blank">
+          {{ title }}
+        </a>
+        <p>{{ role }}</p>
       </div>
     </div>
     <p class="mt-2" v-html="description"></p>

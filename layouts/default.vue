@@ -13,7 +13,17 @@
       <header>
         <h2>
           {{
-            pages.includes($route.path.substring($route.path.lastIndexOf("/")))
+            (
+              $route.path != "/" && $route.path.endsWith("/")
+                ? pages.includes(
+                    $route.path
+                      .slice(0, -1)
+                      .substring($route.path.lastIndexOf("/"))
+                  )
+                : pages.includes(
+                    $route.path.substring($route.path.lastIndexOf("/"))
+                  )
+            )
               ? $route.path == "/"
                 ? "Hello, it's"
                 : $route.path.split("/").pop()

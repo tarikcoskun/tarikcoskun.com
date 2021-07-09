@@ -13,29 +13,15 @@
       <header>
         <h2>
           {{
-            (
-              $route.path != "/" && $route.path.endsWith("/")
-                ? pages.includes(
-                    $route.path
-                      .slice(0, -1)
-                      .substring($route.path.slice(0, -1).lastIndexOf("/"))
-                  )
-                : pages.includes(
-                    $route.path.substring($route.path.lastIndexOf("/"))
-                  )
-            )
-              ? $route.path == "/"
+            $route.name != "blog-slug"
+              ? $route.name == "index"
                 ? "Hello, it's"
-                : $route.path.split("/").pop()
+                : $route.name
               : header.upper
           }}
         </h2>
         <h1>
-          {{
-            pages.includes($route.path.substring($route.path.lastIndexOf("/")))
-              ? "Tarık Coşkun"
-              : header.title
-          }}
+          {{ $route.name != "blog-slug" ? "Tarık Coşkun" : header.title }}
         </h1>
       </header>
       <Nuxt />

@@ -1,5 +1,5 @@
 <template>
-  <section class="z-10 border-r sidebar">
+  <section class="z-10 sidebar">
     <div class="fixed flex flex-col gap-2 top-8 page-links">
       <NuxtLink to="/">Home</NuxtLink>
       <NuxtLink to="/works">Works</NuxtLink>
@@ -21,6 +21,7 @@
         <h3>{{ account.name }}</h3>
       </a>
     </div>
+    <div class="fixed h-[calc(100vh-4rem)] border-r w-[calc(17.5%-1rem)]"></div>
   </section>
 </template>
 

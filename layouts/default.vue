@@ -8,7 +8,7 @@
     ]"
   >
     <Navbar class="md:hidden" />
-    <Sidebar class="hidden md:flex" />
+    <Sidebar class="hidden md:block" />
     <section class="h-full header-container">
       <header>
         <h2>

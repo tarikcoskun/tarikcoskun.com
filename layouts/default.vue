@@ -18,7 +18,7 @@
                 ? pages.includes(
                     $route.path
                       .slice(0, -1)
-                      .substring($route.path.lastIndexOf("/"))
+                      .substring($route.path.slice(0, -1).lastIndexOf("/"))
                   )
                 : pages.includes(
                     $route.path.substring($route.path.lastIndexOf("/"))

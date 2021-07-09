@@ -1,6 +1,6 @@
 <template>
   <main>
-    <nuxt-content :document="post" class="mt-2 prose-lg prose-blue" />
+    <nuxt-content :document="post" class="pb-2 mt-2 prose-lg prose-blue" />
   </main>
 </template>
 

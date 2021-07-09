@@ -19,8 +19,22 @@
     <Sidebar class="hidden md:flex" />
     <section class="header-container">
       <header>
-        <h2>{{ this.$route.path.split("/").pop() || "Hello, it's" }}</h2>
-        <h1>Tarık Coşkun</h1>
+        <h2>
+          {{
+            pages.includes($route.path.substring($route.path.lastIndexOf("/")))
+              ? $route.path == "/"
+                ? "Hello, it's"
+                : $route.path.split("/").pop()
+              : header.upper
+          }}
+        </h2>
+        <h1>
+          {{
+            pages.includes($route.path.substring($route.path.lastIndexOf("/")))
+              ? "Tarık Coşkun"
+              : header.title
+          }}
+        </h1>
       </header>
       <Nuxt />
     </section>
@@ -32,16 +46,14 @@
         <h2>Latest</h2>
         <h1>Articles</h1>
       </header>
-      <div class="article-container">
+      <div>
         <Article
-          title="Lorem ipsum, dolor sit amet!"
-          date="05.07.2021"
-          description="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus ullam nisi?"
-        />
-        <Article
-          title="Lorem ipsum, dolor sit amet!"
-          date="05.07.2021"
-          description="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus ullam nisi?"
+          v-for="post in posts"
+          :key="post.id"
+          :to="`/blog/${post.slug}`"
+          :title="post.title"
+          :date="post.date"
+          :description="post.description"
         />
       </div>
     </section>
@@ -58,6 +70,21 @@ export default {
   components: { DiscordIcon, TwitterIcon, GitHubIcon, MailIcon },
   mounted() {
     this.animate();
+  },
+  created() {
+    this.$nuxt.$on("header", (data) => {
+      this.header = data;
+    });
+  },
+  data() {
+    return {
+      posts: [],
+      pages: ["/", "/works", "/blog"],
+      header: "",
+    };
+  },
+  async fetch() {
+    this.posts = await this.$content().fetch();
   },
   methods: {
     animate() {

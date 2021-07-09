@@ -10,7 +10,7 @@
         href="https://crowdin.com/profile/tarikcoskun"
         target="_blank"
         rel="noreferrer"
-        class="border-b-2 border-gray-300 hover:border-gray-300"
+        class="border-b-2 border-gray-300 hover:border-gray-400"
         >here</a
       >.
     </p>

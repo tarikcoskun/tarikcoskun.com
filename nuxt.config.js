@@ -20,18 +20,20 @@ export default {
   },
   css: ["~/assets/main.scss"],
   components: true,
-  tailwindcss: {
-    viewer: false,
-    jit: true,
-  },
   buildModules: [
     "@nuxtjs/pwa",
     "@nuxtjs/tailwindcss",
     "@nuxt/postcss8",
     "@nuxtjs/google-fonts",
+    "@nuxtjs/moment",
     "nuxt-animejs",
   ],
-  modules: ["@nuxtjs/svg"],
+  modules: ["@nuxt/content", "@nuxtjs/svg"],
+  plugins: ["@/plugins/get-date"],
+  tailwindcss: {
+    viewer: false,
+    jit: true,
+  },
   googleFonts: {
     families: {
       Poppins: {
@@ -39,5 +41,10 @@ export default {
       },
     },
     display: "swap",
+  },
+  content: {
+    markdown: {
+      remarkPlugins: ["remark-emoji"],
+    },
   },
 };

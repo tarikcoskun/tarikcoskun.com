@@ -1,14 +1,6 @@
 <template>
   <div
-    class="
-      py-4
-      h-screen
-      w-full
-      md:grid
-      md:py-8
-      md:overflow-hidden
-      grid-rows-[100%]
-    "
+    class="py-4 h-screen w-full md:grid md:py-8 grid-rows-[100%]"
     :class="[
       $route.path == '/'
         ? 'grid-cols-[17.5%,42.5%,40%]'
@@ -17,7 +9,7 @@
   >
     <Navbar class="md:hidden" />
     <Sidebar class="hidden md:flex" />
-    <section class="header-container">
+    <section class="h-full header-container">
       <header>
         <h2>
           {{
@@ -84,7 +76,7 @@ export default {
     };
   },
   async fetch() {
-    this.posts = await this.$content().fetch();
+    this.posts = await this.$content().limit(3).fetch();
   },
   methods: {
     animate() {

@@ -1,7 +1,10 @@
 html {
   @apply font-poppins;
   ::-webkit-scrollbar {
-    @apply w-0;
+    @apply w-2;
+    &-thumb {
+      @apply bg-gray-300;
+    }
   }
   ::selection {
     @apply bg-gray-200;
@@ -67,4 +70,16 @@ main {
 
 section {
   @apply px-4 bg-gray-100 border-gray-300;
+}
+
+.nuxt-content {
+  h3 {
+    @apply text-xl font-bold mb-1;
+  }
+  p {
+    @apply mb-4;
+  }
+  code {
+    @apply bg-gray-200 rounded px-1;
+  }
 }

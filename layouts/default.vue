@@ -13,7 +13,12 @@
     <Sidebar class="hidden md:block" />
     <Nuxt />
     <LatestArticles v-if="$route.name == 'index'" />
-    <PostSidebar :toc="toc" v-if="$route.name == 'blog-slug'" />
+    <PostSidebar
+      class="hidden md:block"
+      :toc="toc"
+      :key="componentKey"
+      v-if="$route.name == 'blog-slug'"
+    />
   </div>
 </template>
 

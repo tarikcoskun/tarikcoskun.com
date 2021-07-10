@@ -18,7 +18,7 @@ export default {
     };
   },
   mounted() {
-    this.$nuxt.$emit("toc", this.post.toc);
+    this.$nextTick(() => this.$nuxt.$emit("toc", this.post.toc));
   },
   beforeDestroy() {
     this.$nuxt.$off("toc");

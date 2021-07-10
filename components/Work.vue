@@ -1,8 +1,7 @@
 <template>
-  <article class="p-4 px-0 border-b border-gray-300">
-    <div class="flex items-center gap-4">
+  <article class="p-4 px-0 border-b">
+    <div class="flex gap-3">
       <Skeleton
-        class="rounded-lg"
         :img="
           title
             .toLowerCase()
@@ -13,7 +12,7 @@
         "
       />
       <div>
-        <a class="-mb-1 text-xl font-medium" :href="url" target="_blank">
+        <a class="text-xl font-medium" :href="to" target="_blank">
           {{ title }}
         </a>
         <p>{{ role }}</p>
@@ -25,6 +24,6 @@
 
 <script>
 export default {
-  props: ["url", "title", "role", "description"],
+  props: ["to", "title", "role", "description"],
 };
 </script>

@@ -1,7 +1,13 @@
 <template>
-  <main>
-    <nuxt-content :document="post" class="pb-2 mt-2 prose-lg prose-blue" />
-  </main>
+  <section class="content-container">
+    <header>
+      <h2>{{ getDate(post.date) }}</h2>
+      <h1>{{ post.title }}</h1>
+    </header>
+    <main>
+      <nuxt-content :document="post" class="mt-2 prose-lg prose-lightBlue" />
+    </main>
+  </section>
 </template>
 
 <script>
@@ -12,10 +18,10 @@ export default {
     };
   },
   mounted() {
-    this.$nuxt.$emit("post", this.post);
+    this.$nuxt.$emit("toc", this.post.toc);
   },
   beforeDestroy() {
-    this.$nuxt.$off("post");
+    this.$nuxt.$off("toc");
   },
 };
 </script>

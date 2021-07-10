@@ -2,7 +2,7 @@ html {
   scroll-behavior: smooth;
   @apply font-poppins;
   ::-webkit-scrollbar {
-    @apply w-2;
+    @apply w-1.5;
     &-thumb {
       @apply bg-gray-300;
     }
@@ -19,7 +19,7 @@ body {
 p,
 a,
 span {
-  @apply text-lg text-gray-700 md:text-justify;
+  @apply text-lg text-gray-700;
 }
 
 h1 {
@@ -36,7 +36,7 @@ h2 {
     @apply flex items-center font-medium;
     &::before {
       content: "";
-      @apply bg-gray-700 w-4 h-1.5 -top-2 left-1/2 transform -translate-x-1/2 absolute;
+      @apply bg-gray-700 w-5 h-1.5 -top-2 left-1/2 transform -translate-x-1/2 absolute;
     }
   }
 }
@@ -48,18 +48,18 @@ h2 {
       @apply flex items-center font-medium;
       &::before {
         content: "";
-        @apply bg-gray-700 w-1.5 h-4 absolute -left-4;
+        @apply bg-gray-700 w-1.5 h-5 absolute -left-4;
       }
     }
   }
 }
 
-.header-container {
-  @apply opacity-0;
+.content-container {
+  @apply h-full;
   header {
-    @apply bg-gray-100 border-b border-gray-300 pb-1 md:pb-3;
+    @apply bg-gray-100 border-b pb-1 md:pb-3;
     h2 {
-      @apply text-gray-700 text-3xl leading-6 md:leading-9 font-bold capitalize;
+      @apply text-gray-700 text-3xl leading-6 md:leading-9 font-bold;
     }
   }
 }
@@ -72,15 +72,26 @@ main {
 }
 
 section {
-  @apply px-4 bg-gray-100 border-gray-300;
+  @apply px-4 bg-gray-100;
 }
 
 .nuxt-content {
   h1,
-  h2 {
+  h2,
+  h3 {
     @apply m-0 mb-1;
+  }
+  p {
+    @apply mb-3;
   }
   img {
     @apply rounded-lg mx-auto;
   }
+  code {
+    @apply font-poppins bg-coolGray-800 text-gray-200 rounded-md px-1 py-px;
+  }
+}
+
+.page-leave {
+  @apply opacity-0;
 }

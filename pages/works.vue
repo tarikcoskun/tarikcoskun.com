@@ -1,17 +1,25 @@
 <template>
-  <main>
-    <div class="grid md:grid-cols-2">
-      <Work
-        v-for="(work, index) in works"
-        :key="index"
-        :url="work.url"
-        :role="work.role"
-        :title="work.title"
-        :description="work.description"
-        :class="[index % 2 == 1 ? 'md:border-l pr-0 md:pl-4' : 'pl-0 md:pr-4']"
-      />
-    </div>
-  </main>
+  <section class="content-container">
+    <header>
+      <h2>Works</h2>
+      <h1>Tarık Coşkun</h1>
+    </header>
+    <main>
+      <div class="grid md:grid-cols-2">
+        <Work
+          v-for="(work, index) in works"
+          :key="index"
+          :to="work.url"
+          :role="work.role"
+          :title="work.title"
+          :description="work.description"
+          :class="[
+            index % 2 == 1 ? 'pr-0 md:pl-4' : 'md:border-r pl-0 md:pr-4',
+          ]"
+        />
+      </div>
+    </main>
+  </section>
 </template>
 
 <script>

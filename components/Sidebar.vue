@@ -12,7 +12,7 @@
         :href="account.link"
         target="_blank"
         rel="noreferrer"
-        class="flex items-center gap-3 text-xl"
+        class="flex items-center gap-3 text-xl transition-colors ease-out  hover:text-gray-900"
       >
         <DiscordIcon v-if="account.name == 'Discord'" />
         <TwitterIcon v-if="account.name == 'Twitter'" />
@@ -21,7 +21,7 @@
         <h3 translate="no">{{ account.name }}</h3>
       </a>
     </div>
-    <div class="fixed h-[calc(100vh-4rem)] border-r w-[calc(20%-1rem)]"></div>
+    <div class="fixed h-[calc(100vh-4rem)] border-r w-[calc(17.5%-1rem)]"></div>
   </section>
 </template>
 

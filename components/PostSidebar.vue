@@ -1,8 +1,8 @@
 <template>
   <section class="h-full border-l">
     <div class="sticky flex flex-col gap-3 top-4">
-      <div v-if="toc.length > 1">
-        <h2>Başlıklar</h2>
+      <div v-if="toc.length">
+        <h2>Titles</h2>
         <div
           class="grid gap-1.5 mt-1"
           :class="{ 'grid-cols-2': toc.length > 8 }"
@@ -29,7 +29,7 @@
         </div>
       </div>
       <div>
-        <h2>Paylaş</h2>
+        <h2>Share</h2>
         ...
       </div>
     </div>

@@ -16,7 +16,6 @@
     <PostSidebar
       class="hidden md:block"
       :toc="toc"
-      :key="componentKey"
       v-if="$route.name == 'blog-slug'"
     />
   </div>
@@ -27,7 +26,6 @@ import DiscordIcon from "~/static/discord.svg?inline";
 import TwitterIcon from "~/static/twitter.svg?inline";
 import GitHubIcon from "~/static/github.svg?inline";
 import MailIcon from "~/static/mail.svg?inline";
-
 export default {
   components: { DiscordIcon, TwitterIcon, GitHubIcon, MailIcon },
   mounted() {
@@ -50,7 +48,6 @@ export default {
   methods: {
     animate() {
       const anime = this.$anime;
-
       anime({
         targets: ".content-container",
         translateX: [-100, 0],

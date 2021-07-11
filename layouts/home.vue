@@ -1,10 +1,17 @@
 <template>
   <div
-    class="py-4 w-full md:grid md:py-8 grid-rows-[100%] grid-cols-[17.5%,82.5%]"
+    class="
+      py-4
+      w-full
+      md:grid
+      md:py-8
+      grid-rows-[100%] grid-cols-[17.5%,42.5%,40%]
+    "
   >
     <Navbar class="md:hidden" />
     <Sidebar class="hidden md:block" />
     <Nuxt />
+    <LatestArticles />
   </div>
 </template>
 

@@ -36,6 +36,7 @@
 
 <script>
 export default {
+  layout: "home",
   data() {
     return {
       tech: [

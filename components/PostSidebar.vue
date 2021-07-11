@@ -1,5 +1,5 @@
 <template>
-  <section class="h-full border-l">
+  <section class="h-full border-l content-container">
     <div class="sticky flex flex-col gap-3 top-4">
       <div v-if="toc.length">
         <h2>Titles</h2>

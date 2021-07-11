@@ -12,6 +12,7 @@
 
 <script>
 export default {
+  layout: "post",
   async asyncData({ $content, params }) {
     return {
       post: await $content(params.slug).fetch(),

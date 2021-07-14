@@ -47,20 +47,26 @@
       <form
         name="Contact"
         method="POST"
-        @submit.prevent="handleSubmit"
-        netlify
+        action="/thanks"
+        data-netlify="true"
         netlify-honeypot="bot-field"
       >
         <input type="hidden" name="form-name" value="Contact" />
-        <input type="text" name="mail" placeholder="your@mail.com" required />
-        <input type="text" name="name" placeholder="Your name" required />
+        <input type="email" name="mail" placeholder="your@mail.com" required />
+        <input
+          type="text"
+          name="name"
+          placeholder="Your name"
+          required
+          @input="console.log(this.form)"
+        />
         <textarea
           name="message"
           rows="5"
           placeholder="Your message..."
           required
         ></textarea>
-        <button class="w-52 py-2.5 mx-auto button" id="button" type="submit">
+        <button type="submit" class="w-52 py-2.5 mx-auto button">
           Send Message
         </button>
       </form>
@@ -111,36 +117,6 @@ export default {
         },
       ],
     };
-  },
-  methods: {
-    encode(data) {
-      return Object.keys(data)
-        .map(
-          (key) => `${encodeURIComponent(key)}=${encodeURIComponent(data[key])}`
-        )
-        .join("&");
-    },
-    handleSubmit() {
-      const axiosConfig = {
-        header: { "Content-Type": "application/x-www-form-urlencoded" },
-      };
-      axios
-        .post(
-          "/",
-          this.encode({
-            "form-name": "Contact",
-            ...this.form,
-          }),
-          axiosConfig
-        )
-        .then(
-          () => (this.$el.querySelector("#button").innerHTML = "Message Sent!")
-        )
-        .catch(
-          () =>
-            (this.$el.querySelector("#button").innerHTML = "Submission Failed")
-        );
-    },
   },
 };
 </script>

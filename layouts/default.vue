@@ -15,10 +15,10 @@
     </header>
     <Nuxt class="max-w-4xl px-4 mx-auto" />
     <img
-      src="/img/discord.svg"
+      src="/discord.svg"
       alt="*im a ghost*"
       @load="this.animate"
-      hidden
+      class="hidden"
     />
   </div>
 </template>

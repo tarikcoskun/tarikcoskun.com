@@ -1,6 +1,6 @@
 <template>
   <div>
-    <section id="home">
+    <section id="home" v-scroll-reveal>
       <div class="container">
         <h1 class="mb-0 anime-text anime">Hello,</h1>
         <h1 class="anime-text anime">
@@ -25,12 +25,12 @@
     </section>
     <section id="about">
       <div>
-        <h1>About Me</h1>
-        <p>
+        <h1 v-scroll-reveal>About Me</h1>
+        <p v-scroll-reveal>
           Hello there, my name is Tarık. I'm a student from Turkey who loves
           making websites for fun.
         </p>
-        <p>
+        <p v-scroll-reveal>
           I first started coding in 2018, with Node.js. About a year later, I
           started learning web development stuff and I'm learning more and more
           about it.
@@ -43,12 +43,13 @@
           :bg="tech.bg"
           :title="tech.title"
           :since="tech.since"
+          v-scroll-reveal
         />
       </div>
     </section>
     <section id="contact">
-      <h1 class="text-center">Contact</h1>
-      <p class="text-center">
+      <h1 class="text-center" v-scroll-reveal>Contact</h1>
+      <p class="text-center" v-scroll-reveal>
         You can send me a message directly from here and I'll get back to you as
         soon as possible.
       </p>
@@ -60,21 +61,32 @@
         netlify-honeypot="bot-field"
       >
         <input type="hidden" name="form-name" value="Contact" />
-        <input type="email" name="email" placeholder="your@mail.com" required />
+        <input
+          type="email"
+          name="email"
+          placeholder="your@mail.com"
+          required
+          v-scroll-reveal
+        />
         <input
           type="text"
           name="name"
           placeholder="Your name"
           required
-          @input="console.log(this.form)"
+          v-scroll-reveal
         />
         <textarea
           name="message"
           rows="5"
           placeholder="Your message..."
           required
+          v-scroll-reveal
         ></textarea>
-        <button type="submit" class="w-52 py-2.5 mx-auto button">
+        <button
+          type="submit"
+          class="w-52 py-2.5 mx-auto button"
+          v-scroll-reveal
+        >
           Send Message
         </button>
       </form>
@@ -83,8 +95,6 @@
 </template>
 
 <script>
-import axios from "axios";
-
 export default {
   data() {
     return {

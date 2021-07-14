@@ -51,7 +51,7 @@ header {
     &::before,
     &::after {
       content: "";
-      filter: blur(8px);
+      filter: blur(8px) saturate(2);
       @apply hidden md:block absolute bg-gradient-to-br to-transparent rounded-full w-96 h-96 opacity-60;
     }
     &::before {

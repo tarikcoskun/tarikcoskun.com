@@ -46,14 +46,15 @@
       <h1 class="text-center">Contact</h1>
       <form name="Contact" method="POST" @submit.prevent="handleSubmit" netlify>
         <input type="hidden" name="form-name" value="Contact" />
-        <input type="text" name="mail" placeholder="your@mail.com" />
-        <input type="text" name="name" placeholder="Your name" />
+        <input type="text" name="mail" placeholder="your@mail.com" required />
+        <input type="text" name="name" placeholder="Your name" required />
         <textarea
           name="message"
           rows="5"
           placeholder="Your message..."
+          required
         ></textarea>
-        <button class="w-52 py-2.5 mx-auto button" type="submit">
+        <button class="w-52 py-2.5 mx-auto button" id="button" type="submit">
           Send Message
         </button>
       </form>
@@ -117,14 +118,22 @@ export default {
       const axiosConfig = {
         header: { "Content-Type": "application/x-www-form-urlencoded" },
       };
-      axios.post(
-        "/",
-        this.encode({
-          "form-name": "Contact",
-          ...this.form,
-        }),
-        axiosConfig
-      );
+      axios
+        .post(
+          "/",
+          this.encode({
+            "form-name": "Contact",
+            ...this.form,
+          }),
+          axiosConfig
+        )
+        .then(
+          () => (this.$el.querySelector("#button").innerHTML = "Message Sent!")
+        )
+        .catch(
+          () =>
+            (this.$el.querySelector("#button").innerHTML = "Submission Failed")
+        );
     },
   },
 };

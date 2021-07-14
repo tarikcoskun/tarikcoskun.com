@@ -1,29 +1,18 @@
 <template>
-  <div
-    class="py-4 w-full md:grid md:py-8 grid-rows-[100%] grid-cols-[17.5%,82.5%]"
-  >
-    <Navbar class="md:hidden" />
-    <Sidebar class="hidden md:block" />
-    <Nuxt />
+  <div>
+    <header>
+      <div class="container">
+        <h1 class="hidden text-4xl font-medium font-title md:block">
+          Tarık C.
+        </h1>
+        <div class="flex gap-6">
+          <NuxtLink to="#home">Home</NuxtLink>
+          <NuxtLink to="#about">About</NuxtLink>
+          <NuxtLink to="#work">Work</NuxtLink>
+        </div>
+        <NuxtLink class="w-32 py-2 button" to="#contact">Contact</NuxtLink>
+      </div>
+    </header>
+    <Nuxt class="max-w-4xl px-4 mx-auto" />
   </div>
 </template>
-
-<script>
-export default {
-  mounted() {
-    this.animate();
-  },
-  methods: {
-    animate() {
-      const anime = this.$anime;
-      anime({
-        targets: ".content-container",
-        translateX: [-100, 0],
-        opacity: [0, 1],
-        easing: "spring(2, 50, 20, 0)",
-        delay: anime.stagger(100),
-      });
-    },
-  },
-};
-</script>

@@ -25,26 +25,18 @@ export default {
     "@nuxtjs/tailwindcss",
     "@nuxt/postcss8",
     "@nuxtjs/google-fonts",
-    "@nuxtjs/moment",
     "nuxt-animejs",
   ],
-  modules: ["@nuxt/content", "@nuxtjs/svg"],
-  plugins: ["@/plugins/get-date"],
-  tailwindcss: {
-    viewer: false,
-    jit: true,
-  },
+  modules: ["@nuxtjs/svg", "@nuxtjs/axios"],
   googleFonts: {
     families: {
-      Poppins: {
+      "IBM Plex Sans": {
+        wght: [600],
+      },
+      Inter: {
         wght: [400, 500],
       },
     },
     display: "swap",
-  },
-  content: {
-    markdown: {
-      remarkPlugins: ["remark-emoji"],
-    },
   },
 };

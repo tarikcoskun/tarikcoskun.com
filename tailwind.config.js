@@ -9,8 +9,9 @@ module.exports = {
       },
     },
     fontFamily: {
-      poppins: ["Poppins", "sans-serif"],
+      base: ["Inter", "sans-serif"],
+      title: "IBM Plex Sans",
     },
   },
-  plugins: [require("@tailwindcss/typography")],
+  plugins: [require("@tailwindcss/forms")],
 };

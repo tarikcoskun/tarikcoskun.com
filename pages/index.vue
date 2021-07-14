@@ -44,7 +44,13 @@
     </section>
     <section id="contact">
       <h1 class="text-center">Contact</h1>
-      <form name="Contact" method="POST" @submit.prevent="handleSubmit" netlify>
+      <form
+        name="Contact"
+        method="POST"
+        @submit.prevent="handleSubmit"
+        netlify
+        netlify-honeypot="bot-field"
+      >
         <input type="hidden" name="form-name" value="Contact" />
         <input type="text" name="mail" placeholder="your@mail.com" required />
         <input type="text" name="name" placeholder="Your name" required />

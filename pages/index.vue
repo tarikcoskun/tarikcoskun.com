@@ -52,7 +52,7 @@
         netlify-honeypot="bot-field"
       >
         <input type="hidden" name="form-name" value="Contact" />
-        <input type="email" name="mail" placeholder="your@mail.com" required />
+        <input type="email" name="email" placeholder="your@mail.com" required />
         <input
           type="text"
           name="name"

@@ -2,8 +2,8 @@
   <div>
     <section id="home" v-scroll-reveal>
       <div class="container">
-        <h1 class="mb-0 anime-text anime">Hello,</h1>
-        <h1 class="anime-text anime">
+        <h1 class="mb-0 anime-text anime font-base">Hello,</h1>
+        <h1 class="anime-text anime font-base">
           it's <span class="font-title">Tarık C.</span>
         </h1>
         <p class="mt-4 text-2xl anime-text anime">

@@ -18,9 +18,6 @@ body {
 
 h1 {
   @apply text-white text-4xl;
-  &:not(#home h1) {
-    @apply font-title;
-  }
 }
 
 h2 {

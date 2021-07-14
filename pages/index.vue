@@ -2,9 +2,11 @@
   <div>
     <section id="home">
       <div class="container">
-        <h1 class="mb-0">Hello,</h1>
-        <h1>it's <span class="font-title">Tarık C.</span></h1>
-        <p class="mt-4 text-2xl">
+        <h1 class="mb-0 anime-text anime">Hello,</h1>
+        <h1 class="anime-text anime">
+          it's <span class="font-title">Tarık C.</span>
+        </h1>
+        <p class="mt-4 text-2xl anime-text anime">
           Front-end developer with over 3 years of experience.
         </p>
         <div class="flex items-center gap-3 -ml-0.5 my-4">
@@ -13,10 +15,12 @@
             :key="index"
             :url="account.url"
             :icon="account.icon"
-            class="m-0"
+            class="m-0 anime-account anime"
           />
         </div>
-        <NuxtLink class="w-32 py-2 button" to="#contact">Contact</NuxtLink>
+        <NuxtLink class="w-32 py-2 button anime-account anime" to="#contact"
+          >Contact</NuxtLink
+        >
       </div>
     </section>
     <section id="about">
@@ -44,6 +48,10 @@
     </section>
     <section id="contact">
       <h1 class="text-center">Contact</h1>
+      <p class="text-center">
+        You can send me a message directly from here and I'll get back to you as
+        soon as possible.
+      </p>
       <form
         name="Contact"
         method="POST"

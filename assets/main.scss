@@ -77,9 +77,9 @@ header {
 }
 
 #contact {
-  @apply mt-8 max-w-xl mx-auto;
+  @apply mt-16 max-w-lg mx-auto;
   form {
-    @apply flex flex-col gap-6 mt-8;
+    @apply flex flex-col gap-4 mt-8;
     input,
     textarea {
       @apply bg-white bg-opacity-10 border-0 rounded-lg p-4 text-xl placeholder-white font-medium placeholder-opacity-30 resize-none text-white focus:bg-opacity-20 focus:ring-0 transition-colors;
@@ -88,4 +88,8 @@ header {
       @apply mt-6;
     }
   }
+}
+
+.anime {
+  @apply opacity-0;
 }

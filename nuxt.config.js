@@ -28,6 +28,10 @@ export default {
     "nuxt-animejs",
   ],
   modules: ["@nuxtjs/svg", "@nuxtjs/axios"],
+  tailwindcss: {
+    viewer: false,
+    jit: true,
+  },
   googleFonts: {
     families: {
       "IBM Plex Sans": {

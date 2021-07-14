@@ -14,5 +14,37 @@
       </div>
     </header>
     <Nuxt class="max-w-4xl px-4 mx-auto" />
+    <img
+      src="/img/discord.svg"
+      alt="*im a ghost*"
+      @load="this.animate"
+      hidden
+    />
   </div>
 </template>
+
+<script>
+export default {
+  methods: {
+    animate() {
+      const anime = this.$anime;
+
+      anime({
+        targets: ".anime-text",
+        translateX: [-50, 0],
+        opacity: 1,
+        easing: "spring(0, 5, 20, 0)",
+        delay: anime.stagger(350),
+      });
+
+      anime({
+        targets: ".anime-account",
+        translateY: [15, 0],
+        opacity: 1,
+        easing: "spring(0, 7, 20, 0)",
+        delay: anime.stagger(250, { start: 1250 }),
+      });
+    },
+  },
+};
+</script>

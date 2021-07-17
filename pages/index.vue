@@ -1,6 +1,6 @@
 <template>
   <div>
-    <section id="home" v-scroll-reveal>
+    <section class="anime" id="home">
       <div class="container">
         <h1 class="mb-0 anime-text anime font-base">Hello,</h1>
         <h1 class="anime-text anime font-base">
@@ -26,24 +26,24 @@
     <section id="about">
       <div>
         <h1 v-scroll-reveal>About Me</h1>
-        <p v-scroll-reveal>
+        <p class="text-justify" v-scroll-reveal>
           Hello there, my name is Tarık. I'm a student from Turkey who loves
           making websites for fun.
         </p>
-        <p v-scroll-reveal>
+        <p class="text-justify" v-scroll-reveal>
           I first started coding in 2018, with Node.js. About a year later, I
           started learning web development stuff and I'm learning more and more
           about it.
         </p>
       </div>
-      <div class="grid grid-cols-2 gap-2 md:gap-4">
+      <div class="grid grid-cols-2 gap-3 md:gap-4">
         <MainTech
           v-for="(tech, index) in tech"
           :key="index"
           :bg="tech.bg"
           :title="tech.title"
           :since="tech.since"
-          v-scroll-reveal
+          v-scroll-reveal="{ delay: index * 50 + 250 }"
         />
       </div>
     </section>
@@ -84,7 +84,7 @@
         ></textarea>
         <button
           type="submit"
-          class="w-52 py-2.5 mx-auto button"
+          class="py-2 mx-auto mb-4 w-52 button"
           v-scroll-reveal
         >
           Send Message

@@ -9,8 +9,11 @@
           <NuxtLink to="/#home">Home</NuxtLink>
           <NuxtLink to="/#about">About</NuxtLink>
           <NuxtLink to="/#work">Work</NuxtLink>
+          <NuxtLink class="md:hidden" to="/#contact">Contact</NuxtLink>
         </div>
-        <NuxtLink class="w-32 py-2 button" to="#contact">Contact</NuxtLink>
+        <NuxtLink class="hidden w-32 py-2 button md:block" to="#contact"
+          >Contact</NuxtLink
+        >
       </div>
     </header>
     <Nuxt class="max-w-4xl px-4 mx-auto" />
@@ -28,6 +31,13 @@ export default {
   methods: {
     animate() {
       const anime = this.$anime;
+
+      anime({
+        targets: "#home",
+        translateY: [25, 0],
+        opacity: 1,
+        easing: "spring(0, 5, 20, 0)",
+      });
 
       anime({
         targets: ".anime-text",

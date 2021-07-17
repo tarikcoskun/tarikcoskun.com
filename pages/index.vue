@@ -18,7 +18,9 @@
             class="m-0 anime-account anime"
           />
         </div>
-        <NuxtLink class="w-32 py-2 button anime-account anime" to="#contact"
+        <NuxtLink
+          class="w-32 py-2 mt-2 button anime-account anime"
+          to="#contact"
           >Contact</NuxtLink
         >
       </div>

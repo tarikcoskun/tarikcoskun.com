@@ -36,7 +36,7 @@
       </div>
     </footer>
     <img
-      src="/discord.svg"
+      src="/github.svg"
       alt="*im a ghost*"
       @load="this.animate"
       class="hidden"

@@ -21,7 +21,7 @@ import Node from "~/static/img/node.js.svg?inline";
 import Sass from "~/static/img/sass.svg?inline";
 
 export default {
-  props: ["title", "since", "bg"],
+  props: ["bg", "title", "since"],
   components: { Nuxt, Tailwind, Node, Sass },
 };
 </script>

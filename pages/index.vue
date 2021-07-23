@@ -9,7 +9,7 @@
         <p class="mt-4 text-2xl anime-text anime">
           Front-end developer with over 3 years of experience.
         </p>
-        <div class="flex items-center gap-3 -ml-0.5 my-4">
+        <div class="flex gap-3 my-4">
           <Account
             v-for="(account, index) in accounts"
             :key="index"
@@ -39,13 +39,28 @@
         </p>
       </div>
       <div class="grid grid-cols-2 gap-3 md:gap-4">
-        <MainTech
+        <Tech
           v-for="(tech, index) in tech"
           :key="index"
           :bg="tech.bg"
           :title="tech.title"
           :since="tech.since"
-          v-scroll-reveal="{ delay: index * 50 + 250 }"
+          v-scroll-reveal="{ delay: index * 50 }"
+        />
+      </div>
+    </section>
+    <section id="work">
+      <h1 class="text-center" v-scroll-reveal>Work</h1>
+      <div class="grid gap-6 mt-8 md:grid-cols-2">
+        <Work
+          v-for="(work, index) in work"
+          :key="index"
+          :url="work.url"
+          :img="work.img"
+          :role="work.role"
+          :title="work.title"
+          :description="work.description"
+          v-scroll-reveal="{ delay: index * 50 }"
         />
       </div>
     </section>
@@ -86,7 +101,7 @@
         ></textarea>
         <button
           type="submit"
-          class="py-2 mx-auto mb-4 w-52 button"
+          class="py-2.5 mx-auto mb-4 w-52 button"
           v-scroll-reveal
         >
           Send Message
@@ -102,16 +117,12 @@ export default {
     return {
       accounts: [
         {
-          url: "https://discord.com/users/474537652943847444",
-          icon: "discord",
+          url: "https://github.com/tarikcoskun",
+          icon: "github",
         },
         {
           url: "https://twitter.com/itstarikcoskun",
           icon: "twitter",
-        },
-        {
-          url: "https://github.com/tarikcoskun",
-          icon: "github",
         },
       ],
       tech: [
@@ -134,6 +145,38 @@ export default {
           title: "Sass",
           since: "2019",
           bg: "#590d33",
+        },
+      ],
+      work: [
+        {
+          url: "https://crumblingstatue.github.io/FloweysTimeMachine",
+          img: "floweystimemachine",
+          title: "Flowey's Time Machine",
+          role: "Lead Designer",
+          description:
+            "An editor tool for Undertale that allows you to change your save content with a friendly UI",
+        },
+        /*{
+          title: "Squid's Brain",
+          role: "Developer [WIP]",
+          description:
+            "An editor tool for Will You Snail? that allows you to change your save content with a friendly UI",
+        },*/
+        {
+          url: "https://discords.com/templates",
+          img: "templates",
+          title: "Discord Templates",
+          role: "Website Moderator",
+          description:
+            "A template library that lets you create your own kingdom with a diverse range of templates",
+        },
+        {
+          url: "https://store.steampowered.com/app/1115050/Will_You_Snail",
+          img: "wyss",
+          title: "Will You Snail?",
+          role: "Translator - Tester",
+          description:
+            "A fast pace platformer where an evil AI tries to kill you by predicting your movement",
         },
       ],
     };

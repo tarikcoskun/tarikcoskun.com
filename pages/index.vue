@@ -148,33 +148,36 @@ export default {
         },
       ],
       work: [
-        {
-          url: "https://crumblingstatue.github.io/FloweysTimeMachine",
-          img: "floweystimemachine",
-          title: "Flowey's Time Machine",
-          role: "Lead Designer",
-          description:
-            "An editor tool for Undertale that allows you to change your save content with a friendly UI",
-        },
         /*{
-          title: "Squid's Brain",
-          role: "Developer [WIP]",
+          title: "Squid's Brain — Developer",
           description:
             "An editor tool for Will You Snail? that allows you to change your save content with a friendly UI",
         },*/
         {
           url: "https://discords.com/templates",
           img: "templates",
-          title: "Discord Templates",
-          role: "Website Moderator",
+          title: "Discord Templates — Moderator",
           description:
             "A template library that lets you create your own kingdom with a diverse range of templates",
         },
         {
+          url: "https://premid.app",
+          img: "premid",
+          title: "PreMiD — Translator",
+          description:
+            "A template library that lets you create your own kingdom with a diverse range of templates",
+        },
+        {
+          url: "https://crumblingstatue.github.io/FloweysTimeMachine",
+          img: "floweystimemachine",
+          title: "Flowey's Time Machine — Designer",
+          description:
+            "An editor tool for Undertale that allows you to change your save content with a friendly UI",
+        },
+        {
           url: "https://store.steampowered.com/app/1115050/Will_You_Snail",
-          img: "wyss",
-          title: "Will You Snail?",
-          role: "Translator - Tester",
+          img: "willyousnail",
+          title: "Will You Snail? — Translator & Tester",
           description:
             "A fast pace platformer where an evil AI tries to kill you by predicting your movement",
         },

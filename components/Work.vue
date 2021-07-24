@@ -26,7 +26,7 @@
     <div
       class="z-10 p-8 transition duration-300 opacity-0 group-hover:opacity-100"
     >
-      <h2 class="text-2xl">{{ title }}</h2>
+      <h2 class="text-xl">{{ title }}</h2>
       <p class="mt-2 text-lg leading-6 line-clamp-2" :title="description">
         {{ description }}
       </p>

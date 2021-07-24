@@ -165,7 +165,7 @@ export default {
           img: "premid",
           title: "PreMiD — Translator",
           description:
-            "A template library that lets you create your own kingdom with a diverse range of templates",
+            "A utility that allows you to show what you're doing on the web in your Discord status",
         },
         {
           url: "https://crumblingstatue.github.io/FloweysTimeMachine",

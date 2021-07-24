@@ -3,7 +3,10 @@
     :href="url"
     class="relative flex items-end m-0 transition duration-300 transform bg-center bg-cover cursor-pointer  rounded-xl h-60 group hover:scale-105"
     target="_blank"
-    :style="{ backgroundImage: `url('/img/${img}.png')` }"
+    :style="{
+      backgroundImage: `url('/img/${img}.png')`,
+      backgroundColor: '#0b0b0d',
+    }"
   >
     <div
       class="

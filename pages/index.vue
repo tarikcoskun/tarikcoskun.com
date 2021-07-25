@@ -7,7 +7,7 @@
           it's <span class="font-title">Tarık C.</span>
         </h1>
         <p class="mt-4 text-2xl anime-text anime">
-          Front-end developer with over 3 years of experience.
+          Full-stack developer with over 3 years of experience.
         </p>
         <div class="flex gap-3 my-4">
           <Account
@@ -29,8 +29,8 @@
       <div>
         <h1 v-scroll-reveal>About Me</h1>
         <p class="text-justify" v-scroll-reveal>
-          Hello there, my name is Tarık. I'm a student from Turkey who loves
-          making stuff for fun.
+          Hello there, my name is Tarık. I'm a full-stack developer from Turkey,
+          but I mostly focus on front-end stuff
         </p>
         <p class="text-justify" v-scroll-reveal>
           I first started coding in 2018, with Node.js. About a year later, I

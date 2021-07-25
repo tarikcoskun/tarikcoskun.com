@@ -30,12 +30,12 @@
         <h1 v-scroll-reveal>About Me</h1>
         <p class="text-justify" v-scroll-reveal>
           Hello there, my name is Tarık. I'm a student from Turkey who loves
-          making websites for fun.
+          making stuff for fun.
         </p>
         <p class="text-justify" v-scroll-reveal>
           I first started coding in 2018, with Node.js. About a year later, I
-          started learning web development stuff and I'm learning more and more
-          about it.
+          started learning web development stuff and currently I'm trying to
+          learn new languages and stuff related to game development.
         </p>
       </div>
       <div class="grid grid-cols-2 gap-3 md:gap-4">

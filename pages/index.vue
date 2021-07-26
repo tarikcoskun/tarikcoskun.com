@@ -49,8 +49,8 @@
         />
       </div>
     </section>
-    <section id="work">
-      <h1 class="text-center" v-scroll-reveal>Work</h1>
+    <section id="works">
+      <h1 class="text-center" v-scroll-reveal>Works</h1>
       <div class="grid gap-6 mt-8 md:grid-cols-2">
         <Work
           v-for="(work, index) in work"
@@ -148,11 +148,6 @@ export default {
         },
       ],
       work: [
-        /*{
-          title: "Squid's Brain — Developer",
-          description:
-            "An editor tool for Will You Snail? that allows you to change your save content with a friendly UI",
-        },*/
         {
           url: "https://discords.com/templates",
           img: "templates",
@@ -173,6 +168,12 @@ export default {
           title: "Flowey's Time Machine — Designer",
           description:
             "An editor tool for Undertale that allows you to change your save content with a friendly UI",
+        },
+        {
+          title: "Unicorn's Studio — Developer [WIP]",
+          img: "unicornsstudio",
+          description:
+            "An editor tool for Will You Snail? that allows you to change your save content with a friendly UI",
         },
         {
           url: "https://store.steampowered.com/app/1115050/Will_You_Snail",

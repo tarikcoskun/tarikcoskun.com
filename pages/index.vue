@@ -7,7 +7,7 @@
           it's <span class="font-title">Tarık C.</span>
         </h1>
         <p class="mt-4 text-2xl anime-text anime">
-          Full-stack developer with over 3 years of experience.
+          Web developer with over 3 years of experience.
         </p>
         <div class="flex gap-3 my-4">
           <Account
@@ -29,13 +29,12 @@
       <div>
         <h1 v-scroll-reveal>About Me</h1>
         <p class="text-justify" v-scroll-reveal>
-          Hello there, my name is Tarık. I'm a full-stack developer from Turkey,
-          but I mostly focus on front-end stuff
+          Hello there, my name is Tarık. I'm a web developer from Turkey.
         </p>
         <p class="text-justify" v-scroll-reveal>
-          I first started coding in 2018, with Node.js. About a year later, I
-          started learning web development stuff and currently I'm trying to
-          learn new languages and stuff related to game development.
+          I've been in web development since 2018 but this year was my most
+          productive year. I've learned framework stuff, contributed in some
+          projects and even created some of my own, which you can see here.
         </p>
       </div>
       <div class="grid grid-cols-2 gap-3 md:gap-4">
@@ -170,6 +169,7 @@ export default {
             "An editor tool for Undertale that allows you to change your save content with a friendly UI",
         },
         {
+          url: "https://unicorns-studio.netlify.app",
           title: "Unicorn's Studio — Developer [WIP]",
           img: "unicornsstudio",
           description:

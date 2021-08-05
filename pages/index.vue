@@ -120,7 +120,7 @@ export default {
           icon: "github",
         },
         {
-          url: "https://twitter.com/itstarikcoskun",
+          url: "https://twitter.com/tarikcoskun86",
           icon: "twitter",
         },
       ],

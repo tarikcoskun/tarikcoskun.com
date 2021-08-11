@@ -39,7 +39,7 @@
         </p>
         <div class="grid grid-cols-2 gap-1 mt-4">
           <li v-scroll-reveal><TypeScript /> TypeScript</li>
-          <li v-scroll-reveal><React /> React</li>
+          <li v-scroll-reveal><React /> React.js</li>
           <li v-scroll-reveal><Next /> Next.js</li>
           <li v-scroll-reveal title="GameMaker Language"><GML /> GML</li>
         </div>

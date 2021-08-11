@@ -30,7 +30,7 @@ a {
 }
 
 li {
-  @apply text-white text-xl font-medium;
+  @apply text-white text-xl font-medium flex gap-2 items-center list-none;
 }
 
 .button {
@@ -74,7 +74,7 @@ header {
 }
 
 #about {
-  @apply -mt-20 pt-20 grid md:grid-cols-2 gap-12 items-center;
+  @apply -mt-20 pt-20 grid md:grid-cols-2 gap-8 items-center;
 }
 
 #works {

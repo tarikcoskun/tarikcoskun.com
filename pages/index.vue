@@ -29,13 +29,20 @@
       <div>
         <h1 v-scroll-reveal>About Me</h1>
         <p class="text-justify" v-scroll-reveal>
-          Hello there, my name is Tarık. I'm a web developer from Turkey.
+          Hello there, my name is Tarık. I'm a student from Turkey who likes
+          programming on his free time.
         </p>
-        <p class="text-justify" v-scroll-reveal>
-          I've been in web development since 2018 but this year was my most
-          productive year. I've learned framework stuff, contributed in some
-          projects and even created some of my own, which you can see here.
+        <p class="mt-2 text-justify" v-scroll-reveal>
+          I've been in web development since 2018. Since then, I've been
+          learning more and more technologies. Some technologies I've been
+          working with lately...
         </p>
+        <div class="grid grid-cols-2 gap-1 mt-4">
+          <li v-scroll-reveal><TypeScript /> TypeScript</li>
+          <li v-scroll-reveal><React /> React</li>
+          <li v-scroll-reveal><Next /> Next.js</li>
+          <li v-scroll-reveal title="GameMaker Language"><GML /> GML</li>
+        </div>
       </div>
       <div class="grid grid-cols-2 gap-3 md:gap-4">
         <Tech
@@ -111,7 +118,13 @@
 </template>
 
 <script>
+import TypeScript from "~/static/img/typescript.svg?inline";
+import React from "~/static/img/react.js.svg?inline";
+import Next from "~/static/img/next.js.svg?inline";
+import GML from "~/static/img/gml.svg?inline";
+
 export default {
+  components: { TypeScript, React, Next, GML },
   data() {
     return {
       accounts: [
@@ -169,8 +182,8 @@ export default {
             "An editor tool for Undertale that allows you to change your save content with a friendly UI",
         },
         {
-          url: "https://unicorns-studio.netlify.app",
-          title: "Unicorn's Studio — Developer [WIP]",
+          url: "https://unicorns.software",
+          title: "Unicorn's Software — Developer",
           img: "unicornsstudio",
           description:
             "An editor tool for Will You Snail? that allows you to change your save content with a friendly UI",

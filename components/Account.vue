@@ -5,7 +5,7 @@
     target="_blank"
     rel="noreferrer"
     draggable="false"
-    class="text-gray-300 transition-colors duration-200 hover:text-white"
+    class="-mb-1 text-gray-300 transition-colors duration-200 hover:text-white"
   >
     <TwitterIcon v-if="icon === 'twitter'" />
     <GitHubIcon v-if="icon === 'github'" />

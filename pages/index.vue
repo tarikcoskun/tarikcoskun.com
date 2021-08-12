@@ -2,14 +2,19 @@
   <div>
     <section class="anime" id="home">
       <div class="container">
-        <h1 class="mb-0 anime-text anime font-base">Hello,</h1>
-        <h1 class="anime-text anime font-base">
-          it's <span class="font-title">Tarık C.</span>
+        <h1 class="mb-1 anime-text anime font-base">
+          Hello<span class="text-[2.75rem] font-title">,</span> it's
         </h1>
+        <h1 class="anime-text anime font-title">Tarık Coşkun</h1>
         <p class="mt-4 text-2xl anime-text anime">
-          Web developer with over 3 years of experience.
+          I'm a student from Turkey who likes programming on his free time.
         </p>
-        <div class="flex gap-3 my-4">
+        <div class="flex items-center gap-3 my-4">
+          <NuxtLink
+            class="w-32 py-2 mt-2 mr-1 button anime-account anime"
+            to="#contact"
+            >Contact</NuxtLink
+          >
           <Account
             v-for="(account, index) in accounts"
             :key="index"
@@ -18,29 +23,23 @@
             class="m-0 anime-account anime"
           />
         </div>
-        <NuxtLink
-          class="w-32 py-2 mt-2 button anime-account anime"
-          to="#contact"
-          >Contact</NuxtLink
-        >
       </div>
     </section>
     <section id="about">
       <div>
         <h1 v-scroll-reveal>About Me</h1>
-        <p class="text-justify" v-scroll-reveal>
-          Hello there, my name is Tarık. I'm a student from Turkey who likes
-          programming on his free time.
-        </p>
         <p class="mt-2 text-justify" v-scroll-reveal>
-          I've been in web development since 2018. Since then, I've been
-          learning more and more technologies. Some technologies I've been
-          working with lately...
+          I've been in web development since 2018. Since then, I've learned and
+          keep learning more and more technologies. Lately started learning game
+          development.
         </p>
-        <div class="grid grid-cols-2 gap-1 mt-4">
+        <p class="text-justify" v-scroll-reveal>
+          Here are some of the technologies I've been working with lately...
+        </p>
+        <div class="grid grid-cols-2 gap-2 mt-4">
           <li v-scroll-reveal><TypeScript /> TypeScript</li>
           <li v-scroll-reveal><React /> React.js</li>
-          <li v-scroll-reveal><Next /> Next.js</li>
+          <li v-scroll-reveal><Svelte /> Svelte</li>
           <li v-scroll-reveal title="GameMaker Language"><GML /> GML</li>
         </div>
       </div>
@@ -120,11 +119,11 @@
 <script>
 import TypeScript from "~/static/img/typescript.svg?inline";
 import React from "~/static/img/react.js.svg?inline";
-import Next from "~/static/img/next.js.svg?inline";
+import Svelte from "~/static/img/svelte.svg?inline";
 import GML from "~/static/img/gml.svg?inline";
 
 export default {
-  components: { TypeScript, React, Next, GML },
+  components: { TypeScript, React, Svelte, GML },
   data() {
     return {
       accounts: [

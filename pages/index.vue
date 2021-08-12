@@ -1,13 +1,14 @@
 <template>
   <div>
-    <section class="anime" id="home">
+    <section id="home">
       <div class="container">
-        <h1 class="mb-1 anime-text anime font-base">
+        <h1 class="mb-2 anime-text anime font-base">
           Hello<span class="text-[2.75rem] font-title">,</span> it's
         </h1>
         <h1 class="anime-text anime font-title">Tarık Coşkun</h1>
-        <p class="mt-4 text-2xl anime-text anime">
-          I'm a student from Turkey who likes programming on his free time.
+        <p class="mt-4 text-[1.325rem] leading-7 anime-text anime">
+          I'm a student from Turkey who likes programming and translating
+          projects into Turkish. Lately started learning game development.
         </p>
         <div class="flex items-center gap-3 my-4">
           <NuxtLink
@@ -28,17 +29,17 @@
     <section id="about">
       <div>
         <h1 v-scroll-reveal>About Me</h1>
-        <p class="mt-2 text-justify" v-scroll-reveal>
+        <p class="mt-2 md:text-justify" v-scroll-reveal>
           I've been in web development since 2018. Since then, I've learned and
           keep learning more and more technologies. Lately started learning game
           development.
         </p>
-        <p class="text-justify" v-scroll-reveal>
+        <p class="mt-4 md:text-justify" v-scroll-reveal>
           Here are some of the technologies I've been working with lately...
         </p>
-        <div class="grid grid-cols-2 gap-2 mt-4">
+        <div class="grid grid-cols-2 gap-2 mt-6">
           <li v-scroll-reveal><TypeScript /> TypeScript</li>
-          <li v-scroll-reveal><React /> React.js</li>
+          <li v-scroll-reveal><React /> React</li>
           <li v-scroll-reveal><Svelte /> Svelte</li>
           <li v-scroll-reveal title="GameMaker Language"><GML /> GML</li>
         </div>
@@ -56,7 +57,7 @@
     </section>
     <section id="works">
       <h1 class="text-center" v-scroll-reveal>Works</h1>
-      <div class="grid gap-6 mt-8 md:grid-cols-2">
+      <div class="grid mt-8">
         <Work
           v-for="(work, index) in work"
           :key="index"
@@ -138,59 +139,64 @@ export default {
       ],
       tech: [
         {
-          title: "Nuxt.js",
+          title: "Nuxt",
           since: "2021",
-          bg: "#0a432b",
+          bg: "#9eeccb",
         },
         {
           title: "Tailwind",
           since: "2020",
-          bg: "#0a3a43",
+          bg: "#9edfec",
         },
         {
-          title: "Node.js",
+          title: "Node",
           since: "2018",
-          bg: "#27430a",
+          bg: "#9eecb3",
         },
         {
           title: "Sass",
           since: "2019",
-          bg: "#590d33",
+          bg: "#ebaecd",
         },
       ],
       work: [
         {
           url: "https://discords.com/templates",
           img: "templates",
-          title: "Discord Templates — Moderator",
+          title: "Discord Templates",
+          role: "Moderator",
           description:
             "A template library that lets you create your own kingdom with a diverse range of templates",
         },
         {
           url: "https://premid.app",
           img: "premid",
-          title: "PreMiD — Translator",
+          title: "PreMiD",
+          role: "Translator",
           description:
             "A utility that allows you to show what you're doing on the web in your Discord status",
         },
         {
           url: "https://crumblingstatue.github.io/FloweysTimeMachine",
           img: "floweystimemachine",
-          title: "Flowey's Time Machine — Designer",
+          title: "Flowey's Time Machine",
+          role: "Designer",
           description:
             "An editor tool for Undertale that allows you to change your save content with a friendly UI",
         },
         {
           url: "https://unicorns.software",
-          title: "Unicorn's Software — Developer",
-          img: "unicornsstudio",
+          img: "unicornssoftware",
+          title: "Unicorn's Software",
+          role: "Developer",
           description:
             "An editor tool for Will You Snail? that allows you to change your save content with a friendly UI",
         },
         {
           url: "https://store.steampowered.com/app/1115050/Will_You_Snail",
           img: "willyousnail",
-          title: "Will You Snail? — Translator & Tester",
+          title: "Will You Snail?",
+          role: "Translator & Tester",
           description:
             "A fast pace platformer where an evil AI tries to kill you by predicting your movement",
         },

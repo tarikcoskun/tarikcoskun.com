@@ -4,42 +4,42 @@ html {
   ::-webkit-scrollbar {
     @apply w-1.5;
     &-thumb {
-      @apply bg-gray-700 rounded-sm;
+      @apply bg-gray-400 rounded-sm;
     }
   }
   ::selection {
-    @apply bg-gray-800;
+    @apply bg-gray-300;
   }
 }
 
 body {
-  @apply bg-gray-900 pb-4 md:pb-16;
+  @apply bg-gray-100 pb-4 md:pb-16;
 }
 
 h1 {
-  @apply text-white text-4xl font-title;
+  @apply text-black text-4xl font-title;
 }
 
 h2 {
-  @apply text-white font-medium text-2xl;
+  @apply text-black font-medium text-2xl;
 }
 
 p,
 a {
-  @apply text-gray-300 text-xl leading-7 mt-6;
+  @apply text-gray-700 text-xl leading-7 mt-6;
 }
 
 li {
-  @apply text-white text-xl font-medium flex gap-2 items-center list-none;
+  @apply text-black text-xl font-medium flex gap-2 items-center list-none;
 }
 
 .button {
-  @apply bg-white bg-opacity-10 hover:bg-opacity-20 border-2 border-white border-opacity-10 rounded-lg text-white text-opacity-80 text-xl transition-colors text-center font-medium;
+  @apply bg-black bg-opacity-10 hover:bg-opacity-20 border-2 border-black border-opacity-10 rounded-lg text-black text-opacity-80 text-xl transition-colors text-center font-medium;
 }
 
 header {
   backdrop-filter: blur(12px);
-  @apply sticky top-0 z-10 h-16 md:h-[4.5rem] bg-gray-900 bg-opacity-60;
+  @apply sticky top-0 z-10 h-16 md:h-[4.5rem] bg-gray-100 bg-opacity-60;
   * {
     @apply m-0;
   }
@@ -51,34 +51,22 @@ header {
 #home {
   @apply flex items-center justify-center md:h-screen md:mt-[-4.5rem];
   .container {
-    @apply flex flex-col rounded-3xl bg-gray-900 bg-opacity-60 py-16 md:px-16 w-full relative;
-    /*&::before,
-    &::after {
-      content: "";
-      filter: blur(8px) saturate(2);
-      @apply hidden md:block absolute bg-gradient-to-br to-transparent rounded-full w-[23rem] h-[23rem] opacity-60;
-    }
-    &::before {
-      @apply from-pink-600 via-pink-900 z-[-8] left-4;
-    }
-    &::after {
-      @apply from-blue-600 via-blue-900 z-[-10] right-4;
-    }*/
+    @apply flex flex-col rounded-3xl bg-gray-100 bg-opacity-60 py-16 md:px-16 w-full relative;
   }
   h1 {
-    @apply text-6xl;
+    @apply text-[3.25rem];
   }
   p {
-    @apply md:w-3/4;
+    @apply w-11/12;
   }
 }
 
 #about {
-  @apply -mt-20 pt-20 grid md:grid-cols-2 gap-8 items-center;
+  @apply -mt-20 pt-20 grid md:grid-cols-2 gap-8 items-center w-full;
 }
 
 #works {
-  @apply pt-20;
+  @apply pt-20 md:mx-20;
 }
 
 #contact {
@@ -87,7 +75,7 @@ header {
     @apply flex flex-col gap-4 md:gap-6 mt-8;
     input,
     textarea {
-      @apply bg-white bg-opacity-10 border-0 rounded-lg p-5 text-xl placeholder-white font-medium placeholder-opacity-30 resize-none text-white focus:bg-opacity-20 focus:ring-0 transition-colors;
+      @apply bg-black bg-opacity-10 border-0 rounded-lg p-5 text-xl placeholder-black font-medium placeholder-opacity-30 resize-none text-black focus:bg-opacity-20 focus:ring-0 transition-colors;
     }
     button {
       @apply mt-6;

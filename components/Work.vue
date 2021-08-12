@@ -1,36 +1,18 @@
 <template>
   <a
     :href="url"
-    class="relative flex items-end m-0 transition duration-300 transform bg-center bg-cover cursor-pointer  rounded-xl h-60 group hover:scale-105"
+    class="relative flex flex-col p-4 m-0 transition duration-300 transform bg-center bg-cover rounded-lg cursor-pointer  md:items-center md:flex-row hover:bg-black hover:bg-opacity-5"
     target="_blank"
-    :style="{
-      backgroundImage: `url('/img/${img}.png')`,
-      backgroundColor: '#0b0b0d',
-    }"
   >
-    <div
-      class="
-        absolute
-        bottom-0
-        left-0
-        w-full
-        h-full
-        transition
-        duration-300
-        opacity-0
-        group-hover:opacity-100
-        bg-gradient-to-b
-        from-transparent
-        via-[#0d0d0f90]
-        to-[#0d0d0f]
-        rounded-xl
-      "
-    ></div>
-    <div
-      class="z-10 p-8 transition duration-300 opacity-0 group-hover:opacity-100"
-    >
-      <h2 class="text-xl">{{ title }}</h2>
-      <p class="mt-2 text-lg leading-6 line-clamp-2" :title="description">
+    <img
+      class="object-cover h-40 rounded-md md:w-48 md:h-full"
+      :src="`/img/${img}.png`"
+      alt="logo"
+    />
+    <div class="mt-4 md:pl-6 md:mt-0">
+      <h2 class="text-2xl">{{ title }}</h2>
+      <p class="m-0">{{ role }}</p>
+      <p class="mt-2 text-xl leading-6 text-gray-800 line-clamp-2">
         {{ description }}
       </p>
     </div>

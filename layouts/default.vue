@@ -54,7 +54,7 @@ export default {
           icon: "github",
         },
         {
-          url: "https://twitter.com/tarikcoskun86",
+          url: "https://twitter.com/tarikcoskn",
           icon: "twitter",
         },
       ],

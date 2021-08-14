@@ -3,12 +3,13 @@
     <section id="home">
       <div class="container">
         <h1 class="mb-2 anime-text anime font-base">
-          Hello<span class="text-[2.75rem] font-title">,</span> it's
+          Hello<span class="text-[2.75rem] font-title">,</span>
+          <span class="text-gray-700">it's</span>
         </h1>
         <h1 class="anime-text anime font-title">Tarık Coşkun</h1>
         <p class="mt-4 text-[1.325rem] leading-7 anime-text anime">
           I'm a student from Turkey who likes programming and translating
-          projects into Turkish. Lately started learning game development.
+          projects into Turkish. Recently started learning game development.
         </p>
         <div class="flex items-center gap-3 my-4">
           <NuxtLink

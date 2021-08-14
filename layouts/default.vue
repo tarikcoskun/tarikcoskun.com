@@ -3,12 +3,12 @@
     <header>
       <div class="container">
         <h1 class="hidden text-4xl font-medium font-title md:block">
-          Tarık C.
+          Tarık Coşkun
         </h1>
         <div class="flex gap-6">
           <NuxtLink to="/#home">Home</NuxtLink>
           <NuxtLink to="/#about">About</NuxtLink>
-          <NuxtLink to="/#work">Works</NuxtLink>
+          <NuxtLink to="/#works">Works</NuxtLink>
           <NuxtLink class="md:hidden" to="/#contact">Contact</NuxtLink>
         </div>
         <NuxtLink class="hidden w-32 py-2 button md:block" to="#contact"

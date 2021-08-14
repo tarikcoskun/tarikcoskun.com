@@ -34,7 +34,7 @@ li {
 }
 
 .button {
-  @apply bg-black bg-opacity-10 hover:bg-opacity-20 border-2 border-black border-opacity-10 rounded-lg text-black text-opacity-80 text-xl transition-colors text-center font-medium;
+  @apply bg-black bg-opacity-5 hover:bg-opacity-10 border-2 border-black border-opacity-10 rounded-lg text-black text-opacity-80 text-xl transition-colors text-center font-medium;
 }
 
 header {
@@ -75,7 +75,7 @@ header {
     @apply flex flex-col gap-4 md:gap-6 mt-8;
     input,
     textarea {
-      @apply bg-black bg-opacity-10 border-0 rounded-lg p-5 text-xl placeholder-black font-medium placeholder-opacity-30 resize-none text-black focus:bg-opacity-20 focus:ring-0 transition-colors;
+      @apply bg-black bg-opacity-5 border-0 rounded-lg p-5 text-xl placeholder-black font-medium placeholder-opacity-30 resize-none text-black focus:bg-opacity-10 focus:ring-0 transition-colors;
     }
     button {
       @apply mt-6;

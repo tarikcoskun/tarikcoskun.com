@@ -10,7 +10,7 @@ module.exports = {
     },
     fontFamily: {
       base: ["Inter", "sans-serif"],
-      title: "IBM Plex Sans",
+      title: ["IBM Plex Sans", "Inter", "sans-serif"],
     },
   },
   plugins: [require("@tailwindcss/line-clamp"), require("@tailwindcss/forms")],

@@ -20,7 +20,7 @@
     </header>
     <Nuxt class="max-w-[52rem] px-4 mx-auto" />
     <img
-      src="/github.svg"
+      src="/img/github.svg"
       alt="*im a ghost*"
       @load="this.animate"
       class="hidden"
@@ -47,13 +47,6 @@ export default {
   methods: {
     animate() {
       const anime = this.$anime;
-
-      anime({
-        targets: "#home",
-        translateY: [25, 0],
-        opacity: 1,
-        easing: "spring(0, 5, 20, 0)",
-      });
 
       anime({
         targets: ".anime-text",

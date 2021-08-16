@@ -8,8 +8,8 @@
         </h1>
         <h1 class="anime-text anime font-title">Tarık Coşkun</h1>
         <p class="mt-4 text-[1.325rem] leading-7 anime-text anime">
-          I'm a student from Turkey who likes programming and translating
-          projects into Turkish. Recently started learning game development.
+          I'm a student from Turkey who likes programming and translating on
+          free times. Recently started learning game development.
         </p>
         <div class="flex items-center gap-3 my-4">
           <NuxtLink
@@ -31,12 +31,12 @@
       <div>
         <h1 v-scroll-reveal>About Me</h1>
         <p class="mt-2 md:text-justify" v-scroll-reveal>
-          I've been in web development since 2018. Since then, I've learned and
-          keep learning more and more technologies. Lately started learning game
-          development.
+          I've been in web development since 2018. Since then, I've been
+          learning more and more technologies. On the right, you can see my
+          favorite ones.
         </p>
         <p class="mt-4 md:text-justify" v-scroll-reveal>
-          Here are some of the technologies I've been working with lately...
+          Here are some of the technologies I've been working with recently
         </p>
         <div class="grid grid-cols-2 gap-2 mt-6">
           <li v-scroll-reveal><TypeScript /> TypeScript</li>
@@ -124,7 +124,7 @@
 
 <script>
 import TypeScript from "~/static/img/typescript.svg?inline";
-import React from "~/static/img/react.js.svg?inline";
+import React from "~/static/img/react.svg?inline";
 import Svelte from "~/static/img/svelte.svg?inline";
 import GML from "~/static/img/gml.svg?inline";
 

@@ -6,7 +6,7 @@
   >
     <img
       class="object-cover h-40 rounded-md md:w-48 md:h-full"
-      :src="`/img/${img}.png`"
+      :src="`/projects/${img}.png`"
       alt="logo"
     />
     <div class="mt-4 md:pl-6 md:mt-0">

@@ -18,7 +18,7 @@
         </div>
       </div>
     </header>
-    <Nuxt class="max-w-4xl px-4 mx-auto" />
+    <Nuxt class="max-w-[52rem] px-4 mx-auto" />
     <img
       src="/github.svg"
       alt="*im a ghost*"

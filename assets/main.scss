@@ -44,20 +44,20 @@ header {
     @apply m-0;
   }
   .container {
-    @apply max-w-4xl md:mx-auto flex items-center justify-between h-full gap-4 md:gap-0;
+    @apply max-w-[52rem] md:mx-auto flex items-center justify-between h-full gap-4 md:gap-0;
   }
 }
 
 #home {
   @apply flex items-center justify-center md:h-screen md:mt-[-4.5rem];
   .container {
-    @apply flex flex-col rounded-3xl bg-gray-100 dark:bg-gray-900 bg-opacity-60 dark:bg-opacity-60 py-16 md:px-16 w-full relative;
+    @apply flex flex-col rounded-3xl bg-gray-100 dark:bg-gray-900 bg-opacity-60 dark:bg-opacity-60 py-16 w-full relative;
   }
   h1 {
     @apply text-[3.25rem];
   }
   p {
-    @apply w-11/12;
+    @apply w-5/6;
   }
 }
 
@@ -66,7 +66,7 @@ header {
 }
 
 #works {
-  @apply pt-20 md:mx-20;
+  @apply pt-20;
 }
 
 #contact {

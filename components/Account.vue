@@ -13,8 +13,8 @@
 </template>
 
 <script>
-import TwitterIcon from "~/static/twitter.svg?inline";
-import GitHubIcon from "~/static/github.svg?inline";
+import TwitterIcon from "~/static/img/twitter.svg?inline";
+import GitHubIcon from "~/static/img/github.svg?inline";
 
 export default {
   props: ["url", "icon"],

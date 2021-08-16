@@ -39,7 +39,7 @@ li {
 
 header {
   backdrop-filter: blur(12px);
-  @apply sticky top-0 z-10 h-16 md:h-[4.5rem] bg-gray-100 bg-opacity-60;
+  @apply sticky top-0 z-10 h-12 md:h-[4.5rem] bg-gray-100 bg-opacity-60;
   * {
     @apply m-0;
   }

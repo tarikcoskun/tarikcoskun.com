@@ -13,30 +13,15 @@
           >
           <NuxtLink to="/#works">Works</NuxtLink>
         </div>
-        <NuxtLink class="hidden w-32 py-2 button md:block" to="#contact"
-          >Contact</NuxtLink
-        >
+        <div class="flex items-center gap-2">
+          <NuxtLink class="hidden w-32 py-1.5 button md:block" to="#contact"
+            >Contact</NuxtLink
+          >
+          <ThemeSwitch />
+        </div>
       </div>
     </header>
     <Nuxt class="max-w-4xl px-4 mx-auto" />
-    <footer
-      class="flex items-center justify-between max-w-4xl px-4 mx-auto mt-8"
-    >
-      <a
-        class="m-0 hover:underline"
-        href="https://github.com/tarikcoskun/website"
-        >Source on GitHub</a
-      >
-      <div class="flex gap-3">
-        <Account
-          v-for="(account, index) in accounts"
-          :key="index"
-          :url="account.url"
-          :icon="account.icon"
-          class="m-0"
-        />
-      </div>
-    </footer>
     <img
       src="/github.svg"
       alt="*im a ghost*"

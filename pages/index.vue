@@ -4,7 +4,7 @@
       <div class="container">
         <h1 class="mb-2 anime-text anime font-base">
           Hello<span class="text-[2.75rem] font-title">,</span>
-          <span class="text-gray-700">it's</span>
+          <span class="text-gray-700 dark:text-gray-300">it's</span>
         </h1>
         <h1 class="anime-text anime font-title">Tarık Coşkun</h1>
         <p class="mt-4 text-[1.325rem] leading-7 anime-text anime">
@@ -13,7 +13,7 @@
         </p>
         <div class="flex items-center gap-3 my-4">
           <NuxtLink
-            class="w-32 py-2 mt-2 mr-1 button anime-account anime"
+            class="w-32 py-1.5 mt-2 mr-1 button anime-account anime"
             to="#contact"
             >Contact</NuxtLink
           >
@@ -52,6 +52,10 @@
           :bg="tech.bg"
           :title="tech.title"
           :since="tech.since"
+          :darkBg="tech.darkBg"
+          :darkColor="tech.darkColor"
+          :lightBg="tech.lightBg"
+          :lightColor="tech.lightColor"
           v-scroll-reveal="{ delay: index * 50 }"
         />
       </div>
@@ -108,7 +112,7 @@
         ></textarea>
         <button
           type="submit"
-          class="py-2.5 mx-auto mb-4 w-52 button"
+          class="py-2 mx-auto mb-4 w-52 button"
           v-scroll-reveal
         >
           Send Message
@@ -142,22 +146,34 @@ export default {
         {
           title: "Nuxt",
           since: "2021",
-          bg: "#9eeccb",
+          darkBg: "#0a432b",
+          darkColor: "#00dc82",
+          lightBg: "#9eeccb",
+          lightColor: "#009a5b",
         },
         {
           title: "Tailwind",
           since: "2020",
-          bg: "#9edfec",
+          darkBg: "#0a3a43",
+          darkColor: "#06b6d4",
+          lightBg: "#9edfec",
+          lightColor: "#0497b0",
         },
         {
           title: "Node",
           since: "2018",
-          bg: "#9eecb3",
+          darkBg: "#0a4311",
+          darkColor: "#4bc864",
+          lightBg: "#9eecb3",
+          lightColor: "#028700",
         },
         {
           title: "Sass",
           since: "2019",
-          bg: "#ebaecd",
+          darkBg: "#590d33",
+          darkColor: "#cf649a",
+          lightBg: "#ebaecd",
+          lightColor: "#ad266a",
         },
       ],
       work: [

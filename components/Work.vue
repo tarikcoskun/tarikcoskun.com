@@ -1,7 +1,7 @@
 <template>
   <a
     :href="url"
-    class="relative flex flex-col p-4 m-0 transition duration-300 transform bg-center bg-cover rounded-lg cursor-pointer  md:items-center md:flex-row hover:bg-black hover:bg-opacity-5"
+    class="relative flex flex-col p-4 m-0 transition duration-300 transform bg-center bg-cover rounded-lg cursor-pointer  md:items-center md:flex-row hover:bg-black dark:hover:bg-white hover:bg-opacity-5 dark:hover:bg-opacity-5"
     target="_blank"
   >
     <img

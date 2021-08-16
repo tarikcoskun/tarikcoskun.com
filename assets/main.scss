@@ -39,12 +39,12 @@ li {
 
 header {
   backdrop-filter: blur(12px);
-  @apply sticky top-0 z-10 h-12 md:h-[4.5rem] bg-gray-100 dark:bg-gray-900 bg-opacity-60 dark:bg-opacity-60;
+  @apply sticky top-0 z-10 h-14 md:h-[4.5rem] bg-gray-100 dark:bg-gray-900 bg-opacity-60 dark:bg-opacity-60;
   * {
     @apply m-0;
   }
   .container {
-    @apply max-w-4xl mx-auto flex items-center justify-center md:justify-between h-full;
+    @apply max-w-4xl md:mx-auto flex items-center justify-between h-full gap-4 md:gap-0;
   }
 }
 

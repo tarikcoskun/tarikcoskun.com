@@ -1,6 +1,6 @@
 <template>
   <div
-    class="flex items-center justify-center duration-150 rounded-lg cursor-pointer  button w-11 h-11 right-4 top-4"
+    class="flex items-center justify-center mr-2 duration-150 rounded-lg cursor-pointer  button w-11 h-11"
     @click="
       $colorMode.value === 'dark'
         ? ($colorMode.preference = 'light')

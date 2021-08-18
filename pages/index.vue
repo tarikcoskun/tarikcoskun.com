@@ -32,8 +32,8 @@
         <h1 v-scroll-reveal>About Me</h1>
         <p class="mt-2 md:text-justify" v-scroll-reveal>
           I've been in web development since 2018. Since then, I've been
-          learning more and more technologies. On the right, you can see my
-          favorite ones.
+          learning more and more technologies. On the right, you can see the
+          ones I mainly use.
         </p>
         <p class="mt-4 md:text-justify" v-scroll-reveal>
           Here are some of the technologies I've been working with recently

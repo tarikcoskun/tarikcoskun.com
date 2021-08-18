@@ -5,7 +5,15 @@
     target="_blank"
   >
     <img
-      class="object-cover h-40 rounded-md md:w-48 md:h-full"
+      class="
+        object-cover
+        h-40
+        rounded-md
+        md:w-48
+        md:h-full
+        bg-[#151516]
+        dark:bg-[#121214]
+      "
       :src="`/projects/${img}.png`"
       alt="logo"
     />

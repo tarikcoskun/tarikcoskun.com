@@ -39,7 +39,15 @@ export default {
         translateX: [-50, 0],
         opacity: 1,
         easing: "spring(0, 5, 20, 0)",
-        delay: anime.stagger(350),
+        delay: anime.stagger(350, { start: 1000 }),
+      });
+
+      anime({
+        targets: ".anime-intro",
+        translateX: [-10, 0],
+        opacity: 1,
+        easing: "spring(0, 5, 20, 0)",
+        delay: anime.stagger(75),
       });
 
       anime({

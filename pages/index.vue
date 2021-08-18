@@ -2,14 +2,45 @@
   <div>
     <section id="home">
       <div class="container">
-        <h1 class="mb-2 anime-text anime font-base">
-          Hello<span class="text-[2.75rem] font-title">,</span>
-          <span class="text-gray-700 dark:text-gray-300">it's</span>
-        </h1>
-        <h1 class="anime-text anime font-title">Tarık Coşkun</h1>
+        <div class="flex gap-3">
+          <div class="flex">
+            <h1
+              class="mb-2 anime-intro anime font-base"
+              v-for="character in 'Hello,'.split('')"
+            >
+              {{ character }}
+            </h1>
+          </div>
+          <div class="flex">
+            <h1
+              class="mb-2 text-gray-700  anime-intro anime font-base dark:text-gray-300"
+              v-for="character in 'it\'s'.split('')"
+            >
+              {{ character }}
+            </h1>
+          </div>
+        </div>
+        <div class="flex gap-3">
+          <div class="flex">
+            <h1
+              class="text-5xl anime-intro anime"
+              v-for="character in 'Tarık'.split('')"
+            >
+              {{ character }}
+            </h1>
+          </div>
+          <div class="flex">
+            <h1
+              class="text-5xl anime-intro anime"
+              v-for="character in 'COŞKUN'.split('')"
+            >
+              {{ character }}
+            </h1>
+          </div>
+        </div>
         <p class="mt-4 text-[1.325rem] leading-7 anime-text anime">
-          I'm a student from Turkey who likes programming and translating on
-          free times. Recently started learning game development.
+          A student from Turkey who likes programming and translating on free
+          times. Recently started learning game development.
         </p>
         <div class="flex items-center gap-3 my-4">
           <NuxtLink

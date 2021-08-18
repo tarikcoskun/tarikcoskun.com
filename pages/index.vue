@@ -50,6 +50,7 @@
           v-for="(tech, index) in tech"
           :key="index"
           :bg="tech.bg"
+          :link="tech.link"
           :title="tech.title"
           :since="tech.since"
           :darkBg="tech.darkBg"
@@ -144,6 +145,7 @@ export default {
       ],
       tech: [
         {
+          link: "nuxtjs.org",
           title: "Nuxt",
           since: "2021",
           darkBg: "#0a432b",
@@ -152,6 +154,7 @@ export default {
           lightColor: "#009a5b",
         },
         {
+          link: "tailwindcss.org",
           title: "Tailwind",
           since: "2020",
           darkBg: "#0a3a43",
@@ -160,6 +163,7 @@ export default {
           lightColor: "#0497b0",
         },
         {
+          link: "nodejs.org",
           title: "Node",
           since: "2018",
           darkBg: "#0a4311",
@@ -168,6 +172,7 @@ export default {
           lightColor: "#028700",
         },
         {
+          link: "sass-lang.com",
           title: "Sass",
           since: "2019",
           darkBg: "#590d33",

@@ -30,20 +30,6 @@
 
 <script>
 export default {
-  data() {
-    return {
-      accounts: [
-        {
-          url: "https://github.com/tarikcoskun",
-          icon: "github",
-        },
-        {
-          url: "https://twitter.com/tarikcoskn",
-          icon: "twitter",
-        },
-      ],
-    };
-  },
   methods: {
     animate() {
       const anime = this.$anime;

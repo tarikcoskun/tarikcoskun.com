@@ -138,7 +138,7 @@ export default {
           icon: "github",
         },
         {
-          url: "https://twitter.com/tarikcoskn",
+          url: "https://twitter.com/tarikcskun",
           icon: "twitter",
         },
       ],

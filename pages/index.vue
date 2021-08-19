@@ -185,7 +185,7 @@ export default {
           lightColor: "#009a5b",
         },
         {
-          link: "tailwindcss.org",
+          link: "tailwindcss.com",
           title: "Tailwind",
           since: "2020",
           darkBg: "#0a3a43",

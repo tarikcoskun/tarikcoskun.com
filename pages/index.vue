@@ -1,79 +1,66 @@
 <template>
   <div>
-    <section id="home">
-      <div class="container">
+    <section
+      class="flex items-center justify-center md:h-screen md:mt-[-4.5rem]"
+      id="home"
+    >
+      <div
+        class="flex flex-col w-full py-16 bg-gray-100  rounded-3xl dark:bg-gray-900 bg-opacity-60 dark:bg-opacity-60"
+      >
         <div class="flex gap-3">
-          <div class="flex">
-            <h1
-              class="mb-2 anime-intro anime font-base"
-              v-for="character in 'Hello,'.split('')"
-            >
-              {{ character }}
-            </h1>
-          </div>
-          <div class="flex">
-            <h1
-              class="mb-2 text-gray-700  anime-intro anime font-base dark:text-gray-300"
-              v-for="character in 'it\'s'.split('')"
-            >
-              {{ character }}
-            </h1>
-          </div>
+          <AnimatedText
+            text="Hello,"
+            class="text-5xl text-gray-700 font-base dark:text-gray-300"
+          />
+          <AnimatedText
+            text="it's"
+            class="text-5xl text-gray-700 font-base dark:text-gray-300"
+          />
         </div>
-        <div class="flex gap-3">
-          <div class="flex">
-            <h1
-              class="text-5xl anime-intro anime"
-              v-for="character in 'Tarık'.split('')"
-            >
-              {{ character }}
-            </h1>
-          </div>
-          <div class="flex">
-            <h1
-              class="text-5xl anime-intro anime"
-              v-for="character in 'COŞKUN'.split('')"
-            >
-              {{ character }}
-            </h1>
-          </div>
+        <div class="flex gap-3 mt-3">
+          <AnimatedText text="Tarık" class="text-5xl font-title" />
+          <AnimatedText text="COŞKUN" class="text-5xl font-title" />
         </div>
-        <p class="mt-4 text-[1.325rem] leading-7 anime-text anime">
-          A student from Turkey who likes programming and translating on free
-          times. Recently started learning game development.
+        <p class="w-2/3 my-5 opacity-0 anime-text">
+          I'm a Full-stack web developer with over 3 years, from Turkey. I use
+          TypeScript, Node, Vue and React
         </p>
-        <div class="flex items-center gap-3 my-4">
-          <NuxtLink
-            class="w-32 py-1.5 mt-2 mr-1 button anime-account anime"
-            to="#contact"
-            >Contact</NuxtLink
+        <div class="flex items-center gap-3">
+          <a
+            class="w-32 mt-2 mr-1 opacity-0 button anime-account"
+            href="mailto:tarikcskun@gmail.com"
+            >Contact</a
           >
           <Account
             v-for="(account, index) in accounts"
             :key="index"
             :url="account.url"
             :icon="account.icon"
-            class="m-0 anime-account anime"
+            class="opacity-0 anime-account"
           />
         </div>
       </div>
     </section>
-    <section id="about">
+
+    <section
+      class="grid items-center w-full gap-8 pt-20 -mt-20 md:grid-cols-2"
+      id="about"
+    >
       <div>
-        <h1 v-scroll-reveal>About Me</h1>
-        <p class="mt-2 md:text-justify" v-scroll-reveal>
+        <h1>About Me</h1>
+        <p class="mt-2 md:text-justify">
           I've been in web development since 2018. Since then, I've been
           learning more and more technologies. On the right, you can see the
           ones I mainly use.
         </p>
-        <p class="mt-4 md:text-justify" v-scroll-reveal>
+        <p class="mt-4 md:text-justify">
           Here are some of the technologies I've been working with recently
         </p>
         <div class="grid grid-cols-2 gap-2 mt-6">
-          <li v-scroll-reveal><TypeScript /> TypeScript</li>
-          <li v-scroll-reveal><React /> React</li>
-          <li v-scroll-reveal><Svelte /> Svelte</li>
-          <li v-scroll-reveal title="GameMaker Language"><GML /> GML</li>
+          <li><TypeScript /> TypeScript</li>
+          <li><React /> React</li>
+          <li><Svelte /> Svelte</li>
+          <li title="GameMaker Language"><GML /> GML</li>
         </div>
       </div>
       <div class="grid grid-cols-2 gap-3 md:gap-4">
@@ -88,13 +75,13 @@
           :darkColor="tech.darkColor"
           :lightBg="tech.lightBg"
           :lightColor="tech.lightColor"
-          v-scroll-reveal="{ delay: index * 50 }"
         />
       </div>
     </section>
-    <section id="works">
-      <h1 class="text-center" v-scroll-reveal>Works</h1>
-      <div class="grid mt-8">
+
+    <section class="py-20" id="works">
+      <h1 class="text-center">Works</h1>
+      <div class="grid mx-12 mt-8">
         <Work
           v-for="(work, index) in work"
           :key="index"
@@ -103,53 +90,8 @@
           :role="work.role"
           :title="work.title"
           :description="work.description"
-          v-scroll-reveal="{ delay: index * 50 }"
         />
       </div>
-    </section>
-    <section id="contact">
-      <h1 class="text-center" v-scroll-reveal>Contact</h1>
-      <p class="text-center" v-scroll-reveal>
-        You can send me a message directly from here and I'll get back to you as
-        soon as possible.
-      </p>
-      <form
-        name="Contact"
-        method="POST"
-        action="/thanks"
-        data-netlify="true"
-        netlify-honeypot="bot-field"
-      >
-        <input type="hidden" name="form-name" value="Contact" />
-        <input
-          type="email"
-          name="email"
-          placeholder="your@mail.com"
-          required
-          v-scroll-reveal
-        />
-        <input
-          type="text"
-          name="name"
-          placeholder="Your name"
-          required
-          v-scroll-reveal
-        />
-        <textarea
-          name="message"
-          rows="5"
-          placeholder="Your message..."
-          required
-          v-scroll-reveal
-        ></textarea>
-        <button
-          type="submit"
-          class="py-2 mx-auto mb-4 w-52 button"
-          v-scroll-reveal
-        >
-          Send Message
-        </button>
-      </form>
     </section>
   </div>
 </template>
@@ -251,7 +193,7 @@ export default {
           title: "Will You Snail?",
           role: "Translator & Tester",
           description:
-            "A fast pace platformer where an evil AI tries to kill you by predicting your movement",
+            "A fast paced platformer where an evil AI tries to kill you by predicting your movement",
         },
       ],
     };

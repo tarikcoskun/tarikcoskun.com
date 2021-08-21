@@ -4,7 +4,7 @@ html {
   ::-webkit-scrollbar {
     @apply w-1.5;
     &-thumb {
-      @apply bg-gray-400 dark:bg-gray-700 rounded-sm;
+      @apply bg-gray-500 rounded-sm;
     }
   }
   ::selection {
@@ -13,20 +13,16 @@ html {
 }
 
 body {
-  @apply bg-gray-100 dark:bg-gray-900 pb-4 md:pb-16;
+  @apply bg-gray-100 dark:bg-gray-900;
 }
 
 h1 {
   @apply text-black dark:text-white text-4xl font-title;
 }
 
-h2 {
-  @apply text-black dark:text-white font-medium text-2xl;
-}
-
 p,
 a {
-  @apply text-gray-700 dark:text-gray-300 text-xl leading-7 mt-6;
+  @apply text-gray-700 dark:text-gray-300 text-xl;
 }
 
 li {
@@ -34,55 +30,5 @@ li {
 }
 
 .button {
-  @apply bg-black dark:bg-white bg-opacity-5 dark:bg-opacity-5 hover:bg-opacity-10 dark:hover:bg-opacity-10 border-2 border-black dark:border-white border-opacity-10 dark:border-opacity-10 rounded-lg text-black dark:text-white text-opacity-80 dark:text-opacity-80 text-xl transition-colors text-center font-medium;
-}
-
-header {
-  backdrop-filter: blur(12px);
-  @apply sticky top-0 z-10 h-14 md:h-[4.5rem] bg-gray-100 dark:bg-gray-900 bg-opacity-60 dark:bg-opacity-60;
-  * {
-    @apply m-0;
-  }
-  .container {
-    @apply max-w-[52rem] md:mx-auto flex items-center justify-between h-full gap-4 md:gap-0;
-  }
-}
-
-#home {
-  @apply flex items-center justify-center md:h-screen md:mt-[-4.5rem];
-  .container {
-    @apply flex flex-col rounded-3xl bg-gray-100 dark:bg-gray-900 bg-opacity-60 dark:bg-opacity-60 py-16 w-full relative;
-  }
-  h1 {
-    @apply text-[3.25rem];
-  }
-  p {
-    @apply w-5/6;
-  }
-}
-
-#about {
-  @apply -mt-20 pt-20 grid md:grid-cols-2 gap-8 items-center w-full;
-}
-
-#works {
-  @apply pt-20;
-}
-
-#contact {
-  @apply pt-20 max-w-lg mx-auto;
-  form {
-    @apply flex flex-col gap-4 md:gap-6 mt-8;
-    input,
-    textarea {
-      @apply bg-black dark:bg-white bg-opacity-5 dark:bg-opacity-5 border-0 rounded-lg p-5 text-xl placeholder-black dark:placeholder-white font-medium placeholder-opacity-30 dark:placeholder-opacity-30 resize-none text-black dark:text-white focus:bg-opacity-10 dark:focus:bg-opacity-10 focus:ring-0 transition-colors;
-    }
-    button {
-      @apply mt-6;
-    }
-  }
-}
-
-.anime {
-  @apply opacity-0;
+  @apply py-1.5 bg-black dark:bg-white bg-opacity-5 dark:bg-opacity-5 hover:bg-opacity-10 dark:hover:bg-opacity-10 border-2 border-black dark:border-white border-opacity-10 dark:border-opacity-10 rounded-lg text-black dark:text-white text-opacity-80 dark:text-opacity-80 text-xl transition-colors text-center font-medium;
 }

@@ -29,10 +29,8 @@ export default {
     "nuxt-animejs",
   ],
   modules: ["@nuxtjs/svg", "@nuxtjs/axios"],
-  plugins: [{ src: "~/plugins/scroll-reveal", ssr: false }],
   tailwindcss: {
     viewer: false,
-    jit: true,
   },
   colorMode: {
     classSuffix: "",

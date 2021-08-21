@@ -2,7 +2,7 @@
   <a
     :href="`https://${link}`"
     target="_blank"
-    class="relative flex flex-col gap-2 p-4 m-0 bg-black  group dark:bg-white bg-opacity-5 dark:bg-opacity-5 rounded-xl"
+    class="relative flex flex-col gap-2 p-4 bg-black  group dark:bg-white bg-opacity-5 dark:bg-opacity-5 rounded-xl"
   >
     <div
       class="flex items-center justify-center w-16 h-16 rounded-lg"
@@ -19,8 +19,8 @@
       <Node v-if="title === 'Node'" />
       <Sass v-if="title === 'Sass'" />
     </div>
-    <h1 class="mt-1 text-2xl">{{ title }}</h1>
-    <p class="m-0">Since {{ since }}</p>
+    <h1 class="mt-1 text-2xl font-medium font-base">{{ title }}</h1>
+    <p>Since {{ since }}</p>
   </a>
 </template>
 

@@ -19,10 +19,10 @@
         </div>
         <div class="flex gap-3 mt-3">
           <AnimatedText text="Tarık" class="text-5xl font-title" />
-          <AnimatedText text="COŞKUN" class="text-5xl font-title" />
+          <AnimatedText text="Coşkun" class="text-5xl font-title" />
         </div>
-        <p class="w-2/3 my-5 opacity-0 anime-text">
-          I'm a Full-stack web developer with over 3 years, from Turkey. I use
+        <p class="my-5 opacity-0 md:w-2/3 anime-text">
+          I'm a Full-stack web developer for over 3 years, from Turkey. I use
           TypeScript, Node, Vue and React
         </p>
         <div class="flex items-center gap-3">
@@ -81,7 +81,7 @@
 
     <section class="py-20" id="works">
       <h1 class="text-center">Works</h1>
-      <div class="grid mx-12 mt-8">
+      <div class="grid mt-8 md:mx-12">
         <Work
           v-for="(work, index) in work"
           :key="index"

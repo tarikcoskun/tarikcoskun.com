@@ -27,7 +27,7 @@
         "
       >
         <h1 class="hidden text-4xl font-medium font-title md:block">
-          Tarık COŞKUN
+          Tarık Coşkun
         </h1>
         <div class="flex items-center gap-5 ml-4 md:ml-0">
           <NuxtLink to="/#home">Home</NuxtLink>

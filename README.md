@@ -1,11 +1,14 @@
-# Vue 3 + Typescript + Vite
+#### 📩 Installation
 
-This template should help get you started developing with Vue 3 and Typescript in Vite.
+- Make sure [Node.js](https://nodejs.org/en/download) is installed in your system.
+- Download this repository or clone: `git clone https://github.com/tarikcoskun/website`,
+- Install modules:
+  - with Yarn: `yarn` or `yarn install`.
+  - with NPM: `npm install`.
+- Start the project:
+  - in Development mode: `yarn dev` or `npm run dev`,
+  - in Production mode: First, run `yarn generate` or `npm run generate` then run `yarn start` or `npm run start`.
 
-## Recommended IDE Setup
+### 🙏 Special Thanks
 
-- [VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=johnsoncodehk.volar)
-
-## Type Support For `.vue` Imports in TS
-
-Since TypeScript cannot handle type information for `.vue` imports, they are shimmed to be a generic Vue component type by default. In most cases this is fine if you don't really care about component prop types outside of templates. However, if you wish to get actual prop types in `.vue` imports (for example to get props validation when using manual `h(...)` calls), you can enable Volar's `.vue` type support plugin by running `Volar: Switch TS Plugin on/off` from VSCode command palette.
+to [EGGSY](https://github.com/eggsy), [Arda](https://github.com/ardasoyturk), [Barış](https://github.com/barbarbar338), [Florian Lefebvre](https://github.com/florian-lefebvre) and [Harsh Singh](https://github.com/harshhhdev). Got inspired a lot by them, even used some of their amazing code. Make sure to check their profiles and websites 😉

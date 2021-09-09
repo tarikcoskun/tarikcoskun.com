@@ -1,0 +1,52 @@
+@import "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700";
+
+* {
+  font: 20px "Inter", sans-serif;
+  color: #bebfc2;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  text-decoration: none;
+
+  &::-webkit-scrollbar {
+    width: 8px;
+    &-thumb {
+      background: #343438;
+    }
+  }
+}
+
+.button {
+  background: #ffffff10;
+  border: 2px solid #ffffff25;
+  padding: 8px 20px;
+  border-radius: 8px;
+  transition: 0.15s;
+  font-weight: 500;
+  &:hover {
+    background: #ffffff20;
+  }
+}
+
+.text-center {
+  text-align: center;
+}
+
+@media only screen and (max-width: 768px) {
+  .mb\:hidden {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .pc\:button {
+    background: #ffffff10;
+    border: 2px solid #ffffff25;
+    padding: 8px 20px;
+    border-radius: 8px;
+    transition: 0.15s;
+    &:hover {
+      background: #ffffff20;
+    }
+  }
+}

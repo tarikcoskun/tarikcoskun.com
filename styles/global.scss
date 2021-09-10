@@ -1,9 +1,17 @@
 @import "utility.scss";
 
 body {
-  background: #18181b;
+  background: linear-gradient(to right, #f9f3fa, #f1e7f3);
+  background-repeat: no-repeat;
+  background-size: cover;
   overflow-x: hidden;
   scroll-behavior: smooth;
+}
+
+.wrapper {
+  &.wrapper-bg {
+    background: linear-gradient(to bottom, #fff, #fafafa);
+  }
 }
 
 section {
@@ -24,14 +32,14 @@ header {
     justify-content: space-between;
 
     h1 {
-      color: #fff;
+      color: #000;
       font-size: 24px;
       font-weight: 600;
     }
 
     div#links {
       display: flex;
-      gap: 32px;
+      gap: 24px;
       align-items: center;
 
       a {
@@ -47,12 +55,17 @@ section#home {
 
   h1 {
     &:first-child {
-      color: #fff;
+      color: #000;
       font-size: 48px;
       font-weight: 700;
     }
-    color: #adadd1;
-    font-size: 24px;
+    &:not(:first-child) {
+      background: linear-gradient(to right, #d96ecd, #331da8, #1d62f1);
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-weight: 600;
+      font-size: 24px;
+    }
   }
 
   p {
@@ -68,6 +81,7 @@ section#home {
 }
 
 section#about {
+  padding: 32px 0;
   display: grid;
   gap: 32px;
   align-items: center;
@@ -75,7 +89,7 @@ section#about {
   div {
     &#first-col {
       h1 {
-        color: #fff;
+        color: #000;
         font-size: 30px;
         font-weight: 600;
       }
@@ -92,7 +106,7 @@ section#about {
       div.tech {
         padding: 16px;
         border-radius: 12px;
-        background: #ffffff0d;
+        background: #00000007;
 
         svg {
           border-radius: 8px;
@@ -100,7 +114,7 @@ section#about {
 
         h1 {
           margin: 16px 0 4px 0;
-          color: #fff;
+          color: #000;
           font-size: 24px;
           font-weight: 600;
         }
@@ -110,10 +124,10 @@ section#about {
 }
 
 section#works {
-  padding: 72px 0;
+  padding: 32px 0;
 
   h1 {
-    color: #fff;
+    color: #000;
     font-size: 30px;
     font-weight: 600;
   }
@@ -122,14 +136,14 @@ section#works {
     margin-top: 16px;
     display: grid;
 
-    a.tech {
+    a.work {
       border-radius: 8px;
       padding: 20px;
       display: flex;
       transition: 0.15s;
       cursor: pointer;
       &:hover {
-        background: #ffffff0d;
+        background: #00000009;
       }
 
       img {
@@ -145,8 +159,11 @@ section#works {
 
         p {
           &.role {
+            background: linear-gradient(to right, #d96ecd, #331da8);
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
             font-size: 18px;
-            color: #adadd1;
+            font-weight: 600;
             margin-top: 2px;
           }
           &.description {
@@ -159,7 +176,7 @@ section#works {
 }
 
 @media only screen and (max-width: 768px) {
-  main {
+  .wrapper {
     padding: 0 16px;
   }
   header section {
@@ -171,7 +188,7 @@ section#works {
   section#works {
     > div {
       gap: 12px;
-      a.tech {
+      a.work {
         flex-direction: column;
         img {
           height: 160px;
@@ -184,12 +201,14 @@ section#works {
 
 @media only screen and (min-width: 768px) {
   section#about {
+    padding: 64px 0;
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
   section#works {
+    padding: 64px 0;
     > div {
       margin-top: 32px;
-      a.tech {
+      a.work {
         align-items: center;
 
         img {

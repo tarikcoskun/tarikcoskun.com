@@ -6,7 +6,7 @@ export const Work: React.FC<{
   description: string;
 }> = ({ href, img, role, title, description }) => {
   return (
-    <a href={href} target="_blank" rel="noreferrer" className="tech">
+    <a href={href} target="_blank" rel="noreferrer" className="work">
       <img src={`/projects/${img}.png`} alt={title} />
       <div>
         <h1>{title}</h1>

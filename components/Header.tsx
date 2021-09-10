@@ -13,7 +13,7 @@ export const Header: React.FC = () => {
             href="mailto:tarikcskun@gmail.com"
             target="_blank"
             rel="noreferrer"
-            className="pc:button"
+            className="button"
           >
             Contact
           </a>

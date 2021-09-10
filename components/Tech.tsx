@@ -1,4 +1,5 @@
 import { ReactElement } from "react";
+import { motion } from "framer-motion";
 
 export const Tech: React.FC<{
   icon: ReactElement;
@@ -6,10 +7,14 @@ export const Tech: React.FC<{
   since: string;
 }> = ({ icon, title, since }) => {
   return (
-    <div className="tech">
+    <motion.div
+      className="tech"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+    >
       {icon}
       <h1>{title}</h1>
       <p>Since {since}</p>
-    </div>
+    </motion.div>
   );
 };

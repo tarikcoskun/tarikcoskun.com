@@ -1,3 +1,5 @@
+import { motion } from "framer-motion";
+
 import { Tech } from "@components/Tech";
 import { Work } from "@components/Work";
 
@@ -8,110 +10,161 @@ import VueIcon from "@icons/Vue";
 import TailwindIcon from "@icons/Tailwind";
 import SassIcon from "@icons/Sass";
 
+const container = {
+  hidden: { opacity: 0 },
+  show: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.35,
+    },
+  },
+};
+
+const item = {
+  hidden: { x: -64, opacity: 0 },
+  show: { x: 0, opacity: 1 },
+};
+
+const account = {
+  hidden: { y: 32, opacity: 0 },
+  show: { y: 0, opacity: 1 },
+};
+
+const easing = {
+  type: "spring",
+  stiffness: 30,
+};
+
 export default function Home() {
   return (
     <main>
-      <section id="home">
-        <h1>Tarık Coşkun</h1>
-        <h1>Full-stack Developer</h1>
-        <p>
-          My name is Tarık and I&#39;m a full-stack web developer from Turkey
-          <br />I like working on front-end side more
-        </p>
+      <div className="wrapper">
+        <motion.section
+          id="home"
+          initial="hidden"
+          animate="show"
+          variants={container}
+        >
+          <motion.h1 variants={item} transition={easing}>
+            Tarık Coşkun
+          </motion.h1>
+          <motion.h1 variants={item} transition={easing}>
+            Full-stack Developer
+          </motion.h1>
+          <motion.p variants={item} transition={easing}>
+            My name is Tarık and I&#39;m a full-stack web developer from Turkey
+            <br />I like working on front-end side more
+          </motion.p>
 
-        <div id="accounts">
-          <a
-            href="mailto:tarikcskun@gmail.com"
-            target="_blank"
-            rel="noreferrer"
-            className="button"
-            style={{
-              fontSize: "20px",
-              padding: "8px 28px",
-            }}
+          <motion.div
+            id="accounts"
+            variants={container}
+            initial="hidden"
+            animate="show"
           >
-            Contact
-          </a>
-          <a
-            href="https://github.com/tarikcoskun"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <GitHubIcon />
-          </a>
-          <a
-            href="https://github.com/tarikcoskun"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <TwitterIcon />
-          </a>
-        </div>
-      </section>
+            <motion.a
+              href="mailto:tarikcskun@gmail.com"
+              target="_blank"
+              rel="noreferrer"
+              className="button"
+              variants={account}
+              transition={{ ...easing, delay: 1.25 }}
+            >
+              Contact
+            </motion.a>
+            <motion.a
+              href="https://github.com/tarikcoskun"
+              target="_blank"
+              rel="noreferrer"
+              variants={account}
+              transition={{ ...easing, delay: 1.25 }}
+            >
+              <GitHubIcon />
+            </motion.a>
+            <motion.a
+              href="https://github.com/tarikcoskun"
+              target="_blank"
+              rel="noreferrer"
+              variants={account}
+              transition={{ ...easing, delay: 1.25 }}
+            >
+              <TwitterIcon />
+            </motion.a>
+          </motion.div>
+        </motion.section>
+      </div>
 
-      <section id="about">
-        <div id="first-col">
-          <h1>About Me</h1>
-          <p>
-            I&#39;ve been in web development since 2018. Since then, I&#39;ve
-            been learning more and more technologies. I mainly use Node.js based
-            technologies.
-            <br />
-            <br />
-            Recently, I&#39;ve been working with TypeScript, Vue, React, Svelte,
-            Tailwind and more. On the right, you can see the technologies I
-            mainly use.
-          </p>
-        </div>
+      <div className="wrapper wrapper-bg">
+        <section id="about">
+          <div id="first-col">
+            <h1>About Me</h1>
+            <p>
+              I&#39;ve been in web development since 2018. Since then, I&#39;ve
+              been learning more and more technologies. I mainly use Node.js
+              based technologies.
+              <br />
+              <br />
+              Recently, I&#39;ve been working with{" "}
+              <span style={{ color: "#3178c6" }}>TypeScript</span>,{" "}
+              <span style={{ color: "#41b883" }}>Vue</span>,{" "}
+              <span style={{ color: "#50bbd7" }}>React</span>,{" "}
+              <span style={{ color: "#ff3e00" }}>Svelte</span>,{" "}
+              <span style={{ color: "#44a8b3" }}>Tailwind</span>. And also on
+              the right, you can see the technologies I mainly use.
+            </p>
+          </div>
 
-        <div id="second-col">
-          <Tech icon={<ReactIcon />} title="React" since="2021" />
-          <Tech icon={<VueIcon />} title="Vue" since="2021" />
-          <Tech icon={<TailwindIcon />} title="Tailwind" since="2020" />
-          <Tech icon={<SassIcon />} title="Sass" since="2018" />
-        </div>
-      </section>
+          <motion.div id="second-col">
+            <Tech icon={<ReactIcon />} title="React" since="2021" />
+            <Tech icon={<VueIcon />} title="Vue" since="2021" />
+            <Tech icon={<TailwindIcon />} title="Tailwind" since="2020" />
+            <Tech icon={<SassIcon />} title="Sass" since="2018" />
+          </motion.div>
+        </section>
+      </div>
 
-      <section id="works">
-        <h1 className="text-center">Works</h1>
-        <div>
-          <Work
-            href="https://discords.com/templates"
-            img="templates"
-            title="Discord Templates"
-            role="Moderator"
-            description="A template library that helps you create your own kingdom with a diverse range of templates"
-          />
-          <Work
-            href="https://premid.app"
-            img="premid"
-            title="PreMiD"
-            role="Translator"
-            description="A utility that allows you to show what you're doing on the web in your Discord status"
-          />
-          <Work
-            href="https://crumblingstatue.github.io/FloweysTimeMachine"
-            img="floweystimemachine"
-            title="Flowey's Time Machine"
-            role="Designer"
-            description="An editor tool for Undertale that allows you to change your save content with a friendly UI"
-          />
-          <Work
-            href="https://unicorns.software"
-            img="unicornssoftware"
-            title="Unicorn's Software"
-            role="Lead Developer"
-            description="An editor tool for Will You Snail? that allows you to change your save content with a friendly UI"
-          />
-          <Work
-            href="https://crumblingstatue.github.io/FloweysTimeMachine"
-            img="willyousnail"
-            title="Will You Snail?"
-            role="Translator & Tester"
-            description="A fast paced platformer where an evil AI tries to kill you by predicting your movement"
-          />
-        </div>
-      </section>
+      <div className="wrapper">
+        <section id="works">
+          <h1 className="text-center">Works</h1>
+          <div>
+            <Work
+              href="https://discords.com/templates"
+              img="templates"
+              title="Discord Templates"
+              role="Moderator"
+              description="A template library that helps you create your own kingdom with a diverse range of templates"
+            />
+            <Work
+              href="https://premid.app"
+              img="premid"
+              title="PreMiD"
+              role="Translator"
+              description="A utility that allows you to show what you're doing on the web in your Discord status"
+            />
+            <Work
+              href="https://crumblingstatue.github.io/FloweysTimeMachine"
+              img="floweystimemachine"
+              title="Flowey's Time Machine"
+              role="Designer"
+              description="An editor tool for Undertale that allows you to change your save content with a friendly UI"
+            />
+            <Work
+              href="https://unicorns.software"
+              img="unicornssoftware"
+              title="Unicorn's Software"
+              role="Lead Developer"
+              description="An editor tool for Will You Snail? that allows you to change your save content with a friendly UI"
+            />
+            <Work
+              href="https://crumblingstatue.github.io/FloweysTimeMachine"
+              img="willyousnail"
+              title="Will You Snail?"
+              role="Translator & Tester"
+              description="A fast paced platformer where an evil AI tries to kill you by predicting your movement"
+            />
+          </div>
+        </section>
+      </div>
     </main>
   );
 }

@@ -46,8 +46,10 @@ header {
         cursor: pointer;
         font-weight: 500;
         font-size: 18px;
+        transition: 0.15s;
         &.active {
-          border-bottom: 2px solid #000;
+          color: #000;
+          font-weight: 600;
         }
       }
     }

@@ -1,4 +1,4 @@
-import Link from "next/link";
+import { Link, animateScroll as scroll } from "react-scroll";
 
 export const Header: React.FC = () => {
   return (
@@ -6,9 +6,15 @@ export const Header: React.FC = () => {
       <section>
         <h1 className="mb:hidden">Tarık Coşkun</h1>
         <div id="links">
-          <Link href="/">Home</Link>
-          <Link href="/#about">About</Link>
-          <Link href="/#works">Works</Link>
+          <Link to="home" smooth={true} offset={-73} activeClass="active">
+            Home
+          </Link>
+          <Link to="about" smooth={true} offset={-73} activeClass="active">
+            About
+          </Link>
+          <Link to="works" smooth={true} offset={-73} activeClass="active">
+            Works
+          </Link>
           <a
             href="mailto:tarikcskun@gmail.com"
             target="_blank"

@@ -38,7 +38,7 @@ const easing = {
 export default function Home() {
   return (
     <main>
-      <div className="wrapper">
+      <div className="wrapper wrapper-home">
         <motion.section
           id="home"
           initial="hidden"
@@ -104,13 +104,9 @@ export default function Home() {
               based technologies.
               <br />
               <br />
-              Recently, I&#39;ve been working with{" "}
-              <span style={{ color: "#3178c6" }}>TypeScript</span>,{" "}
-              <span style={{ color: "#41b883" }}>Vue</span>,{" "}
-              <span style={{ color: "#50bbd7" }}>React</span>,{" "}
-              <span style={{ color: "#ff3e00" }}>Svelte</span>,{" "}
-              <span style={{ color: "#44a8b3" }}>Tailwind</span>. And also on
-              the right, you can see the technologies I mainly use.
+              Recently, I&#39;ve been working with TypeScript, React, Vue,
+              Svelte and Tailwind. And also on the right, you can see the
+              technologies I mainly use.
             </p>
           </div>
 

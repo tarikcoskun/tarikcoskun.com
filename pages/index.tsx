@@ -82,7 +82,7 @@ export default function Home() {
               <GitHubIcon />
             </motion.a>
             <motion.a
-              href="https://github.com/tarikcoskun"
+              href="https://twitter.com/tarikcskun"
               target="_blank"
               rel="noreferrer"
               variants={account}

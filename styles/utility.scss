@@ -37,8 +37,15 @@
   text-align: center;
 }
 
+.pc\:hidden {
+  display: none;
+}
+
 @media only screen and (max-width: 768px) {
   .mb\:hidden {
     display: none;
+  }
+  .pc\:hidden {
+    display: block;
   }
 }

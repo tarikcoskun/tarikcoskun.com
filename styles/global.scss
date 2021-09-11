@@ -10,7 +10,7 @@ body {
 
 .wrapper {
   &.wrapper-bg {
-    background: linear-gradient(to bottom, #fff, #ffffff90);
+    background: #ffffff75;
   }
 }
 
@@ -114,7 +114,7 @@ section#about {
       div.tech {
         padding: 16px;
         border-radius: 12px;
-        background: #00000007;
+        background: #00000008;
 
         svg {
           border-radius: 8px;
@@ -155,7 +155,7 @@ section#works {
       transition: 0.15s;
       cursor: pointer;
       &:hover {
-        background: #00000015;
+        background: #00000010;
       }
 
       img {

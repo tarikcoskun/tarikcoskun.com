@@ -63,14 +63,14 @@ section#home {
     &:first-child {
       background: linear-gradient(to bottom, #000, #00000085);
       background-clip: text;
-      -webkit-text-fill-color: transparent;
+      color: transparent;
       font-size: 48px;
       font-weight: 700;
     }
     &:not(:first-child) {
       background: linear-gradient(to right, #9445d4, #cf44d6);
       background-clip: text;
-      -webkit-text-fill-color: transparent;
+      color: transparent;
       font-weight: 600;
       font-size: 24px;
     }
@@ -99,7 +99,7 @@ section#about {
       h1 {
         background: linear-gradient(to bottom, #000, #00000085);
         background-clip: text;
-        -webkit-text-fill-color: transparent;
+        color: transparent;
         font-size: 30px;
         font-weight: 600;
       }
@@ -126,7 +126,7 @@ section#about {
           margin: 16px 0 4px 0;
           background: linear-gradient(to bottom, #000, #00000085);
           background-clip: text;
-          -webkit-text-fill-color: transparent;
+          color: transparent;
           font-size: 24px;
           font-weight: 600;
         }
@@ -141,7 +141,7 @@ section#works {
   h1 {
     background: linear-gradient(to bottom, #000, #00000085);
     background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: transparent;
     font-size: 30px;
     font-weight: 600;
   }
@@ -173,9 +173,7 @@ section#works {
 
         p {
           &.role {
-            background: #00000075;
-            background-clip: text;
-            -webkit-text-fill-color: transparent;
+            color: #00000075;
             font-size: 18px;
             font-weight: 600;
             margin-top: 2px;

@@ -12,6 +12,10 @@ export default function App({ Component, pageProps }: AppProps) {
         <meta name="og:site_name" content="tarikcoskun.xyz" />
         <meta name="og:title" content="Tarık Coşkun" />
         <meta
+          name="keywords"
+          content="tarık, coşkun, portfolio, website, developer"
+        />
+        <meta
           name="og:description"
           content="My personal website, portfolio and playground!"
         />

@@ -8,7 +8,7 @@ export default function App({ Component, pageProps }: AppProps) {
     <>
       <Head>
         <title>Tarık Coşkun</title>
-        <meta name="theme-color" content="#41b883" />
+        <meta name="theme-color" content="#c887d3" />
         <meta name="og:site_name" content="tarikcoskun.xyz" />
         <meta name="og:title" content="Tarık Coşkun" />
         <meta

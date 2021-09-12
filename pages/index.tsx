@@ -1,5 +1,3 @@
-import { motion } from "framer-motion";
-
 import { Tech } from "@components/Tech";
 import { Work } from "@components/Work";
 
@@ -9,89 +7,64 @@ import ReactIcon from "@icons/React";
 import VueIcon from "@icons/Vue";
 import TailwindIcon from "@icons/Tailwind";
 import SassIcon from "@icons/Sass";
-
-const container = {
-  hidden: { opacity: 0 },
-  show: {
-    opacity: 1,
-    transition: {
-      staggerChildren: 0.35,
-    },
-  },
-};
-
-const item = {
-  hidden: { x: -64, opacity: 0 },
-  show: { x: 0, opacity: 1 },
-};
-
-const account = {
-  hidden: { y: 32, opacity: 0 },
-  show: { y: 0, opacity: 1 },
-};
-
-const easing = {
-  type: "spring",
-  stiffness: 30,
-};
+import { useEffect } from "react";
+import anime from "animejs";
 
 export default function Home() {
+  useEffect(() => {
+    anime({
+      targets: ["#home h1", "#home h2", "#home p"],
+      opacity: [0, 1],
+      translateX: [-30, 0],
+      delay: anime.stagger(250),
+      easing: "spring(0, 10, 20, 0)",
+    });
+
+    anime({
+      targets: ["#accounts a"],
+      opacity: [0, 1],
+      translateY: [20, 0],
+      delay: anime.stagger(250, { start: 1000 }),
+      easing: "spring(0, 10, 20, 0)",
+    });
+  });
+
   return (
     <main>
-      <div className="wrapper wrapper-home">
-        <motion.section
-          id="home"
-          initial="hidden"
-          animate="show"
-          variants={container}
-        >
-          <motion.h1 variants={item} transition={easing}>
-            Tarık Coşkun
-          </motion.h1>
-          <motion.h1 variants={item} transition={easing}>
-            Full-stack Developer
-          </motion.h1>
-          <motion.p variants={item} transition={easing}>
-            My name is Tarık and I&#39;m a full-stack web developer from Turkey
-            <br />I like working on front-end side more
-          </motion.p>
+      <div className="wrapper">
+        <section id="home">
+          <h1>Tarık Coşkun</h1>
+          <h2>Full-stack Developer</h2>
+          <p>
+            My name is Tarık and I&#39;m a full-stack developer from Turkey
+            <br />I like working on front-end more
+          </p>
 
-          <motion.div
-            id="accounts"
-            variants={container}
-            initial="hidden"
-            animate="show"
-          >
-            <motion.a
+          <div id="accounts">
+            <a
               href="mailto:tarikcskun@gmail.com"
               target="_blank"
               rel="noreferrer"
               className="button"
-              variants={account}
-              transition={{ ...easing, delay: 1.25 }}
             >
               Contact
-            </motion.a>
-            <motion.a
+            </a>
+            <a
               href="https://github.com/tarikcoskun"
               target="_blank"
               rel="noreferrer"
-              variants={account}
-              transition={{ ...easing, delay: 1.25 }}
             >
               <GitHubIcon />
-            </motion.a>
-            <motion.a
+            </a>
+            <a
               href="https://twitter.com/tarikcskun"
               target="_blank"
               rel="noreferrer"
-              variants={account}
-              transition={{ ...easing, delay: 1.25 }}
             >
               <TwitterIcon />
-            </motion.a>
-          </motion.div>
-        </motion.section>
+            </a>
+          </div>
+        </section>
       </div>
 
       <div className="wrapper wrapper-bg">
@@ -102,20 +75,20 @@ export default function Home() {
               I&#39;ve been in web development since 2018. Since then, I&#39;ve
               been learning more and more technologies. I mainly use Node.js
               based technologies.
-              <br />
-              <br />
+            </p>
+            <p>
               Recently, I&#39;ve been working with TypeScript, React, Vue,
               Svelte and Tailwind. And also on the right, you can see the
               technologies I mainly use.
             </p>
           </div>
 
-          <motion.div id="second-col">
+          <div id="second-col">
             <Tech icon={<ReactIcon />} title="React" since="2021" />
             <Tech icon={<VueIcon />} title="Vue" since="2021" />
             <Tech icon={<TailwindIcon />} title="Tailwind" since="2020" />
             <Tech icon={<SassIcon />} title="Sass" since="2018" />
-          </motion.div>
+          </div>
         </section>
       </div>
 

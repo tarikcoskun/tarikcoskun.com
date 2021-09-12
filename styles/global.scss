@@ -60,20 +60,19 @@ section#home {
   padding: 96px 0;
 
   h1 {
-    &:first-child {
-      background: linear-gradient(to bottom, #000, #00000085);
-      background-clip: text;
-      color: transparent;
-      font-size: 48px;
-      font-weight: 700;
-    }
-    &:not(:first-child) {
-      background: linear-gradient(to right, #9445d4, #cf44d6);
-      background-clip: text;
-      color: transparent;
-      font-weight: 600;
-      font-size: 24px;
-    }
+    background: linear-gradient(to bottom, #000, #00000085);
+    background-clip: text;
+    color: transparent;
+    font-size: 48px;
+    font-weight: 700;
+  }
+
+  h2 {
+    background: linear-gradient(to right, #9445d4, #cf44d6);
+    background-clip: text;
+    color: transparent;
+    font-weight: 600;
+    font-size: 24px;
   }
 
   p {

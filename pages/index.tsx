@@ -31,7 +31,7 @@ export default function Home() {
 
   return (
     <main>
-      <div className="wrapper">
+      <div className="wrapper wrapper-home">
         <section id="home">
           <h1>Tarık Coşkun</h1>
           <h2>Full-stack Developer</h2>
@@ -67,7 +67,7 @@ export default function Home() {
         </section>
       </div>
 
-      <div className="wrapper wrapper-bg">
+      <div className="wrapper wrapper-about">
         <section id="about">
           <div id="first-col">
             <h1>About Me</h1>
@@ -92,7 +92,7 @@ export default function Home() {
         </section>
       </div>
 
-      <div className="wrapper">
+      <div className="wrapper wrapper-works">
         <section id="works">
           <h1 className="text-center">Works</h1>
           <div>

@@ -1,16 +1,18 @@
 @import "utility.scss";
 
 body {
-  background: linear-gradient(to right, #d1c3dc, #f6e5f8, #e2d1e3);
-  background-repeat: no-repeat;
-  background-size: cover;
   overflow-x: hidden;
-  scroll-behavior: smooth;
 }
 
 .wrapper {
-  &.wrapper-bg {
-    background: #ffffff75;
+  &.wrapper-home {
+    background: linear-gradient(to bottom, #fff, #eadce9c0);
+  }
+  &.wrapper-about {
+    background: #eadce930;
+  }
+  &.wrapper-works {
+    background: linear-gradient(to bottom, #eadce9c0, #eadce920);
   }
 }
 

@@ -1,19 +1,20 @@
 @import "utility.scss";
 
-body {
-  overflow-x: hidden;
-}
-
 .wrapper {
   &.wrapper-home {
-    background: linear-gradient(to bottom, #fff, #eadce9c0);
+    background: var(--home-bg);
   }
   &.wrapper-about {
-    background: #eadce930;
+    background: var(--about-bg);
   }
   &.wrapper-works {
-    background: linear-gradient(to bottom, #eadce9c0, #eadce920);
+    background: var(--works-bg);
   }
+}
+
+body {
+  background: var(--bg);
+  overflow-x: hidden;
 }
 
 section {
@@ -34,7 +35,7 @@ header {
     justify-content: space-between;
 
     h1 {
-      color: #000;
+      color: var(--text-primary);
       font-size: 24px;
       font-weight: 600;
     }
@@ -50,7 +51,7 @@ header {
         font-size: 18px;
         transition: 0.15s;
         &.active {
-          color: #000;
+          color: var(--text-primary);
           font-weight: 600;
         }
       }
@@ -62,7 +63,7 @@ section#home {
   padding: 96px 0;
 
   h1 {
-    background: linear-gradient(to bottom, #000, #00000085);
+    background: var(--text-gradient);
     background-clip: text;
     color: transparent;
     font-size: 48px;
@@ -98,7 +99,7 @@ section#about {
   div {
     &#first-col {
       h1 {
-        background: linear-gradient(to bottom, #000, #00000085);
+        background: var(--text-gradient);
         background-clip: text;
         color: transparent;
         font-size: 30px;
@@ -117,7 +118,7 @@ section#about {
       div.tech {
         padding: 16px;
         border-radius: 12px;
-        background: #00000008;
+        background: var(--tech-bg);
 
         svg {
           border-radius: 8px;
@@ -125,7 +126,7 @@ section#about {
 
         h1 {
           margin: 16px 0 4px 0;
-          background: linear-gradient(to bottom, #000, #00000085);
+          background: var(--text-gradient);
           background-clip: text;
           color: transparent;
           font-size: 24px;
@@ -140,7 +141,7 @@ section#works {
   padding: 32px 0;
 
   h1 {
-    background: linear-gradient(to bottom, #000, #00000085);
+    background: var(--text-gradient);
     background-clip: text;
     color: transparent;
     font-size: 30px;
@@ -158,13 +159,13 @@ section#works {
       transition: 0.15s;
       cursor: pointer;
       &:hover {
-        background: #00000010;
+        background: var(--tech-bg);
       }
 
       img {
         border-radius: 6px;
         object-fit: cover;
-        background: #151517;
+        background: #111113;
       }
 
       div {
@@ -174,7 +175,7 @@ section#works {
 
         p {
           &.role {
-            color: #00000075;
+            color: var(--text-transparent);
             font-size: 18px;
             margin-top: 2px;
           }

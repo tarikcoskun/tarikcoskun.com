@@ -1,8 +1,36 @@
 @import "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700";
 
+:root {
+  --bg: #fff;
+  --shadow: #d1c3dc30;
+  --text-primary: #000;
+  --text-secondary: #000000a0;
+  --text-transparent: #00000075;
+  --text-gradient: linear-gradient(to bottom, #000, #00000085);
+
+  --home-bg: linear-gradient(to bottom, #fff, #eadce9c0);
+  --about-bg: #eadce930;
+  --works-bg: #eadce9c0;
+  --tech-bg: #00000009;
+}
+
+[data-theme="dark"] {
+  --bg: #18181b;
+  --shadow: #02020230;
+  --text-primary: #fff;
+  --text-secondary: #ffffffa0;
+  --text-transparent: #ffffff75;
+  --text-gradient: linear-gradient(to bottom, #fff, #ffffffc0);
+
+  --home-bg: linear-gradient(to bottom, #18181b, #0d0d0f);
+  --about-bg: #0f0f1170;
+  --works-bg: #0d0d0f;
+  --tech-bg: #e8eaff09;
+}
+
 * {
   font: 20px "Inter", sans-serif;
-  color: #000000a0;
+  color: var(--text-secondary);
   font-weight: 500;
   padding: 0;
   margin: 0;
@@ -23,13 +51,22 @@
 .button {
   font-weight: 600;
   font-size: 18px;
-  background: #fff;
-  box-shadow: 0 4px 8px #d1c3dc30;
+  color: var(--text-primary);
+  background: var(--bg);
+  box-shadow: 0 4px 8px var(--shadow);
   padding: 10px 24px;
   border-radius: 36px;
   transition: 0.15s;
+  cursor: pointer;
+  &.theme-switch {
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: -8px;
+  }
   &:hover {
-    background: #ffffff75;
+    opacity: 0.75;
   }
 }
 

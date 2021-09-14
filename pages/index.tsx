@@ -1,16 +1,23 @@
+import { useEffect } from "react";
+import anime from "animejs";
+import { Link } from "react-scroll";
+import { useTheme } from "next-themes";
+
 import { Tech } from "@components/Tech";
 import { Work } from "@components/Work";
 
+import SunIcon from "@icons/Sun";
+import MoonIcon from "@icons/Moon";
 import GitHubIcon from "@icons/GitHub";
 import TwitterIcon from "@icons/Twitter";
 import ReactIcon from "@icons/React";
 import VueIcon from "@icons/Vue";
 import TailwindIcon from "@icons/Tailwind";
 import SassIcon from "@icons/Sass";
-import { useEffect } from "react";
-import anime from "animejs";
 
 export default function Home() {
+  const { theme, setTheme } = useTheme();
+
   useEffect(() => {
     anime({
       targets: ["#home h1", "#home h2", "#home p"],
@@ -27,10 +34,61 @@ export default function Home() {
       delay: anime.stagger(250, { start: 1000 }),
       easing: "spring(0, 10, 20, 0)",
     });
-  });
+  }, []);
 
   return (
     <main>
+      <header>
+        <section>
+          <h1 className="mb:hidden">Tarık Coşkun</h1>
+          <div id="links">
+            <Link to="home" smooth={true} offset={-73} activeClass="active" spy>
+              Home
+            </Link>
+            <Link
+              to="about"
+              smooth={true}
+              offset={-73}
+              activeClass="active"
+              spy
+            >
+              About
+            </Link>
+            <Link
+              to="works"
+              smooth={true}
+              offset={-73}
+              activeClass="active"
+              spy
+            >
+              Works
+            </Link>
+            <a
+              href="mailto:tarikcskun@gmail.com"
+              target="_blank"
+              rel="noreferrer"
+              className="button mb:hidden"
+            >
+              Contact
+            </a>
+            <a
+              href="mailto:tarikcskun@gmail.com"
+              target="_blank"
+              rel="noreferrer"
+              className="pc:hidden"
+            >
+              Contact
+            </a>
+            <button
+              className="button theme-switch"
+              onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
+            >
+              {theme === "dark" ? <MoonIcon /> : <SunIcon />}
+            </button>
+          </div>
+        </section>
+      </header>
+
       <div className="wrapper wrapper-home">
         <section id="home">
           <h1>Tarık Coşkun</h1>

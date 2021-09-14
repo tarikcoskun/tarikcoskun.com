@@ -1,7 +1,7 @@
 import "@styles/global.scss";
 import Head from "next/head";
 import { AppProps } from "next/app";
-import { Header } from "@components/Header";
+import { ThemeProvider } from "next-themes";
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
@@ -20,8 +20,9 @@ export default function App({ Component, pageProps }: AppProps) {
           content="My personal website, portfolio and playground!"
         />
       </Head>
-      <Header />
-      <Component {...pageProps} />
+      <ThemeProvider>
+        <Component {...pageProps} />
+      </ThemeProvider>
     </>
   );
 }

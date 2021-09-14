@@ -20,7 +20,7 @@ export default function App({ Component, pageProps }: AppProps) {
           content="My personal website, portfolio and playground!"
         />
       </Head>
-      <ThemeProvider>
+      <ThemeProvider defaultTheme="dark">
         <Component {...pageProps} />
       </ThemeProvider>
     </>

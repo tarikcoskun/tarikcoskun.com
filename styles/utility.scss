@@ -40,10 +40,7 @@
   &::-webkit-scrollbar {
     width: 6px;
     &-thumb {
-      background: #c887d3;
-    }
-    &-track {
-      background: #f6e5f8;
+      background: var(--text-transparent);
     }
   }
 }

@@ -10,10 +10,16 @@ import SunIcon from "@icons/Sun";
 import MoonIcon from "@icons/Moon";
 import GitHubIcon from "@icons/GitHub";
 import TwitterIcon from "@icons/Twitter";
-import ReactIcon from "@icons/React";
-import VueIcon from "@icons/Vue";
-import TailwindIcon from "@icons/Tailwind";
-import SassIcon from "@icons/Sass";
+import ReactIcon from "@icons/Tech/React";
+import VueIcon from "@icons/Tech/Vue";
+import TailwindIcon from "@icons/Tech/Tailwind";
+import SassIcon from "@icons/Tech/Sass";
+import TypeScriptIconInline from "@icons/Tech/TypeScriptInline";
+import VueIconInline from "@icons/Tech/VueInline";
+import ReactIconInline from "@icons/Tech/ReactInline";
+import SvelteIconInline from "@icons/Tech/SvelteInline";
+import TailwindIconInline from "@icons/Tech/TailwindInline";
+import { GameMakerIconInline } from "@icons/Tech/GameMakerInline";
 
 export default function Home() {
   const { theme, setTheme } = useTheme();
@@ -135,15 +141,34 @@ export default function Home() {
               based technologies.
             </p>
             <p>
-              Recently, I&#39;ve been working with TypeScript, React, Vue,
-              Svelte and Tailwind. And also on the right, you can see the
-              technologies I mainly use.
+              Recently, I&#39;ve been working with...
+              <div className="recent-tech">
+                <span>
+                  <TypeScriptIconInline />
+                  TypeScript
+                </span>
+                <span>
+                  <VueIconInline /> Vue
+                </span>
+                <span>
+                  <ReactIconInline /> React
+                </span>
+                <span>
+                  <SvelteIconInline /> Svelte
+                </span>
+                <span>
+                  <TailwindIconInline /> Tailwind
+                </span>
+                <span>
+                  <GameMakerIconInline /> GML
+                </span>
+              </div>
             </p>
           </div>
 
           <div id="second-col">
-            <Tech icon={<ReactIcon />} title="React" since="2021" />
             <Tech icon={<VueIcon />} title="Vue" since="2021" />
+            <Tech icon={<ReactIcon />} title="React" since="2021" />
             <Tech icon={<TailwindIcon />} title="Tailwind" since="2020" />
             <Tech icon={<SassIcon />} title="Sass" since="2018" />
           </div>

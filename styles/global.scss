@@ -71,9 +71,7 @@ section#home {
   }
 
   h2 {
-    background: linear-gradient(to right, #9445d4, #cf44d6);
-    background-clip: text;
-    color: transparent;
+    color: #5d719c;
     font-weight: 600;
     font-size: 24px;
   }
@@ -113,7 +111,7 @@ section#about {
         margin-top: 16px;
         display: flex;
         flex-wrap: wrap;
-        gap: 8px 24px;
+        gap: 8px 16px;
 
         span {
           display: flex;

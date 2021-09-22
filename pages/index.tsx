@@ -87,9 +87,9 @@ export default function Home() {
             </a>
             <button
               className="button theme-switch"
-              onClick={() => setTheme(theme === "light" ? "dark" : "light")}
+              onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
             >
-              {theme === "light" ? <SunIcon /> : <MoonIcon />}
+              {theme === "dark" ? <MoonIcon /> : <SunIcon />}
             </button>
           </div>
         </section>

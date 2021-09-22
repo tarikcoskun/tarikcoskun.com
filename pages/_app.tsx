@@ -8,7 +8,7 @@ export default function App({ Component, pageProps }: AppProps) {
     <>
       <Head>
         <title>Tarık Coşkun</title>
-        <meta name="theme-color" content="#c887d3" />
+        <meta name="theme-color" content="#f9f5f6" />
         <meta name="og:site_name" content="tarikcoskun.xyz" />
         <meta name="og:title" content="Tarık Coşkun" />
         <meta
@@ -20,7 +20,7 @@ export default function App({ Component, pageProps }: AppProps) {
           content="My personal website, portfolio and playground!"
         />
       </Head>
-      <ThemeProvider defaultTheme="dark">
+      <ThemeProvider defaultTheme="light">
         <Component {...pageProps} />
       </ThemeProvider>
     </>

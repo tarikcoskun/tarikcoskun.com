@@ -1,4 +1,4 @@
-export default function TypeScriptIconInline() {
+export function TypeScriptIconInline() {
   return (
     <svg width="24" height="24" viewBox="0 0 32 32">
       <rect x="2" y="2" width="28" height="28" rx="1.312" fill="#3178c6" />

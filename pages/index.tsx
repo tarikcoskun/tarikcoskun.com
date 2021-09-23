@@ -1,25 +1,26 @@
-import { useEffect } from "react";
 import anime from "animejs";
+import { useEffect } from "react";
 import { Link } from "react-scroll";
 import { useTheme } from "next-themes";
-
 import { Tech } from "@components/Tech";
 import { Work } from "@components/Work";
 
-import SunIcon from "@icons/Sun";
-import MoonIcon from "@icons/Moon";
-import GitHubIcon from "@icons/GitHub";
-import TwitterIcon from "@icons/Twitter";
-import ReactIcon from "@icons/Tech/React";
-import VueIcon from "@icons/Tech/Vue";
-import TailwindIcon from "@icons/Tech/Tailwind";
-import SassIcon from "@icons/Tech/Sass";
-import TypeScriptIconInline from "@icons/Tech/TypeScriptInline";
-import VueIconInline from "@icons/Tech/VueInline";
-import ReactIconInline from "@icons/Tech/ReactInline";
-import SvelteIconInline from "@icons/Tech/SvelteInline";
-import TailwindIconInline from "@icons/Tech/TailwindInline";
-import { GameMakerIconInline } from "@icons/Tech/GameMakerInline";
+import {
+  SunIcon,
+  VueIcon,
+  MoonIcon,
+  SassIcon,
+  ReactIcon,
+  GitHubIcon,
+  TwitterIcon,
+  TailwindIcon,
+  VueIconInline,
+  ReactIconInline,
+  SvelteIconInline,
+  TailwindIconInline,
+  GameMakerIconInline,
+  TypeScriptIconInline,
+} from "@icons";
 
 export default function Home() {
   const { theme, setTheme } = useTheme();

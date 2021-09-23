@@ -12,7 +12,7 @@ html {
   --works-bg: #eadce9c0;
   --tech-bg: #00000009;
 
-  &[data-theme="dark"] {
+  &.dark {
     --background: #18181b;
     --text-primary: #ffffffa0;
     --title-solid: #ffffff;
@@ -45,7 +45,7 @@ html {
 .button {
   font-weight: 600;
   font-size: 18px;
-  color: var(--inverted);
+  color: var(--title-solid);
   background: var(--background);
   box-shadow: 0 4px 8px var(--shadow);
   padding: 10px 24px;

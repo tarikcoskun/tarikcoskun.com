@@ -1,4 +1,4 @@
-export default function TailwindIcon() {
+export function TailwindIcon() {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"

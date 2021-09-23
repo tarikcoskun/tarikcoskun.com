@@ -1,10 +1,18 @@
-export const Work: React.FC<{
+interface Props {
   href: string;
   img: string;
   role: string;
   title: string;
   description: string;
-}> = ({ href, img, role, title, description }) => {
+}
+
+export const Work: React.FC<Props> = ({
+  href,
+  img,
+  role,
+  title,
+  description,
+}) => {
   return (
     <a href={href} target="_blank" rel="noreferrer" className="work">
       <img src={`/projects/${img}.png`} alt={title} />

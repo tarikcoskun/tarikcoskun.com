@@ -1,10 +1,12 @@
 import { ReactElement } from "react";
 
-export const Tech: React.FC<{
+interface Props {
   icon: ReactElement;
   title: string;
   since: string;
-}> = ({ icon, title, since }) => {
+}
+
+export const Tech: React.FC<Props> = ({ icon, title, since }) => {
   return (
     <div className="tech">
       {icon}

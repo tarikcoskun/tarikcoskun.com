@@ -13,7 +13,7 @@
 }
 
 body {
-  background: var(--bg);
+  background: var(--background);
   overflow-x: hidden;
 }
 
@@ -35,7 +35,7 @@ header {
     justify-content: space-between;
 
     h1 {
-      color: var(--text-primary);
+      color: var(--title-solid);
       font-size: 24px;
       font-weight: 600;
     }
@@ -51,7 +51,7 @@ header {
         font-size: 18px;
         transition: 0.15s;
         &.active {
-          color: var(--text-primary);
+          color: var(--title-solid);
           font-weight: 600;
         }
       }
@@ -71,7 +71,7 @@ section#home {
   }
 
   h2 {
-    color: #5d719c;
+    color: #9a88b8;
     font-weight: 600;
     font-size: 24px;
   }
@@ -185,7 +185,6 @@ section#works {
 
         p {
           &.role {
-            color: var(--text-transparent);
             font-size: 18px;
             margin-top: 2px;
           }
@@ -198,6 +197,7 @@ section#works {
   }
 }
 
+// Mobile
 @media only screen and (max-width: 768px) {
   .wrapper {
     padding: 0 16px;
@@ -222,6 +222,7 @@ section#works {
   }
 }
 
+// PC
 @media only screen and (min-width: 768px) {
   section#about {
     padding: 64px 0;

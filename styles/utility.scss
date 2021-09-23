@@ -1,60 +1,58 @@
 @import "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700";
 
-:root {
-  --bg: #fff;
-  --shadow: #d1c3dc30;
-  --text-primary: #000;
-  --text-secondary: #000000a0;
-  --text-transparent: #00000075;
-  --title-gradient: linear-gradient(to bottom, #000, #00000085);
+html {
+  --background: #ffffff;
+  --shadow: #00000010;
+  --text-primary: #000000a0;
+  --title-solid: #000000;
+  --title-gradient: linear-gradient(to bottom, #000000, #00000090);
 
-  --home-bg: linear-gradient(to bottom, #fff, #eadce9c0);
+  --home-bg: linear-gradient(to bottom, #ffffff, #eadce9c0);
   --about-bg: #eadce930;
   --works-bg: #eadce9c0;
   --tech-bg: #00000009;
-}
 
-[data-theme="dark"] {
-  --bg: #18181b;
-  --shadow: #02020230;
-  --text-primary: #fff;
-  --text-secondary: #ffffffa0;
-  --text-transparent: #ffffff75;
-  --title-gradient: linear-gradient(to bottom, #fff, #ffffffc0);
+  &[data-theme="dark"] {
+    --background: #18181b;
+    --text-primary: #ffffffa0;
+    --title-solid: #ffffff;
+    --title-gradient: linear-gradient(to bottom, #ffffff, #ffffffc0);
 
-  --home-bg: linear-gradient(to bottom, #18181b, #0d0d0f);
-  --about-bg: #0f0f1170;
-  --works-bg: #0d0d0f;
-  --tech-bg: #e8eaff09;
-}
-
-* {
-  font: 20px "Inter", sans-serif;
-  color: var(--text-secondary);
-  font-weight: 500;
-  padding: 0;
-  margin: 0;
-  border: 0;
-  text-decoration: none;
+    --home-bg: linear-gradient(to bottom, #18181b, #0d0d0f);
+    --about-bg: #0f0f1170;
+    --works-bg: #0d0d0f;
+    --tech-bg: #e8eaff09;
+  }
 
   &::-webkit-scrollbar {
-    width: 6px;
+    width: 4px;
     &-thumb {
-      background: var(--text-transparent);
+      background: var(--text-primary);
     }
+  }
+
+  * {
+    font: 20px "Inter", sans-serif;
+    color: var(--text-primary);
+    font-weight: 500;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    text-decoration: none;
   }
 }
 
 .button {
   font-weight: 600;
   font-size: 18px;
-  color: var(--text-primary);
-  background: var(--bg);
+  color: var(--inverted);
+  background: var(--background);
   box-shadow: 0 4px 8px var(--shadow);
   padding: 10px 24px;
   border-radius: 36px;
   transition: 0.15s;
   cursor: pointer;
+
   &.theme-switch {
     padding: 8px;
     display: flex;
@@ -81,35 +79,5 @@
   }
   .pc\:hidden {
     display: block;
-  }
-}
-
-.fadeInLeft {
-  animation: 0.5s fadeInLeft;
-}
-
-.fadeInBottom {
-  animation: 0.5s fadeInBottom;
-}
-
-@keyframes fadeInLeft {
-  0% {
-    opacity: 0;
-    transform: translateX(-50px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
-@keyframes fadeInBottom {
-  0% {
-    opacity: 0;
-    transform: translateY(25px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
   }
 }

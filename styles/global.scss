@@ -49,7 +49,9 @@ header {
         cursor: pointer;
         font-weight: 500;
         font-size: 18px;
-        transition: 0.15s;
+        transition-duration: 0.15s;
+        transition-property: opacity, color;
+
         &.active {
           color: var(--title-solid);
           font-weight: 600;
@@ -85,6 +87,13 @@ section#home {
     display: flex;
     gap: 16px;
     align-items: center;
+
+    a {
+      transition: 0.15s opacity;
+      &:hover {
+        opacity: 0.75 !important;
+      }
+    }
   }
 }
 
@@ -166,7 +175,7 @@ section#works {
       border-radius: 8px;
       padding: 20px;
       display: flex;
-      transition: 0.15s;
+      transition: background 0.25s;
       cursor: pointer;
       &:hover {
         background: var(--tech-bg);

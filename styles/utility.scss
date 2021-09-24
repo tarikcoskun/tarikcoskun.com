@@ -50,8 +50,8 @@ html {
   box-shadow: 0 4px 8px var(--shadow);
   padding: 10px 24px;
   border-radius: 36px;
-  transition: 0.15s;
   cursor: pointer;
+  transition: 0.15s opacity;
 
   &.theme-switch {
     padding: 8px;

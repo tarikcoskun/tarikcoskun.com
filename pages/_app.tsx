@@ -1,4 +1,4 @@
-import "@styles/global.scss";
+import "@/styles/global.scss";
 import Head from "next/head";
 import { AppProps } from "next/app";
 import { config } from "@/web.config";

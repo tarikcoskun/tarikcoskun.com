@@ -1,4 +1,4 @@
-export function SassIcon() {
+export function Sass() {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"

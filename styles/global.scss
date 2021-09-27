@@ -1,17 +1,5 @@
 @import "utility.scss";
 
-.wrapper {
-  &.wrapper-home {
-    background: var(--home-bg);
-  }
-  &.wrapper-about {
-    background: var(--about-bg);
-  }
-  &.wrapper-works {
-    background: var(--works-bg);
-  }
-}
-
 body {
   background: var(--background);
   overflow-x: hidden;
@@ -208,11 +196,8 @@ section#works {
 
 // Mobile
 @media only screen and (max-width: 768px) {
-  .wrapper {
-    padding: 0 16px;
-  }
-  header section {
-    justify-content: center;
+  header {
+    padding: 16px;
   }
   section#home {
     padding: 32px 0 64px 0;

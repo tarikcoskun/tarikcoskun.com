@@ -1,4 +1,4 @@
-export function GitHubIcon() {
+export function GitHub() {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"

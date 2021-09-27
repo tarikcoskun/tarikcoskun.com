@@ -1,4 +1,4 @@
-export function TailwindIconInline() {
+export function TailwindInline() {
   return (
     <svg width="24" height="24" viewBox="0 0 32 32">
       <path

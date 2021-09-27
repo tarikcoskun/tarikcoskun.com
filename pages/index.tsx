@@ -4,23 +4,7 @@ import { Link } from "react-scroll";
 import { useTheme } from "next-themes";
 import { Tech } from "@components/Tech";
 import { Work } from "@components/Work";
-
-import {
-  SunIcon,
-  VueIcon,
-  MoonIcon,
-  SassIcon,
-  ReactIcon,
-  GitHubIcon,
-  TwitterIcon,
-  TailwindIcon,
-  VueIconInline,
-  ReactIconInline,
-  SvelteIconInline,
-  TailwindIconInline,
-  GameMakerIconInline,
-  TypeScriptIconInline,
-} from "@icons";
+import * as Icons from "@icons";
 
 export default function Home() {
   const { theme, setTheme } = useTheme();
@@ -78,19 +62,11 @@ export default function Home() {
             >
               Contact
             </a>
-            <a
-              href="mailto:tarikcskun@gmail.com"
-              target="_blank"
-              rel="noreferrer"
-              className="pc:hidden"
-            >
-              Contact
-            </a>
             <button
               className="button theme-switch"
               onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
             >
-              {theme === "dark" ? <MoonIcon /> : <SunIcon />}
+              {theme === "dark" ? <Icons.Moon /> : <Icons.Sun />}
             </button>
           </div>
         </section>
@@ -119,14 +95,14 @@ export default function Home() {
               target="_blank"
               rel="noreferrer"
             >
-              <GitHubIcon />
+              <Icons.GitHub />
             </a>
             <a
               href="https://twitter.com/tarikcskun"
               target="_blank"
               rel="noreferrer"
             >
-              <TwitterIcon />
+              <Icons.Twitter />
             </a>
           </div>
         </section>
@@ -145,33 +121,33 @@ export default function Home() {
               Recently, I&#39;ve been working with...
               <div className="recent-tech">
                 <span>
-                  <TypeScriptIconInline />
+                  <Icons.TypeScriptInline />
                   TypeScript
                 </span>
                 <span>
-                  <VueIconInline /> Vue
+                  <Icons.VueInline /> Vue
                 </span>
                 <span>
-                  <ReactIconInline /> React
+                  <Icons.ReactInline /> React
                 </span>
                 <span>
-                  <SvelteIconInline /> Svelte
+                  <Icons.SvelteInline /> Svelte
                 </span>
                 <span>
-                  <TailwindIconInline /> Tailwind
+                  <Icons.TailwindInline /> Tailwind
                 </span>
                 <span>
-                  <GameMakerIconInline /> GML
+                  <Icons.GameMakerInline /> GML
                 </span>
               </div>
             </p>
           </div>
 
           <div id="second-col">
-            <Tech icon={<VueIcon />} title="Vue" since="2021" />
-            <Tech icon={<ReactIcon />} title="React" since="2021" />
-            <Tech icon={<TailwindIcon />} title="Tailwind" since="2020" />
-            <Tech icon={<SassIcon />} title="Sass" since="2018" />
+            <Tech icon={<Icons.Vue />} title="Vue" since="2021" />
+            <Tech icon={<Icons.React />} title="React" since="2021" />
+            <Tech icon={<Icons.Tailwind />} title="Tailwind" since="2020" />
+            <Tech icon={<Icons.Sass />} title="Sass" since="2018" />
           </div>
         </section>
       </div>

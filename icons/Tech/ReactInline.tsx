@@ -1,4 +1,4 @@
-export function ReactIconInline() {
+export function ReactInline() {
   return (
     <svg width="24" height="24" viewBox="0 0 32 32">
       <circle cx="16" cy="15.974" r="2.5" fill="#00d8ff" />

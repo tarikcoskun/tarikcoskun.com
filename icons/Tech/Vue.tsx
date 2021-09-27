@@ -1,4 +1,4 @@
-export function VueIcon() {
+export function Vue() {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"

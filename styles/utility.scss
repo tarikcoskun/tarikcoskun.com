@@ -42,6 +42,18 @@ html {
   }
 }
 
+.wrapper {
+  &.wrapper-home {
+    background: var(--home-bg);
+  }
+  &.wrapper-about {
+    background: var(--about-bg);
+  }
+  &.wrapper-works {
+    background: var(--works-bg);
+  }
+}
+
 .button {
   font-weight: 600;
   font-size: 18px;
@@ -69,15 +81,16 @@ html {
   text-align: center;
 }
 
-.pc\:hidden {
-  display: none;
-}
-
+// Mobile
 @media only screen and (max-width: 768px) {
   .mb\:hidden {
     display: none;
   }
-  .pc\:hidden {
-    display: block;
+  .wrapper {
+    padding: 0 16px;
+  }
+  button.theme-switch {
+    position: absolute;
+    right: 16px;
   }
 }

@@ -169,14 +169,14 @@ section#works {
         background: var(--tech-bg);
       }
 
-      img {
+      img.icon {
         border-radius: 6px;
         object-fit: cover;
         background: #111113;
       }
 
       div {
-        h1 {
+        h1.title {
           font-size: 24px;
         }
 

@@ -1,10 +1,11 @@
 import anime from "animejs";
+import * as Icons from "@/icons";
 import { useEffect } from "react";
 import { Link } from "react-scroll";
+import { config } from "@/web.config";
 import { useTheme } from "next-themes";
-import { Tech } from "@components/Tech";
-import { Work } from "@components/Work";
-import * as Icons from "@icons";
+import { Tech } from "@/components/Tech";
+import { Work } from "@/components/Work";
 
 export default function Home() {
   const { theme, setTheme } = useTheme();
@@ -31,7 +32,7 @@ export default function Home() {
     <main>
       <header>
         <section>
-          <h1 className="mb:hidden">Tarık Coşkun</h1>
+          <h1 className="mb:hidden">{config.name}</h1>
           <div id="links">
             <Link to="home" smooth={true} offset={-73} activeClass="active" spy>
               Home
@@ -55,7 +56,7 @@ export default function Home() {
               Works
             </Link>
             <a
-              href="mailto:tarikcskun@gmail.com"
+              href={`mailto:${config.email}`}
               target="_blank"
               rel="noreferrer"
               className="button mb:hidden"
@@ -74,16 +75,13 @@ export default function Home() {
 
       <div className="wrapper wrapper-home">
         <section id="home">
-          <h1>Tarık Coşkun</h1>
-          <h2>Full-stack Developer</h2>
-          <p>
-            My name is Tarık and I&#39;m a full-stack developer from Turkey
-            <br />I like working on front-end more
-          </p>
+          <h1>{config.name}</h1>
+          <h2>{config.title}</h2>
+          <p dangerouslySetInnerHTML={{ __html: config.bio }} />
 
           <div id="accounts">
             <a
-              href="mailto:tarikcskun@gmail.com"
+              href={`mailto:${config.email}`}
               target="_blank"
               rel="noreferrer"
               className="button"
@@ -91,14 +89,14 @@ export default function Home() {
               Contact
             </a>
             <a
-              href="https://github.com/tarikcoskun"
+              href={`https://github.com/${config.github}`}
               target="_blank"
               rel="noreferrer"
             >
               <Icons.GitHub />
             </a>
             <a
-              href="https://twitter.com/tarikcskun"
+              href={`https://twitter.com/${config.twitter}`}
               target="_blank"
               rel="noreferrer"
             >
@@ -112,42 +110,29 @@ export default function Home() {
         <section id="about">
           <div id="first-col">
             <h1>About Me</h1>
-            <p>
-              I&#39;ve been in web development since 2018. Since then, I&#39;ve
-              been learning more and more technologies. I mainly use Node.js
-              based technologies.
-            </p>
+            <p>{config.about}</p>
             <p>
               Recently, I&#39;ve been working with...
               <div className="recent-tech">
-                <span>
-                  <Icons.TypeScriptInline />
-                  TypeScript
-                </span>
-                <span>
-                  <Icons.VueInline /> Vue
-                </span>
-                <span>
-                  <Icons.ReactInline /> React
-                </span>
-                <span>
-                  <Icons.SvelteInline /> Svelte
-                </span>
-                <span>
-                  <Icons.TailwindInline /> Tailwind
-                </span>
-                <span>
-                  <Icons.GameMakerInline /> GML
-                </span>
+                {config.recentTech.map((tech, index) => (
+                  <span key={index}>
+                    <tech.icon />
+                    {tech.name}
+                  </span>
+                ))}
               </div>
             </p>
           </div>
 
           <div id="second-col">
-            <Tech icon={<Icons.Vue />} title="Vue" since="2021" />
-            <Tech icon={<Icons.React />} title="React" since="2021" />
-            <Tech icon={<Icons.Tailwind />} title="Tailwind" since="2020" />
-            <Tech icon={<Icons.Sass />} title="Sass" since="2018" />
+            {config.favouriteTech.map((tech, index) => (
+              <Tech
+                icon={<tech.icon />}
+                name={tech.name}
+                since={tech.since}
+                key={index}
+              />
+            ))}
           </div>
         </section>
       </div>
@@ -156,41 +141,16 @@ export default function Home() {
         <section id="works">
           <h1 className="text-center">Works</h1>
           <div>
-            <Work
-              href="https://discords.com/templates"
-              img="templates"
-              title="Discord Templates"
-              role="Moderator"
-              description="A template library that helps you create your own kingdom with a diverse range of templates"
-            />
-            <Work
-              href="https://premid.app"
-              img="premid"
-              title="PreMiD"
-              role="Translator"
-              description="A utility that allows you to show what you're doing on the web in your Discord status"
-            />
-            <Work
-              href="https://crumblingstatue.github.io/FloweysTimeMachine"
-              img="floweystimemachine"
-              title="Flowey's Time Machine"
-              role="Designer"
-              description="An editor tool for Undertale that allows you to change your save content with a friendly UI"
-            />
-            <Work
-              href="https://unicorns.software"
-              img="unicornssoftware"
-              title="Unicorn's Software"
-              role="Lead Developer"
-              description="An editor tool for Will You Snail? that allows you to change your save content with a friendly UI"
-            />
-            <Work
-              href="https://crumblingstatue.github.io/FloweysTimeMachine"
-              img="willyousnail"
-              title="Will You Snail?"
-              role="Translator & Tester"
-              description="A fast paced platformer where an evil AI tries to kill you by predicting your movement"
-            />
+            {config.works.map((work, index) => (
+              <Work
+                href={work.href}
+                img={work.img}
+                name={work.name}
+                role={work.role}
+                description={work.description}
+                key={index}
+              />
+            ))}
           </div>
         </section>
       </div>

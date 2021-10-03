@@ -1,11 +1,11 @@
 import anime from "animejs";
-import * as Icons from "@/icons";
 import { useEffect } from "react";
 import { Link } from "react-scroll";
 import { config } from "@/web.config";
 import { useTheme } from "next-themes";
 import { Tech } from "@/components/Tech";
 import { Work } from "@/components/Work";
+import { Moon, Sun, GitHub, Twitter } from "@/icons";
 
 export default function Home() {
   const { theme, setTheme } = useTheme();
@@ -67,7 +67,7 @@ export default function Home() {
               className="button theme-switch"
               onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
             >
-              {theme === "dark" ? <Icons.Moon /> : <Icons.Sun />}
+              {theme === "dark" ? <Moon /> : <Sun />}
             </button>
           </div>
         </section>
@@ -93,14 +93,14 @@ export default function Home() {
               target="_blank"
               rel="noreferrer"
             >
-              <Icons.GitHub />
+              <GitHub />
             </a>
             <a
               href={`https://twitter.com/${config.twitter}`}
               target="_blank"
               rel="noreferrer"
             >
-              <Icons.Twitter />
+              <Twitter />
             </a>
           </div>
         </section>
@@ -116,7 +116,7 @@ export default function Home() {
               <div className="recent-tech">
                 {config.recentTech.map((tech, index) => (
                   <span key={index}>
-                    <tech.icon />
+                    {tech.icon}
                     {tech.name}
                   </span>
                 ))}
@@ -127,7 +127,7 @@ export default function Home() {
           <div id="second-col">
             {config.favouriteTech.map((tech, index) => (
               <Tech
-                icon={<tech.icon />}
+                icon={tech.icon}
                 name={tech.name}
                 since={tech.since}
                 key={index}

@@ -10,7 +10,7 @@ export interface IWork {
 
 export const config = {
   name: "Tarık Coşkun",
-  title: "Full-stack developer",
+  title: "Full-stack Developer",
   email: "tarikcskun@gmail.com",
   github: "tarikcoskun",
   twitter: "tarikcskun",
@@ -19,44 +19,44 @@ export const config = {
     "I've been in web development since 2018. Since then, I've been learning more and more technologies. I mainly use Node.js based technologies.",
   recentTech: [
     {
-      icon: Icons.TypeScriptInline,
+      icon: <Icons.TypeScriptInline />,
       name: "TypeScript",
     },
     {
-      icon: Icons.VueInline,
+      icon: <Icons.VueInline />,
       name: "Vue",
     },
     {
-      icon: Icons.ReactInline,
+      icon: <Icons.ReactInline />,
       name: "React",
     },
     {
-      icon: Icons.SvelteInline,
+      icon: <Icons.SvelteInline />,
       name: "Svelte",
     },
     {
-      icon: Icons.TailwindInline,
+      icon: <Icons.TailwindInline />,
       name: "Tailwind",
     },
   ],
   favouriteTech: [
     {
-      icon: Icons.Vue,
+      icon: <Icons.Vue />,
       name: "Vue",
       since: 2021,
     },
     {
-      icon: Icons.React,
+      icon: <Icons.React />,
       name: "React",
       since: 2021,
     },
     {
-      icon: Icons.Tailwind,
+      icon: <Icons.Tailwind />,
       name: "Tailwind",
       since: 2020,
     },
     {
-      icon: Icons.Sass,
+      icon: <Icons.Sass />,
       name: "Sass",
       since: 2018,
     },
@@ -64,7 +64,7 @@ export const config = {
   works: [
     {
       href: "https://discords.com/templates",
-      img: "/projects/templates.png",
+      img: "/projects/discord-templates.png",
       name: "Discord Templates",
       role: "Moderator",
       description:
@@ -80,7 +80,7 @@ export const config = {
     },
     {
       href: "https://unicorns.software",
-      img: "/projects/unicornssoftware.png",
+      img: "/projects/unicorns-software.png",
       name: "Unicorn's Software",
       role: "Lead Developer",
       description:
@@ -88,7 +88,7 @@ export const config = {
     },
     {
       href: "https://crumblingstatue.github.io/FloweysTimeMachine",
-      img: "/projects/floweystimemachine.png",
+      img: "/projects/floweys-time-machine.png",
       name: "Flowey's Time Machine",
       role: "Designer",
       description:
@@ -96,7 +96,7 @@ export const config = {
     },
     {
       href: "https://store.steampowered.com/app/1115050",
-      img: "/projects/willyousnail.png",
+      img: "/projects/will-you-snail.png",
       name: "Will You Snail?",
       role: "Translator & Tester",
       description:

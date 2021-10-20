@@ -61,7 +61,7 @@ section#home {
   }
 
   h2 {
-    color: #9a88b8;
+    color: #cf89c5;
     font-weight: 600;
     font-size: 24px;
   }
@@ -166,7 +166,7 @@ section#works {
       transition: background 0.25s;
       cursor: pointer;
       &:hover {
-        background: var(--tech-bg);
+        background: var(--work-bg);
       }
 
       img.icon {

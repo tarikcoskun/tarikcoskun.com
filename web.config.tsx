@@ -74,7 +74,7 @@ export const config = {
       href: "https://premid.app",
       img: "/projects/premid.png",
       name: "PreMiD",
-      role: "Moderator",
+      role: "Translator",
       description:
         "A utility that allows you to show what you're doing on the web in your Discord status",
     },

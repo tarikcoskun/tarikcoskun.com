@@ -127,10 +127,10 @@ export default function Home() {
           <div id="second-col">
             {config.favouriteTech.map((tech, index) => (
               <Tech
+                key={index}
                 icon={tech.icon}
                 name={tech.name}
                 since={tech.since}
-                key={index}
               />
             ))}
           </div>
@@ -143,12 +143,12 @@ export default function Home() {
           <div>
             {config.works.map((work, index) => (
               <Work
-                href={work.href}
+                key={index}
                 img={work.img}
+                href={work.href}
                 name={work.name}
                 role={work.role}
                 description={work.description}
-                key={index}
               />
             ))}
           </div>

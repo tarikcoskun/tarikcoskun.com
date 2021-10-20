@@ -5,12 +5,13 @@ html {
   --shadow: #00000010;
   --text-primary: #000000a0;
   --title-solid: #000000;
-  --title-gradient: linear-gradient(to bottom, #000000, #00000090);
+  --title-gradient: linear-gradient(to bottom, #000000, #00000085);
 
   --home-bg: linear-gradient(to bottom, #ffffff, #eadce9c0);
   --about-bg: #eadce930;
   --works-bg: #eadce9c0;
   --tech-bg: #00000009;
+  --work-bg: #00000018;
 
   &.dark {
     --background: #18181b;
@@ -22,10 +23,11 @@ html {
     --about-bg: #0f0f1170;
     --works-bg: #0d0d0f;
     --tech-bg: #e8eaff09;
+    --work-bg: #e8eaff09;
   }
 
   &::-webkit-scrollbar {
-    width: 4px;
+    width: 8px;
     &-thumb {
       background: var(--text-primary);
     }
@@ -39,15 +41,19 @@ html {
     margin: 0;
     border: 0;
     text-decoration: none;
+    &::selection {
+      background: var(--work-bg);
+    }
   }
 }
 
-.wrapper {
+div.wrapper {
   &.wrapper-home {
     background: var(--home-bg);
   }
   &.wrapper-about {
     background: var(--about-bg);
+    box-shadow: 0 0 12px var(--shadow);
   }
   &.wrapper-works {
     background: var(--works-bg);

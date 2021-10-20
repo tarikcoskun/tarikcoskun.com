@@ -1,3 +1,8 @@
+### 🌐 My Personal Website
+
+![Website Preview](public/preview.png)
+![Netlify Status](https://api.netlify.com/api/v1/badges/edb2b2f4-2dc3-46fc-ab4b-b0656ae45700/deploy-status)
+
 ### ✨ Features
 
 - Built with [Next.js](https://nextjs.org), one of the most popular front-end frameworks!
@@ -7,7 +12,7 @@
 
 ### 📦️ Installation
 
-[Node.js](https://nodejs.org/en/download) is required for this project to run. Node.js natively comes with npm, but I recommend using yarn over it, as it is faster. You can install yarn to your machine by using `npm install yarn -g` command.
+[Node.js](https://nodejs.org/en/download) is required for this project to run. Node.js natively comes with npm, but I recommend using yarn over it, as it is faster. You can install yarn in your machine by using `npm install yarn -g` command.
 
 - Install dependencies: `yarn` or `npm install`.
 - Start the project:

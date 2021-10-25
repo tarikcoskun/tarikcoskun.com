@@ -1,5 +1,3 @@
-import anime from "animejs";
-import { useEffect } from "react";
 import { Link } from "react-scroll";
 import { config } from "@/web.config";
 import { useTheme } from "next-themes";
@@ -10,29 +8,11 @@ import { Moon, Sun, GitHub, Twitter } from "@/icons";
 export default function Home() {
   const { theme, setTheme } = useTheme();
 
-  useEffect(() => {
-    anime({
-      targets: ["#home h1", "#home h2", "#home p"],
-      opacity: [0, 1],
-      translateX: [-30, 0],
-      delay: anime.stagger(250),
-      easing: "spring(0, 10, 20, 0)",
-    });
-
-    anime({
-      targets: ["#accounts a"],
-      opacity: [0, 1],
-      translateY: [20, 0],
-      delay: anime.stagger(250, { start: 1000 }),
-      easing: "spring(0, 10, 20, 0)",
-    });
-  }, []);
-
   return (
     <main>
       <header>
         <section>
-          <h1 className="mb:hidden">{config.name}</h1>
+          <h1>{config.name}</h1>
           <div id="links">
             <Link to="home" smooth={true} offset={-73} activeClass="active" spy>
               Home
@@ -40,7 +20,7 @@ export default function Home() {
             <Link
               to="about"
               smooth={true}
-              offset={-73}
+              offset={-72}
               activeClass="active"
               spy
             >
@@ -49,7 +29,7 @@ export default function Home() {
             <Link
               to="works"
               smooth={true}
-              offset={-73}
+              offset={-72}
               activeClass="active"
               spy
             >

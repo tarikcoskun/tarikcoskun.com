@@ -9,7 +9,6 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "animejs": "^3.2.1",
     "next": "11.1.2",
     "next-themes": "^0.0.15",
     "react": "17.0.2",

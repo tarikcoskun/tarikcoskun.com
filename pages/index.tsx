@@ -12,7 +12,7 @@ export default function Home() {
     <main>
       <header>
         <section>
-          <h1>{config.name}</h1>
+          <h1 className="mb:hidden">{config.name}</h1>
           <div id="links">
             <Link to="home" smooth={true} offset={-73} activeClass="active" spy>
               Home

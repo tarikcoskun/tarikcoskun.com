@@ -3,7 +3,8 @@ import { config } from "@/web.config";
 import { useTheme } from "next-themes";
 import { Tech } from "@/components/Tech";
 import { Work } from "@/components/Work";
-import { Moon, Sun, GitHub, Twitter } from "@/icons";
+
+import { Moon, Sun, GitHub, Twitter, Info, Rocket, Briefcase } from "@/icons";
 
 export default function Home() {
   const { theme, setTheme } = useTheme();
@@ -12,7 +13,9 @@ export default function Home() {
     <main>
       <header>
         <section>
-          <h1 className="mb:hidden">{config.name}</h1>
+          <div>
+            <h1 className="mb:hidden">{config.name}</h1>
+          </div>
           <div id="links">
             <Link to="home" smooth={true} offset={-73} activeClass="active" spy>
               Home
@@ -86,21 +89,16 @@ export default function Home() {
         </section>
       </div>
 
-      <div className="wrapper wrapper-about">
+      <div className="wrapper wrapper-white">
         <section id="about">
           <div id="first-col">
-            <h1>About Me</h1>
+            <h1>
+              About Me <Info />
+            </h1>
             <p>{config.about}</p>
             <p>
-              Recently, I&#39;ve been working with...
-              <div className="recent-tech">
-                {config.recentTech.map((tech, index) => (
-                  <span key={index}>
-                    {tech.icon}
-                    {tech.name}
-                  </span>
-                ))}
-              </div>
+              On the right, you can see my favourite technologies and the ones I
+              use most of the time. You can see the full list of them below.
             </p>
           </div>
 
@@ -117,9 +115,11 @@ export default function Home() {
         </section>
       </div>
 
-      <div className="wrapper wrapper-works">
+      <div className="wrapper wrapper-accent">
         <section id="works">
-          <h1 className="text-center">Works</h1>
+          <h1 className="text-center">
+            Works <Briefcase />
+          </h1>
           <div>
             {config.works.map((work, index) => (
               <Work
@@ -130,6 +130,22 @@ export default function Home() {
                 role={work.role}
                 description={work.description}
               />
+            ))}
+          </div>
+        </section>
+      </div>
+
+      <div className="wrapper wrapper-white">
+        <section id="tech">
+          <h1 className="text-center">
+            Techs & Tools <Rocket />
+          </h1>
+          <div>
+            {config.techStack.map((tech, index) => (
+              <figure className="tech" key={index}>
+                {tech.icon}
+                {tech.name}
+              </figure>
             ))}
           </div>
         </section>

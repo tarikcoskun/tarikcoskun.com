@@ -1,5 +1,11 @@
 import * as Icons from "@/icons";
 
+export interface IFavouriteTech {
+  name: string;
+  since: number;
+  icon: JSX.Element;
+}
+
 export interface IWork {
   img: string;
   href: string;
@@ -17,49 +23,45 @@ export const config = {
   bio: "My name is Tarık and I'm a full-stack developer from Turkey<br />I like working on front-end more",
   about:
     "I've been in web development since 2018. Since then, I've been learning more and more technologies. I mainly use Node.js based technologies.",
-  recentTech: [
-    {
-      icon: <Icons.TypeScriptInline />,
-      name: "TypeScript",
-    },
-    {
-      icon: <Icons.VueInline />,
-      name: "Vue",
-    },
-    {
-      icon: <Icons.ReactInline />,
-      name: "React",
-    },
-    {
-      icon: <Icons.SvelteInline />,
-      name: "Svelte",
-    },
-    {
-      icon: <Icons.TailwindInline />,
-      name: "Tailwind",
-    },
-  ],
   favouriteTech: [
     {
-      icon: <Icons.Vue />,
+      icon: <Icons.VueFav />,
       name: "Vue",
       since: 2021,
     },
     {
-      icon: <Icons.React />,
+      icon: <Icons.ReactFav />,
       name: "React",
       since: 2021,
     },
     {
-      icon: <Icons.Tailwind />,
+      icon: <Icons.TailwindFav />,
       name: "Tailwind",
       since: 2020,
     },
     {
-      icon: <Icons.Sass />,
+      icon: <Icons.SassFav />,
       name: "Sass",
       since: 2018,
     },
+  ] as IFavouriteTech[],
+  techStack: [
+    { icon: <Icons.HTML />, name: "HTML" },
+    { icon: <Icons.CSS />, name: "CSS" },
+    { icon: <Icons.JavaScript />, name: "JavaScript" },
+    { icon: <Icons.TypeScript />, name: "TypeScript" },
+    { icon: <Icons.Node />, name: "Node.js" },
+    { icon: <Icons.Vue />, name: "Vue.js" },
+    { icon: <Icons.Nuxt />, name: "Nuxt.js" },
+    { icon: <Icons.React />, name: "React.js" },
+    { icon: <Icons.Next />, name: "Next.js" },
+    { icon: <Icons.Svelte />, name: "Svelte" },
+    { icon: <Icons.Sass />, name: "Sass" },
+    { icon: <Icons.Tailwind />, name: "Tailwind CSS" },
+    { icon: <Icons.VSCode />, name: "VS Code" },
+    { icon: <Icons.Git />, name: "Git" },
+    { icon: <Icons.Netlify />, name: "Netlify" },
+    { icon: <Icons.Vercel />, name: "Vercel" },
   ],
   works: [
     {

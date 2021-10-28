@@ -51,11 +51,11 @@ div.wrapper {
   &.wrapper-home {
     background: var(--home-bg);
   }
-  &.wrapper-about {
+  &.wrapper-white {
     background: var(--about-bg);
     box-shadow: 0 0 12px var(--shadow);
   }
-  &.wrapper-works {
+  &.wrapper-accent {
     background: var(--works-bg);
   }
 }

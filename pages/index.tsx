@@ -13,9 +13,7 @@ export default function Home() {
     <main>
       <header>
         <section>
-          <div>
-            <h1 className="mb:hidden">{config.name}</h1>
-          </div>
+          <h1 className="mb:hidden">{config.name}</h1>
           <div id="links">
             <Link to="home" smooth={true} offset={-73} activeClass="active" spy>
               Home

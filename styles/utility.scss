@@ -10,8 +10,7 @@ html {
   --home-bg: linear-gradient(to bottom, #ffffff, #eadce9c0);
   --about-bg: #eadce930;
   --works-bg: #eadce9c0;
-  --tech-bg: #00000009;
-  --work-bg: #00000018;
+  --tech-bg: #0000000a;
 
   &.dark {
     --background: #18181b;
@@ -23,7 +22,6 @@ html {
     --about-bg: #0f0f1170;
     --works-bg: #0d0d0f;
     --tech-bg: #e8eaff09;
-    --work-bg: #e8eaff09;
   }
 
   &::-webkit-scrollbar {
@@ -42,7 +40,7 @@ html {
     border: 0;
     text-decoration: none;
     &::selection {
-      background: var(--work-bg);
+      background: var(--tech-bg);
     }
   }
 }

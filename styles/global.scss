@@ -151,12 +151,15 @@ section {
   &#works {
     padding: 32px 0;
 
-    > h1 {
+    h1 {
       background: var(--title-gradient);
       background-clip: text;
       color: transparent;
       font-size: 30px;
       font-weight: 600;
+    }
+
+    > h1 {
       display: flex;
       gap: 12px;
       align-items: center;
@@ -174,7 +177,7 @@ section {
         transition: background 0.25s;
         cursor: pointer;
         &:hover {
-          background: var(--work-bg);
+          background: var(--tech-bg);
         }
 
         img.icon {
@@ -224,7 +227,7 @@ section {
       grid-template-columns: repeat(2, minmax(0, 1fr));
 
       figure.tech {
-        padding: 20px;
+        padding: 16px;
         background: var(--tech-bg);
         border-radius: 8px;
         display: flex;
@@ -237,6 +240,27 @@ section {
         svg path {
           color: var(--title-solid);
         }
+      }
+    }
+  }
+
+  &#footer {
+    padding: 16px 0;
+    display: flex;
+
+    p {
+      font-size: 16px;
+    }
+    span {
+      color: var(--title-solid);
+      font-size: 16px;
+    }
+    a {
+      font-size: 16px;
+      color: var(--title-solid);
+      border-bottom: 1px dashed transparent;
+      &:hover {
+        border-color: var(--title-solid);
       }
     }
   }
@@ -263,6 +287,10 @@ section {
         }
       }
     }
+    &#footer {
+      flex-direction: column;
+      align-items: center;
+    }
   }
 }
 
@@ -280,7 +308,7 @@ section {
       padding: 64px 0;
       > div {
         margin-top: 32px;
-        grid-template-columns: repeat(4, minmax(0, 1fr));
+        grid-template-columns: repeat(5, minmax(0, 1fr));
       }
     }
     &#works {
@@ -299,6 +327,9 @@ section {
           }
         }
       }
+    }
+    &#footer {
+      justify-content: space-between;
     }
   }
 }

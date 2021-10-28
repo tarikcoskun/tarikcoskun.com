@@ -61,7 +61,6 @@ export const config = {
     { icon: <Icons.VSCode />, name: "VS Code" },
     { icon: <Icons.Git />, name: "Git" },
     { icon: <Icons.Netlify />, name: "Netlify" },
-    { icon: <Icons.Vercel />, name: "Vercel" },
   ],
   works: [
     {

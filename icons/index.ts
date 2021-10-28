@@ -14,7 +14,6 @@ export * from "@/icons/Tech/Nuxt";
 export * from "@/icons/Tech/Sass";
 export * from "@/icons/Tech/Next";
 export * from "@/icons/Tech/React";
-export * from "@/icons/Tech/Vercel";
 export * from "@/icons/Tech/Svelte";
 export * from "@/icons/Tech/VSCode";
 export * from "@/icons/Tech/VueFav";

@@ -114,6 +114,22 @@ export default function Home() {
       </div>
 
       <div className="wrapper wrapper-accent">
+        <section id="tech">
+          <h1 className="text-center">
+            Techs & Tools <Rocket />
+          </h1>
+          <div>
+            {config.techStack.map((tech, index) => (
+              <figure className="tech" key={index}>
+                {tech.icon}
+                {tech.name}
+              </figure>
+            ))}
+          </div>
+        </section>
+      </div>
+
+      <div className="wrapper wrapper-white">
         <section id="works">
           <h1 className="text-center">
             Works <Briefcase />
@@ -133,19 +149,21 @@ export default function Home() {
         </section>
       </div>
 
-      <div className="wrapper wrapper-white">
-        <section id="tech">
-          <h1 className="text-center">
-            Techs & Tools <Rocket />
-          </h1>
-          <div>
-            {config.techStack.map((tech, index) => (
-              <figure className="tech" key={index}>
-                {tech.icon}
-                {tech.name}
-              </figure>
-            ))}
-          </div>
+      <div className="wrapper wrapper-accent">
+        <section id="footer">
+          <p>
+            Website by <span>Tarık Coşkun</span>
+          </p>
+          <p>
+            This website is open-source on{" "}
+            <a
+              href="https://github.com/tarikcoskun/webiste"
+              target="_blank"
+              rel="noreferrer"
+            >
+              GitHub
+            </a>
+          </p>
         </section>
       </div>
     </main>

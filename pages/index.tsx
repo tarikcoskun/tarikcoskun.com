@@ -157,7 +157,7 @@ export default function Home() {
           <p>
             This website is open-source on{" "}
             <a
-              href="https://github.com/tarikcoskun/webiste"
+              href="https://github.com/tarikcoskun/website"
               target="_blank"
               rel="noreferrer"
             >

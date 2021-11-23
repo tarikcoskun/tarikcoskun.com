@@ -1,0 +1,186 @@
+@import "utility.scss";
+
+body { overflow-x: hidden; background: var(--background); }
+section { margin: auto; max-width: 800px; }
+
+header {
+  z-index: 10;
+  padding: 16px 0;
+  max-height: 72px;
+  position: sticky; top: 0;
+  backdrop-filter: blur(16px);
+
+  section {
+    display: flex; align-items: center; justify-content: space-between;
+
+    h1 { color: var(--title-solid); font-size: 24px; font-weight: 600; }
+    aside.links {
+      display: flex; gap: 24px; align-items: center;
+
+      a {
+        cursor: pointer;
+        transition-duration: 0.15s;
+        font-size: 18px; font-weight: 500;
+        transition-property: opacity, color;
+      }
+    }
+  }
+}
+
+section {
+  &#hero {
+    padding: 96px 0;
+
+    h1 {
+      color: transparent; font-size: 48px; font-weight: 700;
+      background: var(--title-gradient); background-clip: text; -webkit-background-clip: text;
+    }
+
+    p { margin: 18px 0; }
+    h2 { color: #b889cf; font-size: 24px; font-weight: 600; }
+
+    aside.accounts {
+      padding-top: 12px;
+      display: flex; gap: 12px; align-items: center;
+
+      a {
+        transition: 0.15s opacity;
+        &:hover { opacity: 0.75 !important; }
+      }
+    }
+  }
+
+  &#about {
+    padding: 32px 0;
+    display: grid; gap: 32px; align-items: center;
+
+    aside {
+      &.about-me {
+        h1 {
+          display: flex; gap: 12px; align-items: center;
+          color: transparent; font-size: 30px; font-weight: 600;
+          background: var(--title-gradient); background-clip: text; -webkit-background-clip: text;
+        }
+
+        p { margin-top: 16px; }
+      }
+      &.fav-techs {
+        display: grid; gap: 16px;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+
+        figure.tech {
+          padding: 16px;
+          border-radius: 12px;
+          background: var(--tech-bg);
+
+          svg {
+            border-radius: 8px; width: 56px; padding: 8px;
+            path { fill: inherit; }
+          }
+
+          h1.title {
+            margin: 16px 0 4px 0;
+            color: transparent; font-size: 24px; font-weight: 600;
+            background: var(--title-gradient); background-clip: text; -webkit-background-clip: text;
+          }
+        }
+      }
+    }
+  }
+
+  &#works {
+    padding: 32px 0;
+
+    h1 {
+      color: transparent; font-size: 30px; font-weight: 600;
+      background: var(--title-gradient); background-clip: text;  -webkit-background-clip: text;
+    }
+
+    > h1 { display: flex; gap: 12px; align-items: center; justify-content: center; }
+    > div {
+      display: grid;
+      margin-top: 16px;
+
+      a.work {
+        padding: 20px;
+        cursor: pointer;
+        border-radius: 8px;
+        display: flex; gap: 16px 20px;
+        transition: background 0.25s;
+        &:hover { background: var(--tech-bg); }
+
+        img.icon {
+          object-fit: cover;
+          border-radius: 6px;
+          background: #111113;
+        }
+
+        aside {
+          h1.name { font-size: 24px; }
+          p {
+            &.desc { margin-top: 8px; }
+            &.role { font-size: 18px; margin-top: 2px; }
+          }
+        }
+      }
+    }
+  }
+
+  &#footer {
+    padding: 16px 0;
+    display: flex;
+
+    p { font-size: 16px; }
+    span { color: var(--title-solid); font-size: 16px; }
+    a {
+      border-bottom: 1px dashed transparent;
+      color: var(--title-solid); font-size: 16px;
+      &:hover { border-color: var(--title-solid); }
+    }
+  }
+}
+
+svg {
+  width: 32px;
+  path, circle { fill: currentColor; }
+}
+
+// Mobile
+@media only screen and (max-width: 768px) {
+  header { padding: 16px; }
+  section {
+    &#hero { padding: 32px 0 64px 0; }
+    &#works {
+      > div {
+        gap: 12px;
+        a.work {
+          flex-direction: column;
+          img.icon { height: 160px; }
+        }
+      }
+    }
+    &#footer { align-items: center; flex-direction: column; }
+  }
+}
+
+// PC
+@media only screen and (min-width: 768px) {
+  section {
+    &#about {
+      padding: 64px 0;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      > aside.about-me p { text-align: justify; }
+    }
+    &#works {
+      padding: 64px 0;
+      > div {
+        margin-top: 32px;
+        a.work {
+          align-items: center;
+          img { width: 192px; }
+        }
+      }
+    }
+    &#footer { justify-content: space-between; }
+  }
+}

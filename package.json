@@ -1,28 +1,23 @@
 {
-  "name": "tarikcoskun.xyz-next",
-  "version": "0.1.0",
-  "private": true,
+  "name": "tarikcoskun.xyz",
+  "version": "1.0.0",
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "vite preview"
   },
   "dependencies": {
-    "next": "11.1.2",
-    "next-themes": "^0.0.15",
-    "react": "17.0.2",
-    "react-dom": "17.0.2",
-    "react-scroll": "^1.8.4",
-    "react-use-lanyard": "^0.1.0",
-    "sass": "^1.39.0"
+    "@animxyz/vue3": "^0.6.4",
+    "@vueuse/motion": "^2.0.0-beta.4",
+    "aos": "^2.3.4",
+    "vue": "^3.2.16"
   },
   "devDependencies": {
-    "@types/animejs": "^3.1.4",
-    "@types/react": "17.0.20",
-    "@types/react-scroll": "^1.8.3",
-    "eslint": "7.32.0",
-    "eslint-config-next": "11.1.2",
-    "typescript": "4.4.2"
+    "@types/aos": "^3.0.4",
+    "@types/node": "^16.11.9",
+    "@vitejs/plugin-vue": "^1.9.3",
+    "sass": "^1.43.4",
+    "typescript": "^4.4.3",
+    "vite": "^2.6.4"
   }
 }

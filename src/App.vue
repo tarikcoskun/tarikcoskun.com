@@ -25,7 +25,7 @@
         <aside xyz="fade down-2 stagger ease-out-back duration-20 delay-8" class="accounts"><XyzTransition appear-visible>
           <a
             href="mailto:tarikcskun@gmail.com"
-            class="button mb:hidden"
+            class="button"
             rel="noreferrer"
             target="_blank">Contact</a></XyzTransition><XyzTransition appear-visible>
           <a

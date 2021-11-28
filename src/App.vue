@@ -55,7 +55,7 @@
           <XyzTransition v-for="tech in techs" appear-visible>
             <figure
               class="tech">
-              <component :is="tech.icon" :fill="tech.color" :style="`background: ${tech.color}20;`" />
+              <component :is="tech.icon" :fill="tech.color" :style="`background: ${tech.color}30;`" />
               <h1 class="title">{{ tech.name }}</h1>
               <h1 class="date">Since 20{{ tech.date }}</h1>
             </figure>

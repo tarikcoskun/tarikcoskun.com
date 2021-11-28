@@ -16,13 +16,13 @@
     </header>
 
     <figure class="wrapper wrapper-hero">
-      <section id="hero" xyz="fade left-4 stagger duration-8">
+      <section id="hero" xyz="fade left-4 duration-8 stagger-1">
         <XyzTransition appear-visible><h1>Tarık Coşkun</h1></XyzTransition>
         <XyzTransition appear-visible><h2>Full stack developer</h2></XyzTransition>
         <XyzTransition appear-visible><p>My name is Tarık and I'm a full-stack developer from Turkey
-        <br />I like working on front-end</p></XyzTransition>
+        <br />I like working on front end</p></XyzTransition>
 
-        <aside xyz="fade down-2 stagger ease-out-back duration-20 delay-8" class="accounts"><XyzTransition appear-visible>
+        <aside xyz="fade down-2 ease-out-back duration-20 delay-8 stagger-1" class="accounts"><XyzTransition appear-visible>
           <a
             href="mailto:tarikcskun@gmail.com"
             class="button"
@@ -42,7 +42,7 @@
 
     <figure class="wrapper wrapper-white">
       <section id="about">
-        <aside class="about-me" xyz="fade left-4 stagger duration-8">
+        <aside class="about-me" xyz="fade left-4 duration-8 stagger-0.5">
           <XyzTransition appear-visible><h1>About Me <About /></h1></XyzTransition><XyzTransition appear-visible>
           <p>
             I've been in web development since 2018. Since then, I've been learning more and more technologies. I mainly use Node.js based technologies.
@@ -51,7 +51,7 @@
           </p></XyzTransition>
         </aside>
 
-        <aside class="fav-techs" xyz="fade down-4 stagger duration-8">
+        <aside class="fav-techs" xyz="fade down-4 duration-8 stagger-0.5">
           <XyzTransition v-for="tech in techs" appear-visible>
             <figure
               class="tech">
@@ -67,7 +67,7 @@
     <figure class="wrapper wrapper-colored">
       <section id="works">
         <h1>Works <Works /></h1>
-        <div xyz="fade down-4 duration-8">
+        <div xyz="fade down-4 duration-8 stagger-0.5">
           <XyzTransition v-for="work in works" appear-visible>
             <a
             :href="`https://${work.link}`"

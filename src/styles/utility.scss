@@ -4,9 +4,10 @@ html {
   scroll-behavior: smooth;
 
   --background: #ffffff;
-  --shadow: #00000010;
-  --text-primary: #5E5E5E;
+  --shadow: #00000016;
+  --text-primary: #5e5e5e;
   --title-solid: #000000;
+  --title-profession: #b889cf;
   --title-gradient: linear-gradient(to bottom, #000000, #00000085);
 
   --hero-bg: linear-gradient(to bottom, #ffffff, #eadce9c0);
@@ -56,6 +57,7 @@ figure.wrapper {
     --background: #18181b;
     --text-primary: #ffffffa0;
     --title-solid: #ffffff;
+    --title-profession: #8f92b1;
     --title-gradient: linear-gradient(to bottom, #ffffff, #ffffffc0);
 
     --hero-bg: linear-gradient(to bottom, #18181b, #0d0d0f);

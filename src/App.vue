@@ -9,7 +9,7 @@
           <a
             href="mailto:tarikcskun@gmail.com"
             class="button mb:hidden"
-            rel="noreferrer"
+            rel="noreferrer noopener"
             target="_blank">Contact</a>
         </aside>
       </section>
@@ -26,15 +26,15 @@
           <a
             href="mailto:tarikcskun@gmail.com"
             class="button"
-            rel="noreferrer"
+            rel="noreferrer noopener"
             target="_blank">Contact</a></XyzTransition><XyzTransition appear-visible>
           <a
             href="https://github.com/tarikcoskun"
-            rel="noreferrer"
+            rel="noreferrer noopener"
             target="_blank"><GitHub /></a></XyzTransition><XyzTransition appear-visible>
           <a
             href="https://twitter.com/tarikcskun"
-            rel="noreferrer"
+            rel="noreferrer noopener"
             target="_blank"><Twitter /></a></XyzTransition>
         </aside>
       </section>
@@ -71,7 +71,7 @@
           <XyzTransition v-for="work in works" appear-visible>
             <a
             :href="`https://${work.link}`"
-              rel="noreferrer"
+              rel="noreferrer noopener"
               target="_blank"
               class="work">
                 <img
@@ -93,8 +93,8 @@
       <section id="footer">
         <p>Coded & designed by <span>Tarık Coşkun</span></p>
         <p>The source code is availible is on
-          <a href="https://github.com/tarikcoskun/website"
-          rel="noreferred"
+          <a href="https://github.com/tarikcoskun/tarikcoskun.github.io"
+          rel="noreferrer noopener"
           target="_blank">GitHub</a>
         </p>
       </section>

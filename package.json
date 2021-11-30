@@ -9,12 +9,9 @@
   },
   "dependencies": {
     "@animxyz/vue3": "^0.6.4",
-    "@vueuse/motion": "^2.0.0-beta.4",
-    "aos": "^2.3.4",
     "vue": "^3.2.16"
   },
   "devDependencies": {
-    "@types/aos": "^3.0.4",
     "@types/node": "^16.11.9",
     "@vitejs/plugin-vue": "^1.9.3",
     "sass": "^1.43.4",

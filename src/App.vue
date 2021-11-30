@@ -19,8 +19,8 @@
       <section id="hero" xyz="fade left-4 duration-8 stagger-1">
         <XyzTransition appear-visible><h1>Tarık Coşkun</h1></XyzTransition>
         <XyzTransition appear-visible><h2>Full stack developer</h2></XyzTransition>
-        <XyzTransition appear-visible><p>My name is Tarık and I'm a full-stack developer from Turkey
-        <br />I like working on front end</p></XyzTransition>
+        <XyzTransition appear-visible><p>I'm a full stack developer with over {{ new Date().getFullYear() - 2018 }} years of experience
+        <br />More interested in front end</p></XyzTransition>
 
         <aside xyz="fade down-2 ease-out-back duration-20 delay-8 stagger-1" class="accounts"><XyzTransition appear-visible>
           <a
@@ -45,9 +45,9 @@
         <aside class="about-me" xyz="fade left-4 duration-8 stagger-0.5">
           <XyzTransition appear-visible><h1>About Me <About /></h1></XyzTransition><XyzTransition appear-visible>
           <p>
-            I've been in web development since 2018. Since then, I've been learning more and more technologies. I mainly use Node.js based technologies.
+            I've been playing with web development since 2018. Over the years, I've been learning more and more technologies.
           </p></XyzTransition><XyzTransition appear-visible><p class="techs">
-            On the right, you can see my favourite techhnologies, which are the ones I use in most of my projects.
+            I mainly use Node based technologies. On the right, you can see a couple of my favourite techhnologies, which are also the ones I use in most of my projects.
           </p></XyzTransition>
         </aside>
 

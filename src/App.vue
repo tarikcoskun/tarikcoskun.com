@@ -92,7 +92,7 @@
     <figure class="wrapper wrapper-accent">
       <section id="footer">
         <p>Coded & designed by <span>Tarık Coşkun</span></p>
-        <p>The source code is availible is on
+        <p>The source code is availible on
           <a href="https://github.com/tarikcoskun/tarikcoskun.github.io"
           rel="noreferrer noopener"
           target="_blank">GitHub</a>

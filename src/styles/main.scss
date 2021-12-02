@@ -1,6 +1,6 @@
 @import "utility.scss";
 
-body { overflow-x: hidden; background: var(--background); }
+body { overflow-x: hidden; background: var(--bg); }
 section { margin: auto; max-width: 800px; }
 
 header {
@@ -8,7 +8,7 @@ header {
   padding: 16px 0;
   max-height: 72px;
   position: sticky; top: 0;
-  backdrop-filter: blur(16px);
+  backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px);
 
   section {
     display: flex; align-items: center; justify-content: space-between;
@@ -31,10 +31,7 @@ section {
   &#hero {
     padding: 96px 0;
 
-    h1 {
-      color: transparent; font-size: 48px; font-weight: 700;
-      background: var(--title-gradient); background-clip: text; -webkit-background-clip: text;
-    }
+    h1 { font-size: 48px; font-weight: 700; }
 
     p { margin: 18px 0; }
     h2 { color: var(--title-profession); font-size: 24px; font-weight: 600; }
@@ -57,9 +54,8 @@ section {
     aside {
       &.about-me {
         h1 {
+          font-size: 30px; font-weight: 600;
           display: flex; gap: 12px; align-items: center;
-          color: transparent; font-size: 30px; font-weight: 600;
-          background: var(--title-gradient); background-clip: text; -webkit-background-clip: text;
         }
 
         p { margin-top: 16px; }
@@ -80,8 +76,7 @@ section {
 
           h1.title {
             margin: 16px 0 4px 0;
-            color: transparent; font-size: 24px; font-weight: 600;
-            background: var(--title-gradient); background-clip: text; -webkit-background-clip: text;
+            font-size: 24px; font-weight: 600;
           }
         }
       }
@@ -91,10 +86,7 @@ section {
   &#works {
     padding: 32px 0;
 
-    h1 {
-      color: transparent; font-size: 30px; font-weight: 600;
-      background: var(--title-gradient); background-clip: text;  -webkit-background-clip: text;
-    }
+    h1 { font-size: 30px; font-weight: 600; }
 
     > h1 { display: flex; gap: 12px; align-items: center; justify-content: center; }
     > div {
@@ -140,11 +132,6 @@ section {
   }
 }
 
-svg {
-  width: 32px;
-  path, circle { fill: currentColor; }
-}
-
 // Mobile
 @media only screen and (max-width: 800px) {
   header { padding: 16px; }
@@ -183,4 +170,8 @@ svg {
     }
     &#footer { justify-content: space-between; }
   }
+}
+
+@supports not (backdrop-filter: blur(16px)) {
+  header { background: var(--bg); }
 }

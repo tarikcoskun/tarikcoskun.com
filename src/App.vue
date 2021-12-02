@@ -2,7 +2,7 @@
   <main>
     <header>
       <section>
-        <h1 class="mb:hidden">Tarık Coşkun</h1>
+        <h1>Tarık Coşkun</h1>
         <aside class="links">
           <a href="#about">About</a>
           <a href="#works">Works</a>
@@ -55,9 +55,9 @@
           <XyzTransition v-for="tech in techs" appear-visible>
             <figure
               class="tech">
-              <component :is="tech.icon" :fill="tech.color" :style="`background: ${tech.color}30;`" />
+              <component :is="tech.icon" :fill="tech.color" :style="`background: ${tech.color}40;`" />
               <h1 class="title">{{ tech.name }}</h1>
-              <h1 class="date">Since 20{{ tech.date }}</h1>
+              <h2 class="date">Since 20{{ tech.date }}</h2>
             </figure>
           </XyzTransition>
         </aside>
@@ -92,7 +92,7 @@
     <figure class="wrapper wrapper-accent">
       <section id="footer">
         <p>Coded & designed by <span>Tarık Coşkun</span></p>
-        <p>The source code is availible is on
+        <p>The source code is availible on
           <a href="https://github.com/tarikcoskun/tarikcoskun.github.io"
           rel="noreferrer noopener"
           target="_blank">GitHub</a>

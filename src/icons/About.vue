@@ -1,7 +1,0 @@
-<template>
-  <svg viewBox="0 0 24 24">
-    <circle cx="12" cy="12" r="10" opacity="0.4" />
-    <circle cx="12" cy="7" r="1.3" />
-    <path d="M12 18a1 1 0 0 1-1-1V12a1 1 0 0 1 2 0v5a1 1 0 0 1-1 1z" />
-  </svg>
-</template>

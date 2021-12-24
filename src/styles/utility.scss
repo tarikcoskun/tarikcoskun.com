@@ -1,4 +1,5 @@
 @import "https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700";
+@import "mixins.scss";
 
 html {
   scroll-behavior: smooth;
@@ -16,7 +17,7 @@ html {
 
   &::-webkit-scrollbar {
     width: 8px;
-    &-thumb { background: var(--text-primary); }
+    &-thumb { background: var(--text-primary) }
   }
 
   * {
@@ -24,38 +25,32 @@ html {
     color: var(--text-primary);
     padding: 0; margin: 0; border: 0;
     font: 20px "Inter", sans-serif; font-weight: 500;
-    &::selection { background: var(--tech-bg); }
+    &::selection { background: var(--tech-bg) }
   }
 }
 
 figure.wrapper {
-  &.wrapper-hero { background: linear-gradient(var(--bg), var(--accent)); }
-  &.wrapper-white { background: var(--about-bg); }
-  &.wrapper-colored { background: var(--accent); }
+  &.wrapper-hero { background: linear-gradient(var(--bg), var(--accent)) }
+  &.wrapper-white { background: var(--about-bg) }
+  &.wrapper-colored { background: var(--accent) }
+  @include mobile { padding: 0 16px }
 }
 
-h1 { color: var(--title-solid); }
-
+h1 { color: var(--title-solid) }
 svg {
   width: 32px;
-  path, circle { fill: currentColor; }
+  path, circle { fill: currentColor }
 }
 
 .button {
   cursor: pointer;
   padding: 10px 24px;
   border-radius: 36px;
-  transition: 0.15s opacity;
   background: var(--bg);
+  transition: 0.15s opacity;
   box-shadow: 0 4px 8px var(--shadow);
   color: var(--title-solid); font-weight: 600 !important; font-size: 18px;
-  &:hover { opacity: 0.75 !important; }
-}
-
-// Mobile
-@media only screen and (max-width: 800px) {
-  .mb\:hidden { display: none; }
-  figure.wrapper { padding: 0 16px; }
+  &:hover { opacity: 0.75 !important }
 }
 
 @media (prefers-color-scheme: dark) {
@@ -75,6 +70,7 @@ svg {
 @supports (background-clip: text) or (-webkit-background-clip: text) {
   h1 {
     color: transparent;
-    background: linear-gradient(var(--title-solid), var(--title-secondary)); background-clip: text; -webkit-background-clip: text;
+    background-clip: text; -webkit-background-clip: text !important;
+    background: linear-gradient(var(--title-solid), var(--title-secondary));
   }
 }

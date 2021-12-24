@@ -1,13 +1,10 @@
-/**
- * @type {import('vite').UserConfig}
- */
-
 import { resolve } from "path"
 import { defineConfig } from "vite"
 import Vue from "@vitejs/plugin-vue"
+import SVG from "vite-svg-loader"
 
 export default defineConfig({
-  plugins: [Vue()],
+  plugins: [Vue(), SVG()],
   base: "./",
   resolve: {
     alias: [

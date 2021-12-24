@@ -1,7 +1,8 @@
 @import "utility.scss";
+@import "mixins.scss";
 
-body { overflow-x: hidden; background: var(--bg); }
-section { margin: auto; max-width: 800px; }
+body { overflow-x: hidden; background: var(--bg) }
+section { margin: auto; max-width: 800px }
 
 header {
   z-index: 10;
@@ -9,19 +10,24 @@ header {
   max-height: 72px;
   position: sticky; top: 0;
   backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px);
+  @include mobile { padding: 16px }
 
   section {
-    display: flex; align-items: center; justify-content: space-between;
+    @include flex(center, space-between);
 
-    h1 { color: var(--title-solid); font-size: 24px; font-weight: 600; }
+    h1 { color: var(--title-solid); font-size: 24px; font-weight: 600 }
     aside.links {
-      display: flex; gap: 24px; align-items: center;
+      @include flex(center, $gap: 24px);
 
       a {
         cursor: pointer;
         transition-duration: 0.15s;
         font-size: 18px; font-weight: 500;
         transition-property: opacity, color;
+
+        &.button {
+          @include mobile { display: none }
+        }
       }
     }
   }
@@ -30,39 +36,45 @@ header {
 section {
   &#hero {
     padding: 96px 0;
+    @include mobile { padding: 72px 0 96px 0 }
 
-    h1 { font-size: 48px; font-weight: 700; }
-
-    p { margin: 18px 0; }
-    h2 { color: var(--title-profession); font-size: 24px; font-weight: 600; }
+    p { margin: 18px 0 }
+    h1 { font-size: 48px; font-weight: 700 }
+    h2 { color: var(--title-profession); font-size: 24px; font-weight: 600 }
 
     aside.accounts {
       padding-top: 12px;
-      display: flex; gap: 12px; align-items: center;
+      @include flex(center, $gap: 12px);
 
       a {
         transition: 0.15s opacity;
-        &:hover { opacity: 0.75 !important; }
+        &:hover { opacity: 0.75 !important }
       }
     }
   }
 
   &#about {
-    padding: 32px 0;
-    display: grid; gap: 32px; align-items: center;
+    padding: 64px 0;
+    @include grid(2, 32px, center);
+
+    @include mobile {
+      @include grid(1, 32px, center)
+    }
 
     aside {
       &.about-me {
         h1 {
           font-size: 30px; font-weight: 600;
-          display: flex; gap: 12px; align-items: center;
+          @include flex(center, $gap: 12px);
         }
 
-        p { margin-top: 16px; }
+        p {
+          margin-top: 16px;
+          @include pc { text-align: justify; text-align-last: justify }
+        }
       }
       &.fav-techs {
-        display: grid; gap: 16px;
-        grid-template-columns: repeat(2, minmax(0, 1fr));
+        @include grid(2, 16px);
 
         figure.tech {
           padding: 16px;
@@ -70,7 +82,7 @@ section {
           background: var(--tech-bg);
 
           svg {
-            border-radius: 8px; width: 56px; padding: 8px;
+            border-radius: 8px; width: 56px; height: 56px; padding: 8px;
             path { fill: inherit; }
           }
 
@@ -84,27 +96,35 @@ section {
   }
 
   &#works {
-    padding: 32px 0;
+    padding: 64px 0;
 
     h1 { font-size: 30px; font-weight: 600; }
 
-    > h1 { display: flex; gap: 12px; align-items: center; justify-content: center; }
+    > h1 { @include flex(center, center, $gap: 12px) }
     > div {
       display: grid;
-      margin-top: 16px;
+      margin-top: 32px;
+      @include mobile { margin-top: 16px; gap: 12px }
 
       a.work {
         padding: 20px;
         cursor: pointer;
         border-radius: 8px;
-        display: flex; gap: 16px 20px;
         transition: background 0.25s;
-        &:hover { background: var(--tech-bg); }
+        @include flex(center, $gap: 16px 20px);
+        @include mobile {
+          align-items: unset;
+          flex-direction: column;
+          img.icon { height: 160px }
+        }
+
+        &:hover { background: var(--tech-bg) }
 
         img.icon {
           object-fit: cover;
           border-radius: 6px;
           background: #111113;
+          @include pc { width: 192px }
         }
 
         aside {
@@ -120,55 +140,16 @@ section {
 
   &#footer {
     padding: 16px 0;
-    display: flex;
+    @include flex(unset, space-between);
+    @include mobile { @include flex(center, unset, $dir: column) }
 
-    p { font-size: 16px; }
-    span { color: var(--title-solid); font-size: 16px; }
+    span { color: var(--title-solid); font-size: 16px }
+    p { font-size: 16px }
     a {
       border-bottom: 1px dashed transparent;
       color: var(--title-solid); font-size: 16px;
-      &:hover { border-color: var(--title-solid); }
+      &:hover { border-color: var(--title-solid) }
     }
-  }
-}
-
-// Mobile
-@media only screen and (max-width: 800px) {
-  header { padding: 16px; }
-  section {
-    &#hero { padding: 32px 0 64px 0; }
-    &#works {
-      > div {
-        gap: 12px;
-        a.work {
-          flex-direction: column;
-          img.icon { height: 160px; }
-        }
-      }
-    }
-    &#footer { align-items: center; flex-direction: column; }
-  }
-}
-
-// PC
-@media only screen and (min-width: 800px) {
-  section {
-    &#about {
-      padding: 64px 0;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      > aside.about-me p { text-align: justify; text-align-last: justify; }
-    }
-    &#works {
-      padding: 64px 0;
-      > div {
-        margin-top: 32px;
-        a.work {
-          align-items: center;
-          img { width: 192px; }
-        }
-      }
-    }
-    &#footer { justify-content: space-between; }
   }
 }
 

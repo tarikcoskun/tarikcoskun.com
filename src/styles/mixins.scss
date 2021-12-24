@@ -1,0 +1,22 @@
+@mixin grid($cols: 2, $gap: 20px, $align: unset) {
+  gap: $gap;
+  display: grid;
+  align-items: $align;
+  grid-template-columns: repeat($cols, minmax(0, 1fr));
+}
+
+@mixin flex($align: unset, $justify: unset, $dir: row, $gap: 0) {
+  gap: $gap;
+  display: flex;
+  align-items: $align;
+  flex-direction: $dir;
+  justify-content: $justify;
+}
+
+@mixin pc {
+  @media (min-width: 800px) { @content }
+}
+
+@mixin mobile {
+  @media (max-width: 800px) { @content }
+}

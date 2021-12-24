@@ -6,11 +6,10 @@
         <aside class="links">
           <a href="#about">About</a>
           <a href="#works">Works</a>
-          <a
-            href="mailto:tarikcskun@gmail.com"
-            class="button mb:hidden"
-            rel="noreferrer noopener"
-            target="_blank">Contact</a>
+          <a href="mailto:tarikcskun@gmail.com"
+            class="button"
+            target="_blank"
+            rel="noreferrer noopener">Contact</a>
         </aside>
       </section>
     </header>
@@ -103,23 +102,23 @@
 </template>
 
 <script lang="ts" setup>
-import { VueElement } from "@vue/runtime-dom"
+import type { Component } from "vue"
 
-import About from "@/icons/About.vue"
-import Works from "@/icons/Works.vue"
-import GitHub from "@/icons/GitHub.vue"
-import Twitter from "@/icons/Twitter.vue"
+import About from "@/icons/about.svg?component"
+import Works from "@/icons/works.svg?component"
+import GitHub from "@/icons/github.svg?component"
+import Twitter from "@/icons/twitter.svg?component"
 
-import Vue from "@/icons/Tech/Vue.vue"
-import Sass from "@/icons/Tech/Sass.vue"
-import React from "@/icons/Tech/React.vue"
-import Tailwind from "@/icons/Tech/Tailwind.vue"
+import Vue from "@/icons/tech/vue.svg?component"
+import Sass from "@/icons/tech/sass.svg?component"
+import Vite from "@/icons/tech/vite.svg?component"
+import React from "@/icons/tech/react.svg?component"
 
 interface ITech {
   color: string;
   name:  string;
   date:  number;
-  icon:  VueElement;
+  icon:  Component;
 }
 
 interface IWork {
@@ -131,25 +130,25 @@ interface IWork {
 
 const techs: ITech[] = [
   {
-    color: "#41b883",
+    color: "#42b983",
     name:  "Vue",
     icon:  Vue,
     date:  21
   },
   {
-    color: "#50bbd7",
+    color: "#5ed3f3",
     name:  "React",
     icon:  React,
     date:  21
   },
   {
-    color: "#44a8b3",
+    color: "#38bdf8",
     name:  "Tailwind",
-    icon:  Tailwind,
+    icon:  Vite,
     date:  20
   },
   {
-    color: "#cf649a",
+    color: "#c96097",
     name:  "Sass",
     icon:  Sass,
     date:  19
@@ -180,6 +179,12 @@ const works: IWork[] = [
     name: "Flowey's Time Machine",
     role: "Designer",
     desc: "An editor tool for Undertale that allows you to change your save content with ease"
+  },
+  {
+    link: "tarikcoskun.github.io/youtube-concept",
+    name: "YouTube Concept",
+    role: "Developer",
+    desc: "A design concept that was made into a website, original design by Avdan"
   },
   {
     link: "store.steampowered.com/app/1115050",

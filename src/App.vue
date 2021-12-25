@@ -133,7 +133,7 @@ const techs: ITech[] = [
     color: "#42b983",
     name:  "Vue",
     icon:  Vue,
-    date:  21
+    date:  20
   },
   {
     color: "#5ed3f3",

@@ -13,4 +13,4 @@
 
 ### 🙏 Thanks
 
-To [EGGSY](https://github.com/eggsy), [Arda](https://github.com/ardasoyturk), [Barış](https://github.com/barbarbar338), [Florian Lefebvre](https://github.com/florian-lefebvre) and [Harsh Singh](https://github.com/harshhhdev). I got inspired a lot by them, even used some of their amazing code. Make sure to check their profiles and websites 😉
+To [EGGSY](https://github.com/eggsy), [Ali Furkan](https://github.com/ali-furkan), [Arda](https://github.com/ardasoyturk), [Barış](https://github.com/barbarbar338), [Florian Lefebvre](https://github.com/florian-lefebvre) and [Harsh Singh](https://github.com/harshhhdev). I got inspired a lot by them, even used some of their amazing code. Make sure to check their profiles and websites 😉

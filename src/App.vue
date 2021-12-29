@@ -171,13 +171,13 @@ const works: IWork[] = [
   {
     link: "unicorns.software",
     name: "Unicorn's Software",
-    role: "Translator",
+    role: "Developer",
     desc: "An editor tool for Will You Snail that allows you to change your save content with ease"
   },
   {
     link: "crumblingstatue.github.io/FloweysTimeMachine",
     name: "Flowey's Time Machine",
-    role: "Designer",
+    role: "Contributor",
     desc: "An editor tool for Undertale that allows you to change your save content with ease"
   },
   {

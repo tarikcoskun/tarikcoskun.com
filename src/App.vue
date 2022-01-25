@@ -16,25 +16,21 @@
 
     <figure class="wrapper wrapper-hero">
       <section id="hero" xyz="fade left-4 duration-8 stagger-1">
-        <XyzTransition appear-visible><h1>Tarık Coşkun</h1></XyzTransition>
-        <XyzTransition appear-visible><h2>Full stack developer</h2></XyzTransition>
-        <XyzTransition appear-visible><p>I'm a full stack developer with over {{ new Date().getFullYear() - 2018 }} years of experience
-        <br />More interested in front end</p></XyzTransition>
+        <Animated><h1>Tarık Coşkun</h1></Animated>
+        <Animated><h2>Full stack developer</h2></Animated>
+        <Animated><p>I'm a full stack developer with over {{ new Date().getFullYear() - 2018 }} years of experience<br />More interested in front end</p></Animated>
 
-        <aside xyz="fade down-2 ease-out-back duration-20 delay-8 stagger-1" class="accounts"><XyzTransition appear-visible>
-          <a
-            href="mailto:tarikcskun@gmail.com"
+        <aside class="accounts" xyz="fade down-2 ease-out-back duration-20 delay-8 stagger-1">
+          <Animated><a href="mailto:tarikcskun@gmail.com"
             class="button"
             rel="noreferrer noopener"
-            target="_blank">Contact</a></XyzTransition><XyzTransition appear-visible>
-          <a
-            href="https://github.com/tarikcoskun"
+            target="_blank">Contact</a></Animated>
+          <Animated><a href="https://github.com/tarikcoskun"
             rel="noreferrer noopener"
-            target="_blank"><GitHub /></a></XyzTransition><XyzTransition appear-visible>
-          <a
-            href="https://twitter.com/tarikcskun"
+            target="_blank"><GitHub /></a></Animated>
+          <Animated><a href="https://twitter.com/tarikcskun"
             rel="noreferrer noopener"
-            target="_blank"><Twitter /></a></XyzTransition>
+            target="_blank"><Twitter /></a></Animated>
         </aside>
       </section>
     </figure>
@@ -42,23 +38,23 @@
     <figure class="wrapper wrapper-white">
       <section id="about">
         <aside class="about-me" xyz="fade left-4 duration-8 stagger-0.5">
-          <XyzTransition appear-visible><h1>About Me <About /></h1></XyzTransition><XyzTransition appear-visible>
-          <p>
+          <Animated><h1>About Me <About /></h1></Animated>
+          <Animated><p>
             I've been playing with web development since 2018. Over the years, I've been learning more and more technologies.
-          </p></XyzTransition><XyzTransition appear-visible><p class="techs">
-            I mainly use Node based technologies. On the right, you can see a couple of my favourite techhnologies, which are also the ones I use in most of my projects.
-          </p></XyzTransition>
+            <br /><br />
+              I mainly use Node based technologies. On the right, you can see a couple of my favourite techhnologies, which are also the ones I use in most of my projects.
+          </p></Animated>
         </aside>
 
         <aside class="fav-techs" xyz="fade down-4 duration-8 stagger-0.5">
-          <XyzTransition v-for="tech in techs" appear-visible>
+          <Animated v-for="tech in techs">
             <figure
               class="tech">
               <component :is="tech.icon" :fill="tech.color" :style="`background: ${tech.color}40;`" />
               <h1 class="title">{{ tech.name }}</h1>
               <h2 class="date">Since 20{{ tech.date }}</h2>
             </figure>
-          </XyzTransition>
+          </Animated>
         </aside>
       </section>
     </figure>
@@ -67,23 +63,17 @@
       <section id="works">
         <h1>Works <Works /></h1>
         <div xyz="fade down-4 duration-8 stagger-0.5">
-          <XyzTransition v-for="work in works" appear-visible>
-            <a
-            :href="`https://${work.link}`"
-              rel="noreferrer noopener"
-              target="_blank"
-              class="work">
-                <img
-                  :src="`/projects/${work.name.toLowerCase().replace('\'', '').replace(/\s/g, '-')}.png`"
-                  :alt="work.name"
-                  class="icon" />
-                <aside>
-                  <h1 class="name">{{ work.name }}</h1>
-                  <h2 class="role">{{ work.role }}</h2>
-                  <p class="desc">{{ work.desc }}</p>
-                </aside>
+          <Animated v-for="work in works">
+            <a :href="`https://${work.link}`" target="_blank" rel="noreferrer noopener" class="work">
+              <img :src="`/projects/${work.name.toLowerCase().replace('\'', '').replace(/\s/g, '-')}.png`" :alt="work.name" class="icon" />
+
+              <aside>
+                <h1 class="name">{{ work.name }}</h1>
+                <h2 class="role">{{ work.role }}</h2>
+                <p class="desc">{{ work.desc }}</p>
+              </aside>
             </a>
-          </XyzTransition>
+          </Animated>
         </div>
       </section>
     </figure>
@@ -103,32 +93,32 @@
 
 <script lang="ts" setup>
 import type { Component } from "vue"
+import Animated from "@/components/Animated.vue"
 
+import Vue from "@/icons/vue.svg?component"
+import Sass from "@/icons/sass.svg?component"
+import React from "@/icons/react.svg?component"
 import About from "@/icons/about.svg?component"
 import Works from "@/icons/works.svg?component"
 import GitHub from "@/icons/github.svg?component"
 import Twitter from "@/icons/twitter.svg?component"
+import Tailwind from "@/icons/tailwind.svg?component"
 
-import Vue from "@/icons/tech/vue.svg?component"
-import Sass from "@/icons/tech/sass.svg?component"
-import Vite from "@/icons/tech/vite.svg?component"
-import React from "@/icons/tech/react.svg?component"
-
-interface ITech {
+interface Tech {
   color: string;
   name:  string;
   date:  number;
   icon:  Component;
 }
 
-interface IWork {
+interface Work {
   link: string
   name: string
   role: string
   desc: string
 }
 
-const techs: ITech[] = [
+const techs: Tech[] = [
   {
     color: "#42b983",
     name:  "Vue",
@@ -144,7 +134,7 @@ const techs: ITech[] = [
   {
     color: "#38bdf8",
     name:  "Tailwind",
-    icon:  Vite,
+    icon:  Tailwind,
     date:  20
   },
   {
@@ -155,7 +145,7 @@ const techs: ITech[] = [
   }
 ]
 
-const works: IWork[] = [
+const works: Work[] = [
   {
     link: "discordtemplates.com",
     name: "Discord Templates",

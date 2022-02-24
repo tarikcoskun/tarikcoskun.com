@@ -1,8 +1,9 @@
-@mixin grid($cols: 2, $gap: 20px, $align: unset) {
+@mixin grid($cols: 2, $gap: 20px, $align: unset, $mb: $cols) {
   gap: $gap;
   display: grid;
   align-items: $align;
   grid-template-columns: repeat($cols, minmax(0, 1fr));
+  @include mobile { grid-template-columns: repeat($mb, minmax(0, 1fr)) }
 }
 
 @mixin flex($align: unset, $justify: unset, $dir: row, $gap: 0) {

@@ -1,158 +1,69 @@
-@import "utility.scss";
+@import "https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700";
 @import "mixins.scss";
+
+html {
+  scroll-behavior: smooth;
+
+  --bg: #ffffff;
+  --accent: #eadce9;
+  --shadow: #00000016;
+  --tech-bg: #0000000a;
+  --about-bg: #eadce930;
+  --title-solid: #000000;
+  --text-primary: #5e5e5e;
+  --title-profession: #b889cf;
+  --title-secondary: #00000060;
+
+  &::-webkit-scrollbar {
+    width: 8px;
+    &-thumb { background: var(--text-primary) }
+  }
+
+  * {
+    margin: 0; border: 0;
+    text-decoration: none;
+    color: var(--text-primary);
+    font: 20px "Inter", sans-serif; font-weight: 500;
+    &::selection { background: var(--tech-bg) }
+  }
+}
 
 body { overflow-x: hidden; background: var(--bg) }
 section { margin: auto; max-width: 800px }
 
-header {
-  z-index: 10;
-  padding: 16px 0;
-  max-height: 72px;
-  position: sticky; top: 0;
-  backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px);
-  @include mobile { padding: 16px }
+h1 { color: var(--title-solid) }
+svg {
+  width: 32px;
+  path, circle { fill: currentColor }
+}
 
-  section {
-    @include flex(center, space-between);
+.button {
+  cursor: pointer;
+  padding: 10px 24px;
+  border-radius: 36px;
+  background: var(--bg);
+  transition: 0.15s opacity;
+  box-shadow: 0 4px 8px var(--shadow);
+  color: var(--title-solid); font-weight: 600 !important; font-size: 18px;
+  &:hover { opacity: 0.75 !important }
+}
 
-    h1 { color: var(--title-solid); font-size: 24px; font-weight: 600 }
-    aside.links {
-      @include flex(center, $gap: 24px);
-
-      a {
-        cursor: pointer;
-        transition-duration: 0.15s;
-        font-size: 18px; font-weight: 500;
-        transition-property: opacity, color;
-
-        &.button {
-          @include mobile { display: none }
-        }
-      }
-    }
+@media (prefers-color-scheme: dark) {
+  html {
+    --bg: #18181b;
+    --accent: #0d0d0f;
+    --tech-bg: #e8eaff09;
+    --about-bg: #0f0f1170;
+    --title-solid: #ffffff;
+    --text-primary: #ffffffa0;
+    --title-secondary: #ffffffc0;
   }
 }
 
-section {
-  &#hero {
-    padding: 96px 0;
-    @include mobile { padding: 72px 0 96px 0 }
-
-    p { margin: 18px 0 }
-    h1 { font-size: 48px; font-weight: 700 }
-    h2 { color: var(--title-profession); font-size: 24px; font-weight: 600 }
-
-    aside.accounts {
-      padding-top: 12px;
-      @include flex(center, $gap: 12px);
-
-      a {
-        transition: 0.15s opacity;
-        &:hover { opacity: 0.75 !important }
-      }
-    }
+@supports (background-clip: text) or (-webkit-background-clip: text) {
+  h1 {
+    color: transparent;
+    background-clip: text; -webkit-background-clip: text !important;
+    background: linear-gradient(var(--title-solid), var(--title-secondary));
   }
-
-  &#about {
-    padding: 64px 0;
-    @include grid(2, 32px, center);
-
-    @include mobile {
-      @include grid(1, 32px, center)
-    }
-
-    aside {
-      &.about-me {
-        h1 {
-          font-size: 30px; font-weight: 600;
-          @include flex(center, $gap: 12px);
-        }
-
-        p {
-          margin-top: 16px;
-          @include pc { text-align: justify; text-align-last: justify }
-        }
-      }
-      &.fav-techs {
-        @include grid(2, 16px);
-
-        figure.tech {
-          padding: 16px;
-          border-radius: 12px;
-          background: var(--tech-bg);
-
-          svg {
-            border-radius: 8px; width: 56px; height: 56px; padding: 8px;
-            path { fill: inherit; }
-          }
-
-          h1.title {
-            margin: 16px 0 4px 0;
-            font-size: 24px; font-weight: 600;
-          }
-        }
-      }
-    }
-  }
-
-  &#works {
-    padding: 64px 0;
-
-    h1 { font-size: 30px; font-weight: 600; }
-
-    > h1 { @include flex(center, center, $gap: 12px) }
-    > div {
-      display: grid;
-      margin-top: 32px;
-      @include mobile { margin-top: 16px; gap: 12px }
-
-      a.work {
-        padding: 20px;
-        cursor: pointer;
-        border-radius: 8px;
-        transition: background 0.25s;
-        @include flex(center, $gap: 16px 20px);
-        @include mobile {
-          align-items: unset;
-          flex-direction: column;
-          img.icon { height: 160px }
-        }
-
-        &:hover { background: var(--tech-bg) }
-
-        img.icon {
-          object-fit: cover;
-          border-radius: 6px;
-          background: #111113;
-          @include pc { width: 192px }
-        }
-
-        aside {
-          h1.name { font-size: 24px; }
-          p {
-            &.desc { margin-top: 8px; }
-            &.role { font-size: 18px; margin-top: 2px; }
-          }
-        }
-      }
-    }
-  }
-
-  &#footer {
-    padding: 16px 0;
-    @include flex(unset, space-between);
-    @include mobile { @include flex(center, unset, $dir: column) }
-
-    span { color: var(--title-solid); font-size: 16px }
-    p { font-size: 16px }
-    a {
-      border-bottom: 1px dashed transparent;
-      color: var(--title-solid); font-size: 16px;
-      &:hover { border-color: var(--title-solid) }
-    }
-  }
-}
-
-@supports not (backdrop-filter: blur(16px)) {
-  header { background: var(--bg); }
 }

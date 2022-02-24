@@ -8,18 +8,15 @@ on:
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
-
     strategy:
       matrix:
         node: [16.x]
-        # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
 
     steps:
     - uses: actions/checkout@v2
       with:
-       version: 6.15.0
+        version: 6.15.0
     - name: Use Node.js ${{ matrix.node }}
       uses: actions/setup-node@v2
       with:
@@ -28,8 +25,8 @@ jobs:
     - run: yarn install
     - run: yarn build
 
-    - name: 🚀 Deploy
+    - name: Deploy
       uses: JamesIves/github-pages-deploy-action@4.1.4
       with:
-        branch: gh-pages # The branch the action should deploy to.
-        folder: dist     # The folder the action should deploy.
+        branch: gh-pages
+        folder: dist

@@ -7,9 +7,6 @@ export default defineConfig({
   plugins: [Vue(), SVG()],
   base: "./",
   resolve: {
-    alias: [
-      { find: "@", replacement: resolve(__dirname, "src") },
-      { find: "~", replacement: resolve(__dirname, ".") }
-    ]
+    alias: [{ find: "@", replacement: resolve(__dirname, "src") }]
   }
 })

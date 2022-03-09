@@ -158,7 +158,7 @@ const works: Work[] = [
         <div xyz="fade down-4 duration-8 stagger-0.5">
           <Animated v-for="work in works">
             <a :href="`https://${work.link}`" target="_blank" rel="noreferrer noopener" class="work">
-              <img :src="`/projects/${work.name.toLowerCase().replace('\'', '').replace(/\s/g, '-')}.png`" :alt="work.name" class="icon" />
+              <img :src="`/projects/${work.name.toLowerCase().replace('\'', '').replace(/\s/g, '-')}.png`" :alt="work.name" class="icon" width="192" height="192" />
 
               <aside>
                 <h1 class="name">{{ work.name }}</h1>
@@ -299,11 +299,7 @@ section {
         border-radius: 8px;
         transition: background 0.25s;
         @include flex(center, $gap: 16px 20px);
-        @include mobile {
-          align-items: unset;
-          flex-direction: column;
-          img.icon { height: 160px }
-        }
+        @include mobile { align-items: unset; flex-direction: column }
 
         &:hover { background: var(--tech-bg) }
 
@@ -311,7 +307,8 @@ section {
           object-fit: cover;
           border-radius: 6px;
           background: #111113;
-          @include pc { width: 192px }
+          @include pc { width: 192px; height: 128px }
+          @include mobile { width: 100%; height: 192px }
         }
 
         aside {

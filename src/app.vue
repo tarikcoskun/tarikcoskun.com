@@ -81,7 +81,7 @@ const works: Work[] = [
     link: "tarikcoskun.github.io/youtube-concept",
     name: "YouTube Concept",
     role: "Developer",
-    desc: "A design concept that was made into a website, original design by Avdan"
+    desc: "A YouTube design concept that fits well with other Google applications"
   },
   {
     link: "store.steampowered.com/app/1115050",

@@ -85,9 +85,9 @@ const works: Work[] = [
   },
   {
     link: "unicorns.software",
-    name: "Unicorn's Software (Discontinued)",
+    name: "Unicorn's Software",
     role: "Developer",
-    desc: "An editor tool for Will You Snail that allows you to change your save content with ease"
+    desc: "(Discontinued) An editor tool for Will You Snail that allows you to change your save content with ease"
   }
 ]
 </script>

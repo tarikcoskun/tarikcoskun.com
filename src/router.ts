@@ -11,8 +11,7 @@ const routes: RouteRecordRaw[] = [
   },
   {
     path: "/s2y/:track",
-    alias: "/s2y/:track",
-    name: "Spotify to YouTube",
+    name: "Spotify2YouTube",
     component: Spotify2YouTube,
     props: true
   }

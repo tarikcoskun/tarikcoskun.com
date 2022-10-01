@@ -14,5 +14,11 @@ location.href = `https://music.youtube.com/watch?v=${id}`
 </script>
 
 <template>
-  <suspense></suspense>
+  <h1>im a ghost</h1>
 </template>
+
+<style>
+h1 {
+  display: none;
+}
+</style>

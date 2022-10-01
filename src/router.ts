@@ -1,6 +1,6 @@
 import { createWebHistory, createRouter, RouteRecordRaw } from "vue-router"
 import Home from "./pages/index.vue"
-import Spotify2YouTube from "./pages/s2y.vue"
+import Spotify2YouTube from "./pages/s2y/[track].vue"
 
 const history = createWebHistory()
 const routes: RouteRecordRaw[] = [

@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-<template>
-  <router-view />
-</template>
-=======
 <script lang="ts" setup>
 import type { Component } from "vue"
 import Animated from "@/components/Animated.vue"
@@ -71,10 +66,10 @@ const works: Work[] = [
     desc: "A utility that allows you to show what you're doing on the web in your Discord status"
   },
   {
-    link: "tarikcoskun.github.io/youtube-concept",
-    name: "YouTube Concept",
+    link: "unicorns.software",
+    name: "Unicorn's Software",
     role: "Developer",
-    desc: "A YouTube design concept that fits well with other Google applications"
+    desc: "An editor tool for Will You Snail that allows you to change your save content with ease"
   },
   {
     link: "crumblingstatue.github.io/FloweysTimeMachine",
@@ -83,16 +78,16 @@ const works: Work[] = [
     desc: "An editor tool for Undertale that allows you to change your save content with ease"
   },
   {
+    link: "tarikcoskun.github.io/youtube-concept",
+    name: "YouTube Concept",
+    role: "Developer",
+    desc: "A YouTube design concept that fits well with other Google applications"
+  },
+  {
     link: "store.steampowered.com/app/1115050",
     name: "Will You Snail",
     role: "Translator & Tester",
     desc: "A fast paced platformer where an evil AI tries to kill you by predicting your movement"
-  },
-  {
-    link: "unicorns.software",
-    name: "Unicorn's Software",
-    role: "Developer",
-    desc: "(Discontinued) An editor tool for Will You Snail that allows you to change your save content with ease"
   }
 ]
 </script>
@@ -110,79 +105,92 @@ const works: Work[] = [
             class="button"
             target="_blank"
             rel="noreferrer noopener"
-            >Contact</a
-          >
+            >Contact
+          </a>
         </aside>
       </section>
     </header>
 
     <figure class="wrapper wrapper-hero">
-      <section id="hero" xyz="fade left-4 duration-8 stagger-1">
+      <section
+        id="hero"
+        xyz="fade left-4 duration-8 stagger-1"
+      >
         <Animated><h1>Tarık Coşkun</h1></Animated>
         <Animated><h2>Full stack developer</h2></Animated>
-        <Animated
-          ><p>
+        <Animated>
+          <p>
             I'm a full stack developer with over
             {{ new Date().getFullYear() - 2018 }} years of experience<br />More
             interested in front end
-          </p></Animated
-        >
+          </p>
+        </Animated>
 
         <aside
           class="accounts"
-          xyz="fade down-2 ease-out-back duration-20 delay-8 stagger-1">
-          <Animated
-            ><a
+          xyz="fade down-2 ease-out-back duration-20 delay-8 stagger-1"
+        >
+          <Animated>
+            <a
               href="mailto:me@tarikcoskun.xyz"
               class="button"
               rel="noreferrer noopener"
               target="_blank"
-              >Contact</a
-            ></Animated
-          >
-          <Animated
-            ><a
+              >Contact
+            </a>
+          </Animated>
+          <Animated>
+            <a
               href="https://github.com/tarikcoskun"
               rel="noreferrer noopener"
               target="_blank"
-              ><GitHub /></a
-          ></Animated>
-          <Animated
-            ><a
+              ><GitHub />
+            </a>
+          </Animated>
+          <Animated>
+            <a
               href="https://twitter.com/tarikcskun"
               rel="noreferrer noopener"
               target="_blank"
-              ><Twitter /></a
-          ></Animated>
+              ><Twitter />
+            </a>
+          </Animated>
         </aside>
       </section>
     </figure>
 
     <figure class="wrapper wrapper-bg">
       <section id="about">
-        <aside class="about" xyz="fade left-4 duration-8 stagger-0.5">
-          <Animated
-            ><h1>About Me <About /></h1
-          ></Animated>
-          <Animated
-            ><p>
+        <aside
+          class="about"
+          xyz="fade left-4 duration-8 stagger-0.5"
+        >
+          <Animated>
+            <h1>About Me <About /></h1>
+          </Animated>
+          <Animated>
+            <p>
               I've been playing with web development since 2018. Over the years,
               I've been learning more and more technologies.
               <br /><br />
               I mainly use Node based technologies. On the right, you can see a
               couple of my favourite techhnologies, which are also the ones I
               use in most of my projects.
-            </p></Animated
-          >
+            </p>
+          </Animated>
         </aside>
 
-        <aside class="techs" xyz="fade down-4 duration-8 stagger-0.5">
+        <aside
+          class="techs"
+          xyz="fade down-4 duration-8 stagger-0.5"
+        >
           <Animated v-for="tech in techs">
             <figure class="tech">
               <component
                 :is="tech.icon"
                 :fill="tech.color"
-                :style="`background: ${tech.color}40;`" />
+                :style="`background: ${tech.color}40;`"
+              />
               <h1 class="title">{{ tech.name }}</h1>
               <h2 class="date">Since 20{{ tech.date }}</h2>
             </figure>
@@ -200,7 +208,8 @@ const works: Work[] = [
               :href="`https://${work.link}`"
               target="_blank"
               rel="noreferrer noopener"
-              class="work">
+              class="work"
+            >
               <img
                 :src="`/projects/${work.name
                   .toLowerCase()
@@ -209,7 +218,8 @@ const works: Work[] = [
                 :alt="work.name"
                 class="icon"
                 width="192"
-                height="192" />
+                height="192"
+              />
 
               <aside>
                 <h1 class="name">{{ work.name }}</h1>
@@ -231,8 +241,8 @@ const works: Work[] = [
             href="https://github.com/tarikcoskun/website"
             rel="noreferrer noopener"
             target="_blank"
-            >GitHub</a
-          >
+            >GitHub
+          </a>
         </p>
       </section>
     </figure>
@@ -482,4 +492,3 @@ section {
   }
 }
 </style>
->>>>>>> cbe755f14b7e2dae4b53ddb714dbc50c3eae93e9

@@ -17,7 +17,7 @@ location.href = `https://music.youtube.com/watch?v=${id}`
   <h1>im a ghost</h1>
 </template>
 
-<style>
+<style scoped>
 h1 {
   display: none;
 }

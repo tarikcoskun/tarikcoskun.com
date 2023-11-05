@@ -66,7 +66,7 @@ function Work(work: (typeof works)[number]) {
       >
         <Image src={work.image} alt={work.title} width={48} height={48} className="h-full w-full rounded-lg" />
         <div className="bg-black/50 absolute inset-0 flex items-center justify-center rounded-lg opacity-0 transition-opacity group-hover:opacity-100">
-          <ArrowUpRightIcon width={24} height={24} className="text-theme-heading" />
+          <ArrowUpRightIcon width={24} height={24} className="text-white" />
         </div>
       </a>
       <div className="flex flex-col gap-y-2">

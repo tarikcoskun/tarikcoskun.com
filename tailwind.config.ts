@@ -6,7 +6,7 @@ const hsl = (str: string) => `hsl(var(${str}), <alpha-value>)`;
 
 const tailwindConfig: Config = {
   darkMode: "media",
-  content: ["./pages/**/*.tsx", "./ui/**/*.tsx", "./data/styles.ts"],
+  content: ["./pages/**/*.tsx", "./ui/**/*.tsx"],
   theme: {
     colors: {
       white: "#fff",

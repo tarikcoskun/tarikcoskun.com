@@ -18,8 +18,8 @@ export default function Home() {
             <span className="font-medium text-theme-heading">Tarık Coşkun.</span> <br className="lg:hidden" /> Developer & Designer.
           </h1>
           <p className="mt-4">
-            Front-end developer passionate about crafting experiences with polished interfaces. Always seeking out new opportunities. Reach
-            me at{" "}
+            Front-end developer passionate about crafting experiences with polished interfaces. Always seeking new opportunities. Reach me
+            at{" "}
             <a href="mailto:tarikcskun@gmail.com" className="link">
               hi@tarikcoskun.com
             </a>

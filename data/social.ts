@@ -1,4 +1,4 @@
-import { type Icon, GithubIcon, LinkedinIcon, TwitterIcon } from "@/ui/Icon";
+import { type Icon, GithubIcon, TwitterIcon } from "@/ui/Icon";
 
 interface SocialLink {
   label: string;
@@ -16,10 +16,5 @@ export const social: SocialLink[] = [
     label: "GitHub",
     href: "https://github.com/tarikcoskun",
     icon: GithubIcon,
-  },
-  {
-    label: "LinkedIn",
-    href: "https://www.linkedin.com/in/mtarikcoskun",
-    icon: LinkedinIcon,
   },
 ];

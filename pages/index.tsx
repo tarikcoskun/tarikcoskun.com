@@ -3,11 +3,11 @@ import Layout from "@/ui/Layout";
 import Box from "@/ui/Box";
 import Section from "@/ui/Section";
 import Image from "next/image";
+import { ArrowUpRightIcon } from "@/ui/Icon";
 
 // Data
 import { works } from "@/data/works";
 import { social } from "@/data/social";
-import { ArrowUpRightIcon } from "@/ui/Icon";
 
 export default function Home() {
   return (
@@ -30,7 +30,7 @@ export default function Home() {
               <a
                 key={link.label}
                 href={link.href}
-                target={link.href.startsWith("https") ? "_blank" : "_self"}
+                target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-x-1.5 rounded-full bg-theme-surface p-1.5 pr-3 text-theme-heading transition-colors hover:bg-color-neutral-800 hover:text-color-neutral-100"
               >
@@ -65,7 +65,7 @@ function Work(work: (typeof works)[number]) {
         className="group relative h-12 w-12 shrink-0 overflow-hidden rounded-lg ring-1 ring-theme-outline ring-offset-2 ring-offset-theme-background"
       >
         <Image src={work.image} alt={work.title} width={48} height={48} className="h-full w-full rounded-lg" />
-        <div className="bg-black/50 absolute inset-0 flex items-center justify-center rounded-lg opacity-0 transition-opacity group-hover:opacity-100">
+        <div className="absolute inset-0 flex items-center justify-center rounded-lg bg-black/50 opacity-0 transition-opacity group-hover:opacity-100">
           <ArrowUpRightIcon width={24} height={24} className="text-white" />
         </div>
       </a>

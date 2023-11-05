@@ -10,7 +10,6 @@
     "postbuild": "next-sitemap --config sitemap.config.js"
   },
   "dependencies": {
-    "@iconscout/react-unicons": "^2.0.2",
     "clsx": "^2.0.0",
     "framer-motion": "^10.16.4",
     "next": "13.5.4",

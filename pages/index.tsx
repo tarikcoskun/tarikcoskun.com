@@ -20,7 +20,7 @@ export default function Home() {
           <p className="mt-4">
             Front-end developer passionate about crafting experiences with polished interfaces. Always seeking out new opportunities. Reach
             me at{" "}
-            <a href="mailto:tarikcskun@gmail.com" target="_blank" rel="noopener noreferrer" className="link">
+            <a href="mailto:tarikcskun@gmail.com" className="link">
               hi@tarikcoskun.com
             </a>
             .

@@ -1,20 +1,13 @@
-import clsx from "clsx";
-import { clamp } from "@/util/helpers";
-import { motion, type PanInfo } from "framer-motion";
-import { useRef, useState } from "react";
-
 // Components
 import Layout from "@/ui/Layout";
 import Box from "@/ui/Box";
 import Section from "@/ui/Section";
+import Image from "next/image";
 
 // Data
 import { works } from "@/data/works";
-
-// Icons
-import { ArrowLeftIcon, ArrowRightIcon, ArrowUpRightIcon } from "@/ui/Icon";
 import { social } from "@/data/social";
-import Image from "next/image";
+import { ArrowUpRightIcon } from "@/ui/Icon";
 
 export default function Home() {
   return (
@@ -65,13 +58,17 @@ export default function Home() {
 function Work(work: (typeof works)[number]) {
   return (
     <article className="flex items-start gap-x-4">
-      <Image
-        src={work.image}
-        alt={work.title}
-        width={48}
-        height={48}
-        className="h-12 w-12 rounded-lg ring-1 ring-theme-outline ring-offset-2 ring-offset-theme-background"
-      />
+      <a
+        href={work.link}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="group relative h-12 w-12 shrink-0 overflow-hidden rounded-lg ring-1 ring-theme-outline ring-offset-2 ring-offset-theme-background"
+      >
+        <Image src={work.image} alt={work.title} width={48} height={48} className="h-full w-full rounded-lg" />
+        <div className="bg-black/50 absolute inset-0 flex items-center justify-center rounded-lg opacity-0 transition-opacity group-hover:opacity-100">
+          <ArrowUpRightIcon width={24} height={24} className="text-theme-heading" />
+        </div>
+      </a>
       <div className="flex flex-col gap-y-2">
         <h3 className="leading-none">
           <a href={work.link} target="_blank" rel="noopener noreferrer" className="link font-medium">

@@ -9,6 +9,8 @@ const tailwindConfig: Config = {
   content: ["./pages/**/*.tsx", "./ui/**/*.tsx", "./data/styles.ts"],
   theme: {
     colors: {
+      white: "#fff",
+      black: "#000",
       transparent: "transparent",
       theme: {
         background: hsl("--theme-background"),

@@ -47,6 +47,7 @@
     --color-neutral-900: 20, 100%, 99%;
     /* theme */
     --theme-background: 0, 0%, 8%;
+    --theme-outline: var(--color-neutral-50);
 
     color-scheme: dark;
   }

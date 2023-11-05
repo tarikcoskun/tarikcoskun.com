@@ -21,7 +21,11 @@ const headingFont = localFont({
 export default function App({ Component, pageProps }: AppProps) {
   return (
     <>
-      <DefaultSeo />
+      <DefaultSeo
+        title="Tarık Coşkun"
+        description="Front-end developer passionate about crafting experiences with polished interfaces."
+        canonical="https://tarikcoskun.com"
+      />
 
       <div
         className={clsx(

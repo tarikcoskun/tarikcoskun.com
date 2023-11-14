@@ -36,7 +36,7 @@ export default function Home() {
                 className="group relative flex items-center gap-x-1.5 overflow-hidden rounded-full bg-theme-surface p-1.5 pr-3 text-theme-heading transition-all hover:bg-color-neutral-800 hover:pr-6 hover:text-color-neutral-10"
               >
                 <link.icon width={18} height={18} /> <span className="text-sm font-medium leading-none">{link.label}</span>
-                <ArrowUpRightIcon className="absolute -right-3 origin-left scale-0 !text-color-neutral-300 transition-all group-hover:right-1.5 group-hover:scale-100" />
+                <ArrowUpRightIcon className="absolute right-1.5 origin-bottom-left scale-0 !text-color-neutral-300 opacity-0 transition-all group-hover:scale-100 group-hover:opacity-100" />
               </a>
             ))}
           </div>

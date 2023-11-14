@@ -51,9 +51,11 @@ export default function Slider({ slides, containerClassName }: SliderProps) {
             <img
               src={src}
               alt={alt}
+              width={640}
+              height={360}
               draggable="false"
               className={clsx(
-                "aspect-video rounded-xl object-cover",
+                "aspect-video h-[360px] w-[640px] rounded-xl object-cover",
                 active === idx && "ring-1 ring-theme-outline ring-offset-2 ring-offset-theme-background",
               )}
             />

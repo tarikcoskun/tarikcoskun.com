@@ -31,7 +31,7 @@ export default function App({ Component, pageProps }: AppProps) {
         className={clsx(
           bodyFont.variable,
           headingFont.variable,
-          "bg-theme-background font-body font-[450] leading-7 text-theme-foreground",
+          "bg-theme-background font-body font-[450] text-theme-foreground lg:leading-7",
         )}
       >
         <Component {...pageProps} />

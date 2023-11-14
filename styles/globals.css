@@ -23,9 +23,6 @@
   --theme-heading: var(--color-neutral-900);
   --theme-subtext: var(--color-neutral-400);
 
-  --content-width: 640px;
-  --aside-width: 192px;
-
   color-scheme: light;
   scroll-behavior: smooth;
   scrollbar-gutter: stable;

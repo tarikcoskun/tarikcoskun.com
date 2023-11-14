@@ -51,11 +51,11 @@ export default function Slider({ slides, containerClassName }: SliderProps) {
             <img
               src={src}
               alt={alt}
+              draggable="false"
               className={clsx(
                 "aspect-video rounded-xl object-cover",
                 active === idx && "ring-1 ring-theme-outline ring-offset-2 ring-offset-theme-background",
               )}
-              draggable="false"
             />
           </motion.li>
         ))}
@@ -82,8 +82,8 @@ export default function Slider({ slides, containerClassName }: SliderProps) {
             <button
               type="button"
               aria-label="Previous image"
-              className="flex h-8 w-8 items-center justify-center rounded-full bg-theme-surface transition hover:bg-color-neutral-800 hover:text-color-neutral-100 disabled:pointer-events-none disabled:opacity-50"
               disabled={active === 0}
+              className="flex h-8 w-8 items-center justify-center rounded-full bg-theme-surface transition hover:bg-color-neutral-800 hover:text-color-neutral-100 disabled:pointer-events-none disabled:opacity-50"
               onClick={() => {
                 setActive((active) => Math.max(active - 1, 0));
               }}
@@ -93,8 +93,8 @@ export default function Slider({ slides, containerClassName }: SliderProps) {
             <button
               type="button"
               aria-label="Next image"
-              className="flex h-8 w-8 items-center justify-center rounded-full bg-theme-surface transition hover:bg-color-neutral-800 hover:text-color-neutral-100 disabled:pointer-events-none disabled:opacity-50"
               disabled={active === slides.length - 1}
+              className="flex h-8 w-8 items-center justify-center rounded-full bg-theme-surface transition hover:bg-color-neutral-800 hover:text-color-neutral-100 disabled:pointer-events-none disabled:opacity-50"
               onClick={() => {
                 setActive((active) => Math.min(active + 1, slides.length - 1));
               }}

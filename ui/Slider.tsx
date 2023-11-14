@@ -5,6 +5,7 @@ import { type PanInfo, motion } from "framer-motion";
 
 // Components
 import { ArrowLeftIcon, ArrowRightIcon } from "@/ui/Icon";
+import Image from "next/image";
 
 type SliderProps = {
   slides: string[][];
@@ -39,7 +40,6 @@ export default function Slider({ slides, containerClassName }: SliderProps) {
         {slides.map(([src, alt], idx) => (
           <motion.li
             key={idx}
-            role="button"
             aria-label={`Jump to image #${idx + 1}`}
             className={clsx("w-full shrink-0 transition duration-500", {
               "scale-95 cursor-pointer opacity-50": active !== idx,
@@ -48,14 +48,14 @@ export default function Slider({ slides, containerClassName }: SliderProps) {
               setActive(idx);
             }}
           >
-            <img
+            <Image
+              fill
               src={src}
               alt={alt}
-              width={640}
-              height={360}
+              loading="lazy"
               draggable="false"
               className={clsx(
-                "aspect-video h-[360px] w-[640px] rounded-xl object-cover",
+                "!static aspect-video h-[360px] w-[640px] rounded-xl object-cover",
                 active === idx && "ring-1 ring-theme-outline ring-offset-2 ring-offset-theme-background",
               )}
             />

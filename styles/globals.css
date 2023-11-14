@@ -21,7 +21,7 @@
   --theme-outline: var(--color-neutral-100);
   --theme-foreground: var(--color-neutral-600);
   --theme-heading: var(--color-neutral-900);
-  --theme-subtext: var(--color-neutral-400);
+  --theme-subtext: var(--color-neutral-500);
 
   color-scheme: light;
   scroll-behavior: smooth;

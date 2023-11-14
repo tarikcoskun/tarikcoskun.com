@@ -5,7 +5,6 @@ import { type PanInfo, motion } from "framer-motion";
 
 // Components
 import { ArrowLeftIcon, ArrowRightIcon } from "@/ui/Icon";
-import Image from "next/image";
 
 type SliderProps = {
   slides: string[][];
@@ -48,10 +47,11 @@ export default function Slider({ slides, containerClassName }: SliderProps) {
               setActive(idx);
             }}
           >
-            <Image
-              fill
+            <img
               src={src}
               alt={alt}
+              width={640}
+              height={360}
               loading="lazy"
               draggable="false"
               className={clsx(

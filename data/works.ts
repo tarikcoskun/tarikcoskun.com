@@ -16,6 +16,10 @@ export const works: Work[] = [
     description: "A mobile platform where users can freely showcase their creativity in organizing events.",
     startDate: "01 Aug 2023",
     endDate: "01 Oct 2023",
+    slides: [
+      ["/works/voco/slide1.png", "Homepage view of Voco"],
+      ["/works/voco/slide2.png", "Dashboard view of Voco"],
+    ],
   },
   {
     link: "https://eren.si/en",
@@ -25,7 +29,7 @@ export const works: Work[] = [
     startDate: "01 Apr 2023",
     endDate: "01 Sep 2023",
     slides: [
-      ["/works/erensibot/slide1.png", "ErensiBot dashboard view"],
+      ["/works/erensibot/slide1.png", "Dashboard view of ErensiBot"],
       ["/works/erensibot/slide2.png", "ErensiBot features"],
       ["/works/erensibot/slide3.png", "ErensiBot reaction role"],
     ],
@@ -37,5 +41,6 @@ export const works: Work[] = [
     description: "The fastest and the most cost effective way of investing in crypto.",
     startDate: "01 Oct 2022",
     endDate: "01 Apr 2023",
+    slides: [["/works/playpad/slide1.png", "Homepage view of PlayPad"]],
   },
 ];

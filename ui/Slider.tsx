@@ -48,7 +48,7 @@ export default function Slider({ slides, containerClassName }: SliderProps) {
               setActive(idx);
             }}
           >
-            <Image
+            <img
               fill
               src={src}
               alt={alt}

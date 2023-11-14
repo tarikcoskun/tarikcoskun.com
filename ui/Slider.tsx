@@ -55,7 +55,7 @@ export default function Slider({ slides, containerClassName }: SliderProps) {
               loading="lazy"
               draggable="false"
               className={clsx(
-                "!static aspect-video h-[360px] w-[640px] rounded-xl object-cover",
+                "!static aspect-video h-[360px] w-[640px] rounded-xl bg-theme-surface object-cover",
                 active === idx && "ring-1 ring-theme-outline ring-offset-2 ring-offset-theme-background",
               )}
             />

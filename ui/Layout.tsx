@@ -1,9 +1,9 @@
 import { NextSeo, type NextSeoProps } from "next-seo";
 
-interface LayoutProps {
+type LayoutProps = {
   seo?: NextSeoProps;
   children?: React.ReactNode;
-}
+};
 
 export default function Layout({ seo, children }: LayoutProps) {
   return (

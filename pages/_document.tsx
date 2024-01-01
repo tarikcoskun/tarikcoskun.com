@@ -7,7 +7,7 @@ export default function Document() {
       <Head>
         <link rel="shortcut icon" href="/favicon.png" type="image/png" />
       </Head>
-      <body className="overflow-x-hidden" vocab="http://schema.org/">
+      <body className="overflow-x-hidden">
         <Main />
         <NextScript />
       </body>

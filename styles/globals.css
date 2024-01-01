@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
+html {
   /* neutral */
   --color-neutral-10: 20, 100%, 99%;
   --color-neutral-50: 22, 38%, 94%;
@@ -28,8 +28,20 @@
   scrollbar-gutter: stable;
 }
 
+::-webkit-scrollbar {
+  @apply w-1.5;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-color-neutral-500;
+}
+
+.link {
+  @apply text-theme-heading underline decoration-theme-outline underline-offset-2 hover:decoration-theme-heading;
+}
+
 @media (prefers-color-scheme: dark) {
-  :root {
+  html {
     /* neutral */
     --color-neutral-10: 30, 7%, 11%;
     --color-neutral-50: 30, 6%, 19%;
@@ -48,16 +60,4 @@
 
     color-scheme: dark;
   }
-}
-
-::-webkit-scrollbar {
-  @apply w-1.5;
-}
-
-::-webkit-scrollbar-thumb {
-  @apply bg-color-neutral-500;
-}
-
-.link {
-  @apply text-theme-heading underline decoration-theme-outline underline-offset-2 hover:decoration-theme-heading;
 }

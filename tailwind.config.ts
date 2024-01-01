@@ -42,8 +42,8 @@ const tailwindConfig: Config = {
       serif: "var(--font-serif)",
     },
     backgroundImage: {
-      "hero-gradient": "linear-gradient(to bottom, rgb(254,220,231,0.75), transparent)",
-      "hero-gradient-dark": "linear-gradient(to bottom, rgb(77,18,47,0.75), transparent)",
+      "hero-gradient": "linear-gradient(to bottom, rgb(254,220,231), transparent)",
+      "hero-gradient-dark": "linear-gradient(to bottom, rgb(77,18,47,0.5), transparent)",
     },
   },
   plugins: [

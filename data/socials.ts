@@ -6,7 +6,7 @@ interface SocialLink {
   icon: Icon;
 }
 
-export const social: SocialLink[] = [
+export const socials: SocialLink[] = [
   {
     label: "Twitter",
     href: "https://twitter.com/tarikcoskunum",

@@ -34,7 +34,7 @@ export default function Slider({ slides, containerClassName }: SliderProps) {
         dragConstraints={{ left: (slides.length - 1) * width * -1, right: 0 }}
         transition={{ type: "spring", damping: 20 }}
         onDragEnd={handleDragEnd}
-        className="mt-4 flex"
+        className="flex"
       >
         {slides.map(([src, alt], idx) => (
           <motion.li
@@ -55,7 +55,7 @@ export default function Slider({ slides, containerClassName }: SliderProps) {
               loading="lazy"
               draggable="false"
               className={clsx(
-                "!static aspect-video w-[40rem] rounded-xl bg-theme-surface object-cover",
+                "aspect-video w-[40rem] rounded-xl bg-theme-surface object-cover",
                 active === idx && "ring-1 ring-theme-outline ring-offset-2 ring-offset-theme-background",
               )}
             />

@@ -66,9 +66,11 @@ export default function Home() {
           <div className="mt-6 flex flex-col gap-y-8">
             {projects.map((project) => (
               <article key={project.title}>
-                <a href={project.link} target="_blank" rel="noopener noreferrer" className="link font-medium">
-                  {project.title}
-                </a>
+                <h3 className="leading-none font-medium text-theme-heading">
+                  <a href={project.link} target="_blank" rel="noopener noreferrer" className="link">
+                    {project.title}
+                  </a>
+                </h3>
                 <div className="mt-2">
                   <p>{project.description}</p>
                 </div>

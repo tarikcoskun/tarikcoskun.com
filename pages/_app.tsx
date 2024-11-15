@@ -6,13 +6,13 @@ import localFont from "next/font/local";
 
 import "@/styles/globals.css";
 
-const bodyFont = localFont({
+const GeneralSans = localFont({
   src: "../public/fonts/GeneralSans-Variable.woff2",
   display: "swap",
   variable: "--font-body",
 });
 
-const headingFont = localFont({
+const Lora = localFont({
   src: "../public/fonts/Lora-Variable.woff2",
   display: "swap",
   variable: "--font-serif",
@@ -29,8 +29,8 @@ export default function App({ Component, pageProps }: AppProps) {
 
       <div
         className={clsx(
-          bodyFont.variable,
-          headingFont.variable,
+          GeneralSans.variable,
+          Lora.variable,
           "bg-theme-background font-body font-[450] text-theme-foreground lg:leading-7",
         )}
       >

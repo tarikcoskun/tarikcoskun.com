@@ -1,7 +1,7 @@
 import React from "react";
-import mdi from "./collectons/mdi";
-import lucide from "./collectons/lucide";
-import devicon from "./collectons/devicon";
+import mdi from "./collections/mdi";
+import lucide from "./collections/lucide";
+import devicon from "./collections/devicon";
 
 export interface IconCollection {
   specs: {

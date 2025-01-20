@@ -1,21 +1,20 @@
+import React from "react";
 import clsx from "clsx";
-import { clamp } from "@/util/helpers";
-import { useRef, useState } from "react";
-import { type PanInfo, motion } from "framer-motion";
+import { clamp } from "@/util/clamp";
+import { motion, type PanInfo } from "framer-motion";
 
 // Components
-import { ArrowLeftIcon, ArrowRightIcon } from "@/ui/Icon";
+import { Icon } from "./Icon";
 
-type SliderProps = {
+interface SliderProps {
   slides: string[][];
-  containerClassName?: string;
-};
+}
 
-export default function Slider({ slides, containerClassName }: SliderProps) {
-  const trackRef = useRef<HTMLUListElement>(null);
+export function Slider({ slides }: SliderProps) {
+  const trackRef = React.useRef<HTMLDivElement>(null);
   const width = (trackRef.current && trackRef.current.offsetWidth) || 640;
 
-  const [active, setActive] = useState(0);
+  const [active, setActive] = React.useState(0);
 
   const handleDragEnd = (_event: MouseEvent, info: PanInfo) => {
     if (Math.abs(info.offset.x) > 1) {
@@ -26,21 +25,21 @@ export default function Slider({ slides, containerClassName }: SliderProps) {
   };
 
   return (
-    <div className={containerClassName}>
-      <motion.ul
+    <>
+      <motion.div
         ref={trackRef}
         drag="x"
-        animate={{ x: -1 * active * width }}
+        animate={{ x: active * width * -1 }}
         dragConstraints={{ left: (slides.length - 1) * width * -1, right: 0 }}
         transition={{ type: "spring", damping: 20 }}
         onDragEnd={handleDragEnd}
         className="flex"
       >
         {slides.map(([src, alt], idx) => (
-          <motion.li
+          <motion.div
             key={idx}
-            aria-label={`Jump to image #${idx + 1}`}
-            className={clsx("w-full shrink-0 transition duration-500", {
+            aria-label={`Jump to slide ${idx + 1}`}
+            className={clsx("w-full shrink-0 transition duration-500 relative", {
               "scale-95 cursor-pointer opacity-50": active !== idx,
             })}
             onTap={() => {
@@ -54,25 +53,24 @@ export default function Slider({ slides, containerClassName }: SliderProps) {
               height={360}
               loading="lazy"
               draggable="false"
-              className={clsx(
-                "aspect-video w-[40rem] rounded-xl bg-theme-surface object-cover",
-                active === idx && "ring-1 ring-theme-outline ring-offset-2 ring-offset-theme-background",
-              )}
+              className="aspect-video w-[var(--content-width)] rounded-xl bg-theme-surface object-cover shadow-lg"
             />
-          </motion.li>
+            <div aria-hidden className="absolute inset-0 border border-white/10 rounded-xl pointer-events-none" />
+          </motion.div>
         ))}
-      </motion.ul>
+      </motion.div>
+
       {slides.length > 1 && (
         <footer className="mt-4 flex items-center justify-between">
           <div className="flex gap-x-1.5">
-            {slides.map((_, idx) => (
+            {Array.from({ length: slides.length }).map((_, idx) => (
               <button
                 key={idx}
                 type="button"
-                aria-label={`Jump to image #${idx + 1}`}
+                aria-label={`Jump to slide ${idx + 1}`}
                 className={clsx(
                   "h-1.5 w-1.5 cursor-pointer rounded-full transition-colors",
-                  active === idx ? "bg-color-neutral-800" : "bg-color-neutral-100",
+                  active === idx ? "bg-neutral-800" : "bg-neutral-100",
                 )}
                 onClick={() => {
                   setActive(idx);
@@ -83,29 +81,29 @@ export default function Slider({ slides, containerClassName }: SliderProps) {
           <div className="flex gap-x-1.5">
             <button
               type="button"
-              aria-label="Previous image"
+              aria-label="Previous slide"
               disabled={active === 0}
-              className="flex h-8 w-8 items-center justify-center rounded-full bg-theme-surface transition hover:bg-color-neutral-800 hover:text-color-neutral-100 disabled:pointer-events-none disabled:opacity-50"
+              className="button p-2"
               onClick={() => {
                 setActive((active) => Math.max(active - 1, 0));
               }}
             >
-              <ArrowLeftIcon />
+              <Icon icon="chevron-left" />
             </button>
             <button
               type="button"
-              aria-label="Next image"
+              aria-label="Next slide"
               disabled={active === slides.length - 1}
-              className="flex h-8 w-8 items-center justify-center rounded-full bg-theme-surface transition hover:bg-color-neutral-800 hover:text-color-neutral-100 disabled:pointer-events-none disabled:opacity-50"
+              className="button p-2"
               onClick={() => {
                 setActive((active) => Math.min(active + 1, slides.length - 1));
               }}
             >
-              <ArrowRightIcon />
+              <Icon icon="chevron-right" />
             </button>
           </div>
         </footer>
       )}
-    </div>
+    </>
   );
 }

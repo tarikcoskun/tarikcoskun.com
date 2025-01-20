@@ -1,8 +1,51 @@
-export type Icon = (props: React.SVGProps<SVGSVGElement>) => React.ReactNode;
+import React from "react";
+import mdi from "./collectons/mdi";
+import lucide from "./collectons/lucide";
+import devicon from "./collectons/devicon";
 
-export * from "./ArrowLeft";
-export * from "./ArrowRight";
-export * from "./ArrowUpRight";
-export * from "./Github";
-export * from "./Mail";
-export * from "./Twitter";
+export interface IconCollection {
+  specs: {
+    viewBox: string;
+    size: number | string;
+    props: React.SVGProps<SVGPathElement>;
+  };
+  icons: Record<string, React.ReactNode>;
+}
+
+const collections = {
+  mdi,
+  lucide,
+  devicon,
+};
+
+type Collections = keyof typeof collections;
+
+export type IconList<T extends Collections> = keyof typeof collections[T]["icons"];
+
+interface IconProps<T extends Collections> extends React.ComponentPropsWithoutRef<"svg"> {
+  collection?: T;
+  icon: IconList<T>;
+  size?: number | string;
+}
+
+export function Icon<T extends Collections = "lucide">(props: IconProps<T>) {
+  const { icon, collection = "lucide", size = collections[collection].specs.size, ...iconProps } = props;
+
+  const { specs, icons } = collections[collection];
+  const body = icons[icon as keyof typeof icons] as React.ReactElement;
+
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox={specs.viewBox}
+      width={size}
+      height={size}
+      {...iconProps}
+    >
+      {React.cloneElement(body, {
+        ...specs.props,
+        ...body.props,
+      })}
+    </svg>
+  );
+}

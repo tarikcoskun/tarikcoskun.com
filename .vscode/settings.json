@@ -1,0 +1,4 @@
+{
+  "cssvar.files": ["./styles/globals.css"],
+  "typescript.tsdk": "./node_modules/typescript/lib"
+}

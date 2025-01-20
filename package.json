@@ -2,34 +2,30 @@
   "name": "tarikcoskun.com",
   "version": "0.1.0",
   "private": true,
+  "packageManager": "pnpm@9.7.1",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
-    "postbuild": "next-sitemap --config sitemap.config.js"
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
   },
   "dependencies": {
     "clsx": "^2.0.0",
     "framer-motion": "^10.16.4",
     "next": "13.5.4",
-    "next-seo": "^6.1.0",
-    "next-sitemap": "^4.2.3",
     "react": "^18",
     "react-dom": "^18"
   },
   "devDependencies": {
+    "@antfu/eslint-config": "^3.14.0",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
     "autoprefixer": "^10",
-    "eslint": "^8",
-    "eslint-config-next": "13.5.4",
+    "eslint": "^8.57.1",
     "postcss": "^8",
-    "prettier": "^3.0.3",
-    "prettier-plugin-tailwindcss": "^0.5.6",
     "tailwindcss": "^3",
     "typescript": "^5"
-  },
-  "packageManager": "pnpm@9.7.1+sha512.faf344af2d6ca65c4c5c8c2224ea77a81a5e8859cbc4e06b1511ddce2f0151512431dd19e6aff31f2c6a8f5f2aced9bd2273e1fed7dd4de1868984059d2c4247"
+  }
 }

@@ -1,7 +1,7 @@
 import type { AppProps } from "next/app";
 
 import clsx from "clsx";
-import { DefaultSeo } from "next-seo";
+import Head from "next/head";
 import localFont from "next/font/local";
 
 import "@/styles/globals.css";
@@ -21,11 +21,9 @@ const Lora = localFont({
 export default function App({ Component, pageProps }: AppProps) {
   return (
     <>
-      <DefaultSeo
-        title="Tarık Coşkun"
-        description="Front-end developer passionate about crafting experiences with polished interfaces."
-        canonical="https://tarikcoskun.com"
-      />
+      <Head>
+        <title>Tarık Coşkun</title>
+      </Head>
 
       <div
         className={clsx(

@@ -2,11 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-html {
-  /* neutral */
-  --color-neutral-10: 20, 100%, 99%;
-  --color-neutral-50: 22, 38%, 94%;
-  --color-neutral-100: 22, 19%, 89%;
+:root {
+  --color-neutral-50: 22, 20%, 94%;
+  --color-neutral-100: 22, 10%, 89%;
   --color-neutral-200: 20, 8%, 78%;
   --color-neutral-300: 24, 6%, 67%;
   --color-neutral-400: 30, 4%, 56%;
@@ -15,17 +13,21 @@ html {
   --color-neutral-700: 30, 4%, 27%;
   --color-neutral-800: 30, 6%, 19%;
   --color-neutral-900: 30, 7%, 11%;
-  /* theme */
+
   --theme-background: 0, 0%, 100%;
   --theme-surface: var(--color-neutral-50);
   --theme-outline: var(--color-neutral-100);
-  --theme-foreground: var(--color-neutral-600);
-  --theme-heading: var(--color-neutral-900);
-  --theme-subtext: var(--color-neutral-500);
+  --theme-text-body: var(--color-neutral-600);
+  --theme-text-title: var(--color-neutral-900);
 
-  color-scheme: light;
-  scroll-behavior: smooth;
-  scrollbar-gutter: stable;
+  --content-width: 640px;
+
+	--font-body: "General Sans", sans-serif;
+	--font-serif: "Lora", Georgia;
+}
+
+body {
+	@apply bg-theme-background text-theme-body font-body overflow-x-hidden;
 }
 
 ::-webkit-scrollbar {
@@ -33,31 +35,67 @@ html {
 }
 
 ::-webkit-scrollbar-thumb {
-  @apply bg-color-neutral-500;
+  @apply bg-neutral-500;
+}
+
+p {
+  @apply lg:leading-relaxed;
+}
+
+h1,
+h2,
+h3 {
+  @apply font-medium text-theme-title;
+}
+
+h1 {
+  @apply font-serif text-xl lg:text-xl;
+}
+
+h2 {
+  @apply font-serif text-lg lg:text-xl;
+}
+
+.box {
+	@apply px-6 py-12 first:pt-24 last:pb-24 first:lg:pt-32 last:lg:pb-32;
+}
+
+.box > section {
+	@apply mx-auto w-full max-w-[var(--content-width)];
 }
 
 .link {
-  @apply text-theme-heading underline decoration-theme-outline underline-offset-2 hover:decoration-theme-heading;
+  @apply text-theme-title underline decoration-neutral-200 underline-offset-2 hover:decoration-neutral-900;
+}
+
+.button {
+  @apply inline-flex items-center bg-theme-surface text-theme-title rounded-full transition-all hover:bg-neutral-800 hover:text-neutral-100 disabled:pointer-events-none disabled:opacity-50;
+}
+
+.hero-gradient {
+	background: linear-gradient(to bottom, #efdce0, transparent);
 }
 
 @media (prefers-color-scheme: dark) {
-  html {
+  :root {
     /* neutral */
-    --color-neutral-10: 30, 7%, 11%;
-    --color-neutral-50: 30, 6%, 19%;
+    --color-neutral-50: 30, 3%, 19%;
     --color-neutral-100: 30, 4%, 27%;
     --color-neutral-200: 34, 4%, 37%;
     --color-neutral-300: 22, 3%, 46%;
     --color-neutral-400: 30, 4%, 56%;
     --color-neutral-500: 24, 6%, 67%;
     --color-neutral-600: 20, 8%, 78%;
-    --color-neutral-700: 22, 19%, 89%;
-    --color-neutral-800: 22, 38%, 94%;
+    --color-neutral-700: 22, 10%, 89%;
+    --color-neutral-800: 22, 20%, 94%;
     --color-neutral-900: 20, 100%, 99%;
     /* theme */
     --theme-background: 0, 0%, 8%;
-    --theme-outline: var(--color-neutral-50);
 
     color-scheme: dark;
+  }
+
+  .hero-gradient {
+    background: linear-gradient(to bottom, #231014, transparent);
   }
 }

@@ -1,23 +1,23 @@
 {
   "compilerOptions": {
+    "incremental": true,
     "target": "es5",
+    "jsx": "preserve",
     "lib": ["dom", "dom.iterable", "esnext"],
-    "allowJs": true,
-    "skipLibCheck": true,
-    "strict": true,
-    "noEmit": true,
-    "esModuleInterop": true,
+    "baseUrl": "./",
     "module": "esnext",
     "moduleResolution": "bundler",
-    "resolveJsonModule": true,
-    "isolatedModules": true,
-    "downlevelIteration": true,
-    "jsx": "preserve",
-    "incremental": true,
-    "baseUrl": "./",
     "paths": {
       "@/*": ["./*"]
-    }
+    },
+    "resolveJsonModule": true,
+    "allowJs": true,
+    "strict": true,
+    "downlevelIteration": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "isolatedModules": true,
+    "skipLibCheck": true
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
   "exclude": ["node_modules"]

@@ -1,20 +1,30 @@
-import { type Icon, GithubIcon, TwitterIcon } from "@/ui/Icon";
+import type { IconList } from "@/ui/Icon";
 
 interface SocialLink {
   label: string;
   href: string;
-  icon: Icon;
+  icon: IconList<"mdi">;
 }
 
 export const socials: SocialLink[] = [
   {
     label: "Twitter",
     href: "https://twitter.com/tarikcoskunum",
-    icon: TwitterIcon,
+    icon: "twitter",
   },
   {
     label: "GitHub",
     href: "https://github.com/tarikcoskun",
-    icon: GithubIcon,
+    icon: "github",
+  },
+  {
+    label: "LinkedIn",
+    href: "https://www.linkedin.com/in/mtarikcoskun",
+    icon: "linkedin",
+  },
+  {
+    label: "Email",
+    href: "mailto:tarikcskun@gmail.com",
+    icon: "at",
   },
 ];

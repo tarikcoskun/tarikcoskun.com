@@ -42,7 +42,7 @@ export function Slider({ slides }: SliderProps) {
             className={clsx("w-full shrink-0 transition duration-500 relative", {
               "scale-95 cursor-pointer opacity-50": active !== idx,
             })}
-            onTap={() => {
+            onClick={() => {
               setActive(idx);
             }}
           >

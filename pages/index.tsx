@@ -12,8 +12,8 @@ export default function Home() {
     <main>
       <div className="box hero-gradient">
         <section>
-          <h1>Tarık Coşkun</h1>
-          <p className="mt-2">Freelance web developer from Istanbul, TR.</p>
+          <h1 className="text-theme-title font-serif font-medium text-xl lg:text-xl">Tarık Coşkun</h1>
+          <p className="mt-3">Freelance web developer from Istanbul, TR.</p>
           <div className="mt-6 flex flex-wrap gap-1.5">
             {socials.map((link) => (
               <a
@@ -38,7 +38,7 @@ export default function Home() {
           <div className="mt-6 flex flex-col gap-y-12">
             {works.map((work) => (
               <article key={work.title}>
-                <h3>{work.title}</h3>
+                <h3 className="font-medium text-theme-title">{work.title}</h3>
                 <p className="mt-2">{work.description}</p>
                 {work.slides && (
                   <div className="mt-6">
@@ -57,7 +57,7 @@ export default function Home() {
           <div className="mt-6 flex flex-col gap-y-8">
             {projects.map((project) => (
               <article key={project.title}>
-                <h3>
+                <h3 className="font-medium text-theme-title">
                   <a href={project.link} target="_blank" rel="noopener noreferrer" className="link">
                     {project.title}
                   </a>

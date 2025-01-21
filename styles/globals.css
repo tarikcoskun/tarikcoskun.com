@@ -21,9 +21,6 @@
   --theme-text-title: var(--color-neutral-900);
 
   --content-width: 640px;
-
-	--font-body: "General Sans", sans-serif;
-	--font-serif: "Lora", Georgia;
 }
 
 body {
@@ -40,20 +37,6 @@ body {
 
 p {
   @apply lg:leading-relaxed;
-}
-
-h1,
-h2,
-h3 {
-  @apply font-medium text-theme-title;
-}
-
-h1 {
-  @apply font-serif text-xl lg:text-xl;
-}
-
-h2 {
-  @apply font-serif text-lg lg:text-xl;
 }
 
 .box {
@@ -78,7 +61,6 @@ h2 {
 
 @media (prefers-color-scheme: dark) {
   :root {
-    /* neutral */
     --color-neutral-50: 30, 3%, 19%;
     --color-neutral-100: 30, 4%, 27%;
     --color-neutral-200: 34, 4%, 37%;
@@ -89,7 +71,7 @@ h2 {
     --color-neutral-700: 22, 10%, 89%;
     --color-neutral-800: 22, 20%, 94%;
     --color-neutral-900: 20, 100%, 99%;
-    /* theme */
+
     --theme-background: 0, 0%, 8%;
 
     color-scheme: dark;

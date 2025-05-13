@@ -1,0 +1,10 @@
+@font-face {
+	font-display: swap;
+	font-family: "General Sans";
+	src: url("/fonts/GeneralSans-Variable.woff2") format("woff2");
+}
+@font-face {
+	font-display: swap;
+	font-family: "Lora";
+	src: url("/fonts/Lora-Variable.woff2") format("woff2");
+}

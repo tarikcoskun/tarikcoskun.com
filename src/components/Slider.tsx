@@ -33,7 +33,7 @@ export function Slider({ slides }: SliderProps) {
 				onDragEnd={handleDragEnd}
 				className="flex"
 			>
-				{slides.map(([src, alt], idx) => (
+				{slides.map(([fileName, alt], idx) => (
 					<motion.div
 						key={idx}
 						aria-label={`Jump to slide ${idx + 1}`}
@@ -44,15 +44,18 @@ export function Slider({ slides }: SliderProps) {
 							setActiveIdx(idx)
 						}}
 					>
-						<img
-							src={src}
-							alt={alt}
-							width={640}
-							height={360}
-							loading="lazy"
-							draggable="false"
-							className="bg-surface aspect-video w-(--content-width) rounded-xl object-cover shadow-lg"
-						/>
+						<picture>
+							<source type="image/webp" srcSet={`${fileName}.webp`} />
+							<img
+								src={`${fileName}.png`}
+								alt={alt}
+								width={640}
+								height={360}
+								loading="lazy"
+								draggable="false"
+								className="bg-surface aspect-video w-(--content-width) rounded-xl object-cover shadow-lg"
+							/>
+						</picture>
 						<div
 							aria-hidden
 							className="pointer-events-none absolute inset-0 rounded-xl border border-white/10"

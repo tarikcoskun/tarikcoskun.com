@@ -101,7 +101,6 @@ async function generateSvgSprite({
 	const symbols = await Promise.all(
 		files.map(async (file, idx) => {
 			const input = await fs.readFile(file, "utf8")
-			const isColored = input.includes("<!-- preserve colors -->")
 
 			const svgContentMatch = input.match(/<svg[^>]*>([\s\S]*?)<\/svg>/i)
 			if (!svgContentMatch || !svgContentMatch[1]) {
@@ -114,9 +113,7 @@ async function generateSvgSprite({
 			}
 
 			const viewBox = viewBoxMatch[1]
-			const svgContent = isColored
-				? svgContentMatch[1]
-				: svgContentMatch[1].replace(/fill="([^"]*)"/g, "")
+			const svgContent = svgContentMatch[1]
 			return `<symbol viewBox="${viewBox}" id="${iconList[idx]}">${svgContent}</symbol>`
 		}),
 	)

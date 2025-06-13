@@ -1,34 +1,32 @@
 {
 	"name": "tarikcoskun.com",
-	"private": true,
-	"version": "0.0.0",
 	"type": "module",
+	"version": "0.0.1",
 	"scripts": {
 		"predev": "bun run build:icons --silent",
-		"dev": "vite",
+		"dev": "astro dev",
 		"prebuild": "bun run build:icons --force",
-		"build": "tsc -b && vite build",
+		"build": "astro build",
 		"build:icons": "bun ./lib/build-icons.ts",
-		"preview": "vite preview",
+		"preview": "astro preview",
+		"astro": "astro",
 		"format": "prettier . --write"
 	},
 	"dependencies": {
-		"@tailwindcss/vite": "^4.1.6",
+		"@astrojs/react": "^4.3.0",
+		"@tailwindcss/vite": "^4.1.10",
+		"astro": "^5.9.2",
 		"clsx": "^2.1.1",
-		"motion": "^12.11.0",
+		"motion": "^12.18.0",
 		"react": "^19.1.0",
 		"react-dom": "^19.1.0",
-		"tailwindcss": "^4.1.6"
+		"tailwindcss": "^4.1.10"
 	},
 	"devDependencies": {
-		"@sly-cli/sly": "^2.1.1",
-		"@types/node": "^22.15.17",
-		"@types/react": "^19.1.2",
-		"@types/react-dom": "^19.1.2",
-		"@vitejs/plugin-react": "^4.4.1",
+		"@types/react": "^19.1.8",
+		"@types/react-dom": "^19.1.6",
 		"prettier": "^3.5.3",
-		"prettier-plugin-tailwindcss": "^0.6.11",
-		"typescript": "~5.8.3",
-		"vite": "^6.3.5"
+		"prettier-plugin-astro": "^0.14.1",
+		"prettier-plugin-tailwindcss": "^0.6.12"
 	}
 }

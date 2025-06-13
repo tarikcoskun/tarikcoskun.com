@@ -1,16 +1,15 @@
+import { spawn } from "node:child_process"
 import fs from "node:fs/promises"
 import path from "node:path"
-import { $ } from "execa"
-import { glob } from "glob"
-
-const cwd = process.cwd()
-const iconsDir = path.join(cwd, "assets", "icons")
-const publicDir = path.join(cwd, "public")
-const componentDir = path.join(cwd, "src", "components", "Icon")
 
 const isForced = process.argv.includes("--force")
 const isVerbose = !process.argv.includes("--silent")
 const log = isVerbose ? console.log : () => {}
+
+const cwd = process.cwd()
+const iconsDir = path.join(cwd, "assets", "icons")
+const spriteFilePath = path.join(cwd, "public", "sprite.svg")
+const typeFilePath = path.join(cwd, "src", "types", "icon-list.ts")
 
 async function main() {
 	const libraries = await fs.readdir(iconsDir)
@@ -25,7 +24,7 @@ async function main() {
 
 	for (const library of libraries) {
 		const inputDir = path.join(iconsDir, library)
-		const files = glob.sync("**/*.svg", { cwd: inputDir }).sort((a, b) => a.localeCompare(b))
+		const files = (await fs.readdir(inputDir)).sort((a, b) => a.localeCompare(b))
 
 		if (files.length === 0) {
 			console.log(`No SVG files found in ${path.relative(cwd, inputDir)}`)
@@ -45,9 +44,6 @@ async function main() {
 }
 
 async function generateIconFiles({ files, iconList }: { files: string[]; iconList: string[] }) {
-	const typeFilePath = path.join(componentDir, "icon-list.ts")
-	const spriteFilePath = path.join(publicDir, "sprite.svg")
-
 	const currentTypes = await fs.readFile(typeFilePath, "utf8").catch(() => "")
 	const currentSprite = await fs.readFile(spriteFilePath, "utf8").catch(() => "")
 
@@ -105,6 +101,7 @@ async function generateSvgSprite({
 	const symbols = await Promise.all(
 		files.map(async (file, idx) => {
 			const input = await fs.readFile(file, "utf8")
+			const isColored = input.includes("<!-- preserve colors -->")
 
 			const svgContentMatch = input.match(/<svg[^>]*>([\s\S]*?)<\/svg>/i)
 			if (!svgContentMatch || !svgContentMatch[1]) {
@@ -116,7 +113,11 @@ async function generateSvgSprite({
 				throw new Error(`No viewBox attribute found in ${file}`)
 			}
 
-			return `<symbol viewBox="${viewBoxMatch[1]}" id="${iconList[idx]}">${svgContentMatch[1]}</symbol>`
+			const viewBox = viewBoxMatch[1]
+			const svgContent = isColored
+				? svgContentMatch[1]
+				: svgContentMatch[1].replace(/fill="([^"]*)"/g, "")
+			return `<symbol viewBox="${viewBox}" id="${iconList[idx]}">${svgContent}</symbol>`
 		}),
 	)
 
@@ -135,9 +136,24 @@ async function generateSvgSprite({
 async function writeIfChanged(filePath: string, newContent: string) {
 	const currentContent = await fs.readFile(filePath, "utf8").catch(() => "")
 	if (currentContent === newContent) return false
+
 	await fs.writeFile(filePath, newContent, "utf8")
-	await $`prettier --write ${filePath} --ignore-unknown`
-	return true
+
+	const prettierProcess = spawn("prettier", ["--write", filePath, "--ignore-unknown"])
+
+	return new Promise<boolean>((resolve, reject) => {
+		prettierProcess.on("close", (code) => {
+			if (code === 0) {
+				resolve(true)
+			} else {
+				reject(new Error(`Prettier exited with code ${code}`))
+			}
+		})
+
+		prettierProcess.on("error", (err) => {
+			reject(new Error(`Failed to start Prettier process: ${err.message}`))
+		})
+	})
 }
 
 main()

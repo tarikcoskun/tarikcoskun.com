@@ -1,0 +1,16 @@
+---
+import type { IconList } from "@/types/icon-list"
+
+interface Props {
+	icon: IconList
+	size?: number
+	width?: number
+	height?: number
+}
+
+const { icon, size, width, height, ...props } = Astro.props
+---
+
+<svg {...props} width={size ?? width ?? 16} height={size ?? height ?? 16}>
+	<use href={`/sprite.svg#${icon}`}></use>
+</svg>

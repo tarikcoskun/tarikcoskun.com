@@ -1,0 +1,79 @@
+---
+import Root from "@/layouts/Root.astro"
+import Icon from "@/components/Icon.astro"
+import { Slider } from "@/components/Slider"
+import { projects, socials, works } from "@/constants"
+---
+
+<Root>
+	<main>
+		<div class="from-gradient bg-gradient-to-b to-transparent px-6 pt-24 pb-12 md:pt-32">
+			<section class="mx-auto w-full max-w-(--content-width)">
+				<h1 class="text-heading font-serif text-xl font-medium">Tarık Coşkun</h1>
+				<p class="mt-3">Freelance web developer from Istanbul, TR.</p>
+				<div class="mt-6 flex flex-wrap gap-1.5">
+					{
+						socials.map((link) => (
+							<a
+								href={link.href}
+								target="_blank"
+								rel="noopener noreferrer"
+								class="button group relative gap-x-1.5 overflow-hidden p-1.5 pr-3 hover:pr-[calc(var(--spacing)*3+15px)]"
+							>
+								<Icon icon={link.icon} size={18} />
+								<span class="text-sm leading-none font-medium">{link.label}</span>
+								<Icon
+									icon="lucide:arrow-up-right"
+									class:list={[
+										"text-surface-300 absolute right-1.5 origin-bottom-left scale-0 opacity-0 transition-all group-hover:scale-100 group-hover:opacity-100",
+									]}
+								/>
+							</a>
+						))
+					}
+				</div>
+			</section>
+		</div>
+
+		<div class="overflow-hidden px-6 py-12">
+			<section class="mx-auto w-full max-w-(--content-width)">
+				<h2>Experiences</h2>
+				<div class="mt-6 flex flex-col gap-y-12">
+					{
+						works.map((work) => (
+							<article>
+								<h3 class="text-heading font-medium">{work.title}</h3>
+								<p class="mt-2">{work.description}</p>
+								{work.slides && (
+									<div class="mt-6">
+										<Slider slides={work.slides} client:load />
+									</div>
+								)}
+							</article>
+						))
+					}
+				</div>
+			</section>
+		</div>
+
+		<div class="px-6 pt-12 pb-24 md:pb-32">
+			<section class="mx-auto w-full max-w-(--content-width)">
+				<h2>Projects</h2>
+				<div class="mt-6 flex flex-col gap-y-8">
+					{
+						projects.map((project) => (
+							<article>
+								<h3 class="text-heading font-medium">
+									<a href={project.link} target="_blank" rel="noopener noreferrer" class="link">
+										{project.title}
+									</a>
+								</h3>
+								<p class="mt-2">{project.description}</p>
+							</article>
+						))
+					}
+				</div>
+			</section>
+		</div>
+	</main>
+</Root>

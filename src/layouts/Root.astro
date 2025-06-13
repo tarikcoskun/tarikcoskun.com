@@ -1,4 +1,7 @@
-<!doctype html>
+---
+import "@/styles/main.css"
+---
+
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
@@ -10,7 +13,6 @@
 		<meta name="theme-color" content="hsl(347, 37%, 10%)" media="(prefers-color-scheme: dark)" />
 	</head>
 	<body>
-		<div id="root"></div>
-		<script type="module" src="/src/main.tsx"></script>
+		<slot />
 	</body>
 </html>

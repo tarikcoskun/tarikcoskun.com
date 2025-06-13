@@ -1,5 +1,5 @@
+import type { IconList } from "@/types/icon-list"
 import React from "react"
-import type { IconList } from "./icon-list"
 
 interface IconProps extends React.ComponentProps<"svg"> {
 	icon: IconList

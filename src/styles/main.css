@@ -29,15 +29,11 @@
 
 @layer base {
 	:root {
-		color-scheme: light dark;
-	}
-
-	html {
 		font-weight: 450;
 		font-family: var(--font-sans);
 		background-color: var(--color-background);
 		color: var(--color-foreground);
-		font-family: var(--font-sans);
+		color-scheme: light dark;
 	}
 
 	@media (min-width: 1024px) {

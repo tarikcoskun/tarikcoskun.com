@@ -39,7 +39,7 @@ export const socials: SocialLink[] = [
 	},
 	{
 		label: "Email",
-		href: "mailto:tarikcskun@gmail.com",
+		href: "mailto:contact@tarikcoskun.com",
 		icon: "mdi:at",
 	},
 ]
